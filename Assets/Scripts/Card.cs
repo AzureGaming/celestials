@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Card : MonoBehaviour {
     public CardObject cardObject;
+    public int id;
     SpriteRenderer spriteR;
     GameManager gameManager;
+    TurnManager turnManager;
     Sprite artwork;
-    string id;
     new string name;
     string description;
     int manaCost;
@@ -16,10 +17,13 @@ public class Card : MonoBehaviour {
     private void Awake() {
         spriteR = GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
+        turnManager = FindObjectOfType<TurnManager>();
     }
 
     void OnMouseUpAsButton() {
-        gameManager.SetMulligan(id);
+        if (turnManager.state == GameState.MULLIGAN) {
+            gameManager.SetMulligan(id);
+        }
     }
 
     public void LoadCard(CardObject card) {
@@ -28,7 +32,8 @@ public class Card : MonoBehaviour {
         artwork = card.artwork;
         manaCost = card.manaCost;
         attack = card.attack;
-        id = System.Guid.NewGuid().ToString();
+        id = card.id;
+        //id = System.Guid.NewGuid().ToString();
 
         spriteR.sprite = artwork;
     }

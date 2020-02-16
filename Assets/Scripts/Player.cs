@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+    GameManager gameManager;
     Deck deck;
     Hand hand;
     int handLimit;
@@ -11,6 +12,7 @@ public class Player : MonoBehaviour {
     private void Awake() {
         deck = GetComponentInChildren<Deck>();
         hand = GetComponentInChildren<Hand>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void Start() {
@@ -27,16 +29,13 @@ public class Player : MonoBehaviour {
 
     public IEnumerator DrawCard() {
         deck.RemoveCard();
-        hand.AddCard();
+        hand.DrawCard();
         yield return null;
     }
 
-    public IEnumerator StartMulligan() {
-        yield return StartCoroutine(GetMulliganChoices());
-        yield break;
-    }
-
-    IEnumerator GetMulliganChoices() {
+    public IEnumerator ReturnCard(int id) {
+        hand.RemoveCard(id);
+        deck.AddCard();
         yield break;
     }
 }

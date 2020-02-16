@@ -27,15 +27,15 @@ public class Deck : MonoBehaviour {
         SetText(cardCount.ToString());
     }
 
+    public void AddCard() {
+        cardCount++;
+        SetText(cardCount.ToString());
+    }
+
     void FillDeck() {
         for (int i = 0; i < cardLimit; i++) {
             AddCard();
         }
-    }
-
-    void AddCard() {
-        cardCount++;
-        SetText(cardCount.ToString());
     }
 
     void SetText(string value) {

@@ -10,10 +10,14 @@ public class TurnManager : MonoBehaviour {
     public GameState state;
     Player player;
     Deck deck;
+    GameManager gameManager;
+    bool isMulliganConfirmed;
 
     private void Awake() {
         player = FindObjectOfType<Player>();
         deck = FindObjectOfType<Deck>();
+        gameManager = FindObjectOfType<GameManager>();
+        isMulliganConfirmed = false;
     }
 
     private void Start() {
@@ -23,13 +27,29 @@ public class TurnManager : MonoBehaviour {
     public IEnumerator Initialize() {
         yield return StartCoroutine(deck.SetupDeck());
         yield return StartCoroutine(player.SetupPlayer());
-
-        state = GameState.MULLIGAN;
-        yield return StartCoroutine(player.StartMulligan());
+        yield return StartCoroutine(StartMulligan());
         // initialize enemy
         // ...
         // start player turn
         StartCoroutine(StartPlayerTurn());
+    }
+
+    public void ConfirmMulligan() {
+        isMulliganConfirmed = true;
+    }
+
+    IEnumerator StartMulligan() {
+        Debug.Log("Start Mulligan");
+        state = GameState.MULLIGAN;
+        yield return new WaitUntil(() => isMulliganConfirmed);
+        foreach (int id in gameManager.mulligans) {
+            yield return StartCoroutine(player.ReturnCard(id));
+        }
+
+        foreach (int id in gameManager.mulligans) {
+            yield return StartCoroutine(player.DrawCard());
+        }
+        yield break;
     }
 
     IEnumerator StartPlayerTurn() {
