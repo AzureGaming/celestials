@@ -21,22 +21,20 @@ public class GameManager : MonoBehaviour {
     public void SetMulligan(int cardId) {
         if (mulligans.Contains(cardId)) {
             mulligans.Remove(cardId);
-            UpdateIdsDisplay(cardId.ToString(), "remove");
         } else if (mulligans.Count < 2) {
             mulligans.Add(cardId);
-            UpdateIdsDisplay(cardId.ToString(), "insert");
         }
+        UpdateIdsDisplay();
     }
 
     void SetupGame() {
         StartCoroutine(turnManager.Initialize());
     }
 
-    void UpdateIdsDisplay(string id, string operation) {
-        if (operation == "insert") {
-            mulliganIds.text += "\n" + id;
-        } else if (operation == "remove") {
-            mulliganIds.text.Replace(id, "");
+    void UpdateIdsDisplay() {
+        mulliganIds.text = "";
+        foreach (int id in mulligans) {
+            mulliganIds.text += id.ToString() + "\n";
         }
     }
 }
