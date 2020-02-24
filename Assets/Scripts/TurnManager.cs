@@ -9,13 +9,19 @@ public enum GameState {
 public class TurnManager : MonoBehaviour {
     public GameState state;
     Player player;
+    Boss boss;
     Deck deck;
+    Board board;
+    Hand hand;
     GameManager gameManager;
     bool isMulliganConfirmed;
 
     private void Awake() {
         player = FindObjectOfType<Player>();
+        boss = FindObjectOfType<Boss>();
         deck = FindObjectOfType<Deck>();
+        board = FindObjectOfType<Board>();
+        hand = FindObjectOfType<Hand>();
         gameManager = FindObjectOfType<GameManager>();
         isMulliganConfirmed = false;
     }
@@ -28,10 +34,9 @@ public class TurnManager : MonoBehaviour {
         yield return StartCoroutine(deck.SetupDeck());
         yield return StartCoroutine(player.SetupPlayer());
         yield return StartCoroutine(StartMulligan());
-        // initialize enemy
-        // ...
-        // start player turn
+        yield return StartCoroutine(boss.SetupBoss());
         StartCoroutine(StartPlayerTurn());
+        yield break;
     }
 
     public void ConfirmMulligan() {
@@ -49,33 +54,49 @@ public class TurnManager : MonoBehaviour {
         foreach (int id in gameManager.mulligans) {
             yield return StartCoroutine(player.DrawCard());
         }
+
         yield break;
     }
 
     IEnumerator StartPlayerTurn() {
         state = GameState.PLAYERTURN;
 
-
         // Resolve pending summon actions
-        // if boss dies
-        // set game state to win
+        Summon[] summons = board.GetSummons();
+        System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
+        foreach (Summon summon in summons) {
+            yield return StartCoroutine(summon.ExecuteAction());
+            if (boss.getHealth() < 1) {
+                state = GameState.WIN;
+                Debug.Log("Implement win scenario");
+                yield break;
+            }
+        }
+
+        while (player.GetHand().handCardIds.Count < 5) {
+            yield return StartCoroutine(player.DrawCard());
+        }
+
         // if no more cards 
         // shuffle discarded cards
         // draw cards to 5
+
         // refresh mana to cap
         // activate player hand UI
-        // Receive player input
-        // if end turn button is clicked 
-        // set game state to enemey turn
-        yield return null;
+        yield return new WaitUntil(() => player.GetIsTurnDone());
+        StartCoroutine(StartEnemyTurn());
+        yield break;
     }
 
-    void StartEnemyTurn() {
+    IEnumerator StartEnemyTurn() {
         state = GameState.ENEMYTURN;
-
-        // Delegate to enemy AI
-        // If player dies
-        // set game state to lose
-        // set game state to player turn
+        yield return StartCoroutine(boss.RunTurnRoutine());
+        if (player.GetHealth() < 1) {
+            state = GameState.LOSE;
+            Debug.Log("Implement Lose scenario");
+            yield break;
+        }
+        StartCoroutine(StartPlayerTurn());
+        yield break;
     }
 }

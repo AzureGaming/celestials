@@ -10,7 +10,6 @@ public class ConfirmMulligan : MonoBehaviour {
     }
 
     void OnMouseUpAsButton() {
-        Debug.Log("Confirm mulligan");
         turnManager.ConfirmMulligan();
     }
 }

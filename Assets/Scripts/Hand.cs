@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Hand : MonoBehaviour {
     Text text;
-    public List<int> handCardIds;
+    [SerializeField] public List<int> handCardIds;
     CardManager cardManager;
     HandSlot[] handSlots;
     Text idsDisplay;
@@ -24,7 +24,7 @@ public class Hand : MonoBehaviour {
         }
     }
 
-    public void DrawCard() {
+    public IEnumerator DrawCard() {
         GameObject card = cardManager.CreateCard();
         foreach (HandSlot handSlot in handSlots) {
             if (handSlot.transform.childCount < 1) {
@@ -34,6 +34,7 @@ public class Hand : MonoBehaviour {
             }
         }
         UpdateIdsDisplay();
+        yield break;
     }
 
     public void RemoveCard(int id) {

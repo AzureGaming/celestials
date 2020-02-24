@@ -13,12 +13,30 @@ public class Card : MonoBehaviour {
     string description;
     int manaCost;
     int attack;
+    Vector3 startingScale;
 
     private void Awake() {
         spriteR = GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
     }
+
+    private void Start() {
+        startingScale = transform.localScale;
+    }
+
+    private void OnMouseOver() {
+        if (turnManager.state == GameState.PLAYERTURN) {
+            transform.localScale = startingScale * 2;
+        }
+    }
+
+    private void OnMouseExit() {
+        if (turnManager.state == GameState.PLAYERTURN) {
+            transform.localScale = startingScale;
+        }
+    }
+
 
     void OnMouseUpAsButton() {
         if (turnManager.state == GameState.MULLIGAN) {
