@@ -14,6 +14,8 @@ public class Card : MonoBehaviour {
     int manaCost;
     int attack;
     Vector3 startingScale;
+    Ray ray;
+    RaycastHit hit;
 
     private void Awake() {
         spriteR = GetComponent<SpriteRenderer>();
@@ -27,7 +29,13 @@ public class Card : MonoBehaviour {
 
     private void OnMouseOver() {
         if (turnManager.state == GameState.PLAYERTURN) {
-            transform.localScale = startingScale * 2;
+            if (Input.GetMouseButton(0)) {
+                Vector3 pos = Input.mousePosition;
+                pos.z = transform.position.z - Camera.main.transform.position.z;
+                transform.position = Camera.main.ScreenToWorldPoint(pos);
+            } else {
+                transform.localScale = startingScale * 2;
+            }
         }
     }
 
@@ -36,7 +44,6 @@ public class Card : MonoBehaviour {
             transform.localScale = startingScale;
         }
     }
-
 
     void OnMouseUpAsButton() {
         if (turnManager.state == GameState.MULLIGAN) {
