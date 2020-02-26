@@ -23,11 +23,11 @@ public class TurnManager : MonoBehaviour {
         board = FindObjectOfType<Board>();
         hand = FindObjectOfType<Hand>();
         gameManager = FindObjectOfType<GameManager>();
-        isMulliganConfirmed = false;
     }
 
     private void Start() {
         state = GameState.START;
+        isMulliganConfirmed = false;
     }
 
     public IEnumerator Initialize() {
@@ -39,13 +39,14 @@ public class TurnManager : MonoBehaviour {
         yield break;
     }
 
-    public void ConfirmMulligan() {
-        isMulliganConfirmed = true;
+    public void SetMulliganConfirmed(bool value) {
+        isMulliganConfirmed = value;
     }
 
     IEnumerator StartMulligan() {
         Debug.Log("Start Mulligan");
         state = GameState.MULLIGAN;
+        SetMulliganConfirmed(false);
         yield return new WaitUntil(() => isMulliganConfirmed);
         foreach (int id in gameManager.mulligans) {
             yield return StartCoroutine(player.ReturnCard(id));
@@ -59,9 +60,7 @@ public class TurnManager : MonoBehaviour {
     }
 
     IEnumerator StartPlayerTurn() {
-        state = GameState.PLAYERTURN;
-
-        // Resolve pending summon actions
+        Debug.Log("Summons action");
         Summon[] summons = board.GetSummons();
         System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
         foreach (Summon summon in summons) {
@@ -73,22 +72,28 @@ public class TurnManager : MonoBehaviour {
             }
         }
 
+        Debug.Log("Fill hand");
         while (player.GetHand().handCardIds.Count < 5) {
             yield return StartCoroutine(player.DrawCard());
+
+            if (deck.GetCardsInDeck() < 1) {
+                deck.Reload();
+            }
         }
+        Debug.Log("Refresh mana");
+        yield return StartCoroutine(player.GainMaxMana(1));
+        yield return StartCoroutine(player.RefreshMana());
 
-        // if no more cards 
-        // shuffle discarded cards
-        // draw cards to 5
-
-        // refresh mana to cap
-        // activate player hand UI
+        Debug.Log("Player agency starts");
+        state = GameState.PLAYERTURN;
+        player.SetIsTurnDone(false);
         yield return new WaitUntil(() => player.GetIsTurnDone());
         StartCoroutine(StartEnemyTurn());
         yield break;
     }
 
     IEnumerator StartEnemyTurn() {
+        Debug.Log("Start enemy turn");
         state = GameState.ENEMYTURN;
         yield return StartCoroutine(boss.RunTurnRoutine());
         if (player.GetHealth() < 1) {

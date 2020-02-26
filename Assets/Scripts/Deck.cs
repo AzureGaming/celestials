@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Deck : MonoBehaviour {
-    int cardCount;
-    int cardLimit;
+    int cardsInDeck;
+    int deckLimit;
     Text text;
 
     private void Awake() {
@@ -13,8 +13,12 @@ public class Deck : MonoBehaviour {
     }
 
     private void Start() {
-        cardCount = 0;
-        cardLimit = 30;
+        cardsInDeck = 0;
+        deckLimit = 30;
+    }
+
+    public int GetCardsInDeck() {
+        return cardsInDeck;
     }
 
     public IEnumerator SetupDeck() {
@@ -23,17 +27,22 @@ public class Deck : MonoBehaviour {
     }
 
     public void RemoveCard() {
-        cardCount--;
-        SetText(cardCount.ToString());
+        cardsInDeck--;
+        SetText(cardsInDeck.ToString());
     }
 
     public void AddCard() {
-        cardCount++;
-        SetText(cardCount.ToString());
+        cardsInDeck++;
+        SetText(cardsInDeck.ToString());
+    }
+
+    public IEnumerator Reload() {
+        FillDeck();
+        yield break;
     }
 
     void FillDeck() {
-        for (int i = 0; i < cardLimit; i++) {
+        for (int i = 0; i < deckLimit; i++) {
             AddCard();
         }
     }

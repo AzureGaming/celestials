@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6870781710765154340}
   - component: {fileID: -5841468748750245722}
   - component: {fileID: 4956247127437095251}
+  - component: {fileID: 2950536334171906284}
+  - component: {fileID: -4072397686185754714}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -73,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 168962825
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -4389146803844080751, guid: 55240c6080bed7f4ab2d0ae926cac6f0,
     type: 3}
@@ -101,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardObject: {fileID: 0}
-  id: 
+  id: 0
 --- !u!61 &-5841468748750245722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,3 +138,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6870781710765154343}
   m_CullTransparentMesh: 0
+--- !u!114 &2950536334171906284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870781710765154343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae2a9f894725c84f8e11a62c3ed409c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4072397686185754714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870781710765154343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55cb3ea920a3274297b0b183608a72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -10,6 +10,6 @@ public class ConfirmMulligan : MonoBehaviour {
     }
 
     void OnMouseUpAsButton() {
-        turnManager.ConfirmMulligan();
+        turnManager.SetMulliganConfirmed(true);
     }
 }

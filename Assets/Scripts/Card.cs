@@ -23,29 +23,11 @@ public class Card : MonoBehaviour {
         turnManager = FindObjectOfType<TurnManager>();
     }
 
-    private void Start() {
-        startingScale = transform.localScale;
+    private void OnMouseEnter() {
+        gameManager.SetLastTouchedCard(id);
     }
 
-    private void OnMouseOver() {
-        if (turnManager.state == GameState.PLAYERTURN) {
-            if (Input.GetMouseButton(0)) {
-                Vector3 pos = Input.mousePosition;
-                pos.z = transform.position.z - Camera.main.transform.position.z;
-                transform.position = Camera.main.ScreenToWorldPoint(pos);
-            } else {
-                transform.localScale = startingScale * 2;
-            }
-        }
-    }
-
-    private void OnMouseExit() {
-        if (turnManager.state == GameState.PLAYERTURN) {
-            transform.localScale = startingScale;
-        }
-    }
-
-    void OnMouseUpAsButton() {
+    private void OnMouseUpAsButton() {
         if (turnManager.state == GameState.MULLIGAN) {
             gameManager.SetMulligan(id);
         }
