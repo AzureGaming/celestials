@@ -87,6 +87,7 @@ public class TurnManager : MonoBehaviour {
         Debug.Log("Player agency starts");
         state = GameState.PLAYERTURN;
         player.SetIsTurnDone(false);
+        board.EnablePlay();
         yield return new WaitUntil(() => player.GetIsTurnDone());
         StartCoroutine(StartEnemyTurn());
         yield break;
@@ -95,6 +96,7 @@ public class TurnManager : MonoBehaviour {
     IEnumerator StartEnemyTurn() {
         Debug.Log("Start enemy turn");
         state = GameState.ENEMYTURN;
+        board.DisablePlay();
         yield return StartCoroutine(boss.RunTurnRoutine());
         if (player.GetHealth() < 1) {
             state = GameState.LOSE;

@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour {
     private void Start() {
         mulligans = new List<int>(2);
         heldCardId = -1;
-        SetupGame();
+        //SetupGame();
     }
 
     public bool GetIsHoldingCard() {
