@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 4a4e9f7571452b04ea5c6b43a2929b3c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7919987069915980634
+    second: Celestial Soldier Sprite Sheet_0
+  - first:
+      213: 5293687848840039590
+    second: Celestial Soldier Sprite Sheet_1
+  - first:
+      213: 2415949555037014140
+    second: Celestial Soldier Sprite Sheet_2
+  - first:
+      213: -8924380351128919372
+    second: Celestial Soldier Sprite Sheet_3
+  - first:
+      213: 3595613183988972718
+    second: Celestial Soldier Sprite Sheet_4
+  - first:
+      213: -1199534233292736329
+    second: Celestial Soldier Sprite Sheet_5
+  - first:
+      213: -7907013845904287813
+    second: Celestial Soldier Sprite Sheet_6
+  - first:
+      213: 4023271559840894551
+    second: Celestial Soldier Sprite Sheet_7
+  - first:
+      213: 4091147664359946506
+    second: Celestial Soldier Sprite Sheet_8
+  - first:
+      213: -3888647290256065385
+    second: Celestial Soldier Sprite Sheet_9
+  - first:
+      213: -7276238116196978870
+    second: Celestial Soldier Sprite Sheet_10
+  - first:
+      213: 545958425611504815
+    second: Celestial Soldier Sprite Sheet_11
+  - first:
+      213: -844812089931956125
+    second: Celestial Soldier Sprite Sheet_12
+  - first:
+      213: -1663465139555561008
+    second: Celestial Soldier Sprite Sheet_13
+  - first:
+      213: 4223504299701094161
+    second: Celestial Soldier Sprite Sheet_14
+  - first:
+      213: 3675173746176173574
+    second: Celestial Soldier Sprite Sheet_15
+  - first:
+      213: -4301612423516453501
+    second: Celestial Soldier Sprite Sheet_16
+  - first:
+      213: -4301035672027870492
+    second: Celestial Soldier Sprite Sheet_17
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +94,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +123,409 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 177
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9840e1bee5a556c40bcf6946ca27e5df
+      internalID: -7919987069915980634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 177
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6fdb81a8dcf774fb94e2809db86444
+      internalID: 5293687848840039590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 93
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7898bb03c71464398a7f9c030b5cd2
+      internalID: 2415949555037014140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 95
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16ffd575d3be2047bf7021e4d486920
+      internalID: -8924380351128919372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 95
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8936c7bed6385da41b41990a31f2dd03
+      internalID: 3595613183988972718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 95
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e9ac916936db04faebf67ec406a253
+      internalID: -1199534233292736329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 95
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab99ed561eca6a4ca58c06351192a04
+      internalID: -7907013845904287813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 93
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab4c6b24abf91b41a3bf994b1f11ad7
+      internalID: 4023271559840894551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 93
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3009ce15ec1ede94582f51fe528cfa34
+      internalID: 4091147664359946506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 9
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1493637899a92a04ba8d1a1c4decab74
+      internalID: -3888647290256065385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 10
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba522b424337f3741907663f0a851423
+      internalID: -7276238116196978870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 11
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4fba0a444c1854d88c16cabffea8dd
+      internalID: 545958425611504815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 11
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed52d6580d91a734facde98ba45c1e7e
+      internalID: -844812089931956125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 10
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4d64cf02b9eea44b3c9ee291715af2
+      internalID: -1663465139555561008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 10
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8f86d4d6edbf47bf7779195c49546
+      internalID: 4223504299701094161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 9
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae38cdd2f966a8842b930f4fa7050e7f
+      internalID: 3675173746176173574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 10
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6632f27f748d3b24ca6ba3db05a15a1a
+      internalID: -4301612423516453501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Soldier Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 11
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3562221eb658c5143af2c287b394b89b
+      internalID: -4301035672027870492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
