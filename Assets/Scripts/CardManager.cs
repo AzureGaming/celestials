@@ -15,6 +15,7 @@ public class CardManager : MonoBehaviour {
 
     public GameObject CreateCard() {
         GameObject card = Instantiate(cardPrefab, transform);
+        card.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         card.GetComponent<Card>().LoadCard(GetValidCardData());
         return card;
     }

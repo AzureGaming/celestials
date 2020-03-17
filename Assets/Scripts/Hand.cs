@@ -26,14 +26,15 @@ public class Hand : MonoBehaviour {
 
     public IEnumerator DrawCard() {
         GameObject card = cardManager.CreateCard();
-        foreach (HandSlot handSlot in handSlots) {
-            if (handSlot.transform.childCount < 1) {
-                handSlot.InsertCard(card);
-                handCardIds.Add(card.GetComponent<Card>().id);
-                break;
-            }
-        }
-        UpdateIdsDisplay();
+        card.transform.SetParent(transform);
+        //foreach (HandSlot handSlot in handSlots) {
+        //    if (handSlot.transform.childCount < 1) {
+        //        handSlot.InsertCard(card);
+        //        handCardIds.Add(card.GetComponent<Card>().id);
+        //        break;
+        //    }
+        //}
+        //UpdateIdsDisplay();
         yield break;
     }
 
@@ -47,7 +48,7 @@ public class Hand : MonoBehaviour {
             }
             handSlotIndex++;
         }
-        UpdateIdsDisplay();
+        //UpdateIdsDisplay();
     }
 
     void UpdateIdsDisplay() {

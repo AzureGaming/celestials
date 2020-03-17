@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Card : MonoBehaviour {
+public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public CardObject cardObject;
     public int id;
-    SpriteRenderer spriteR;
+    //SpriteRenderer spriteR;
     GameManager gameManager;
     TurnManager turnManager;
     Sprite artwork;
@@ -18,13 +19,13 @@ public class Card : MonoBehaviour {
     RaycastHit hit;
 
     private void Awake() {
-        spriteR = GetComponent<SpriteRenderer>();
+        //spriteR = GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
     }
 
-    private void OnMouseEnter() {
-        gameManager.SetLastTouchedCard(id);
+    private void Start() {
+        startingScale = transform.localScale;
     }
 
     private void OnMouseUpAsButton() {
@@ -42,6 +43,14 @@ public class Card : MonoBehaviour {
         id = card.id;
         //id = System.Guid.NewGuid().ToString();
 
-        spriteR.sprite = artwork;
+        //spriteR.sprite = artwork;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData) {
+        transform.localScale = startingScale * 2;
+    }
+
+    public void OnPointerExit(PointerEventData eventData) {
+        transform.localScale = startingScale;
     }
 }
