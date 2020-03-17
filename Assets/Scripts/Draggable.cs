@@ -1,29 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Draggable : MonoBehaviour {
-    GameManager gameManager;
-    TurnManager turnManager;
+public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler {
+    public Transform parentToReturnTo;
+    Vector3 startingScale;
 
-    private void Awake() {
-        gameManager = FindObjectOfType<GameManager>();
-        turnManager = FindObjectOfType<TurnManager>();
+    public void OnBeginDrag(PointerEventData eventData) {
+        parentToReturnTo = transform.parent;
+        startingScale = eventData.pointerDrag.transform.localScale;
+        transform.SetParent(transform.parent.parent);
+        eventData.pointerDrag.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
-    private void OnMouseDown() {
-        gameManager.SetIsHoldingCard(true);
+    public void OnDrag(PointerEventData eventData) {
+        transform.position = eventData.position;
     }
 
-    private void OnMouseUpAsButton() {
-        gameManager.SetIsHoldingCard(false);
-    }
-
-    private void OnMouseDrag() {
-        if (gameManager.GetIsHoldingCard()) {
-            Vector3 pos = Input.mousePosition;
-            pos.z = transform.position.z - Camera.main.transform.position.z;
-            transform.position = Camera.main.ScreenToWorldPoint(pos);
-        }
+    public void OnEndDrag(PointerEventData eventData) {
+        transform.SetParent(parentToReturnTo);
+        transform.localScale = startingScale;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }
