@@ -8,9 +8,10 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     public CardObject cardObject;
     public System.Guid id;
-    //SpriteRenderer spriteR;
     Image imageDisplay;
     TextMeshProUGUI nameDisplay;
+    TextMeshProUGUI manaDisplay;
+    TextMeshProUGUI attackDisplay;
     GameManager gameManager;
     TurnManager turnManager;
     Sprite artwork;
@@ -23,9 +24,10 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     RaycastHit hit;
 
     private void Awake() {
-        //spriteR = GetComponent<SpriteRenderer>();
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
         nameDisplay = transform.Find("Name").GetComponent<TextMeshProUGUI>();
+        manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
+        attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
     }
@@ -44,6 +46,8 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
         imageDisplay.sprite = artwork;
         nameDisplay.text = name;
+        manaDisplay.text = manaCost.ToString();
+        attackDisplay.text = attack.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
