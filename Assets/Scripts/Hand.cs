@@ -35,7 +35,7 @@ public class Hand : MonoBehaviour {
         yield break;
     }
 
-    public void RemoveCard(int id) {
+    public void RemoveCard(System.Guid id) {
         cards = GetComponentsInChildren<Card>();
         foreach (Card card in cards) {
             if (card.id == id) {

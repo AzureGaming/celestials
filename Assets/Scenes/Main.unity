@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 52196072}
   - component: {fileID: 52196071}
   m_Layer: 5
-  m_Name: End Mulligan
+  m_Name: Action Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1912,7 +1912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffc9ad7bf08ba94f839e08095da6fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mulligans: 
 --- !u!4 &1330709855
 Transform:
   m_ObjectHideFlags: 0
@@ -2346,6 +2345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43552ef487bd3b4e87727b02c1c34f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnManager: {fileID: 0}
 --- !u!212 &1629645756
 SpriteRenderer:
   m_ObjectHideFlags: 0

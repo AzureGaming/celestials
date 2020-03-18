@@ -49,11 +49,11 @@ public class TurnManager : MonoBehaviour {
         SetMulliganConfirmed(false);
         yield return new WaitUntil(() => isMulliganConfirmed);
         Debug.Log("End Mulligan phase");
-        foreach (int id in gameManager.mulligans) {
+        foreach (System.Guid id in gameManager.mulligans) {
             yield return StartCoroutine(player.ReturnCard(id));
         }
 
-        foreach (int id in gameManager.mulligans) {
+        foreach (System.Guid id in gameManager.mulligans) {
             yield return StartCoroutine(player.DrawCard());
         }
 

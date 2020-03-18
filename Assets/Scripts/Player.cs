@@ -61,7 +61,7 @@ public class Player : MonoBehaviour {
         yield break;
     }
 
-    public IEnumerator ReturnCard(int id) {
+    public IEnumerator ReturnCard(System.Guid id) {
         hand.RemoveCard(id);
         deck.AddCard();
         yield break;

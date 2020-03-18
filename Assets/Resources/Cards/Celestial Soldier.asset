@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df63777e85c1195479ccc978781e90f3, type: 3}
-  m_Name: Soldier 1
+  m_Name: Celestial Soldier
   m_EditorClassIdentifier: 
-  id: 1
-  name: Soldier
+  id: 0
+  name: Celestial Soldier
   description: A pawn in a greater game.
-  artwork: {fileID: 7165153905194774992, guid: 55240c6080bed7f4ab2d0ae926cac6f0, type: 3}
+  artwork: {fileID: 21300000, guid: 5532e650f92a2a6478892998e45c9002, type: 3}
   manaCost: 1
   attack: 1

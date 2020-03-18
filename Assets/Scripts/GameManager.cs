@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-    public List<int> mulligans;
+    public List<System.Guid> mulligans;
     TurnManager turnManager;
     Text mulliganIds;
 
@@ -14,11 +14,11 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Start() {
-        mulligans = new List<int>(2);
+        mulligans = new List<System.Guid>(2);
         SetupGame();
     }
 
-    public void SetMulligan(int cardId) {
+    public void SetMulligan(System.Guid cardId) {
         if (mulligans.Contains(cardId)) {
             Debug.Log("Remove " + cardId + " from mulligan");
             mulligans.Remove(cardId);
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour {
 
     void UpdateIdsDisplay() {
         mulliganIds.text = "";
-        foreach (int id in mulligans) {
+        foreach (System.Guid id in mulligans) {
             mulliganIds.text += id.ToString() + "\n";
         }
     }

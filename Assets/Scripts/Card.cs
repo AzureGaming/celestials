@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     public CardObject cardObject;
-    public int id;
+    public System.Guid id;
     //SpriteRenderer spriteR;
+    Image imageDisplay;
+    TextMeshProUGUI nameDisplay;
     GameManager gameManager;
     TurnManager turnManager;
     Sprite artwork;
@@ -20,6 +24,8 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
     private void Awake() {
         //spriteR = GetComponent<SpriteRenderer>();
+        imageDisplay = transform.Find("Artwork").GetComponent<Image>();
+        nameDisplay = transform.Find("Name").GetComponent<TextMeshProUGUI>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
     }
@@ -34,7 +40,10 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         artwork = card.artwork;
         manaCost = card.manaCost;
         attack = card.attack;
-        id = card.id;
+        id = System.Guid.NewGuid();
+
+        imageDisplay.sprite = artwork;
+        nameDisplay.text = name;
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
