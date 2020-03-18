@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
     bool isTurnDone;
     int mana;
     int maxMana;
+    int numberOfCardsHeld;
 
     private void Awake() {
         deck = GetComponentInChildren<Deck>();
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour {
         isTurnDone = false;
         mana = 0;
         maxMana = 0;
+        numberOfCardsHeld = hand.transform.childCount;
     }
 
     public Hand GetHand() {
@@ -45,7 +47,8 @@ public class Player : MonoBehaviour {
     }
 
     public IEnumerator SetupPlayer() {
-        for (int i = 0; i < handLimit; i++) {
+        Debug.Log("Set up player " + numberOfCardsHeld);    
+        for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(DrawCard());
         }
         yield return StartCoroutine(GainMana(1));

@@ -48,6 +48,7 @@ public class TurnManager : MonoBehaviour {
         state = GameState.MULLIGAN;
         SetMulliganConfirmed(false);
         yield return new WaitUntil(() => isMulliganConfirmed);
+        Debug.Log("End Mulligan phase");
         foreach (int id in gameManager.mulligans) {
             yield return StartCoroutine(player.ReturnCard(id));
         }

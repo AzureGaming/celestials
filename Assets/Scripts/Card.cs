@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     public CardObject cardObject;
     public int id;
     //SpriteRenderer spriteR;
@@ -28,12 +28,6 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
         startingScale = transform.localScale;
     }
 
-    private void OnMouseUpAsButton() {
-        if (turnManager.state == GameState.MULLIGAN) {
-            gameManager.SetMulligan(id);
-        }
-    }
-
     public void LoadCard(CardObject card) {
         name = card.name;
         description = card.description;
@@ -41,9 +35,6 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
         manaCost = card.manaCost;
         attack = card.attack;
         id = card.id;
-        //id = System.Guid.NewGuid().ToString();
-
-        //spriteR.sprite = artwork;
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
@@ -52,5 +43,11 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     public void OnPointerExit(PointerEventData eventData) {
         transform.localScale = startingScale;
+    }
+
+    public void OnPointerClick(PointerEventData eventData) {
+        if (turnManager.state == GameState.MULLIGAN) {
+            gameManager.SetMulligan(id);
+        }
     }
 }
