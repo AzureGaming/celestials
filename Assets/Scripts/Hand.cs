@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿
+
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,12 +12,14 @@ public class Hand : MonoBehaviour {
     CardManager cardManager;
     HandSlot[] handSlots;
     Text idsDisplay;
+    Card[] cards;
 
     private void Awake() {
         text = GetComponentInChildren<Text>();
         cardManager = FindObjectOfType<CardManager>();
         handSlots = GetComponentsInChildren<HandSlot>();
         idsDisplay = GameObject.Find("Ids").GetComponent<Text>();
+        cards = GetComponentsInChildren<Card>();
     }
 
     private void Start() {
@@ -27,28 +32,17 @@ public class Hand : MonoBehaviour {
     public IEnumerator DrawCard() {
         GameObject card = cardManager.CreateCard();
         card.transform.SetParent(transform);
-        //foreach (HandSlot handSlot in handSlots) {
-        //    if (handSlot.transform.childCount < 1) {
-        //        handSlot.InsertCard(card);
-        //        handCardIds.Add(card.GetComponent<Card>().id);
-        //        break;
-        //    }
-        //}
-        //UpdateIdsDisplay();
         yield break;
     }
 
-    public void RemoveCard(int id) {
-        int handSlotIndex = 0;
-        foreach (HandSlot handSlot in handSlots) {
-            // Unsure why GetComponentInChildren is undefined sometimes
-            if (handSlot.GetComponentInChildren<Card>()?.id == id) {
-                handCardIds.RemoveAt(handCardIds.FindIndex((handCardId => handCardId == id)));
-                handSlot.DestroyChildren();
+    public void RemoveCard(System.Guid id) {
+        cards = GetComponentsInChildren<Card>();
+        foreach (Card card in cards) {
+            if (card.id == id) {
+                Debug.Log("Remove card " + id);
+                Destroy(card.gameObject);
             }
-            handSlotIndex++;
         }
-        //UpdateIdsDisplay();
     }
 
     void UpdateIdsDisplay() {

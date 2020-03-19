@@ -24,13 +24,6 @@ public class Board : MonoBehaviour {
         SetColliderTrigger(false);
     }
 
-    private IEnumerator OnMouseUp() {
-        Debug.Log("mouse up on board");
-        if (gameManager.GetIsHoldingCard()) {
-            yield return StartCoroutine(Summon(gameManager.GetHeldCardId()));
-        }
-    }
-
     void SetColliderTrigger(bool value) {
         collider2d.isTrigger = value;
     }

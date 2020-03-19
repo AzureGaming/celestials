@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     public CardObject cardObject;
-    public int id;
-    //SpriteRenderer spriteR;
+    public System.Guid id;
+    Image imageDisplay;
+    TextMeshProUGUI nameDisplay;
+    TextMeshProUGUI manaDisplay;
+    TextMeshProUGUI attackDisplay;
     GameManager gameManager;
     TurnManager turnManager;
     Sprite artwork;
@@ -19,7 +24,10 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     RaycastHit hit;
 
     private void Awake() {
-        //spriteR = GetComponent<SpriteRenderer>();
+        imageDisplay = transform.Find("Artwork").GetComponent<Image>();
+        nameDisplay = transform.Find("Name").GetComponent<TextMeshProUGUI>();
+        manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
+        attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
     }
@@ -28,22 +36,18 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
         startingScale = transform.localScale;
     }
 
-    private void OnMouseUpAsButton() {
-        if (turnManager.state == GameState.MULLIGAN) {
-            gameManager.SetMulligan(id);
-        }
-    }
-
     public void LoadCard(CardObject card) {
         name = card.name;
         description = card.description;
         artwork = card.artwork;
         manaCost = card.manaCost;
         attack = card.attack;
-        id = card.id;
-        //id = System.Guid.NewGuid().ToString();
+        id = System.Guid.NewGuid();
 
-        //spriteR.sprite = artwork;
+        imageDisplay.sprite = artwork;
+        nameDisplay.text = name;
+        manaDisplay.text = manaCost.ToString();
+        attackDisplay.text = attack.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
@@ -52,5 +56,11 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     public void OnPointerExit(PointerEventData eventData) {
         transform.localScale = startingScale;
+    }
+
+    public void OnPointerClick(PointerEventData eventData) {
+        if (turnManager.state == GameState.MULLIGAN) {
+            gameManager.SetMulligan(id);
+        }
     }
 }

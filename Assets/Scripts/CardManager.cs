@@ -22,10 +22,11 @@ public class CardManager : MonoBehaviour {
 
     CardObject GetValidCardData() {
         // Will break if no valid cards
-        int randomIndex = Random.Range(0, cards.Length - 1);
-        if (!hand.handCardIds.Contains(cards[randomIndex].id)) {
-            return cards[randomIndex];
-        }
-        return GetValidCardData();
+        //int randomIndex = Random.Range(0, cards.Length - 1);
+        //if (!hand.handCardIds.Contains(cards[randomIndex].id)) {
+        //    return cards[randomIndex];
+        //}
+        //return GetValidCardData();
+        return cards[0];
     }
 }
