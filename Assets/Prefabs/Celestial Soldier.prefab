@@ -14,10 +14,11 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25,6 +26,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -34,8 +36,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 30382619
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7919987069915980634, guid: 4a4e9f7571452b04ea5c6b43a2929b3c,
     type: 3}
@@ -75,20 +77,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
-        type: 3}
-      propertyPath: m_Name
-      value: Summon
-      objectReference: {fileID: 0}
     - target: {fileID: 6818164089875801406, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.461
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6818164089875801406, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.055
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6818164089875801406, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
@@ -149,6 +146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0187936
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_Name
+      value: Celestial Soldier
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}

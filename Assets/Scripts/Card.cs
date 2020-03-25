@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-    public CardObject cardObject;
     public System.Guid id;
+    public GameObject prefab;
     Image imageDisplay;
     TextMeshProUGUI nameDisplay;
     TextMeshProUGUI manaDisplay;
@@ -43,6 +43,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         manaCost = card.manaCost;
         attack = card.attack;
         id = System.Guid.NewGuid();
+        prefab = card.prefab;
 
         imageDisplay.sprite = artwork;
         nameDisplay.text = name;

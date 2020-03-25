@@ -28,8 +28,8 @@ public class Board : MonoBehaviour {
         collider2d.isTrigger = value;
     }
 
-    IEnumerator Summon(int cardId) {
-        Debug.Log("Implement Summon method" + cardId);
+    public IEnumerator Summon(Card card) {
+        Debug.Log("Implement Summon method" + card);
         yield break;
     }
 }
