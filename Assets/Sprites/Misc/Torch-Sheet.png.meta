@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 086a25544411a534f8793b0a93ae350d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7350736784514693453
+    second: Torch-Sheet_0
+  - first:
+      213: 4290816492176585213
+    second: Torch-Sheet_1
+  - first:
+      213: 5028561332744366093
+    second: Torch-Sheet_2
+  - first:
+      213: 832486303073105490
+    second: Torch-Sheet_3
+  - first:
+      213: 4206932331437546343
+    second: Torch-Sheet_4
+  - first:
+      213: -719646498559096173
+    second: Torch-Sheet_5
+  - first:
+      213: 1191514754430711276
+    second: Torch-Sheet_6
+  - first:
+      213: -2817723793645035459
+    second: Torch-Sheet_7
+  - first:
+      213: -2867391947528690492
+    second: Torch-Sheet_0
+  - first:
+      213: 7423694130991416336
+    second: Torch-Sheet_1
+  - first:
+      213: 2118490002823343666
+    second: Torch-Sheet_2
+  - first:
+      213: 1102092590117514864
+    second: Torch-Sheet_3
+  - first:
+      213: -7336335955209833107
+    second: Torch-Sheet_4
+  - first:
+      213: 2953849599095442813
+    second: Torch-Sheet_5
+  - first:
+      213: -4433406051767464741
+    second: Torch-Sheet_6
+  - first:
+      213: 5499937716903651590
+    second: Torch-Sheet_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +144,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Torch-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4acbf373af438d0800000000000000
+      internalID: -2867391947528690492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01445eeca72460760800000000000000
+      internalID: 7423694130991416336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e608eee63666d10800000000000000
+      internalID: 2118490002823343666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e6b8f1f5b6b4f00800000000000000
+      internalID: 1102092590117514864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65bacc7159103a90800000000000000
+      internalID: -7336335955209833107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d830a6f8e2ef820800000000000000
+      internalID: 2953849599095442813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
