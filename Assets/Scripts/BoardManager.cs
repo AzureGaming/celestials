@@ -36,4 +36,10 @@ public class BoardManager : MonoBehaviour {
         Debug.Log("Inserted " + card + " at " + column + row);
         yield break;
     }
+
+    public void DetectTileState() {
+        foreach (Tile tile in tiles) {
+            tile.UpdateStatus();
+        }
+    }
 }

@@ -152,6 +152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Celestial Soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_TagString
+      value: Summon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}
 --- !u!1 &7167678689689261049 stripped

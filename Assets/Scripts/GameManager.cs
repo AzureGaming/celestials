@@ -35,7 +35,15 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator StartCardSummon(Card card) {
         uiManager.SetLocationSelectionPrompt(true);
+        boardManager.DetectTileState();
+        yield return new WaitUntil(() => true);
         yield return StartCoroutine(boardManager.InsertSummon(0, 0, card));
+    }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            StartCoroutine(StartCardSummon(null));
+        }
     }
 
     void SetupGame() {

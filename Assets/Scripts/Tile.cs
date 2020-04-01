@@ -6,12 +6,22 @@ public class Tile : MonoBehaviour {
     [SerializeField] GameObject validPrefab;
     [SerializeField] GameObject invalidPrefab;
     [SerializeField] GameObject neutralPrefab;
-    Card card;
-    State currentState;
     public enum State {
         Neutral,
-        InvalidSelection,
-        ValidSelection
+        Invalid,
+        Valid
+    }
+    Card card;
+
+    State _currentState;
+    State currentState {
+        get {
+            return _currentState;
+        }
+        set {
+            _currentState = value;
+            UpdatePrefab(value);
+        }
     }
 
     public void Summon(Card card) {
@@ -22,7 +32,49 @@ public class Tile : MonoBehaviour {
         Instantiate(card.prefab, transform);
     }
 
-    public void UpdateState(State state) {
+    public void UpdateStatus() {
+        bool isEmptyTile = true;
+        foreach (Transform child in transform) {
+            if (child.CompareTag("Summon")) {
+                UpdateState(State.Invalid);
+                isEmptyTile = false;
+            }
+        }
+
+        if (isEmptyTile) {
+            UpdateState(State.Valid);
+        }
+    }
+
+    void UpdateState(State state) {
         currentState = state;
+    }
+
+    void UpdatePrefab(State state) {
+        if (state == State.Invalid) {
+            foreach (Transform child in transform) {
+                if (child.CompareTag("Indicator")) {
+                    Destroy(child.gameObject);
+                    Instantiate(invalidPrefab, transform);
+                    break;
+                }
+            }
+        } else if (state == State.Valid) {
+            foreach (Transform child in transform) {
+                if (child.CompareTag("Indicator")) {
+                    Destroy(child.gameObject);
+                    Instantiate(validPrefab, transform);
+                    break;
+                }
+            }
+        } else {
+            foreach (Transform child in transform) {
+                if (child.CompareTag("Indicator")) {
+                    Destroy(child.gameObject);
+                    Instantiate(neutralPrefab, transform);
+                    break;
+                }
+            }
+        }
     }
 }
