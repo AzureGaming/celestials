@@ -7,10 +7,14 @@ public class GameManager : MonoBehaviour {
     public List<System.Guid> mulligans;
     TurnManager turnManager;
     Text mulliganIds;
+    UIManager uiManager;
+    BoardManager boardManager;
 
     private void Awake() {
         turnManager = FindObjectOfType<TurnManager>();
         mulliganIds = GameObject.Find("MulliganIds").GetComponent<Text>();
+        uiManager = FindObjectOfType<UIManager>();
+        boardManager = FindObjectOfType<BoardManager>();
     }
 
     private void Start() {
@@ -29,7 +33,13 @@ public class GameManager : MonoBehaviour {
         UpdateIdsDisplay();
     }
 
+    public IEnumerator StartCardSummon(Card card) {
+        uiManager.SetLocationSelectionPrompt(true);
+        yield return StartCoroutine(boardManager.InsertSummon(0, 0, card));
+    }
+
     void SetupGame() {
+        uiManager.SetLocationSelectionPrompt(false);
         StartCoroutine(turnManager.Initialize());
     }
 

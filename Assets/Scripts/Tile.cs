@@ -3,7 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Tile : MonoBehaviour {
+    [SerializeField] GameObject validPrefab;
+    [SerializeField] GameObject invalidPrefab;
+    [SerializeField] GameObject neutralPrefab;
     Card card;
+    State currentState;
+    public enum State {
+        Neutral,
+        InvalidSelection,
+        ValidSelection
+    }
 
     public void Summon(Card card) {
         if (this.card) {
@@ -11,5 +20,9 @@ public class Tile : MonoBehaviour {
         }
         this.card = card;
         Instantiate(card.prefab, transform);
+    }
+
+    public void UpdateState(State state) {
+        currentState = state;
     }
 }

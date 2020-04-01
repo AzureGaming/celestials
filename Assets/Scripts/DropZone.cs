@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler {
-    BoardManager boardManager;
+    GameManager gameManager;
 
     private void Awake() {
-        boardManager = FindObjectOfType<BoardManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public void OnDrop(PointerEventData eventData) {
@@ -16,8 +16,7 @@ public class DropZone : MonoBehaviour, IDropHandler {
 
         if (droppedObject != null) {
             droppedObject.parentToReturnTo = transform;
-            StartCoroutine(boardManager.InsertSummon(0, 0, droppedObject.GetComponent<Card>()));
-            return;
+            StartCoroutine(gameManager.StartCardSummon(droppedObject.GetComponent<Card>()));
         }
     }
 }
