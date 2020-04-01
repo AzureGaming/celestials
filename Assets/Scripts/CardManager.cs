@@ -27,6 +27,6 @@ public class CardManager : MonoBehaviour {
         //    return cards[randomIndex];
         //}
         //return GetValidCardData();
-        return cards[0];
+        return cards[1];
     }
 }
