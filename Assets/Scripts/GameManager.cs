@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     Text mulliganIds;
     UIManager uiManager;
     BoardManager boardManager;
+    public Card cardToSummon;
 
     private void Awake() {
         turnManager = FindObjectOfType<TurnManager>();
@@ -34,16 +35,10 @@ public class GameManager : MonoBehaviour {
     }
 
     public IEnumerator StartCardSummon(Card card) {
+        cardToSummon = card;
         uiManager.SetLocationSelectionPrompt(true);
         boardManager.DetectTileState();
-        yield return new WaitUntil(() => true);
-        yield return StartCoroutine(boardManager.InsertSummon(0, 0, card));
-    }
-
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.T)) {
-            StartCoroutine(StartCardSummon(null));
-        }
+        yield break;
     }
 
     void SetupGame() {

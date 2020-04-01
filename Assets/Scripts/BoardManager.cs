@@ -24,22 +24,24 @@ public class BoardManager : MonoBehaviour {
 
         for (int row = 0; row < rowLimit; row++) {
             for (int column = 0; column < columnLimit; column++) {
-                grid[column][row] = tiles[tileCounter];
+                Tile tile = tiles[tileCounter];
+                tile.column = column;
+                tile.row = row;
+                grid[column][row] = tile;
                 tileCounter++;
             }
         }
     }
 
-    public IEnumerator InsertSummon(int column, int row, Card card) {
-        Tile tile = grid[2][2];
-        tile.Summon(card);
-        Debug.Log("Inserted " + card + " at " + column + row);
-        yield break;
-    }
-
     public void DetectTileState() {
         foreach (Tile tile in tiles) {
-            tile.UpdateStatus();
+            tile.SetSelectState();
+        }
+    }
+
+    public void HandleSummoned() {
+        foreach (Tile tile in tiles) {
+            tile.SetNeutralState();
         }
     }
 }
