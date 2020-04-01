@@ -10,23 +10,18 @@ public class Hand : MonoBehaviour {
     Text text;
     [SerializeField] public List<int> handCardIds;
     CardManager cardManager;
-    HandSlot[] handSlots;
     Text idsDisplay;
     Card[] cards;
 
     private void Awake() {
         text = GetComponentInChildren<Text>();
         cardManager = FindObjectOfType<CardManager>();
-        handSlots = GetComponentsInChildren<HandSlot>();
         idsDisplay = GameObject.Find("Ids").GetComponent<Text>();
         cards = GetComponentsInChildren<Card>();
     }
 
     private void Start() {
         handCardIds = new List<int>();
-        foreach (HandSlot handSlot in handSlots) {
-            handSlot.DestroyChildren();
-        }
     }
 
     public IEnumerator DrawCard() {

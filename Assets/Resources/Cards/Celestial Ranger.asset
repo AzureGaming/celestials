@@ -18,3 +18,4 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: fdf696c50774cad4b9cd69a097e79ef0, type: 3}
   manaCost: 1
   attack: 1
+  prefab: {fileID: 7227906665000558127, guid: 9f0204a545afb5840954aa7ba7b1c403, type: 3}

@@ -1,7 +1,70 @@
 fileFormatVersion: 2
 guid: a8caf7e795a452649902b2202a970625
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -947819407271700587
+    second: Celestial Ranger-Sheet_0
+  - first:
+      213: -7053189692410567437
+    second: Celestial Ranger-Sheet_1
+  - first:
+      213: 9191271348739126655
+    second: Celestial Ranger-Sheet_2
+  - first:
+      213: 192918453941905121
+    second: Celestial Ranger-Sheet_3
+  - first:
+      213: -9184440928546816113
+    second: Celestial Ranger-Sheet_4
+  - first:
+      213: -8908962021357776082
+    second: Celestial Ranger-Sheet_5
+  - first:
+      213: -8965795829538672043
+    second: Celestial Ranger-Sheet_6
+  - first:
+      213: 4802029094807713792
+    second: Celestial Ranger-Sheet_7
+  - first:
+      213: 5371033151017965041
+    second: Celestial Ranger-Sheet_8
+  - first:
+      213: 2759216040266506393
+    second: Celestial Ranger-Sheet_9
+  - first:
+      213: -375254902087298990
+    second: Celestial Ranger-Sheet_10
+  - first:
+      213: 6450817037470992472
+    second: Celestial Ranger-Sheet_11
+  - first:
+      213: -5942557344020207967
+    second: Celestial Ranger-Sheet_12
+  - first:
+      213: 2304625403255907306
+    second: Celestial Ranger-Sheet_13
+  - first:
+      213: -4264417414349786300
+    second: Celestial Ranger-Sheet_14
+  - first:
+      213: 4193453942686591425
+    second: Celestial Ranger-Sheet_15
+  - first:
+      213: -5756936427497305554
+    second: Celestial Ranger-Sheet_16
+  - first:
+      213: -5561329604148714373
+    second: Celestial Ranger-Sheet_17
+  - first:
+      213: 6339049513025712093
+    second: Celestial Ranger-Sheet_18
+  - first:
+      213: 4100591633384462107
+    second: Celestial Ranger-Sheet_19
+  - first:
+      213: 263565855944746776
+    second: Celestial Ranger-Sheet_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +103,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -58,7 +121,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -69,9 +132,475 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 125
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5975956554ba8d2f0800000000000000
+      internalID: -947819407271700587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 124
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4eb6a18590e1e90800000000000000
+      internalID: -7053189692410567437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 124
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7532df1894fd8f70800000000000000
+      internalID: 9191271348739126655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 64
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e623ddcf426da200800000000000000
+      internalID: 192918453941905121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f786103af4a8080800000000000000
+      internalID: -9184440928546816113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 66
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2316874e320d5480800000000000000
+      internalID: -8908962021357776082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 67
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5523ba32238139380800000000000000
+      internalID: -8965795829538672043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 67
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008ba1df40c34a240800000000000000
+      internalID: 4802029094807713792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 64
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5d543a13eb98a40800000000000000
+      internalID: 5371033151017965041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 64
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99025a2ae54ba4620800000000000000
+      internalID: 2759216040266506393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250dcdc97a3dacaf0800000000000000
+      internalID: -375254902087298990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8580f7deae7e58950800000000000000
+      internalID: 6450817037470992472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 4
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a66944a49bc78da0800000000000000
+      internalID: -5942557344020207967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 4
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3e865089cabff10800000000000000
+      internalID: 2304625403255907306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 4
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443f0bb94feb1d4c0800000000000000
+      internalID: -4264417414349786300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9abcb9424223a30800000000000000
+      internalID: 4193453942686591425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a448c12d04b10b0800000000000000
+      internalID: -5756936427497305554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 3
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b742ad1b03032d2b0800000000000000
+      internalID: -5561329604148714373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 3
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfa28542f3d8f750800000000000000
+      internalID: 6339049513025712093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 3
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17d1dc5d5a38e830800000000000000
+      internalID: 4100591633384462107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celestial Ranger-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 3
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8172282efbf58a300800000000000000
+      internalID: 263565855944746776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
