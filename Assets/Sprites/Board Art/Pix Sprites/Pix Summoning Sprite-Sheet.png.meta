@@ -1,7 +1,94 @@
 fileFormatVersion: 2
 guid: 22590036b9f2d6941b1f903b32507aba
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1726072533183625762
+    second: Pix Summoning Sprite-Sheet_0
+  - first:
+      213: 2495862882005215515
+    second: Pix Summoning Sprite-Sheet_1
+  - first:
+      213: -1156482931930826133
+    second: Pix Summoning Sprite-Sheet_2
+  - first:
+      213: 365473773005725121
+    second: Pix Summoning Sprite-Sheet_3
+  - first:
+      213: 5529856026971530484
+    second: Pix Summoning Sprite-Sheet_4
+  - first:
+      213: 3924649457627067226
+    second: Pix Summoning Sprite-Sheet_5
+  - first:
+      213: 4482208876489112015
+    second: Pix Summoning Sprite-Sheet_6
+  - first:
+      213: -4889455512120395118
+    second: Pix Summoning Sprite-Sheet_7
+  - first:
+      213: 5522968524390905183
+    second: Pix Summoning Sprite-Sheet_0
+  - first:
+      213: -8222654377767527548
+    second: Pix Summoning Sprite-Sheet_1
+  - first:
+      213: 8326872991249345865
+    second: Pix Summoning Sprite-Sheet_2
+  - first:
+      213: 2831209335458638387
+    second: Pix Summoning Sprite-Sheet_3
+  - first:
+      213: 1945135276082326748
+    second: Pix Summoning Sprite-Sheet_4
+  - first:
+      213: -7845443848498080786
+    second: Pix Summoning Sprite-Sheet_5
+  - first:
+      213: -1027993307936254542
+    second: Pix Summoning Sprite-Sheet_6
+  - first:
+      213: -4461508154641162891
+    second: Pix Summoning Sprite-Sheet_7
+  - first:
+      213: 1639787007064737063
+    second: Pix Summoning Sprite-Sheet_8
+  - first:
+      213: 5846401239683106597
+    second: Pix Summoning Sprite-Sheet_9
+  - first:
+      213: -1063321656192433681
+    second: Pix Summoning Sprite-Sheet_10
+  - first:
+      213: -7784674771736003745
+    second: Pix Summoning Sprite-Sheet_11
+  - first:
+      213: 151783269032724234
+    second: Pix Summoning Sprite-Sheet_12
+  - first:
+      213: 4930895640600473150
+    second: Pix Summoning Sprite-Sheet_13
+  - first:
+      213: 7286795973335785695
+    second: Pix Summoning Sprite-Sheet_14
+  - first:
+      213: 3671763843733007302
+    second: Pix Summoning Sprite-Sheet_15
+  - first:
+      213: -4940297716272870955
+    second: Pix Summoning Sprite-Sheet_16
+  - first:
+      213: -571298485695422708
+    second: Pix Summoning Sprite-Sheet_17
+  - first:
+      213: -2599334489258757447
+    second: Pix Summoning Sprite-Sheet_18
+  - first:
+      213: 3736250467292901190
+    second: Pix Summoning Sprite-Sheet_19
+  - first:
+      213: 2472458868222346291
+    second: Pix Summoning Sprite-Sheet_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +127,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +157,474 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 56
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55bbf96c9685ac40800000000000000
+      internalID: 5522968524390905183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b1b5ea86343ed80800000000000000
+      internalID: -8222654377767527548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 56
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d263d2edefe8370800000000000000
+      internalID: 8326872991249345865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 4
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a28c4e3e97a4720800000000000000
+      internalID: 2831209335458638387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 4
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdce7f25a328efa10800000000000000
+      internalID: 1945135276082326748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 8
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39ff003626f1390800000000000000
+      internalID: -7845443848498080786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 60
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b51bf07885dbb1f0800000000000000
+      internalID: -1027993307936254542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 8
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dda10b8f98512c0800000000000000
+      internalID: -4461508154641162891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 60
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725056f4891b1c610800000000000000
+      internalID: 1639787007064737063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 4
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52707b1b3f6922150800000000000000
+      internalID: 5846401239683106597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 4
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe18ba066925e31f0800000000000000
+      internalID: -1063321656192433681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bfab24a8747f390800000000000000
+      internalID: -7784674771736003745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 12
+        width: 59
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a070b89341e3b1200800000000000000
+      internalID: 151783269032724234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e638ac57f0e6440800000000000000
+      internalID: 4930895640600473150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd02d65a456ef1560800000000000000
+      internalID: 7286795973335785695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb24d413c9b4f230800000000000000
+      internalID: 3671763843733007302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9c1e0e669807bb0800000000000000
+      internalID: -4940297716272870955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fd76bdd075218f0800000000000000
+      internalID: -571298485695422708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b27f4bcd0f4debd0800000000000000
+      internalID: -2599334489258757447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f61e62104d9d330800000000000000
+      internalID: 3736250467292901190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix Summoning Sprite-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3344822bd30ff4220800000000000000
+      internalID: 2472458868222346291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
