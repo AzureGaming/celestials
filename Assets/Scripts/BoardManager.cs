@@ -7,8 +7,10 @@ public class BoardManager : MonoBehaviour {
     GameObject tilePrefab;
     Board board;
     Tile[] tiles;
+    UIManager uiManager;
 
     private void Awake() {
+        uiManager = FindObjectOfType<UIManager>();
         board = GetComponent<Board>();
         tiles = GetComponentsInChildren<Tile>();
         grid = new Tile[3][];
@@ -43,5 +45,6 @@ public class BoardManager : MonoBehaviour {
         foreach (Tile tile in tiles) {
             tile.SetNeutralState();
         }
+        uiManager.SetLocationSelectionPrompt(false);
     }
 }

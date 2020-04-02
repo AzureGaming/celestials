@@ -1,7 +1,154 @@
 fileFormatVersion: 2
 guid: cda4c9984b96e6b45b753097317ef3e6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5002356522334202931
+    second: Pix-Sheet_0
+  - first:
+      213: 367305499958240794
+    second: Pix-Sheet_1
+  - first:
+      213: -5042386614882483484
+    second: Pix-Sheet_2
+  - first:
+      213: -7373574578412443187
+    second: Pix-Sheet_3
+  - first:
+      213: -5723592867995606208
+    second: Pix-Sheet_4
+  - first:
+      213: 5502228493070778462
+    second: Pix-Sheet_5
+  - first:
+      213: 6271673321537769118
+    second: Pix-Sheet_6
+  - first:
+      213: -5698979735566780314
+    second: Pix-Sheet_7
+  - first:
+      213: 22603282517711069
+    second: Pix-Sheet_8
+  - first:
+      213: -9008473326060268425
+    second: Pix-Sheet_9
+  - first:
+      213: 7335086605612552979
+    second: Pix-Sheet_10
+  - first:
+      213: 5505825010346767095
+    second: Pix-Sheet_11
+  - first:
+      213: 5686846483968558849
+    second: Pix-Sheet_12
+  - first:
+      213: -5980641827339371989
+    second: Pix-Sheet_13
+  - first:
+      213: -3527626158888159983
+    second: Pix-Sheet_14
+  - first:
+      213: -4219981126221125246
+    second: Pix-Sheet_15
+  - first:
+      213: -3354397422604844706
+    second: Pix-Sheet_16
+  - first:
+      213: 2406628644285282012
+    second: Pix-Sheet_17
+  - first:
+      213: -5018237621051181189
+    second: Pix-Sheet_18
+  - first:
+      213: 4146035575359078974
+    second: Pix-Sheet_19
+  - first:
+      213: 5885771426173884436
+    second: Pix-Sheet_20
+  - first:
+      213: 927904413590560427
+    second: Pix-Sheet_21
+  - first:
+      213: -2775484492756281447
+    second: Pix-Sheet_22
+  - first:
+      213: -2556572566125641071
+    second: Pix-Sheet_23
+  - first:
+      213: -4490947992191899633
+    second: Pix-Sheet_24
+  - first:
+      213: -984657273101093375
+    second: Pix-Sheet_25
+  - first:
+      213: -4252424557186661554
+    second: Pix-Sheet_26
+  - first:
+      213: 5755646250834178119
+    second: Pix-Sheet_27
+  - first:
+      213: -2088049110158573679
+    second: Pix-Sheet_28
+  - first:
+      213: 8845441841170483697
+    second: Pix-Sheet_0
+  - first:
+      213: -8574213890989068041
+    second: Pix-Sheet_1
+  - first:
+      213: -5453308650174139734
+    second: Pix-Sheet_2
+  - first:
+      213: 8969505147037685146
+    second: Pix-Sheet_3
+  - first:
+      213: -5155397764976631820
+    second: Pix-Sheet_6
+  - first:
+      213: -6818442148306975389
+    second: Pix-Sheet_11
+  - first:
+      213: -6116133654054357004
+    second: Pix-Sheet_12
+  - first:
+      213: 5399175060574549354
+    second: Pix-Sheet_13
+  - first:
+      213: 3935593340153600076
+    second: Pix-Sheet_16
+  - first:
+      213: -399482658301380591
+    second: Pix-Sheet_18
+  - first:
+      213: 3554854284397092982
+    second: Pix-Sheet_19
+  - first:
+      213: 4356817730506467225
+    second: Pix-Sheet_20
+  - first:
+      213: -6456587190315966274
+    second: Pix-Sheet_21
+  - first:
+      213: 373588730318673351
+    second: Pix-Sheet_22
+  - first:
+      213: -7933532999446473499
+    second: Pix-Sheet_23
+  - first:
+      213: 1215346312735027942
+    second: Pix-Sheet_24
+  - first:
+      213: -7511805158554719619
+    second: Pix-Sheet_25
+  - first:
+      213: -7638352797574056925
+    second: Pix-Sheet_26
+  - first:
+      213: 3811306657171215280
+    second: Pix-Sheet_27
+  - first:
+      213: 6692515123383918305
+    second: Pix-Sheet_28
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +187,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +217,453 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pix-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 808
+        width: 115
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f908584d7251ca70800000000000000
+      internalID: 8845441841170483697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 808
+        width: 107
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0706fe4e5420980800000000000000
+      internalID: -8574213890989068041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 808
+        width: 111
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa23ecfeca4f154b0800000000000000
+      internalID: -5453308650174139734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 808
+        width: 115
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a951834a8651a7c70800000000000000
+      internalID: 8969505147037685146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 548
+        width: 167
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff99b61c095478b0800000000000000
+      internalID: -5155397764976631820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 548
+        width: 167
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3658c94edf60061a0800000000000000
+      internalID: -6818442148306975389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 549
+        width: 167
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f73747a8d02f1ba0800000000000000
+      internalID: -6116133654054357004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 548
+        width: 167
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65b1bd8c19bdea40800000000000000
+      internalID: 5399175060574549354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 548
+        width: 167
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c489f3c8a490e9630800000000000000
+      internalID: 3935593340153600076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 548
+        width: 167
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118740a83a0c47af0800000000000000
+      internalID: -399482658301380591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 288
+        width: 200
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670a3c12321655130800000000000000
+      internalID: 3554854284397092982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 288
+        width: 200
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99726f974a6867c30800000000000000
+      internalID: 4356817730506467225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 288
+        width: 200
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb021eba8289566a0800000000000000
+      internalID: -6456587190315966274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 28
+        width: 115
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5dbba88f04f2500800000000000000
+      internalID: 373588730318673351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 28
+        width: 127
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4572a45cd66e190800000000000000
+      internalID: -7933532999446473499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 28
+        width: 119
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2f6a14807cdd010800000000000000
+      internalID: 1215346312735027942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 28
+        width: 99
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a266ee105b0c790800000000000000
+      internalID: -7511805158554719619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 28
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324bc7fa99e1ff590800000000000000
+      internalID: -7638352797574056925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 28
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b395c6263b74e430800000000000000
+      internalID: 3811306657171215280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 28
+        width: 99
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee5a37db0790ec50800000000000000
+      internalID: 6692515123383918305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

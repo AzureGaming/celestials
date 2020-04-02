@@ -17,7 +17,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     Sprite artwork;
     new string name;
     string description;
-    int manaCost;
+    public int manaCost;
     int attack;
     Vector3 startingScale;
     Ray ray;

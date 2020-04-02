@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     public List<System.Guid> mulligans;
+    public Card cardToSummon;
+
     TurnManager turnManager;
     Text mulliganIds;
     UIManager uiManager;
     BoardManager boardManager;
-    public Card cardToSummon;
+    Player player;
 
     private void Awake() {
+        player = FindObjectOfType<Player>();
         turnManager = FindObjectOfType<TurnManager>();
         mulliganIds = GameObject.Find("MulliganIds").GetComponent<Text>();
         uiManager = FindObjectOfType<UIManager>();
@@ -36,6 +39,7 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator StartCardSummon(Card card) {
         cardToSummon = card;
+        player.LoseMana(card.manaCost);
         uiManager.SetLocationSelectionPrompt(true);
         boardManager.DetectTileState();
         yield break;

@@ -56,6 +56,60 @@ TextureImporter:
   - first:
       213: -4301035672027870492
     second: Celestial Soldier Sprite Sheet_17
+  - first:
+      213: -1457724405819519616
+    second: Celestial Soldier Sprite Sheet_0
+  - first:
+      213: 8959062492766448074
+    second: Celestial Soldier Sprite Sheet_1
+  - first:
+      213: 7136978698484123006
+    second: Celestial Soldier Sprite Sheet_2
+  - first:
+      213: 3582318230287136673
+    second: Celestial Soldier Sprite Sheet_3
+  - first:
+      213: -8483514723459469357
+    second: Celestial Soldier Sprite Sheet_4
+  - first:
+      213: -6195855701782339446
+    second: Celestial Soldier Sprite Sheet_5
+  - first:
+      213: 5936710946732838574
+    second: Celestial Soldier Sprite Sheet_6
+  - first:
+      213: -7031667135234322778
+    second: Celestial Soldier Sprite Sheet_7
+  - first:
+      213: 6479228830015921277
+    second: Celestial Soldier Sprite Sheet_8
+  - first:
+      213: 1784089022889716804
+    second: Celestial Soldier Sprite Sheet_9
+  - first:
+      213: -4842976588345063880
+    second: Celestial Soldier Sprite Sheet_10
+  - first:
+      213: 6637099978416744308
+    second: Celestial Soldier Sprite Sheet_11
+  - first:
+      213: -6996669411965434918
+    second: Celestial Soldier Sprite Sheet_12
+  - first:
+      213: 5089658872383867802
+    second: Celestial Soldier Sprite Sheet_13
+  - first:
+      213: 7356958101572374564
+    second: Celestial Soldier Sprite Sheet_14
+  - first:
+      213: 989156451624729012
+    second: Celestial Soldier Sprite Sheet_15
+  - first:
+      213: -2347729645008177711
+    second: Celestial Soldier Sprite Sheet_16
+  - first:
+      213: 2913960403323098229
+    second: Celestial Soldier Sprite Sheet_17
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -112,7 +166,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,7 +177,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -134,7 +189,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,6 +201,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -152,10 +209,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 177
-        width: 74
-        height: 64
+        x: 68
+        y: 706
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +220,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9840e1bee5a556c40bcf6946ca27e5df
-      internalID: -7919987069915980634
+      spriteID: 08dc5b2506f15cbe0800000000000000
+      internalID: -1457724405819519616
       vertices: []
       indices: 
       edges: []
@@ -173,10 +230,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 177
-        width: 74
-        height: 64
+        x: 471
+        y: 706
+        width: 150
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6fdb81a8dcf774fb94e2809db86444
-      internalID: 5293687848840039590
+      spriteID: ac9aed9bedbf45c70800000000000000
+      internalID: 8959062492766448074
       vertices: []
       indices: 
       edges: []
@@ -194,10 +251,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 18
-        y: 93
-        width: 74
-        height: 64
+        x: 68
+        y: 370
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +262,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d7898bb03c71464398a7f9c030b5cd2
-      internalID: 2415949555037014140
+      spriteID: e750dac1054ab0360800000000000000
+      internalID: 7136978698484123006
       vertices: []
       indices: 
       edges: []
@@ -215,10 +272,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 107
-        y: 95
-        width: 74
-        height: 64
+        x: 423
+        y: 378
+        width: 247
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f16ffd575d3be2047bf7021e4d486920
-      internalID: -8924380351128919372
+      spriteID: 1a7bba45373f6b130800000000000000
+      internalID: 3582318230287136673
       vertices: []
       indices: 
       edges: []
@@ -236,10 +293,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 207
-        y: 95
-        width: 74
-        height: 64
+        x: 824
+        y: 378
+        width: 246
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +304,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8936c7bed6385da41b41990a31f2dd03
-      internalID: 3595613183988972718
+      spriteID: 3dfe66d7e40844a80800000000000000
+      internalID: -8483514723459469357
       vertices: []
       indices: 
       edges: []
@@ -257,10 +314,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 302
-        y: 95
-        width: 74
-        height: 64
+        x: 1203
+        y: 378
+        width: 246
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +325,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9e9ac916936db04faebf67ec406a253
-      internalID: -1199534233292736329
+      spriteID: a806fa7f016e30aa0800000000000000
+      internalID: -6195855701782339446
       vertices: []
       indices: 
       edges: []
@@ -278,10 +335,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 407
-        y: 95
-        width: 74
-        height: 64
+        x: 1623
+        y: 378
+        width: 246
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ab99ed561eca6a4ca58c06351192a04
-      internalID: -7907013845904287813
+      spriteID: eae0f2ae62f636250800000000000000
+      internalID: 5936710946732838574
       vertices: []
       indices: 
       edges: []
@@ -299,10 +356,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 518
-        y: 93
-        width: 74
-        height: 64
+        x: 2067
+        y: 370
+        width: 303
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab4c6b24abf91b41a3bf994b1f11ad7
-      internalID: 4023271559840894551
+      spriteID: 6aec191feff7a6e90800000000000000
+      internalID: -7031667135234322778
       vertices: []
       indices: 
       edges: []
@@ -320,10 +377,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 618
-        y: 93
-        width: 74
-        height: 64
+        x: 2467
+        y: 370
+        width: 302
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +388,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3009ce15ec1ede94582f51fe528cfa34
-      internalID: 4091147664359946506
+      spriteID: d7c919fda48dae950800000000000000
+      internalID: 6479228830015921277
       vertices: []
       indices: 
       edges: []
@@ -341,10 +398,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 18
-        y: 9
-        width: 74
-        height: 64
+        x: 68
+        y: 34
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +409,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1493637899a92a04ba8d1a1c4decab74
-      internalID: -3888647290256065385
+      spriteID: 44ce309838b52c810800000000000000
+      internalID: 1784089022889716804
       vertices: []
       indices: 
       edges: []
@@ -362,10 +419,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_10
       rect:
         serializedVersion: 2
-        x: 107
-        y: 10
-        width: 74
-        height: 64
+        x: 423
+        y: 38
+        width: 247
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +430,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba522b424337f3741907663f0a851423
-      internalID: -7276238116196978870
+      spriteID: 836c82cb37a4accb0800000000000000
+      internalID: -4842976588345063880
       vertices: []
       indices: 
       edges: []
@@ -383,10 +440,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_11
       rect:
         serializedVersion: 2
-        x: 207
-        y: 11
-        width: 74
-        height: 64
+        x: 824
+        y: 42
+        width: 246
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +451,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e4fba0a444c1854d88c16cabffea8dd
-      internalID: 545958425611504815
+      spriteID: 4776848f347bb1c50800000000000000
+      internalID: 6637099978416744308
       vertices: []
       indices: 
       edges: []
@@ -404,10 +461,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_12
       rect:
         serializedVersion: 2
-        x: 302
-        y: 11
-        width: 74
-        height: 64
+        x: 1203
+        y: 42
+        width: 246
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +472,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed52d6580d91a734facde98ba45c1e7e
-      internalID: -844812089931956125
+      spriteID: ad385f06d36d6ee90800000000000000
+      internalID: -6996669411965434918
       vertices: []
       indices: 
       edges: []
@@ -425,10 +482,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_13
       rect:
         serializedVersion: 2
-        x: 407
-        y: 10
-        width: 74
-        height: 64
+        x: 1623
+        y: 38
+        width: 246
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +493,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f4d64cf02b9eea44b3c9ee291715af2
-      internalID: -1663465139555561008
+      spriteID: a9b0b5c37c912a640800000000000000
+      internalID: 5089658872383867802
       vertices: []
       indices: 
       edges: []
@@ -446,10 +503,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 509
-        y: 10
-        width: 74
-        height: 64
+        x: 2031
+        y: 38
+        width: 246
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +514,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ac8f86d4d6edbf47bf7779195c49546
-      internalID: 4223504299701094161
+      spriteID: 42057af1a6a291660800000000000000
+      internalID: 7356958101572374564
       vertices: []
       indices: 
       edges: []
@@ -467,10 +524,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_15
       rect:
         serializedVersion: 2
-        x: 607
-        y: 9
-        width: 74
-        height: 64
+        x: 2423
+        y: 34
+        width: 246
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +535,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae38cdd2f966a8842b930f4fa7050e7f
-      internalID: 3675173746176173574
+      spriteID: 4b9b06e4d803abd00800000000000000
+      internalID: 989156451624729012
       vertices: []
       indices: 
       edges: []
@@ -488,10 +545,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_16
       rect:
         serializedVersion: 2
-        x: 705
-        y: 10
-        width: 74
-        height: 64
+        x: 2815
+        y: 38
+        width: 246
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +556,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6632f27f748d3b24ca6ba3db05a15a1a
-      internalID: -4301612423516453501
+      spriteID: 1d532a0a3503b6fd0800000000000000
+      internalID: -2347729645008177711
       vertices: []
       indices: 
       edges: []
@@ -509,10 +566,10 @@ TextureImporter:
       name: Celestial Soldier Sprite Sheet_17
       rect:
         serializedVersion: 2
-        x: 802
-        y: 11
-        width: 74
-        height: 64
+        x: 3204
+        y: 42
+        width: 246
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,8 +577,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3562221eb658c5143af2c287b394b89b
-      internalID: -4301035672027870492
+      spriteID: 57490a94c87707820800000000000000
+      internalID: 2913960403323098229
       vertices: []
       indices: 
       edges: []
