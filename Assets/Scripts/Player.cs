@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
     GameManager gameManager;
     TurnManager turnManager;
+    UIManager uiManager;
     Deck deck;
     Hand hand;
     int handLimit;
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour {
         hand = GetComponentInChildren<Hand>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     private void Start() {
@@ -72,6 +74,7 @@ public class Player : MonoBehaviour {
         if (mana > maxMana) {
             mana = maxMana;
         }
+        uiManager.SetCurrentMana(mana);
         yield break;
     }
 
@@ -80,21 +83,25 @@ public class Player : MonoBehaviour {
         if (mana < 0) {
             mana = 0;
         }
+        uiManager.SetCurrentMana(mana);
         yield break;
     }
 
     public IEnumerator GainMaxMana(int amount) {
         maxMana += amount;
+        uiManager.SetMaxMana(maxMana);
         yield break;
     }
 
     public IEnumerator LoseMaxMana(int amount) {
         maxMana -= amount;
+        uiManager.SetMaxMana(maxMana);
         yield break;
     }
 
     public IEnumerator RefreshMana() {
         mana = maxMana;
+        uiManager.SetCurrentMana(mana);
         yield break;
     }
 }

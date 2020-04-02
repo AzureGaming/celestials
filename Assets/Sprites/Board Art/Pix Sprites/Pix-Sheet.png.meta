@@ -245,99 +245,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pix-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 808
-        width: 115
-        height: 187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f908584d7251ca70800000000000000
-      internalID: 8845441841170483697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pix-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 317
-        y: 808
-        width: 107
-        height: 191
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f0706fe4e5420980800000000000000
-      internalID: -8574213890989068041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pix-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 569
-        y: 808
-        width: 111
-        height: 191
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa23ecfeca4f154b0800000000000000
-      internalID: -5453308650174139734
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pix-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 829
-        y: 808
-        width: 115
-        height: 187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a951834a8651a7c70800000000000000
-      internalID: 8969505147037685146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Pix-Sheet_6
       rect:
         serializedVersion: 2
-        x: 813
-        y: 548
-        width: 167
-        height: 203
+        x: 753
+        y: 496
+        width: 170
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -353,12 +269,12 @@ TextureImporter:
       name: Pix-Sheet_11
       rect:
         serializedVersion: 2
-        x: 49
-        y: 548
-        width: 167
-        height: 187
+        x: 41
+        y: 496
+        width: 170
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -374,12 +290,12 @@ TextureImporter:
       name: Pix-Sheet_12
       rect:
         serializedVersion: 2
-        x: 305
-        y: 549
-        width: 167
-        height: 187
+        x: 281
+        y: 496
+        width: 170
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -395,12 +311,12 @@ TextureImporter:
       name: Pix-Sheet_13
       rect:
         serializedVersion: 2
-        x: 569
-        y: 548
-        width: 167
-        height: 195
+        x: 521
+        y: 496
+        width: 170
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -416,12 +332,12 @@ TextureImporter:
       name: Pix-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1089
-        y: 548
-        width: 167
-        height: 195
+        x: 1001
+        y: 496
+        width: 170
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -437,12 +353,12 @@ TextureImporter:
       name: Pix-Sheet_18
       rect:
         serializedVersion: 2
-        x: 1349
-        y: 548
-        width: 167
-        height: 191
+        x: 1241
+        y: 496
+        width: 170
+        height: 220
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -458,12 +374,12 @@ TextureImporter:
       name: Pix-Sheet_19
       rect:
         serializedVersion: 2
-        x: 35
-        y: 288
-        width: 200
-        height: 187
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 41
+        y: 256
+        width: 123
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -479,12 +395,12 @@ TextureImporter:
       name: Pix-Sheet_20
       rect:
         serializedVersion: 2
-        x: 295
-        y: 288
-        width: 200
-        height: 187
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 277
+        y: 256
+        width: 127
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -500,12 +416,12 @@ TextureImporter:
       name: Pix-Sheet_21
       rect:
         serializedVersion: 2
-        x: 557
-        y: 288
-        width: 200
-        height: 187
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 521
+        y: 256
+        width: 123
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -521,12 +437,12 @@ TextureImporter:
       name: Pix-Sheet_22
       rect:
         serializedVersion: 2
-        x: 49
-        y: 28
-        width: 115
-        height: 187
+        x: 41
+        y: 16
+        width: 123
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -542,12 +458,12 @@ TextureImporter:
       name: Pix-Sheet_23
       rect:
         serializedVersion: 2
-        x: 301
-        y: 28
+        x: 281
+        y: 16
         width: 127
-        height: 187
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -563,12 +479,12 @@ TextureImporter:
       name: Pix-Sheet_24
       rect:
         serializedVersion: 2
-        x: 565
-        y: 28
-        width: 119
-        height: 187
+        x: 521
+        y: 16
+        width: 123
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -584,12 +500,12 @@ TextureImporter:
       name: Pix-Sheet_25
       rect:
         serializedVersion: 2
-        x: 829
-        y: 28
-        width: 99
-        height: 187
+        x: 761
+        y: 16
+        width: 123
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -605,12 +521,12 @@ TextureImporter:
       name: Pix-Sheet_26
       rect:
         serializedVersion: 2
-        x: 1097
-        y: 28
-        width: 91
-        height: 187
+        x: 1001
+        y: 16
+        width: 123
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -626,12 +542,12 @@ TextureImporter:
       name: Pix-Sheet_27
       rect:
         serializedVersion: 2
-        x: 1357
-        y: 28
-        width: 91
-        height: 187
+        x: 1241
+        y: 16
+        width: 123
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -644,22 +560,106 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix-Sheet_28
+      name: Pix-Sheet_0
       rect:
         serializedVersion: 2
-        x: 1609
-        y: 28
-        width: 99
-        height: 187
+        x: 41
+        y: 736
+        width: 123
+        height: 199
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ee5a37db0790ec50800000000000000
-      internalID: 6692515123383918305
+      spriteID: dc3596e1f3f049ab0800000000000000
+      internalID: -5002356522334202931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 736
+        width: 123
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16ee09f76ee81500800000000000000
+      internalID: 367305499958240794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 736
+        width: 123
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2ceb7e618d50ab0800000000000000
+      internalID: -5042386614882483484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 736
+        width: 123
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc920e0ecfccba990800000000000000
+      internalID: -7373574578412443187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pix-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 16
+        width: 123
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f7d63b562c503e0800000000000000
+      internalID: -2088049110158573679
       vertices: []
       indices: 
       edges: []
