@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator StartCardSummon(Card card) {
         cardToSummon = card;
+        Debug.Log("Hello" + card.name);
         player.LoseMana(card.manaCost);
         uiManager.SetLocationSelectionPrompt(true);
         boardManager.DetectTileState();

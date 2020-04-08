@@ -6,10 +6,12 @@ public class Summon : MonoBehaviour {
     int order;
     Tile tile;
     float movementSpeed = 2f;
+    Animator animator;
     // coordinates how to move?
 
     private void Awake() {
         tile = GetComponentInParent<Tile>();
+        animator = GetComponent<Animator>();
     }
 
     public int getOrder() {
@@ -34,13 +36,14 @@ public class Summon : MonoBehaviour {
         Vector3 endPos = currentPos;
         endPos.x += (float)CONSTANTS.summonSpacing;
 
+        animator.SetBool("isWalking", true);
         for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
             Vector3 lerpedPos = Vector3.Lerp(currentPos, endPos, Mathf.Min(1, t / movementSpeed));
             transform.position = lerpedPos;
             Debug.Log("fadsf" + lerpedPos);
             yield return null;
         }
-
+        animator.SetBool("isWalking", false);
         SetParent(destination);
 
     }
