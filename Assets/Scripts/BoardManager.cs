@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using System;
 
 public class BoardManager : MonoBehaviour {
     Tile[][] grid;
@@ -8,6 +10,7 @@ public class BoardManager : MonoBehaviour {
     Board board;
     Tile[] tiles;
     UIManager uiManager;
+    int cardOrder = 0;
 
     private void Awake() {
         uiManager = FindObjectOfType<UIManager>();
@@ -35,6 +38,14 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
+    public void IncrementCardOrder(int value) {
+        cardOrder += value;
+    }
+
+    public int GetCardOrder() {
+        return cardOrder;
+    }
+
     public void DetectTileState() {
         foreach (Tile tile in tiles) {
             tile.SetSelectState();
@@ -46,5 +57,23 @@ public class BoardManager : MonoBehaviour {
             tile.SetNeutralState();
         }
         uiManager.SetLocationSelectionPrompt(false);
+    }
+
+    public IEnumerator MoveSummonFromTile(Summon summon, Tile tile) {
+        // Implement: different types of movement
+        int startCol = tile.column;
+        int endCol = tile.column += 1;
+
+        if (grid.ElementAtOrDefault(endCol) == null) {
+            Debug.LogWarning("Column " + endCol + " does not exist in grid.");
+            yield break;
+        }
+
+        if (grid[endCol].ElementAtOrDefault(tile.row) == null) {
+            Debug.Log("Implement: Summon is moved off the board, kill summon");
+            yield break;
+        }
+
+        yield return StartCoroutine(summon.WalkToTile(grid[endCol][tile.row]));
     }
 }

@@ -30,12 +30,19 @@ public class TurnManager : MonoBehaviour {
         isMulliganConfirmed = false;
     }
 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            StartCoroutine(ResolveSummonTurn());
+        }
+    }
+
     public IEnumerator Initialize() {
         yield return StartCoroutine(deck.SetupDeck());
         yield return StartCoroutine(player.SetupPlayer());
-        yield return StartCoroutine(StartMulligan());
-        yield return StartCoroutine(boss.SetupBoss());
-        StartCoroutine(StartPlayerTurn());
+        //yield return StartCoroutine(StartMulligan());
+        //yield return StartCoroutine(boss.SetupBoss());
+        //yield return StartCoroutine(ResolveSummonTurn());
+        //StartCoroutine(StartPlayerTurn());
         yield break;
     }
 
@@ -60,7 +67,7 @@ public class TurnManager : MonoBehaviour {
         yield break;
     }
 
-    IEnumerator StartPlayerTurn() {
+    IEnumerator ResolveSummonTurn() {
         Debug.Log("Summons action");
         Summon[] summons = board.GetSummons();
         System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
@@ -73,6 +80,12 @@ public class TurnManager : MonoBehaviour {
             }
         }
 
+        foreach (Summon summon in summons) {
+            yield return StartCoroutine(summon.Move());
+        }
+    }
+
+    IEnumerator StartPlayerTurn() {
         Debug.Log("Fill hand");
         while (player.GetHand().handCardIds.Count < 5) {
             yield return StartCoroutine(player.DrawCard());

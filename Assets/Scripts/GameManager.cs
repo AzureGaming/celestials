@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum CONSTANTS {
+    summonSpacing = (int)2.15,
+}
+
 public class GameManager : MonoBehaviour {
     public List<System.Guid> mulligans;
     public Card cardToSummon;

@@ -17,6 +17,7 @@ public class Tile : MonoBehaviour {
     }
     Card card;
     GameManager gameManager;
+    BoardManager boardManager;
 
     State _currentState;
     State currentState {
@@ -31,6 +32,7 @@ public class Tile : MonoBehaviour {
 
     private void Awake() {
         gameManager = FindObjectOfType<GameManager>();
+        boardManager = FindObjectOfType<BoardManager>();
     }
 
     private void OnMouseDown() {
@@ -47,8 +49,11 @@ public class Tile : MonoBehaviour {
         if (this.card) {
             Debug.LogWarning("Tile is overwriting card" + card.name);
         }
+
         this.card = card;
-        Instantiate(card.prefab, transform);
+        GameObject summonObj = Instantiate(card.prefab, transform);
+        summonObj.GetComponent<Summon>().setOrder(boardManager.GetCardOrder());
+        boardManager.IncrementCardOrder(1);
     }
 
     public void SetSelectState() {
@@ -67,6 +72,10 @@ public class Tile : MonoBehaviour {
 
     public void SetNeutralState() {
         UpdateState(State.Neutral);
+    }
+
+    public IEnumerator MoveSummon(Summon summon) {
+        yield return StartCoroutine(boardManager.MoveSummonFromTile(summon, this));
     }
 
     void UpdateState(State state) {

@@ -16,8 +16,8 @@ public class DropZone : MonoBehaviour, IDropHandler {
 
         if (droppedObject != null) {
             //droppedObject.parentToReturnTo = transform;
-            Destroy(droppedObject.gameObject);
             StartCoroutine(gameManager.StartCardSummon(droppedObject.GetComponent<Card>()));
+            Destroy(droppedObject.gameObject);
         }
     }
 }
