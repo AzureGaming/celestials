@@ -14,6 +14,7 @@ public class TurnManager : MonoBehaviour {
     Board board;
     Hand hand;
     GameManager gameManager;
+    BoardManager boardManager;
     bool isMulliganConfirmed;
 
     private void Awake() {
@@ -23,6 +24,7 @@ public class TurnManager : MonoBehaviour {
         board = FindObjectOfType<Board>();
         hand = FindObjectOfType<Hand>();
         gameManager = FindObjectOfType<GameManager>();
+        boardManager = FindObjectOfType<BoardManager>();
     }
 
     private void Start() {
@@ -80,9 +82,7 @@ public class TurnManager : MonoBehaviour {
             }
         }
 
-        foreach (Summon summon in summons) {
-            yield return StartCoroutine(summon.Move());
-        }
+        StartCoroutine(boardManager.ResolveMovePhase());
     }
 
     IEnumerator StartPlayerTurn() {

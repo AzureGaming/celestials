@@ -1,8 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
-using System;
+using UnityEngine;
 
 public class BoardManager : MonoBehaviour {
     Tile[][] grid;
@@ -11,6 +11,8 @@ public class BoardManager : MonoBehaviour {
     Tile[] tiles;
     UIManager uiManager;
     int cardOrder = 0;
+    int columnLimit = 3;
+    int rowLimit = 3;
 
     private void Awake() {
         uiManager = FindObjectOfType<UIManager>();
@@ -23,8 +25,7 @@ public class BoardManager : MonoBehaviour {
     }
 
     void Start() {
-        int columnLimit = 3;
-        int rowLimit = 3;
+
         int tileCounter = 0;
 
         for (int row = 0; row < rowLimit; row++) {
@@ -59,6 +60,12 @@ public class BoardManager : MonoBehaviour {
         uiManager.SetLocationSelectionPrompt(false);
     }
 
+    public IEnumerator ResolveMovePhase() {
+        for (int col = 0; col < columnLimit; col++) {
+            yield return StartCoroutine(MoveSummonsInColumn(col));
+        }
+    }
+
     public IEnumerator MoveSummonFromTile(Summon summon, Tile tile) {
         // Implement: different types of movement
         int startCol = tile.column;
@@ -75,5 +82,22 @@ public class BoardManager : MonoBehaviour {
         }
 
         yield return StartCoroutine(summon.WalkToTile(grid[endCol][tile.row]));
+    }
+
+    IEnumerator MoveSummonsInColumn(int column) {
+        foreach (Tile tile in grid[column]) {
+            Summon summon = tile.GetComponentInChildren<Summon>();
+            if (summon) {
+                //StartCoroutine(summon.Move());
+                yield return InitCoroutine(summon.Move());
+            }
+
+        }
+        yield return null;
+    }
+
+    IEnumerator InitCoroutine(IEnumerator coroutine) {
+        StartCoroutine(coroutine);
+        yield break;
     }
 }

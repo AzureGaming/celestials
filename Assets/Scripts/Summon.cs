@@ -40,7 +40,6 @@ public class Summon : MonoBehaviour {
         for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
             Vector3 lerpedPos = Vector3.Lerp(currentPos, endPos, Mathf.Min(1, t / movementSpeed));
             transform.position = lerpedPos;
-            Debug.Log("fadsf" + lerpedPos);
             yield return null;
         }
         animator.SetBool("isWalking", false);
