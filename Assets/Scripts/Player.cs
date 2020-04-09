@@ -53,6 +53,7 @@ public class Player : MonoBehaviour {
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(DrawCard());
         }
+        yield return StartCoroutine(GainMaxMana(1));
         yield return StartCoroutine(GainMana(1));
         yield break;
     }

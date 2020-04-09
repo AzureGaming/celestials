@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,6 +28,6 @@ public class CardManager : MonoBehaviour {
         //    return cards[randomIndex];
         //}
         //return GetValidCardData();
-        return cards[1];
+        return cards[0];
     }
 }

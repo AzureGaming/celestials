@@ -11,13 +11,11 @@ public class DropZone : MonoBehaviour, IDropHandler {
     }
 
     public void OnDrop(PointerEventData eventData) {
-        Debug.Log("On drop to " + gameObject.name);
         Draggable droppedObject = eventData.pointerDrag.GetComponent<Draggable>();
-
         if (droppedObject != null) {
             //droppedObject.parentToReturnTo = transform;
-            Destroy(droppedObject.gameObject);
             StartCoroutine(gameManager.StartCardSummon(droppedObject.GetComponent<Card>()));
+            Destroy(droppedObject.gameObject);
         }
     }
 }
