@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: 15e9ab591adca374cba4c68535f3332a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4959729429324330758
+    second: Future Sight-Sheet_0
+  - first:
+      213: -780074973191843120
+    second: Future Sight-Sheet_1
+  - first:
+      213: -3110815301478734025
+    second: Future Sight-Sheet_2
+  - first:
+      213: -7772381144243618292
+    second: Future Sight-Sheet_3
+  - first:
+      213: 8429541167237165911
+    second: Future Sight-Sheet_4
+  - first:
+      213: 8532415960896878543
+    second: Future Sight-Sheet_5
+  - first:
+      213: 1808208705763876251
+    second: Future Sight-Sheet_6
+  - first:
+      213: 7429350707389938662
+    second: Future Sight-Sheet_7
+  - first:
+      213: -710100505518147681
+    second: Future Sight-Sheet_8
+  - first:
+      213: -2561363443003087225
+    second: Future Sight-Sheet_9
+  - first:
+      213: -2366442875173916992
+    second: Future Sight-Sheet_10
+  - first:
+      213: 60472942096427040
+    second: Future Sight-Sheet_11
+  - first:
+      213: 8313354611366650577
+    second: Future Sight-Sheet_12
+  - first:
+      213: -5572037084288527265
+    second: Future Sight-Sheet_13
+  - first:
+      213: -8697127174677689337
+    second: Future Sight-Sheet_14
+  - first:
+      213: 4015447690862459968
+    second: Future Sight-Sheet_15
+  - first:
+      213: -264733984293245042
+    second: Future Sight-Sheet_16
+  - first:
+      213: -5875861223715222325
+    second: Future Sight-Sheet_17
+  - first:
+      213: 3299925776469763356
+    second: Future Sight-Sheet_18
+  - first:
+      213: -2187189600350388124
+    second: Future Sight-Sheet_19
+  - first:
+      213: -7553211908984294128
+    second: Future Sight-Sheet_20
+  - first:
+      213: 3093131009575215309
+    second: Future Sight-Sheet_21
+  - first:
+      213: 7882528536428957033
+    second: Future Sight-Sheet_22
+  - first:
+      213: 9211292591622539850
+    second: Future Sight-Sheet_0
+  - first:
+      213: -2533818018342629670
+    second: Future Sight-Sheet_1
+  - first:
+      213: -3302690582881751731
+    second: Future Sight-Sheet_2
+  - first:
+      213: 6061947000832260838
+    second: Future Sight-Sheet_3
+  - first:
+      213: 1357680227450128573
+    second: Future Sight-Sheet_4
+  - first:
+      213: -2621129673442109027
+    second: Future Sight-Sheet_5
+  - first:
+      213: 7954144623947483192
+    second: Future Sight-Sheet_6
+  - first:
+      213: -473489048621628105
+    second: Future Sight-Sheet_7
+  - first:
+      213: 1265555189348442284
+    second: Future Sight-Sheet_8
+  - first:
+      213: -7252371407374882695
+    second: Future Sight-Sheet_9
+  - first:
+      213: -323672862387022280
+    second: Future Sight-Sheet_10
+  - first:
+      213: -333065370993172823
+    second: Future Sight-Sheet_11
+  - first:
+      213: 553185530891522572
+    second: Future Sight-Sheet_12
+  - first:
+      213: 1802812988684936080
+    second: Future Sight-Sheet_13
+  - first:
+      213: -5573966270739787325
+    second: Future Sight-Sheet_14
+  - first:
+      213: 3055887619884089526
+    second: Future Sight-Sheet_23
+  - first:
+      213: -4614454603912872649
+    second: Future Sight-Sheet_24
+  - first:
+      213: -4375136298029100954
+    second: Future Sight-Sheet_25
+  - first:
+      213: 1591241154707234053
+    second: Future Sight-Sheet_26
+  - first:
+      213: -2916906106802865448
+    second: Future Sight-Sheet_27
+  - first:
+      213: -7056105413999456925
+    second: Future Sight-Sheet_28
+  - first:
+      213: -6201281339075903746
+    second: Future Sight-Sheet_29
+  - first:
+      213: -725541696095468745
+    second: Future Sight-Sheet_30
+  - first:
+      213: -8125260429647110060
+    second: Future Sight-Sheet_31
+  - first:
+      213: -1300080878361385148
+    second: Future Sight-Sheet_32
+  - first:
+      213: -2859462684891366689
+    second: Future Sight-Sheet_33
+  - first:
+      213: -2409786502556280115
+    second: Future Sight-Sheet_34
+  - first:
+      213: -8479807394963608646
+    second: Future Sight-Sheet_35
+  - first:
+      213: 900463952573366889
+    second: Future Sight-Sheet_36
+  - first:
+      213: 2492088658353930374
+    second: Future Sight-Sheet_37
+  - first:
+      213: 2128098286988490116
+    second: Future Sight-Sheet_38
+  - first:
+      213: -5005928543101245758
+    second: Future Sight-Sheet_39
+  - first:
+      213: -6335705669928639218
+    second: Future Sight-Sheet_40
+  - first:
+      213: -5187249839186679341
+    second: Future Sight-Sheet_41
+  - first:
+      213: -6225981562232254757
+    second: Future Sight-Sheet_42
+  - first:
+      213: 8089151542709167530
+    second: Future Sight-Sheet_43
+  - first:
+      213: -5639218680634846780
+    second: Future Sight-Sheet_44
+  - first:
+      213: 6589137124511124692
+    second: Future Sight-Sheet_45
+  - first:
+      213: 6774426491677627629
+    second: Future Sight-Sheet_46
+  - first:
+      213: -2047197259828037804
+    second: Future Sight-Sheet_47
+  - first:
+      213: 6237714209723575412
+    second: Future Sight-Sheet_48
+  - first:
+      213: 6864448732649207862
+    second: Future Sight-Sheet_49
+  - first:
+      213: 8091329504499251918
+    second: Future Sight-Sheet_50
+  - first:
+      213: 4705317349659221303
+    second: Future Sight-Sheet_51
+  - first:
+      213: -1979605906672398881
+    second: Future Sight-Sheet_52
+  - first:
+      213: 3987941932518991492
+    second: Future Sight-Sheet_53
+  - first:
+      213: 6010133447865935728
+    second: Future Sight-Sheet_54
+  - first:
+      213: -3491581249588951733
+    second: Future Sight-Sheet_55
+  - first:
+      213: 4502565996625590182
+    second: Future Sight-Sheet_56
+  - first:
+      213: 7220003851826870936
+    second: Future Sight-Sheet_57
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Future Sight-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaf9dffdac502450800000000000000
+      internalID: 6061947000832260838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db88cbb39f277d210800000000000000
+      internalID: 1357680227450128573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d995f380370ef9bd0800000000000000
+      internalID: -2621129673442109027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8380972846cc26e60800000000000000
+      internalID: 7954144623947483192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735cedb0834dd69f0800000000000000
+      internalID: -473489048621628105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca024c05db7209110800000000000000
+      internalID: 1265555189348442284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978683431a66a5b90800000000000000
+      internalID: -7252371407374882695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836dcfd1f35128bf0800000000000000
+      internalID: -323672862387022280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aed7fa4fc6b06bf0800000000000000
+      internalID: -333065370993172823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02dca73f4f4da700800000000000000
+      internalID: 553185530891522572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093a60b8cd0e40910800000000000000
+      internalID: 1802812988684936080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1db8a753b45a2b0800000000000000
+      internalID: -5573966270739787325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cf40c666cb9b730800000000000000
+      internalID: 4015447690862459968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f2a3a08d9735cf0800000000000000
+      internalID: -264733984293245042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Future Sight-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15a2ab8201bbcd20800000000000000
+      internalID: 3299925776469763356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

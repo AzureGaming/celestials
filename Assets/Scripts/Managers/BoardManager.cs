@@ -11,31 +11,36 @@ public class BoardManager : MonoBehaviour {
     Tile[] tiles;
     UIManager uiManager;
     int cardOrder = 0;
-    int columnLimit = 3;
+    int stageLimit = 3;
     int rowLimit = 3;
 
     private void Awake() {
         uiManager = FindObjectOfType<UIManager>();
         board = GetComponent<Board>();
         tiles = GetComponentsInChildren<Tile>();
-        grid = new Tile[3][];
+        grid = new Tile[4][];
         grid[0] = new Tile[3];
         grid[1] = new Tile[3];
         grid[2] = new Tile[3];
+        // boss cells
+        grid[3] = new Tile[3];
     }
 
     void Start() {
-
         int tileCounter = 0;
 
         for (int row = 0; row < rowLimit; row++) {
-            for (int column = 0; column < columnLimit; column++) {
+            for (int column = 0; column < stageLimit; column++) {
                 Tile tile = tiles[tileCounter];
                 tile.column = column;
                 tile.row = row;
                 grid[column][row] = tile;
                 tileCounter++;
             }
+        }
+
+        for (int i = 0; i < 3; i++) {
+            grid[3][i] = null;
         }
     }
 
@@ -61,9 +66,34 @@ public class BoardManager : MonoBehaviour {
     }
 
     public IEnumerator ResolveMovePhase() {
-        for (int col = 0; col < columnLimit; col++) {
+        for (int col = 0; col < stageLimit; col++) {
             yield return StartCoroutine(MoveSummonsInColumn(col));
         }
+    }
+
+    public IEnumerator ResolvePowerAbilityPhase() {
+        yield break;
+    }
+
+    public IEnumerator ResolveAttackPhase() {
+        for (int stage = stageLimit - 1; stage > 0; stage--) {
+            Tile[] tiles = grid[stage];
+            System.Array.Sort(tiles, (tileX, tileY) => {
+                Summon summonX = tileX.GetComponentInChildren<Summon>();
+                Summon summonY = tileY.GetComponentInChildren<Summon>();
+                int x, y;
+                x = summonX ? summonX.getOrder() : -1;
+                y = summonY ? summonY.getOrder() : -1;
+                return x - y;
+            });
+            foreach (Tile tile in tiles) {
+                Summon summon = tile.GetComponentInChildren<Summon>();
+                if (summon) {
+                    yield return StartCoroutine(summon.Attack());
+                }
+            }
+        }
+        yield break;
     }
 
     public IEnumerator MoveSummonFromTile(Summon summon, Tile tile) {
@@ -76,19 +106,23 @@ public class BoardManager : MonoBehaviour {
             yield break;
         }
 
+
         if (grid[endCol].ElementAtOrDefault(tile.row) == null) {
-            Debug.Log("Implement: Summon is moved off the board, kill summon");
+            Debug.Log("Cell does not exist in grid Column: " + endCol + " Row: " + tile.row);
             yield break;
         }
 
         yield return StartCoroutine(summon.WalkToTile(grid[endCol][tile.row]));
     }
 
+    public bool CheckCanHitBoss(Tile currentPos, int range) {
+        return CheckWithinRange(range, currentPos.column, currentPos.row);
+    }
+
     IEnumerator MoveSummonsInColumn(int column) {
         foreach (Tile tile in grid[column]) {
             Summon summon = tile.GetComponentInChildren<Summon>();
             if (summon) {
-                //StartCoroutine(summon.Move());
                 yield return InitCoroutine(summon.Move());
             }
 
@@ -99,5 +133,18 @@ public class BoardManager : MonoBehaviour {
     IEnumerator InitCoroutine(IEnumerator coroutine) {
         StartCoroutine(coroutine);
         yield break;
+    }
+
+    bool CheckWithinRange(int range, int colIndex, int rowIndex) {
+        Debug.Log("check" + colIndex + " "+ range + " " + grid.Length);
+        int targetColIndex = colIndex + range;
+        if (targetColIndex < grid.Length && rowIndex < grid.Length) {
+            if (grid[targetColIndex][rowIndex] == null) {
+                return true;
+            }
+        } else {
+            Debug.LogWarning("Range check is invalid: Range - " + range + " colIndex: " + colIndex + " rowIndex: " + rowIndex);
+        }
+        return false;
     }
 }

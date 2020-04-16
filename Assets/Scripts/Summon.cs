@@ -5,13 +5,17 @@ using UnityEngine;
 public class Summon : MonoBehaviour {
     int order;
     Tile tile;
+    BoardManager boardManager;
     float movementSpeed = 2f;
     Animator animator;
+    Card card;
+
     // coordinates how to move?
 
     private void Awake() {
         tile = GetComponentInParent<Tile>();
         animator = GetComponent<Animator>();
+        boardManager = FindObjectOfType<BoardManager>();
     }
 
     public int getOrder() {
@@ -20,6 +24,11 @@ public class Summon : MonoBehaviour {
 
     public void setOrder(int value) {
         order = value;
+    }
+
+    public void InitSummon(Card card, int order) {
+        this.card = card;
+        setOrder(order);
     }
 
     public IEnumerator ExecuteAction() {
@@ -44,6 +53,20 @@ public class Summon : MonoBehaviour {
         }
         animator.SetBool("isWalking", false);
         SetParent(destination);
+        yield break;
+    }
+
+    public IEnumerator Attack() {
+        if (boardManager.CheckCanHitBoss(tile, this.card.range)) {
+            Debug.Log("Attack boss");
+            animator.SetTrigger("isAttacking");
+        } else {
+            Debug.Log("Out of range");
+        }
+        yield break;
+    }
+
+    public void HandleAttackAnimationEvent() {
 
     }
 

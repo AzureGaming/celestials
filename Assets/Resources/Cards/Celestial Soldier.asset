@@ -19,3 +19,4 @@ MonoBehaviour:
   manaCost: 1
   attack: 1
   prefab: {fileID: 7167678689689261049, guid: b937adf934890d3469071a4ea50f9467, type: 3}
+  range: 1

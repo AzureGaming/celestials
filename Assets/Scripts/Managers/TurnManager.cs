@@ -82,7 +82,9 @@ public class TurnManager : MonoBehaviour {
             }
         }
 
-        StartCoroutine(boardManager.ResolveMovePhase());
+        yield return StartCoroutine(boardManager.ResolvePowerAbilityPhase());
+        yield return StartCoroutine(boardManager.ResolveAttackPhase());
+        yield return StartCoroutine(boardManager.ResolveMovePhase());
     }
 
     IEnumerator StartPlayerTurn() {

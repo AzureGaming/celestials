@@ -45,14 +45,16 @@ public class Tile : MonoBehaviour {
         }
     }
 
-    public void Summon(Card card) {
-        if (this.card) {
-            Debug.LogWarning("Tile is overwriting card" + card.name);
+    void Summon(Card card) {
+        foreach (Transform child in transform) {
+            if (child.CompareTag("Summon")) {
+                Debug.LogWarning("Overwriting summon...");
+            }
         }
 
-        this.card = card;
         GameObject summonObj = Instantiate(card.prefab, transform);
-        summonObj.GetComponent<Summon>().setOrder(boardManager.GetCardOrder());
+        Summon summon = summonObj.GetComponent<Summon>();
+        summon.InitSummon(card, boardManager.GetCardOrder());
         boardManager.IncrementCardOrder(1);
     }
 
