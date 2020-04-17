@@ -15,12 +15,14 @@ public class GameManager : MonoBehaviour {
     UIManager uiManager;
     BoardManager boardManager;
     Player player;
+    Boss boss;
 
     private void Awake() {
         player = FindObjectOfType<Player>();
         turnManager = FindObjectOfType<TurnManager>();
         uiManager = FindObjectOfType<UIManager>();
         boardManager = FindObjectOfType<BoardManager>();
+        boss = FindObjectOfType<Boss>();
     }
 
     private void Start() {

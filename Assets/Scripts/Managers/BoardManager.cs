@@ -13,6 +13,8 @@ public class BoardManager : MonoBehaviour {
     int cardOrder = 0;
     int stageLimit = 3;
     int rowLimit = 3;
+    int attackCounter = 0;
+    int attacksToWaitFor = 0;
 
     private void Awake() {
         uiManager = FindObjectOfType<UIManager>();
@@ -28,12 +30,12 @@ public class BoardManager : MonoBehaviour {
 
     void Start() {
         int tileCounter = 0;
-
         for (int row = 0; row < rowLimit; row++) {
             for (int column = 0; column < stageLimit; column++) {
                 Tile tile = tiles[tileCounter];
                 tile.column = column;
                 tile.row = row;
+                tile.tag = "[Tile] Summon";
                 grid[column][row] = tile;
                 tileCounter++;
             }
@@ -93,6 +95,7 @@ public class BoardManager : MonoBehaviour {
                 }
             }
         }
+        yield return new WaitUntil(() => CheckAttacksAreDone());
         yield break;
     }
 
@@ -106,9 +109,13 @@ public class BoardManager : MonoBehaviour {
             yield break;
         }
 
-
         if (grid[endCol].ElementAtOrDefault(tile.row) == null) {
-            Debug.Log("Cell does not exist in grid Column: " + endCol + " Row: " + tile.row);
+            StartCoroutine(summon.Die());
+            yield break;
+        }
+
+        if (!grid[endCol][tile.row].CompareTag("[Tile] Summon")) {
+            Debug.Log("Cell exists but is not a valid tile");
             yield break;
         }
 
@@ -117,6 +124,24 @@ public class BoardManager : MonoBehaviour {
 
     public bool CheckCanHitBoss(Tile currentPos, int range) {
         return CheckWithinRange(range, currentPos.column, currentPos.row);
+    }
+
+    public void IncrementAttackCounter() {
+        attackCounter += 1;
+    }
+
+    public void IncrementAttacksToWaitFor() {
+        attacksToWaitFor += 1;
+    }
+
+    bool CheckAttacksAreDone() {
+        if (attackCounter >= attacksToWaitFor) {
+            attackCounter = 0;
+            attacksToWaitFor = 0;
+            return true;
+        }
+
+        return false;
     }
 
     IEnumerator MoveSummonsInColumn(int column) {
@@ -136,7 +161,6 @@ public class BoardManager : MonoBehaviour {
     }
 
     bool CheckWithinRange(int range, int colIndex, int rowIndex) {
-        Debug.Log("check" + colIndex + " "+ range + " " + grid.Length);
         int targetColIndex = colIndex + range;
         if (targetColIndex < grid.Length && rowIndex < grid.Length) {
             if (grid[targetColIndex][rowIndex] == null) {

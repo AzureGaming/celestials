@@ -15,7 +15,6 @@ public class Tile : MonoBehaviour {
         Invalid,
         Valid
     }
-    Card card;
     GameManager gameManager;
     BoardManager boardManager;
 

@@ -9,13 +9,22 @@ public class Summon : MonoBehaviour {
     float movementSpeed = 2f;
     Animator animator;
     Card card;
+    Color color;
+    SpriteRenderer spriteRenderer;
+    Boss boss;
 
     // coordinates how to move?
 
     private void Awake() {
         tile = GetComponentInParent<Tile>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         boardManager = FindObjectOfType<BoardManager>();
+        boss = FindObjectOfType<Boss>();
+    }
+
+    private void Start() {
+        color = spriteRenderer.color;
     }
 
     public int getOrder() {
@@ -32,7 +41,6 @@ public class Summon : MonoBehaviour {
     }
 
     public IEnumerator ExecuteAction() {
-        Debug.Log("Implement summon action execution" + order);
         yield break;
     }
 
@@ -57,7 +65,8 @@ public class Summon : MonoBehaviour {
     }
 
     public IEnumerator Attack() {
-        if (boardManager.CheckCanHitBoss(tile, this.card.range)) {
+        if (boardManager.CheckCanHitBoss(tile, card.range)) {
+            boardManager.IncrementAttacksToWaitFor();
             Debug.Log("Attack boss");
             animator.SetTrigger("isAttacking");
         } else {
@@ -67,10 +76,40 @@ public class Summon : MonoBehaviour {
     }
 
     public void HandleAttackAnimationEvent() {
+        StartCoroutine(boss.TakeDamage(card.attack));
+        boardManager.IncrementAttackCounter();
+    }
 
+    public IEnumerator Die() {
+        yield return StartCoroutine(FadeOut());
+        Destroy(transform.gameObject);
     }
 
     void SetParent(Tile parent) {
         transform.SetParent(parent.transform);
+    }
+
+    IEnumerator FlashRed() {
+        int duration = 2;
+        for (int t = 0; t < duration; t++) {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
+        spriteRenderer.color = color;
+        yield break;
+    }
+
+    IEnumerator FadeOut() {
+        float duration = 1f;
+        for (float t = 0; t < duration; t += Time.deltaTime) {
+            float alpha = Mathf.Lerp(spriteRenderer.color.a, 0, Mathf.Min(1, t / duration));
+            Color newColor = spriteRenderer.color;
+            newColor.a = alpha;
+            spriteRenderer.color = newColor;
+            yield return null;
+        }
+        yield break;
     }
 }

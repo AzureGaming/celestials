@@ -18,7 +18,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     new string name;
     string description;
     public int manaCost;
-    int attack;
+    public int attack;
     Vector3 startingScale;
     public int range;
 
