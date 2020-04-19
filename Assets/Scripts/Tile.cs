@@ -57,18 +57,26 @@ public class Tile : MonoBehaviour {
         boardManager.IncrementCardOrder(1);
     }
 
-    public void SetSelectState() {
-        bool isEmptyTile = true;
-        foreach (Transform child in transform) {
-            if (child.CompareTag("Summon")) {
-                UpdateState(State.Invalid);
-                isEmptyTile = false;
-            }
-        }
+    //public void SetSelectState() {
+    //    bool isEmptyTile = true;
+    //    foreach (Transform child in transform) {
+    //        if (child.CompareTag("Summon")) {
+    //            SetInvalidState();
+    //            isEmptyTile = false;
+    //        }
+    //    }
 
-        if (isEmptyTile) {
-            UpdateState(State.Valid);
-        }
+    //    if (isEmptyTile) {
+    //        SetValidState();
+    //    }
+    //}
+
+    public void SetValidState() {
+        UpdateState(State.Valid);
+    }
+
+    public void SetInvalidState() {
+        UpdateState(State.Invalid);
     }
 
     public void SetNeutralState() {
@@ -77,6 +85,14 @@ public class Tile : MonoBehaviour {
 
     public IEnumerator MoveSummon(Summon summon) {
         yield return StartCoroutine(boardManager.MoveSummonFromTile(summon, this));
+    }
+
+    public bool CheckOccupied() {
+        if (GetComponentInChildren<Summon>()) {
+            return true;
+        }
+
+        return false;
     }
 
     void UpdateState(State state) {

@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,11 +22,12 @@ public class CardManager : MonoBehaviour {
 
     CardObject GetValidCardData() {
         // Will break if no valid cards
-        //int randomIndex = Random.Range(0, cards.Length - 1);
+        int randomIndex = Random.Range(0, cards.Length - 1);
+        return cards[randomIndex];
         //if (!hand.handCardIds.Contains(cards[randomIndex].id)) {
         //    return cards[randomIndex];
         //}
         //return GetValidCardData();
-        return cards[1];
+        //return cards[1];
     }
 }

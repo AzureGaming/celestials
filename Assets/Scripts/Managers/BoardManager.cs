@@ -54,9 +54,23 @@ public class BoardManager : MonoBehaviour {
         return cardOrder;
     }
 
-    public void DetectTileState() {
+    public void DetectSummonableSpace() {
+        foreach (Tile tile in grid[0]) {
+            if (tile.CheckOccupied()) {
+                tile.SetInvalidState();
+            } else {
+                tile.SetValidState();
+            }
+        }
+    }
+
+    public void DetectSummons() {
         foreach (Tile tile in tiles) {
-            tile.SetSelectState();
+            if (tile.CheckOccupied()) {
+                tile.SetValidState();
+            } else {
+                tile.SetInvalidState();
+            }
         }
     }
 
