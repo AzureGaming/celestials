@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df63777e85c1195479ccc978781e90f3, type: 3}
-  m_Name: Soldier 28
+  m_Name: March
   m_EditorClassIdentifier: 
-  id: 28
-  name: Soldier
-  description: A pawn in a greater game.
-  artwork: {fileID: 2126946347914146419, guid: 55240c6080bed7f4ab2d0ae926cac6f0, type: 3}
+  name: March
+  description: March_Description
+  artwork: {fileID: 21300000, guid: 5f513a1d32936104ca53a9d6267c87c1, type: 3}
   manaCost: 1
-  attack: 1
+  attack: 0
+  prefab: {fileID: 640843031359210110, guid: fc931587eecccee4bb4f44b7c6f415ac, type: 3}
+  range: 0
+  type: 1

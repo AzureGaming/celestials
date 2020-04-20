@@ -14,13 +14,17 @@ public class GameManager : MonoBehaviour {
     TurnManager turnManager;
     UIManager uiManager;
     BoardManager boardManager;
+    SpellManager spellManager;
     Player player;
+    Boss boss;
 
     private void Awake() {
         player = FindObjectOfType<Player>();
         turnManager = FindObjectOfType<TurnManager>();
         uiManager = FindObjectOfType<UIManager>();
         boardManager = FindObjectOfType<BoardManager>();
+        boss = FindObjectOfType<Boss>();
+        spellManager = FindObjectOfType<SpellManager>();
     }
 
     private void Start() {
@@ -38,13 +42,27 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public IEnumerator StartCardSummon(Card card) {
+    public void PlayCard(Card card) {
+        Debug.Log("Play card " + card.name);
+        if (card.type == CardType.Summon) {
+            PlaySummon(card);
+        } else if (card.type == CardType.Spell) {
+            PlaySpell(card);
+        } else {
+            Debug.Log("Unknown cardtype encountered: " + card.type);
+        }
+    }
+
+    void PlaySummon(Card card) {
         cardToSummon = card;
-        Debug.Log("Hello" + card.name);
         player.LoseMana(card.manaCost);
         uiManager.SetLocationSelectionPrompt(true);
-        boardManager.DetectTileState();
-        yield break;
+        boardManager.DetectSummonableSpace();
+    }
+
+    void PlaySpell(Card card) {
+        player.LoseMana(card.manaCost);
+        spellManager.HandleSpell(card);
     }
 
     void SetupGame() {

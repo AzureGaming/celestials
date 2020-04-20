@@ -18,9 +18,10 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     new string name;
     string description;
     public int manaCost;
-    int attack;
+    public int attack;
     Vector3 startingScale;
     public int range;
+    public CardType type;
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
@@ -44,6 +45,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         id = System.Guid.NewGuid();
         prefab = card.prefab;
         range = card.range;
+        type = card.type;
 
         imageDisplay.sprite = artwork;
         nameDisplay.text = name;

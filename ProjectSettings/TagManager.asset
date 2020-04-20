@@ -8,6 +8,8 @@ TagManager:
   - Board_Row
   - Indicator
   - Summon
+  - '[Tile] Summon'
+  - '[Tile] Boss'
   layers:
   - Default
   - TransparentFX

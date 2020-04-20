@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CardType {
+    Summon,
+    Spell
+}
+
 [CreateAssetMenu(fileName = "New Card", menuName = "Cards")]
 public class CardObject : ScriptableObject {
-    public int id;
     public new string name;
     public string description;
     public Sprite artwork;
@@ -12,4 +16,5 @@ public class CardObject : ScriptableObject {
     public int attack;
     public GameObject prefab;
     public int range;
+    public CardType type;
 }
