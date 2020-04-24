@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Summon : MonoBehaviour {
+    public Card card;
     int order;
-    Tile tile;
     BoardManager boardManager;
     float movementSpeed = 2f;
     Animator animator;
-    Card card;
     Color color;
     SpriteRenderer spriteRenderer;
     Boss boss;
@@ -16,7 +15,6 @@ public class Summon : MonoBehaviour {
     // coordinates how to move?
 
     private void Awake() {
-        tile = GetComponentInParent<Tile>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boardManager = FindObjectOfType<BoardManager>();
@@ -44,14 +42,10 @@ public class Summon : MonoBehaviour {
         yield break;
     }
 
-    public IEnumerator Move() {
-        yield return StartCoroutine(tile.MoveSummon(this));
-    }
-
     public IEnumerator WalkToTile(Tile destination) {
+        Debug.Log("Walk to tile" + destination.transform.position);
         Vector3 currentPos = transform.position;
-        Vector3 endPos = currentPos;
-        endPos.x += (float)CONSTANTS.summonSpacing;
+        Vector3 endPos = destination.transform.position;
 
         animator.SetBool("isWalking", true);
         for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
@@ -61,16 +55,15 @@ public class Summon : MonoBehaviour {
         }
         animator.SetBool("isWalking", false);
         SetParent(destination);
+        boardManager.ResolveMovementRoutine();
         yield break;
     }
 
     public IEnumerator Attack() {
-        if (boardManager.CheckCanHitBoss(tile, card.range)) {
+        if (boardManager.CheckAttackRange(card.range, GetComponentInParent<Tile>().column, GetComponentInParent<Tile>().row)) {
             boardManager.IncrementAttacksToWaitFor();
             Debug.Log("Attack boss");
             animator.SetTrigger("isAttacking");
-        } else {
-            Debug.Log("Out of range");
         }
         yield break;
     }

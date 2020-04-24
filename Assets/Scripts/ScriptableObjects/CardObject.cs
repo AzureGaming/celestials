@@ -15,6 +15,7 @@ public class CardObject : ScriptableObject {
     public int manaCost;
     public int attack;
     public GameObject prefab;
-    public int range;
+    public int range = 1;
     public CardType type;
+    public int movementSpeed = 1;
 }

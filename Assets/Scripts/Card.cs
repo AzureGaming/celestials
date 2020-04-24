@@ -8,28 +8,35 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     public System.Guid id;
     public GameObject prefab;
+    public new string name;
+    public int manaCost;
+    public int attack;
+    public int range;
+    public CardType type;
+    public int movementSpeed;
     Image imageDisplay;
     TextMeshProUGUI nameDisplay;
     TextMeshProUGUI manaDisplay;
     TextMeshProUGUI attackDisplay;
+    TextMeshProUGUI descriptionDisplay;
     GameManager gameManager;
     TurnManager turnManager;
     Sprite artwork;
-    new string name;
     string description;
-    public int manaCost;
-    public int attack;
     Vector3 startingScale;
-    public int range;
-    public CardType type;
+    CardEffect effect;
+    Player player;
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
         nameDisplay = transform.Find("Name").GetComponent<TextMeshProUGUI>();
         manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
         attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
+        descriptionDisplay = transform.Find("Description").GetComponent<TextMeshProUGUI>();
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
+        effect = GetComponent<CardEffect>();
+        player = FindObjectOfType<Player>();
     }
 
     private void Start() {
@@ -46,11 +53,13 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         prefab = card.prefab;
         range = card.range;
         type = card.type;
+        movementSpeed = card.movementSpeed;
 
         imageDisplay.sprite = artwork;
         nameDisplay.text = name;
         manaDisplay.text = manaCost.ToString();
         attackDisplay.text = attack.ToString();
+        descriptionDisplay.text = description;
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
@@ -65,5 +74,9 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         if (turnManager.state == GameState.MULLIGAN) {
             gameManager.SetMulligan(id);
         }
+    }
+
+    public void ActivateEffect() {
+        effect?.Apply();
     }
 }

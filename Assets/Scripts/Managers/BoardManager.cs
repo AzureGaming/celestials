@@ -10,14 +10,18 @@ public class BoardManager : MonoBehaviour {
     Board board;
     Tile[] tiles;
     UIManager uiManager;
+    Player player;
     int cardOrder = 0;
     int stageLimit = 3;
     int rowLimit = 3;
     int attackCounter = 0;
     int attacksToWaitFor = 0;
+    List<Tile> queue;
+    int movementRoutinesRunning = 0;
 
     private void Awake() {
         uiManager = FindObjectOfType<UIManager>();
+        player = FindObjectOfType<Player>();
         board = GetComponent<Board>();
         tiles = GetComponentsInChildren<Tile>();
         grid = new Tile[4][];
@@ -26,6 +30,8 @@ public class BoardManager : MonoBehaviour {
         grid[2] = new Tile[3];
         // boss cells
         grid[3] = new Tile[3];
+
+        queue = new List<Tile>();
     }
 
     void Start() {
@@ -36,7 +42,7 @@ public class BoardManager : MonoBehaviour {
                 tile.column = column;
                 tile.row = row;
                 tile.tag = "[Tile] Summon";
-                grid[column][row] = tile;
+                grid[row][column] = tile;
                 tileCounter++;
             }
         }
@@ -55,12 +61,19 @@ public class BoardManager : MonoBehaviour {
     }
 
     public void DetectSummonableSpace() {
-        foreach (Tile tile in grid[0]) {
+        for (int row = 0; row < rowLimit; row++) {
+            Tile tile = grid[row][0];
             if (tile.CheckOccupied()) {
                 tile.SetInvalidState();
             } else {
                 tile.SetValidState();
             }
+        }
+    }
+
+    public void SetNeutral() {
+        foreach (Tile tile in tiles) {
+            tile.SetNeutralState();
         }
     }
 
@@ -82,8 +95,8 @@ public class BoardManager : MonoBehaviour {
     }
 
     public IEnumerator ResolveMovePhase() {
-        for (int col = 0; col < stageLimit; col++) {
-            yield return StartCoroutine(MoveSummonsInColumn(col));
+        for (int stage = stageLimit - 1; stage >= 0; stage--) {
+            yield return StartCoroutine(ResolveStageMovement(stage));
         }
     }
 
@@ -92,9 +105,12 @@ public class BoardManager : MonoBehaviour {
     }
 
     public IEnumerator ResolveAttackPhase() {
-        for (int stage = stageLimit - 1; stage > 0; stage--) {
+        Debug.Log("Resolve Attack Phase");
+        for (int stage = stageLimit - 1; stage >= 0; stage--) {
             Tile[] tiles = grid[stage];
-            System.Array.Sort(tiles, (tileX, tileY) => {
+            Tile[] tilesCopy = new Tile[tiles.Length];
+            Array.Copy(tiles, tilesCopy, tiles.Length);
+            System.Array.Sort(tilesCopy, (tileX, tileY) => {
                 Summon summonX = tileX.GetComponentInChildren<Summon>();
                 Summon summonY = tileY.GetComponentInChildren<Summon>();
                 int x, y;
@@ -104,7 +120,7 @@ public class BoardManager : MonoBehaviour {
             });
             foreach (Tile tile in tiles) {
                 Summon summon = tile.GetComponentInChildren<Summon>();
-                if (summon) {
+                if (summon != null) {
                     yield return StartCoroutine(summon.Attack());
                 }
             }
@@ -113,39 +129,65 @@ public class BoardManager : MonoBehaviour {
         yield break;
     }
 
-    public IEnumerator MoveSummonFromTile(Summon summon, Tile tile) {
-        // Implement: different types of movement
-        int startCol = tile.column;
-        int endCol = tile.column += 1;
-
-        if (grid.ElementAtOrDefault(endCol) == null) {
-            Debug.LogWarning("Column " + endCol + " does not exist in grid.");
-            yield break;
-        }
-
-        if (grid[endCol].ElementAtOrDefault(tile.row) == null) {
-            StartCoroutine(summon.Die());
-            yield break;
-        }
-
-        if (!grid[endCol][tile.row].CompareTag("[Tile] Summon")) {
-            Debug.Log("Cell exists but is not a valid tile");
-            yield break;
-        }
-
-        yield return StartCoroutine(summon.WalkToTile(grid[endCol][tile.row]));
-    }
-
-    public bool CheckCanHitBoss(Tile currentPos, int range) {
-        return CheckWithinRange(range, currentPos.column, currentPos.row);
-    }
-
     public void IncrementAttackCounter() {
         attackCounter += 1;
     }
 
     public void IncrementAttacksToWaitFor() {
         attacksToWaitFor += 1;
+    }
+
+    public void AddToQueue(Tile tile) {
+        queue.Add(tile);
+    }
+
+    public List<Tile> GetQueue() {
+        return queue;
+    }
+
+    public void ClearQueue() {
+        queue.Clear();
+    }
+
+    public void PlayCard(Card card) {
+        if (card.type == CardType.Summon) {
+            StartCoroutine(PlaySummon(card));
+        } else if (card.type == CardType.Spell) {
+            PlaySpell(card);
+        } else {
+            Debug.Log("Unknown cardtype encountered: " + card.type);
+        }
+    }
+
+    public void ResolveMovementRoutine() {
+        movementRoutinesRunning -= 1;
+        if (movementRoutinesRunning < 0) {
+            Debug.LogWarning("Movement Routines Running is less than 0");
+        }
+    }
+
+    public IEnumerator AdvanceSummon(Summon summon) {
+        yield return StartCoroutine(MoveSummonToTile(summon));
+    }
+
+    //public IEnumerator RetreatSummon(Summon summon, int stages) {
+    //    yield return StartCoroutine(MoveSummonToTile(summon, -stages));
+    //}
+
+    IEnumerator PlaySummon(Card card) {
+        Debug.Log("Summon: " + card.name);
+        uiManager.SetLocationSelectionPrompt(true);
+        DetectSummonableSpace();
+        yield return new WaitUntil(() => GetQueue().Count == 1);
+        SetNeutral();
+        GetQueue()[0].Summon(card);
+        player.LoseMana(card.manaCost);
+        ClearQueue();
+    }
+
+    void PlaySpell(Card card) {
+        Debug.Log("Cast spell: " + card.name);
+        card.ActivateEffect();
     }
 
     bool CheckAttacksAreDone() {
@@ -158,25 +200,24 @@ public class BoardManager : MonoBehaviour {
         return false;
     }
 
-    IEnumerator MoveSummonsInColumn(int column) {
-        foreach (Tile tile in grid[column]) {
-            Summon summon = tile.GetComponentInChildren<Summon>();
-            if (summon) {
-                yield return InitCoroutine(summon.Move());
+    IEnumerator ResolveStageMovement(int stageIndex) {
+        foreach (Tile tile in grid[stageIndex]) {
+            Summon[] summons = tile.GetComponentsInChildren<Summon>();
+            foreach (Summon summon in summons) {
+                movementRoutinesRunning += 1;
+                StartCoroutine(AdvanceSummon(summon));
             }
-
+            while (movementRoutinesRunning > 1) {
+                yield return null;
+            }
         }
         yield return null;
     }
 
-    IEnumerator InitCoroutine(IEnumerator coroutine) {
-        StartCoroutine(coroutine);
-        yield break;
-    }
-
-    bool CheckWithinRange(int range, int colIndex, int rowIndex) {
+    public bool CheckAttackRange(int range, int colIndex, int rowIndex) {
         int targetColIndex = colIndex + range;
         if (targetColIndex < grid.Length && rowIndex < grid.Length) {
+            Debug.Log("Check atack range" + " " + range + " " + colIndex + " " + rowIndex + " " + grid[targetColIndex][rowIndex]);
             if (grid[targetColIndex][rowIndex] == null) {
                 return true;
             }
@@ -185,4 +226,34 @@ public class BoardManager : MonoBehaviour {
         }
         return false;
     }
+
+    void IncrementMovementRoutineCount() {
+        movementRoutinesRunning += 1;
+    }
+
+    IEnumerator MoveSummonToTile(Summon summon) {
+        // Implement: different types of movement
+        Tile currentPos = summon.GetComponentInParent<Tile>();
+        int stagesToMove = summon.card.movementSpeed;
+        int endCol = currentPos.column + stagesToMove;
+        Debug.Log("Move summon " + currentPos.column + " " + currentPos.row + " " + stagesToMove);
+
+        if (grid.ElementAtOrDefault(currentPos.row) == null) {
+            Debug.LogWarning("Row " + currentPos.row + " does not exist in grid.");
+            yield break;
+        }
+
+        if (grid[currentPos.row].ElementAtOrDefault(endCol) == null) {
+            StartCoroutine(summon.Die());
+            yield break;
+        }
+
+        if (!grid[currentPos.row][endCol].CompareTag("[Tile] Summon")) {
+            Debug.Log("Cell exists but is not a valid tile");
+            yield break;
+        }
+
+        yield return StartCoroutine(summon.WalkToTile(grid[currentPos.row][endCol]));
+    }
+
 }

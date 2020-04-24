@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -82,7 +83,7 @@ public class TurnManager : MonoBehaviour {
             }
         }
 
-        yield return StartCoroutine(boardManager.ResolvePowerAbilityPhase());
+        //yield return StartCoroutine(boardManager.ResolvePowerAbilityPhase());
         yield return StartCoroutine(boardManager.ResolveAttackPhase());
         yield return StartCoroutine(boardManager.ResolveMovePhase());
     }

@@ -7,7 +7,6 @@ public class Tile : MonoBehaviour {
     [SerializeField] GameObject validPrefab;
     [SerializeField] GameObject invalidPrefab;
     [SerializeField] GameObject neutralPrefab;
-    public UnityEvent summoned;
     public int column;
     public int row;
     public enum State {
@@ -35,16 +34,16 @@ public class Tile : MonoBehaviour {
     }
 
     private void OnMouseDown() {
-        Debug.Log("On mouse down tile");
-
         if (currentState == State.Valid) {
-            Summon(gameManager.cardToSummon);
-            summoned.Invoke();
-            // clear card to summon
+            boardManager.AddToQueue(this);
         }
     }
 
-    void Summon(Card card) {
+    Summon GetSummon() {
+        return GetComponent<Summon>();
+    }
+
+    public void Summon(Card card) {
         foreach (Transform child in transform) {
             if (child.CompareTag("Summon")) {
                 Debug.LogWarning("Overwriting summon...");
@@ -57,20 +56,6 @@ public class Tile : MonoBehaviour {
         boardManager.IncrementCardOrder(1);
     }
 
-    //public void SetSelectState() {
-    //    bool isEmptyTile = true;
-    //    foreach (Transform child in transform) {
-    //        if (child.CompareTag("Summon")) {
-    //            SetInvalidState();
-    //            isEmptyTile = false;
-    //        }
-    //    }
-
-    //    if (isEmptyTile) {
-    //        SetValidState();
-    //    }
-    //}
-
     public void SetValidState() {
         UpdateState(State.Valid);
     }
@@ -81,10 +66,6 @@ public class Tile : MonoBehaviour {
 
     public void SetNeutralState() {
         UpdateState(State.Neutral);
-    }
-
-    public IEnumerator MoveSummon(Summon summon) {
-        yield return StartCoroutine(boardManager.MoveSummonFromTile(summon, this));
     }
 
     public bool CheckOccupied() {
