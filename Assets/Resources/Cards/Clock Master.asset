@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df63777e85c1195479ccc978781e90f3, type: 3}
-  m_Name: March
+  m_Name: Clock Master
   m_EditorClassIdentifier: 
-  name: March
-  description: March_Description
-  artwork: {fileID: 21300000, guid: 5f513a1d32936104ca53a9d6267c87c1, type: 3}
+  name: Clock Master
+  description: 
+  artwork: {fileID: 21300000, guid: d434eb047923d8f468f8a88fc7174a19, type: 3}
   manaCost: 1
-  attack: 0
-  prefab: {fileID: 640843031359210110, guid: fc931587eecccee4bb4f44b7c6f415ac, type: 3}
-  range: 0
-  type: 1
+  attack: 1
+  prefab: {fileID: 5186822937850323643, guid: 93a9c2744ccb291409b769c65a659581, type: 3}
+  range: 1
+  type: 0
+  movementSpeed: 1

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3045747815744833443}
   - component: {fileID: 8464429647935176073}
   - component: {fileID: 8346409105789969334}
+  - component: {fileID: -3864669894219381094}
   m_Layer: 0
   m_Name: March
   m_TagString: Untagged
@@ -102,3 +103,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3864669894219381094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640843031359210110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4975f6074f4f643a6c1f9dcd381337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
