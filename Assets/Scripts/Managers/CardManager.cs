@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class CardManager : MonoBehaviour {
     public GameObject cardPrefab;
-    CardObject[] cards;
+    GameObject[] cards;
     Hand hand;
 
     private void Awake() {
         hand = FindObjectOfType<Hand>();
-        cards = Resources.LoadAll<CardObject>("Cards");
+        cards = Resources.LoadAll<GameObject>("Loadable Cards");
         Debug.Log("Loaded cards" + cards.Length);
     }
 
     public GameObject CreateCard() {
-        GameObject card = Instantiate(cardPrefab, transform);
-        card.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-        card.GetComponent<Card>().LoadCard(GetValidCardData());
-        return card;
+        GameObject cardPrefab = Instantiate(GetCardPrefab(), transform);
+        cardPrefab.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+        //card.GetComponent<Card>().LoadCard(GetValidCardData());
+
+        return cardPrefab;
     }
 
-    CardObject GetValidCardData() {
+    GameObject GetCardPrefab() {
         // Will break if no valid cards
         int randomIndex = Random.Range(0, cards.Length);
         return cards[randomIndex];

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Celestial Soldier_Start_Walk
+  m_Name: Celestial Soldier_Startup
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -24,9 +24,6 @@ AnimationClip:
         type: 3}
     - time: 0.016666668
       value: {fileID: 3595613183988972718, guid: 4a4e9f7571452b04ea5c6b43a2929b3c,
-        type: 3}
-    - time: 0.033333335
-      value: {fileID: -1199534233292736329, guid: 4a4e9f7571452b04ea5c6b43a2929b3c,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -49,13 +46,12 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: -8924380351128919372, guid: 4a4e9f7571452b04ea5c6b43a2929b3c, type: 3}
     - {fileID: 3595613183988972718, guid: 4a4e9f7571452b04ea5c6b43a2929b3c, type: 3}
-    - {fileID: -1199534233292736329, guid: 4a4e9f7571452b04ea5c6b43a2929b3c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.050000004
+    m_StopTime: 0.033333335
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -7,13 +7,16 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     public System.Guid id;
-    public GameObject prefab;
     public new string name;
     public int manaCost;
     public int attack;
     public int range;
     public CardType type;
     public int movementSpeed;
+    public string description;
+    public Sprite artwork;
+    public GameObject summonPrefab;
+    CardEffect effect;
     Image imageDisplay;
     TextMeshProUGUI nameDisplay;
     TextMeshProUGUI manaDisplay;
@@ -21,10 +24,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     TextMeshProUGUI descriptionDisplay;
     GameManager gameManager;
     TurnManager turnManager;
-    Sprite artwork;
-    string description;
     Vector3 startingScale;
-    CardEffect effect;
     Player player;
 
     private void Awake() {
@@ -41,25 +41,12 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
     private void Start() {
         startingScale = transform.localScale;
-    }
-
-    public void LoadCard(CardObject card) {
-        name = card.name;
-        description = card.description;
-        artwork = card.artwork;
-        manaCost = card.manaCost;
-        attack = card.attack;
-        id = System.Guid.NewGuid();
-        prefab = card.prefab;
-        range = card.range;
-        type = card.type;
-        movementSpeed = card.movementSpeed;
-
         imageDisplay.sprite = artwork;
         nameDisplay.text = name;
         manaDisplay.text = manaCost.ToString();
         attackDisplay.text = attack.ToString();
         descriptionDisplay.text = description;
+        id = System.Guid.NewGuid();
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
