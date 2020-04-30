@@ -50,10 +50,10 @@ public class Tile : MonoBehaviour {
             }
         }
 
-        GameObject summonObj = Instantiate(card.prefab, transform);
+        GameObject summonObj = Instantiate(card.summonPrefab, transform);
         Summon summon = summonObj.GetComponent<Summon>();
-        summon.InitSummon(card, boardManager.GetCardOrder());
-        boardManager.IncrementCardOrder(1);
+        //summon.InitSummon(card, boardManager.GetCardOrder());
+        //boardManager.IncrementCardOrder(1);
     }
 
     public void SetValidState() {

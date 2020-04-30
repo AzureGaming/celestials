@@ -110,20 +110,20 @@ public class BoardManager : MonoBehaviour {
             Tile[] tiles = grid[stage];
             Tile[] tilesCopy = new Tile[tiles.Length];
             Array.Copy(tiles, tilesCopy, tiles.Length);
-            System.Array.Sort(tilesCopy, (tileX, tileY) => {
-                Summon summonX = tileX.GetComponentInChildren<Summon>();
-                Summon summonY = tileY.GetComponentInChildren<Summon>();
-                int x, y;
-                x = summonX ? summonX.getOrder() : -1;
-                y = summonY ? summonY.getOrder() : -1;
-                return x - y;
-            });
-            foreach (Tile tile in tiles) {
-                Summon summon = tile.GetComponentInChildren<Summon>();
-                if (summon != null) {
-                    yield return StartCoroutine(summon.Attack());
-                }
-            }
+            //System.Array.Sort(tilesCopy, (tileX, tileY) => {
+            //    Summon summonX = tileX.GetComponentInChildren<Summon>();
+            //    Summon summonY = tileY.GetComponentInChildren<Summon>();
+            //    int x, y;
+            //    x = summonX ? summonX.getOrder() : -1;
+            //    y = summonY ? summonY.getOrder() : -1;
+            //    return x - y;
+            //});
+            //foreach (Tile tile in tiles) {
+            //    Summon summon = tile.GetComponentInChildren<Summon>();
+            //    if (summon != null) {
+            //        yield return StartCoroutine(summon.Attack());
+            //    }
+            //}
         }
         yield return new WaitUntil(() => CheckAttacksAreDone());
         yield break;
@@ -164,6 +164,25 @@ public class BoardManager : MonoBehaviour {
         if (movementRoutinesRunning < 0) {
             Debug.LogWarning("Movement Routines Running is less than 0");
         }
+    }
+
+    public Tile GetDestination(Summon summon, int offset) {
+        Tile currentTile = GetCurrentTile(summon);
+        return Array.Find(tiles, (Tile tile) => {
+            if (tile.row == currentTile.row && tile.column == currentTile.column + offset) {
+                return true;
+            }
+            return false;
+        });
+    }
+
+    Tile GetCurrentTile(Summon summon) {
+        return Array.Find(tiles, (Tile tile) => {
+            if (tile.GetComponentInChildren<Summon>() == summon) {
+                return true;
+            }
+            return false;
+        });
     }
 
     public IEnumerator AdvanceSummon(Summon summon) {
@@ -234,7 +253,8 @@ public class BoardManager : MonoBehaviour {
     IEnumerator MoveSummonToTile(Summon summon) {
         // Implement: different types of movement
         Tile currentPos = summon.GetComponentInParent<Tile>();
-        int stagesToMove = summon.card.movementSpeed;
+        //int stagesToMove = summon.card.movementSpeed;
+        int stagesToMove = 0;
         int endCol = currentPos.column + stagesToMove;
         Debug.Log("Move summon " + currentPos.column + " " + currentPos.row + " " + stagesToMove);
 
@@ -244,7 +264,7 @@ public class BoardManager : MonoBehaviour {
         }
 
         if (grid[currentPos.row].ElementAtOrDefault(endCol) == null) {
-            StartCoroutine(summon.Die());
+            //StartCoroutine(summon.Die());
             yield break;
         }
 
@@ -253,7 +273,8 @@ public class BoardManager : MonoBehaviour {
             yield break;
         }
 
-        yield return StartCoroutine(summon.WalkToTile(grid[currentPos.row][endCol]));
+        //yield return StartCoroutine(summon.WalkToTile(grid[currentPos.row][endCol]));
+        summon.Walk(-1);
     }
 
 }

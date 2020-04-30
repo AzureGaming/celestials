@@ -73,15 +73,15 @@ public class TurnManager : MonoBehaviour {
     IEnumerator ResolveSummonTurn() {
         Debug.Log("Summons action");
         Summon[] summons = board.GetSummons();
-        System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
-        foreach (Summon summon in summons) {
-            yield return StartCoroutine(summon.ExecuteAction());
-            if (boss.getHealth() < 1) {
-                state = GameState.WIN;
-                Debug.Log("Implement win scenario");
-                yield break;
-            }
-        }
+        //System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
+        //foreach (Summon summon in summons) {
+        //    yield return StartCoroutine(summon.ExecuteAction());
+        //    if (boss.getHealth() < 1) {
+        //        state = GameState.WIN;
+        //        Debug.Log("Implement win scenario");
+        //        yield break;
+        //    }
+        //}
 
         //yield return StartCoroutine(boardManager.ResolvePowerAbilityPhase());
         yield return StartCoroutine(boardManager.ResolveAttackPhase());
