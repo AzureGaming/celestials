@@ -10,6 +10,7 @@ public class BoardManager : MonoBehaviour {
     Board board;
     Tile[] tiles;
     UIManager uiManager;
+    GameManager gameManager;
     Player player;
     int cardOrder = 0;
     int stageLimit = 3;
@@ -17,13 +18,13 @@ public class BoardManager : MonoBehaviour {
     int attackCounter = 0;
     int attacksToWaitFor = 0;
     List<Tile> queue;
-    int movementRoutinesRunning = 0;
 
     private void Awake() {
         uiManager = FindObjectOfType<UIManager>();
         player = FindObjectOfType<Player>();
         board = GetComponent<Board>();
         tiles = GetComponentsInChildren<Tile>();
+        gameManager = FindObjectOfType<GameManager>();
         grid = new Tile[4][];
         grid[0] = new Tile[3];
         grid[1] = new Tile[3];
@@ -37,18 +38,18 @@ public class BoardManager : MonoBehaviour {
     void Start() {
         int tileCounter = 0;
         for (int row = 0; row < rowLimit; row++) {
-            for (int column = 0; column < stageLimit; column++) {
+            for (int stage = 0; stage < stageLimit; stage++) {
                 Tile tile = tiles[tileCounter];
-                tile.column = column;
+                tile.column = stage;
                 tile.row = row;
                 tile.tag = "[Tile] Summon";
-                grid[row][column] = tile;
+                grid[stage][row] = tile;
                 tileCounter++;
             }
         }
 
-        for (int i = 0; i < 3; i++) {
-            grid[3][i] = null;
+        for (int row = 0; row < rowLimit; row++) {
+            grid[3][row] = null;
         }
     }
 
@@ -61,8 +62,9 @@ public class BoardManager : MonoBehaviour {
     }
 
     public void DetectSummonableSpace() {
+        int stage = 0;
         for (int row = 0; row < rowLimit; row++) {
-            Tile tile = grid[row][0];
+            Tile tile = grid[stage][row];
             if (tile.CheckOccupied()) {
                 tile.SetInvalidState();
             } else {
@@ -107,25 +109,25 @@ public class BoardManager : MonoBehaviour {
     public IEnumerator ResolveAttackPhase() {
         Debug.Log("Resolve Attack Phase");
         for (int stage = stageLimit - 1; stage >= 0; stage--) {
-            Tile[] tiles = grid[stage];
-            Tile[] tilesCopy = new Tile[tiles.Length];
-            Array.Copy(tiles, tilesCopy, tiles.Length);
-            //System.Array.Sort(tilesCopy, (tileX, tileY) => {
-            //    Summon summonX = tileX.GetComponentInChildren<Summon>();
-            //    Summon summonY = tileY.GetComponentInChildren<Summon>();
-            //    int x, y;
-            //    x = summonX ? summonX.getOrder() : -1;
-            //    y = summonY ? summonY.getOrder() : -1;
-            //    return x - y;
-            //});
-            //foreach (Tile tile in tiles) {
-            //    Summon summon = tile.GetComponentInChildren<Summon>();
-            //    if (summon != null) {
-            //        yield return StartCoroutine(summon.Attack());
-            //    }
-            //}
+            Tile[] tilesInStage = new Tile[stageLimit];
+            Array.Copy(grid[stage], tilesInStage, stageLimit);
+            System.Array.Sort(tilesInStage, (tileX, tileY) => {
+                Summon summonX = tileX.GetComponentInChildren<Summon>();
+                Summon summonY = tileY.GetComponentInChildren<Summon>();
+                int x, y;
+                x = summonX ? summonX.getOrder() : -1;
+                y = summonY ? summonY.getOrder() : -1;
+                return x - y;
+            });
+
+            foreach (Tile tile in tilesInStage) {
+                Summon summon = tile.GetComponentInChildren<Summon>();
+                if (summon != null) {
+                    summon.Attack();
+                    yield return new WaitUntil(() => summon.DoneAttacking());
+                }
+            }
         }
-        yield return new WaitUntil(() => CheckAttacksAreDone());
         yield break;
     }
 
@@ -159,17 +161,12 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
-    public void ResolveMovementRoutine() {
-        movementRoutinesRunning -= 1;
-        if (movementRoutinesRunning < 0) {
-            Debug.LogWarning("Movement Routines Running is less than 0");
-        }
-    }
-
     public Tile GetDestination(Summon summon, int offset) {
         Tile currentTile = GetCurrentTile(summon);
+        Debug.Log("Find next for " + summon.name + currentTile.row + " " + currentTile.column + " " + offset);
         return Array.Find(tiles, (Tile tile) => {
             if (tile.row == currentTile.row && tile.column == currentTile.column + offset) {
+                Debug.Log("next" + tile.name + tile.column + tile.row);
                 return true;
             }
             return false;
@@ -184,14 +181,6 @@ public class BoardManager : MonoBehaviour {
             return false;
         });
     }
-
-    public IEnumerator AdvanceSummon(Summon summon) {
-        yield return StartCoroutine(MoveSummonToTile(summon));
-    }
-
-    //public IEnumerator RetreatSummon(Summon summon, int stages) {
-    //    yield return StartCoroutine(MoveSummonToTile(summon, -stages));
-    //}
 
     IEnumerator PlaySummon(Card card) {
         Debug.Log("Summon: " + card.name);
@@ -209,29 +198,26 @@ public class BoardManager : MonoBehaviour {
         card.ActivateEffect();
     }
 
-    bool CheckAttacksAreDone() {
-        if (attackCounter >= attacksToWaitFor) {
-            attackCounter = 0;
-            attacksToWaitFor = 0;
-            return true;
-        }
-
-        return false;
-    }
-
     IEnumerator ResolveStageMovement(int stageIndex) {
-        foreach (Tile tile in grid[stageIndex]) {
-            Summon[] summons = tile.GetComponentsInChildren<Summon>();
-            foreach (Summon summon in summons) {
-                movementRoutinesRunning += 1;
-                StartCoroutine(AdvanceSummon(summon));
-            }
-            while (movementRoutinesRunning > 1) {
-                yield return null;
+        Debug.Log("Resolve stage movement" + stageIndex);
+        for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
+            Tile tile = grid[stageIndex][rowIndex];
+            Summon summon = tile.GetComponentInChildren<Summon>();
+            if (summon) {
+                if (GetDestination(summon, summon.GetRange())) {
+                    summon.Walk();
+                } else {
+                    summon.Die();
+                }
             }
         }
-        yield return null;
+
+        yield return new WaitWhile(() => Array.Find(tiles, (Tile tile2) => {
+            Summon summon = tile2.GetComponentInChildren<Summon>();
+            return summon && !summon.DoneMoving() ? true : false;
+        }));
     }
+
 
     public bool CheckAttackRange(int range, int colIndex, int rowIndex) {
         int targetColIndex = colIndex + range;
@@ -246,35 +232,33 @@ public class BoardManager : MonoBehaviour {
         return false;
     }
 
-    void IncrementMovementRoutineCount() {
-        movementRoutinesRunning += 1;
-    }
+    //IEnumerator MoveSummonToTile(Summon summon) {
+    //    Debug.Log("Move");
 
-    IEnumerator MoveSummonToTile(Summon summon) {
-        // Implement: different types of movement
-        Tile currentPos = summon.GetComponentInParent<Tile>();
-        //int stagesToMove = summon.card.movementSpeed;
-        int stagesToMove = 0;
-        int endCol = currentPos.column + stagesToMove;
-        Debug.Log("Move summon " + currentPos.column + " " + currentPos.row + " " + stagesToMove);
+    //    // Implement: different types of movement
+    //    Tile currentPos = summon.GetComponentInParent<Tile>();
+    //    //int stagesToMove = summon.card.movementSpeed;
+    //    int stagesToMove = 0;
+    //    int endCol = currentPos.column + stagesToMove;
+    //    Debug.Log("Move summon " + currentPos.column + " " + currentPos.row + " " + stagesToMove);
 
-        if (grid.ElementAtOrDefault(currentPos.row) == null) {
-            Debug.LogWarning("Row " + currentPos.row + " does not exist in grid.");
-            yield break;
-        }
+    //    if (grid.ElementAtOrDefault(currentPos.row) == null) {
+    //        Debug.LogWarning("Row " + currentPos.row + " does not exist in grid.");
+    //        yield break;
+    //    }
 
-        if (grid[currentPos.row].ElementAtOrDefault(endCol) == null) {
-            //StartCoroutine(summon.Die());
-            yield break;
-        }
+    //    if (grid[currentPos.row].ElementAtOrDefault(endCol) == null) {
+    //        //StartCoroutine(summon.Die());
+    //        yield break;
+    //    }
 
-        if (!grid[currentPos.row][endCol].CompareTag("[Tile] Summon")) {
-            Debug.Log("Cell exists but is not a valid tile");
-            yield break;
-        }
+    //    if (!grid[currentPos.row][endCol].CompareTag("[Tile] Summon")) {
+    //        Debug.Log("Cell exists but is not a valid tile");
+    //        yield break;
+    //    }
 
-        //yield return StartCoroutine(summon.WalkToTile(grid[currentPos.row][endCol]));
-        summon.Walk(-1);
-    }
+    //    //yield return StartCoroutine(summon.WalkToTile(grid[currentPos.row][endCol]));
+    //    summon.Walk();
+    //}
 
 }

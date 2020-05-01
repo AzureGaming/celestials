@@ -4,34 +4,36 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(SpriteRenderer))]
 public class SummonController : MonoBehaviour {
+    public bool attackRoutineRunning = false;
+    public bool movementRoutineRunning = false;
     Animator animator;
     BoardManager boardManager;
     SpriteRenderer spriteRenderer;
     Color color;
     float movementSpeed = 2f;
+    Entity entity;
+    GameManager gameManager;
+    Summon summon;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boardManager = FindObjectOfType<BoardManager>();
+        entity = GetComponent<Entity>();
+        gameManager = FindObjectOfType<GameManager>();
+        summon = GetComponent<Summon>();
     }
 
     private void Start() {
         color = spriteRenderer.color;
     }
 
-    public void Walk(int tiles) {
-        StartCoroutine(WalkRoutine(tiles));
+    public void Walk() {
+        StartCoroutine(WalkRoutine(entity.movementSpeed));
     }
 
-    public void Attack(int damage) {
-        // check if in range
-        //if (boardManager.CheckAttackRange(cardPrefab.range, GetComponentInParent<Tile>().column, GetComponentInParent<Tile>().row)) {
-        //    if (boardManager.CheckAttackRange(0, GetComponentInParent<Tile>().column, GetComponentInParent<Tile>().row)) {
-        //        boardManager.IncrementAttacksToWaitFor();
-        //        Debug.Log("Attack boss");
-        //        animator.SetTrigger("isAttacking");
-        //    }
+    public void Attack() {
+        StartCoroutine(AttackRoutine(entity.range));
     }
 
     public void Die() {
@@ -42,10 +44,15 @@ public class SummonController : MonoBehaviour {
 
     }
 
-    void OnAttackAnimationEnd() {
-        //StartCoroutine(boss.TakeDamage(card.attack));
-        //    StartCoroutine(boss.TakeDamage(0));
-        //    boardManager.IncrementAttackCounter();
+    public void OnAttackAnimationEnd() {
+        attackRoutineRunning = false;
+    }
+
+    bool CheckWithinRange(int range) {
+        if (boardManager.GetDestination(summon, range) == null) {
+            return true;
+        }
+        return false;
     }
 
     void SetParent(Tile parent) {
@@ -53,13 +60,30 @@ public class SummonController : MonoBehaviour {
     }
 
     IEnumerator WalkRoutine(int tiles) {
-        Tile destination = boardManager.GetDestination(GetComponent<Summon>(), tiles);
+        Tile destination = boardManager.GetDestination(summon, tiles);
+        if (destination == null) {
+            yield break;
+        }
+        movementRoutineRunning = true;
         Vector3 currentPos = transform.position;
         Vector3 endPos = destination.transform.position;
         animator.SetBool("isWalking", true);
         yield return StartCoroutine(UpdatePositionRoutine(currentPos, endPos));
         animator.SetBool("isWalking", false);
         SetParent(destination);
+        movementRoutineRunning = false;
+        yield break;
+    }
+
+    IEnumerator AttackRoutine(int range) {
+        if (CheckWithinRange(range)) {
+            Debug.Log("within range: " + entity.name);
+            attackRoutineRunning = true;
+            animator.SetTrigger("isAttacking");
+            yield return new WaitUntil(() => !attackRoutineRunning);
+        } else {
+            Debug.Log("Not in range: " + entity.name);
+        }
         yield break;
     }
 
@@ -70,14 +94,11 @@ public class SummonController : MonoBehaviour {
     }
 
     IEnumerator UpdatePositionRoutine(Vector3 currentPos, Vector3 endPos) {
-        Debug.Log("start" + transform.position);
-
         for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
             Vector3 lerpedPos = Vector3.Lerp(currentPos, endPos, Mathf.Min(1, t / movementSpeed));
             transform.position = lerpedPos;
             yield return null;
         }
-        Debug.Log("end" + transform.position);
 
         yield break;
     }

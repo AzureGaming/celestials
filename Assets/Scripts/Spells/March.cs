@@ -18,7 +18,7 @@ public class March : CardEffect {
         boardManager.DetectSummons();
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         boardManager.SetNeutral();
-        boardManager.AdvanceSummon(boardManager.GetQueue()[0].GetComponent<Summon>());
+        //boardManager.AdvanceSummon(boardManager.GetQueue()[0].GetComponent<Summon>());
         boardManager.ClearQueue();
     }
 }

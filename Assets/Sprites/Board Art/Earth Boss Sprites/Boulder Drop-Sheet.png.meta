@@ -1,0 +1,628 @@
+fileFormatVersion: 2
+guid: 57cae5a3d60dec94583f0de12729f3e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4546585646721969780
+    second: Boulder Drop-Sheet_0
+  - first:
+      213: -8834633214993724072
+    second: Boulder Drop-Sheet_1
+  - first:
+      213: -5398389983742941829
+    second: Boulder Drop-Sheet_2
+  - first:
+      213: 5050353698628836779
+    second: Boulder Drop-Sheet_3
+  - first:
+      213: -4064575513082071595
+    second: Boulder Drop-Sheet_4
+  - first:
+      213: 8925196136998875588
+    second: Boulder Drop-Sheet_5
+  - first:
+      213: -5471274088436108466
+    second: Boulder Drop-Sheet_6
+  - first:
+      213: 5270800319641707069
+    second: Boulder Drop-Sheet_7
+  - first:
+      213: 8753259670942290310
+    second: Boulder Drop-Sheet_8
+  - first:
+      213: 6685459251300632213
+    second: Boulder Drop-Sheet_9
+  - first:
+      213: 2444983443847435378
+    second: Boulder Drop-Sheet_10
+  - first:
+      213: -8625570321994018874
+    second: Boulder Drop-Sheet_11
+  - first:
+      213: 4038884130061984504
+    second: Boulder Drop-Sheet_12
+  - first:
+      213: -589459061701210413
+    second: Boulder Drop-Sheet_13
+  - first:
+      213: -5190551202364877440
+    second: Boulder Drop-Sheet_14
+  - first:
+      213: -3984873751952236931
+    second: Boulder Drop-Sheet_15
+  - first:
+      213: 7470857180944400936
+    second: Boulder Drop-Sheet_16
+  - first:
+      213: 6993783276225552972
+    second: Boulder Drop-Sheet_17
+  - first:
+      213: 7810439576566535991
+    second: Boulder Drop-Sheet_18
+  - first:
+      213: 2512002861030240229
+    second: Boulder Drop-Sheet_19
+  - first:
+      213: 1709499215491652867
+    second: Boulder Drop-Sheet_20
+  - first:
+      213: 794354774244639726
+    second: Boulder Drop-Sheet_21
+  - first:
+      213: -5851472808851464962
+    second: Boulder Drop-Sheet_22
+  - first:
+      213: -580286756209167066
+    second: Boulder Drop-Sheet_23
+  - first:
+      213: 129769795003883704
+    second: Boulder Drop-Sheet_24
+  - first:
+      213: 6896720250924783352
+    second: Boulder Drop-Sheet_25
+  - first:
+      213: 8358681889986677216
+    second: Boulder Drop-Sheet_26
+  - first:
+      213: 1112938338750113794
+    second: Boulder Drop-Sheet_27
+  - first:
+      213: -4660789417709334129
+    second: Boulder Drop-Sheet_28
+  - first:
+      213: -2059762297426798407
+    second: Boulder Drop-Sheet_29
+  - first:
+      213: 4764793884998130878
+    second: Boulder Drop-Sheet_30
+  - first:
+      213: -3834447401138597846
+    second: Boulder Drop-Sheet_31
+  - first:
+      213: -706071830716978468
+    second: Boulder Drop-Sheet_32
+  - first:
+      213: -7631547818722729907
+    second: Boulder Drop-Sheet_33
+  - first:
+      213: -6803766796556492124
+    second: Boulder Drop-Sheet_34
+  - first:
+      213: -2880883865052071033
+    second: Boulder Drop-Sheet_35
+  - first:
+      213: -738832755001196171
+    second: Boulder Drop-Sheet_36
+  - first:
+      213: 8703728767076997190
+    second: Boulder Drop-Sheet_37
+  - first:
+      213: 4135520350705878086
+    second: Boulder Drop-Sheet_38
+  - first:
+      213: -1748145339808769651
+    second: Boulder Drop-Sheet_39
+  - first:
+      213: 480635697418550478
+    second: Boulder Drop-Sheet_40
+  - first:
+      213: -5952339357389038289
+    second: Boulder Drop-Sheet_41
+  - first:
+      213: -9055316353251737062
+    second: Boulder Drop-Sheet_42
+  - first:
+      213: 3928545406357924189
+    second: Boulder Drop-Sheet_43
+  - first:
+      213: 5373037427909972633
+    second: Boulder Drop-Sheet_44
+  - first:
+      213: 8962235977684383039
+    second: Boulder Drop-Sheet_45
+  - first:
+      213: 6078816103109728939
+    second: Boulder Drop-Sheet_46
+  - first:
+      213: 665822271917064805
+    second: Boulder Drop-Sheet_47
+  - first:
+      213: 4537989865920677701
+    second: Boulder Drop-Sheet_48
+  - first:
+      213: 4731409848223526461
+    second: Boulder Drop-Sheet_49
+  - first:
+      213: -9005445842351623141
+    second: Boulder Drop-Sheet_50
+  - first:
+      213: 8640667459621502676
+    second: Boulder Drop-Sheet_0
+  - first:
+      213: 8654750725026733970
+    second: Boulder Drop-Sheet_1
+  - first:
+      213: 3483720543627232894
+    second: Boulder Drop-Sheet_2
+  - first:
+      213: 8852052139620404149
+    second: Boulder Drop-Sheet_3
+  - first:
+      213: -8812982420947269485
+    second: Boulder Drop-Sheet_4
+  - first:
+      213: 2751800852919221999
+    second: Boulder Drop-Sheet_5
+  - first:
+      213: -4200926101989591680
+    second: Boulder Drop-Sheet_6
+  - first:
+      213: 7980376836335048275
+    second: Boulder Drop-Sheet_7
+  - first:
+      213: -826251168399172375
+    second: Boulder Drop-Sheet_8
+  - first:
+      213: 2829895870298013979
+    second: Boulder Drop-Sheet_9
+  - first:
+      213: -449645417264024899
+    second: Boulder Drop-Sheet_10
+  - first:
+      213: 1752407858769694483
+    second: Boulder Drop-Sheet_11
+  - first:
+      213: 1538535126844907898
+    second: Boulder Drop-Sheet_12
+  - first:
+      213: 7019634399472672597
+    second: Boulder Drop-Sheet_13
+  - first:
+      213: -1766285961121265267
+    second: Boulder Drop-Sheet_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de34093641d9e770800000000000000
+      internalID: 8640667459621502676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fd5c8fde9db1870800000000000000
+      internalID: 8654750725026733970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76c1ab7069a85030800000000000000
+      internalID: 3483720543627232894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb8f43558ec8da70800000000000000
+      internalID: 8852052139620404149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3980dab6e2ff1b580800000000000000
+      internalID: -8812982420947269485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feefddacb4c503620800000000000000
+      internalID: 2751800852919221999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0857e3bb7ff43b5c0800000000000000
+      internalID: -4200926101989591680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3569187637effbe60800000000000000
+      internalID: 7980376836335048275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecd054a0f09884f0800000000000000
+      internalID: -826251168399172375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b114574fc4fc54720800000000000000
+      internalID: 2829895870298013979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2781510e982c9f0800000000000000
+      internalID: -449645417264024899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f0293b9adc15810800000000000000
+      internalID: 1752407858769694483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a712d0edb89f95510800000000000000
+      internalID: 1538535126844907898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f5ea17b40ca6160800000000000000
+      internalID: 7019634399472672597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder Drop-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d898b9bc644ec77e0800000000000000
+      internalID: -1766285961121265267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

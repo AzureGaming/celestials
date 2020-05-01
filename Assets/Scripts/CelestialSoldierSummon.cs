@@ -11,12 +11,8 @@ public class CelestialSoldierSummon : Summon {
         entity = GetComponent<CelestialSoldierEntity>();
     }
 
-    public override void Walk(int tiles) {
-        base.Walk(entity.movementSpeed);
-    }
-
-    public override void Attack(int damage) {
-        base.Attack(entity.attack);
+    public override void Attack() {
+        base.Attack();
     }
 }
 

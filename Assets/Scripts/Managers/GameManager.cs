@@ -2,10 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CONSTANTS {
-    summonSpacing = (int)2.15,
-}
-
 public class GameManager : MonoBehaviour {
     public List<System.Guid> mulligans;
     TurnManager turnManager;
@@ -31,7 +27,7 @@ public class GameManager : MonoBehaviour {
             mulligans.Add(cardId);
         }
     }
-
+    
     void SetupGame() {
         uiManager.SetLocationSelectionPrompt(false);
         StartCoroutine(turnManager.Initialize());
