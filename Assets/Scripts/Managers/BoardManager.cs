@@ -152,31 +152,33 @@ public class BoardManager : MonoBehaviour {
     }
 
     public void PlayCard(Card card) {
-        if (card.type == CardType.Summon) {
+        CardType type = card.GetType();
+        if (type == CardType.Summon) {
             StartCoroutine(PlaySummon(card));
-        } else if (card.type == CardType.Spell) {
+        } else if (type == CardType.Spell) {
             PlaySpell(card);
         } else {
-            Debug.Log("Unknown cardtype encountered: " + card.type);
+            Debug.Log("Unknown cardtype encountered: " + type);
         }
     }
 
-    public Tile GetDestination(Summon summon, int offset) {
-        Tile currentTile = GetCurrentTile(summon);
-        Debug.Log("Find next for " + summon.name + currentTile.row + " " + currentTile.column + " " + offset);
+    public Tile GetDestination(int id, int offset) {
+        Tile currentTile = GetCurrentTile(id);
         return Array.Find(tiles, (Tile tile) => {
-            if (tile.row == currentTile.row && tile.column == currentTile.column + offset) {
-                Debug.Log("next" + tile.name + tile.column + tile.row);
+            if (currentTile && tile.row == currentTile.row && tile.column == currentTile.column + offset) {
                 return true;
             }
             return false;
         });
     }
 
-    Tile GetCurrentTile(Summon summon) {
+    Tile GetCurrentTile(int id) {
         return Array.Find(tiles, (Tile tile) => {
-            if (tile.GetComponentInChildren<Summon>() == summon) {
-                return true;
+            Summon summon = tile.GetComponentInChildren<Summon>();
+            if (summon) {
+                if (summon.GetId() == id) {
+                    return true;
+                }
             }
             return false;
         });
@@ -188,8 +190,9 @@ public class BoardManager : MonoBehaviour {
         DetectSummonableSpace();
         yield return new WaitUntil(() => GetQueue().Count == 1);
         SetNeutral();
-        GetQueue()[0].Summon(card);
-        player.LoseMana(card.manaCost);
+        //GetQueue()[0].Summon(card);
+        card.SummonAt(GetQueue()[0]);
+        player.LoseMana(card.GetManaCost());
         ClearQueue();
     }
 
@@ -199,17 +202,10 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveStageMovement(int stageIndex) {
-        Debug.Log("Resolve stage movement" + stageIndex);
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();
-            if (summon) {
-                if (GetDestination(summon, summon.GetRange())) {
-                    summon.Walk();
-                } else {
-                    summon.Die();
-                }
-            }
+            summon?.Walk();
         }
 
         yield return new WaitWhile(() => Array.Find(tiles, (Tile tile2) => {
@@ -231,34 +227,4 @@ public class BoardManager : MonoBehaviour {
         }
         return false;
     }
-
-    //IEnumerator MoveSummonToTile(Summon summon) {
-    //    Debug.Log("Move");
-
-    //    // Implement: different types of movement
-    //    Tile currentPos = summon.GetComponentInParent<Tile>();
-    //    //int stagesToMove = summon.card.movementSpeed;
-    //    int stagesToMove = 0;
-    //    int endCol = currentPos.column + stagesToMove;
-    //    Debug.Log("Move summon " + currentPos.column + " " + currentPos.row + " " + stagesToMove);
-
-    //    if (grid.ElementAtOrDefault(currentPos.row) == null) {
-    //        Debug.LogWarning("Row " + currentPos.row + " does not exist in grid.");
-    //        yield break;
-    //    }
-
-    //    if (grid[currentPos.row].ElementAtOrDefault(endCol) == null) {
-    //        //StartCoroutine(summon.Die());
-    //        yield break;
-    //    }
-
-    //    if (!grid[currentPos.row][endCol].CompareTag("[Tile] Summon")) {
-    //        Debug.Log("Cell exists but is not a valid tile");
-    //        yield break;
-    //    }
-
-    //    //yield return StartCoroutine(summon.WalkToTile(grid[currentPos.row][endCol]));
-    //    summon.Walk();
-    //}
-
 }

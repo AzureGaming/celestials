@@ -59,9 +59,9 @@ public class TurnManager : MonoBehaviour {
         SetMulliganConfirmed(false);
         yield return new WaitUntil(() => isMulliganConfirmed);
         Debug.Log("End Mulligan phase");
-        foreach (System.Guid id in gameManager.mulligans) {
-            yield return StartCoroutine(player.ReturnCard(id));
-        }
+        //foreach (System.Guid id in gameManager.mulligans) {
+        //    yield return StartCoroutine(player.ReturnCard(id));
+        //}
 
         foreach (System.Guid id in gameManager.mulligans) {
             yield return StartCoroutine(player.DrawCard());
@@ -84,7 +84,7 @@ public class TurnManager : MonoBehaviour {
         //}
 
         //yield return StartCoroutine(boardManager.ResolvePowerAbilityPhase());
-        yield return StartCoroutine(boardManager.ResolveAttackPhase());
+        //yield return StartCoroutine(boardManager.ResolveAttackPhase());
         yield return StartCoroutine(boardManager.ResolveMovePhase());
     }
 

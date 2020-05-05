@@ -43,18 +43,18 @@ public class Tile : MonoBehaviour {
         return GetComponent<Summon>();
     }
 
-    public void Summon(Card card) {
-        foreach (Transform child in transform) {
-            if (child.CompareTag("Summon")) {
-                Debug.LogWarning("Overwriting summon...");
-            }
-        }
+    //public void Summon(Card card) {
+    //    foreach (Transform child in transform) {
+    //        if (child.CompareTag("Summon")) {
+    //            Debug.LogWarning("Overwriting summon...");
+    //        }
+    //    }
 
-        GameObject summonObj = Instantiate(card.summonPrefab, transform);
-        Summon summon = summonObj.GetComponent<Summon>();
+        //GameObject summonObj = Instantiate(card.summonPrefab, transform);
+        //Summon summon = summonObj.GetComponent<Summon>();
         //summon.InitSummon(card, boardManager.GetCardOrder());
         //boardManager.IncrementCardOrder(1);
-    }
+    //}
 
     public void SetValidState() {
         UpdateState(State.Valid);

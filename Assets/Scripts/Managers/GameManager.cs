@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
     public List<System.Guid> mulligans;
     TurnManager turnManager;
     UIManager uiManager;
-
+    int entityIdCounter = 0;
 
     private void Awake() {
         turnManager = FindObjectOfType<TurnManager>();
@@ -27,7 +27,14 @@ public class GameManager : MonoBehaviour {
             mulligans.Add(cardId);
         }
     }
-    
+
+    public int GetNextEntityId() {
+        int nextEntityId = entityIdCounter;
+        Debug.Log("next id" + nextEntityId);
+        entityIdCounter++;
+        return nextEntityId;
+    }
+
     void SetupGame() {
         uiManager.SetLocationSelectionPrompt(false);
         StartCoroutine(turnManager.Initialize());

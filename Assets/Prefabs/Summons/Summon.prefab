@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 6818164089875801406}
   - component: {fileID: 3838097514557706253}
   - component: {fileID: -7817794002233985535}
-  - component: {fileID: -5587674398292688155}
   - component: {fileID: -8789592534453370440}
-  - component: {fileID: -42540873705277887}
+  - component: {fileID: 4379188117566988816}
   m_Layer: 0
   m_Name: Summon
   m_TagString: Summon
@@ -104,27 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-5587674398292688155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7552693308965613648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cda925a58ffd0fb449e4ab29fd18a3da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  manaCost: 0
-  attack: 1
-  range: 1
-  type: 0
-  movementSpeed: 1
-  description: 
-  artwork: {fileID: 0}
-  health: 1
 --- !u!114 &-8789592534453370440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b9b46b503112a49b0d37cfc2666771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-42540873705277887
+--- !u!114 &4379188117566988816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +124,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7552693308965613648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ccd45e7c264a69469cd4f2ced906827, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a628e568a2ebcb4a909757c8af1aa5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

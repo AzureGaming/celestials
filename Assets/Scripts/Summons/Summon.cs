@@ -1,26 +1,36 @@
-﻿using System.Collections;
+﻿
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SummonController))]
-public abstract class Summon : MonoBehaviour {
+public class Summon : MonoBehaviour {
+    public Entity entity;
+    Entity entityRef;
     int order;
     Animator animator;
     SpriteRenderer spriteRenderer;
     SummonController controller;
     BoardManager boardManager;
-    Entity entity;
+    GameManager gameManager;
+    Nullable<int> id;
 
     public virtual void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         controller = GetComponent<SummonController>();
         animator = GetComponent<Animator>();
         boardManager = FindObjectOfType<BoardManager>();
-        entity = GetComponent<Entity>();
+        gameManager = FindObjectOfType<GameManager>();
+    }
+
+    public virtual void Start() {
+        entityRef = Instantiate(entity);
+        setOrder(boardManager.GetCardOrder());
+        boardManager.IncrementCardOrder(1);
     }
 
     public virtual void Walk() {
-        controller.Walk();
+        controller.Walk(entity.movementSpeed, GetId());
     }
 
     public virtual void ExecuteAction() {
@@ -28,16 +38,11 @@ public abstract class Summon : MonoBehaviour {
     }
 
     public virtual void Attack() {
-        controller.Attack();
+        controller.Attack(entity.range, GetId());
     }
 
     public virtual void Die() {
         controller.Die();
-    }
-
-    public virtual void Start() {
-        setOrder(boardManager.GetCardOrder());
-        boardManager.IncrementCardOrder(1);
     }
 
     public virtual int getOrder() {
@@ -49,14 +54,25 @@ public abstract class Summon : MonoBehaviour {
     }
 
     public virtual bool DoneMoving() {
-        return !controller.movementRoutineRunning;
+        return controller.DoneMoving();
     }
 
     public virtual bool DoneAttacking() {
-        return !controller.attackRoutineRunning;
+        return controller.DoneAttacking();
+    }
+
+    public void SummonToTile(Tile tile) {
+        GameObject summonObj = Instantiate(gameObject, tile.transform);
     }
 
     public int GetRange() {
         return entity.range;
+    }
+
+    public int GetId() {
+        if (id == null) {
+            id = gameManager.GetNextEntityId();
+        }
+        return (int)id;
     }
 }

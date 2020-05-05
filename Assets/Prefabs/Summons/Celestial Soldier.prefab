@@ -22,6 +22,12 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5587674398292688155, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: artwork
+      value: 
+      objectReference: {fileID: 21300000, guid: 5532e650f92a2a6478892998e45c9002,
+        type: 3}
     - target: {fileID: 3838097514557706253, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_Sprite

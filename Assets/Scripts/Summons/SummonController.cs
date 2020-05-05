@@ -1,39 +1,36 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(SpriteRenderer))]
 public class SummonController : MonoBehaviour {
-    public bool attackRoutineRunning = false;
-    public bool movementRoutineRunning = false;
+    bool attackRoutineRunning = false;
+    bool movementRoutineRunning = false;
     Animator animator;
     BoardManager boardManager;
     SpriteRenderer spriteRenderer;
     Color color;
     float movementSpeed = 2f;
-    Entity entity;
     GameManager gameManager;
-    Summon summon;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boardManager = FindObjectOfType<BoardManager>();
-        entity = GetComponent<Entity>();
         gameManager = FindObjectOfType<GameManager>();
-        summon = GetComponent<Summon>();
     }
 
     private void Start() {
         color = spriteRenderer.color;
     }
 
-    public void Walk() {
-        StartCoroutine(WalkRoutine(entity.movementSpeed));
+    public void Walk(int movementSpeed, int id) {
+        StartCoroutine(WalkRoutine(movementSpeed, id));
     }
 
-    public void Attack() {
-        StartCoroutine(AttackRoutine(entity.range));
+    public void Attack(int range, int id) {
+        StartCoroutine(AttackRoutine(range, id));
     }
 
     public void Die() {
@@ -48,8 +45,16 @@ public class SummonController : MonoBehaviour {
         attackRoutineRunning = false;
     }
 
-    bool CheckWithinRange(int range) {
-        if (boardManager.GetDestination(summon, range) == null) {
+    public bool DoneMoving() {
+        return !movementRoutineRunning ? true : false;
+    }
+
+    public bool DoneAttacking() {
+        return !attackRoutineRunning ? true : false;
+    }
+
+    bool CheckWithinRange(int range, int id) {
+        if (boardManager.GetDestination(id, range) == null) {
             return true;
         }
         return false;
@@ -59,9 +64,10 @@ public class SummonController : MonoBehaviour {
         transform.SetParent(parent.transform);
     }
 
-    IEnumerator WalkRoutine(int tiles) {
-        Tile destination = boardManager.GetDestination(summon, tiles);
+    IEnumerator WalkRoutine(int tiles, int id) {
+        Tile destination = boardManager.GetDestination(id, tiles);
         if (destination == null) {
+            yield return StartCoroutine(DieRoutine());
             yield break;
         }
         movementRoutineRunning = true;
@@ -75,14 +81,13 @@ public class SummonController : MonoBehaviour {
         yield break;
     }
 
-    IEnumerator AttackRoutine(int range) {
-        if (CheckWithinRange(range)) {
-            Debug.Log("within range: " + entity.name);
+    IEnumerator AttackRoutine(int range, int id) {
+        if (CheckWithinRange(range, id)) {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
             yield return new WaitUntil(() => !attackRoutineRunning);
         } else {
-            Debug.Log("Not in range: " + entity.name);
+            Debug.Log("Not in range: ");
         }
         yield break;
     }

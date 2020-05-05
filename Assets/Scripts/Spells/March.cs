@@ -14,7 +14,7 @@ public class March : CardEffect {
     }
 
     override public IEnumerator Apply() {
-        player.LoseMana(card.manaCost);
+        player.LoseMana(card.GetManaCost());
         boardManager.DetectSummons();
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         boardManager.SetNeutral();
