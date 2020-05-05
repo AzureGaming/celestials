@@ -66,4 +66,12 @@ public class Summon : MonoBehaviour {
         }
         return (int)id;
     }
+
+    public void SetEffect(GameObject prefab) {
+        controller.SetEffectPrefab(prefab);
+    }
+
+    public void RemoveEffect() {
+        controller.RemoveEffectPrefab();
+    }
 }

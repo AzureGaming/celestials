@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class March : CardEffect {
+    public GameObject effectPrefab;
     BoardManager boardManager;
     Card card;
     Player player;
@@ -22,8 +23,12 @@ public class March : CardEffect {
         boardManager.DetectSummons();
         Debug.Log("waiting...");
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
+        Summon summon = boardManager.GetQueue()[0].GetSummon();
         boardManager.SetNeutral();
-        boardManager.GetQueue()[0].GetSummon().Walk();
+        summon.SetEffect(effectPrefab);
+        summon.Walk();
+        yield return new WaitUntil(() => summon.DoneMoving());
+        summon.RemoveEffect();
         boardManager.ClearQueue();
         Destroy(gameObject);
         yield break;

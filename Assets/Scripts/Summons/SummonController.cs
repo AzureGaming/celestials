@@ -1,4 +1,8 @@
 ﻿
+
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,6 +57,19 @@ public class SummonController : MonoBehaviour {
         return !attackRoutineRunning ? true : false;
     }
 
+    public void SetEffectPrefab(GameObject prefab) {
+        foreach (Transform childTransform in transform.Find("Effect")) {
+            Destroy(childTransform.gameObject);
+        }
+        Instantiate(prefab, transform.Find("Effect"));
+    }
+
+    public void RemoveEffectPrefab() {
+        foreach (Transform childTransform in transform.Find("Effect")) {
+            Destroy(childTransform.gameObject);
+        }
+    }
+
     bool CheckWithinRange(int range, int id) {
         Tile tileToAttack = boardManager.GetDestination(id, range);
         if (tileToAttack?.type == TileType.Boss) {
@@ -65,7 +82,7 @@ public class SummonController : MonoBehaviour {
         transform.SetParent(parent.transform);
     }
 
-    IEnumerator WalkRoutine(int tiles, int id) {
+    public IEnumerator WalkRoutine(int tiles, int id) {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
         if (tileToMoveTo?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine());
