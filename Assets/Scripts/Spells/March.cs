@@ -23,7 +23,7 @@ public class March : CardEffect {
         Debug.Log("waiting...");
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         boardManager.SetNeutral();
-        //boardManager.AdvanceSummon(boardManager.GetQueue()[0].GetComponent<Summon>());
+        boardManager.GetQueue()[0].GetSummon().Walk();
         boardManager.ClearQueue();
         Destroy(gameObject);
         yield break;

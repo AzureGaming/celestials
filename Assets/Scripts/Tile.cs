@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -45,10 +47,6 @@ public class Tile : MonoBehaviour {
         }
     }
 
-    Summon GetSummon() {
-        return GetComponent<Summon>();
-    }
-
     public void SetValidState() {
         UpdateState(State.Valid);
     }
@@ -69,35 +67,34 @@ public class Tile : MonoBehaviour {
         return false;
     }
 
+    public Summon GetSummon() {
+        return GetComponentInChildren<Summon>();
+    }
+
     void UpdateState(State state) {
         currentState = state;
     }
 
     void UpdateStatePrefab(State state) {
+        if (type == TileType.Boss) {
+            return;
+        }
+
         if (state == State.Invalid) {
-            foreach (Transform child in transform) {
-                if (child.CompareTag("Indicator")) {
-                    Destroy(child.gameObject);
-                    Instantiate(invalidPrefab, transform);
-                    break;
-                }
-            }
+            SetIndicatorPrefab(invalidPrefab);
         } else if (state == State.Valid) {
-            foreach (Transform child in transform) {
-                if (child.CompareTag("Indicator")) {
-                    Destroy(child.gameObject);
-                    Instantiate(validPrefab, transform);
-                    break;
-                }
-            }
+            SetIndicatorPrefab(validPrefab);
         } else {
-            foreach (Transform child in transform) {
-                if (child.CompareTag("Indicator")) {
-                    Destroy(child.gameObject);
-                    Instantiate(neutralPrefab, transform);
-                    break;
-                }
+            SetIndicatorPrefab(neutralPrefab);
+        }
+    }
+
+    void SetIndicatorPrefab(GameObject prefab) {
+        foreach (Transform childTransform in transform) {
+            if (childTransform.CompareTag("Indicator")) {
+                Destroy(childTransform.gameObject);
             }
         }
+        Instantiate(prefab, transform);
     }
 }

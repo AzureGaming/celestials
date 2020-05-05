@@ -42,7 +42,6 @@ public class BoardManager : MonoBehaviour {
                 Tile tile = tiles[tileCounter];
                 tile.column = stage;
                 tile.row = row;
-                tile.type = TileType.Summon;
                 grid[stage][row] = tile;
                 tileCounter++;
             }
@@ -52,7 +51,6 @@ public class BoardManager : MonoBehaviour {
             Tile tile = tiles[tileCounter];
             tile.column = 3;
             tile.row = row;
-            tile.type = TileType.Boss;
             grid[3][row] = tile;
             tileCounter++;
         }

@@ -56,10 +56,6 @@ public class Summon : MonoBehaviour {
         return controller.DoneAttacking();
     }
 
-    public void SummonToTile(Tile tile) {
-        GameObject summonObj = Instantiate(gameObject, tile.transform);
-    }
-
     public int GetRange() {
         return entity.range;
     }
