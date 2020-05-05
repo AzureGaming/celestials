@@ -72,7 +72,7 @@ public class TurnManager : MonoBehaviour {
 
     IEnumerator ResolveSummonTurn() {
         Summon[] summons = board.GetSummons();
-        System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
+        System.Array.Sort(summons, (x, y) => x.GetOrder() - y.GetOrder());
         //foreach (Summon summon in summons) {
         //    yield return StartCoroutine(summon.ExecuteAction());
         //    if (boss.getHealth() < 1) {

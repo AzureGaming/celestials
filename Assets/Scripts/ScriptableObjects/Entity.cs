@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,4 @@ public class Entity : ScriptableObject {
     public CardType type;
     public int movementSpeed = 1;
     public CardEffect effect;
-    //public System.Guid id = System.Guid.NewGuid();
-    // assigned at run time
-    public int id;
 }

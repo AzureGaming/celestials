@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     TurnManager turnManager;
     UIManager uiManager;
     int entityIdCounter = 0;
+    int cardOrder = 0;
 
     private void Awake() {
         turnManager = FindObjectOfType<TurnManager>();
@@ -32,6 +33,12 @@ public class GameManager : MonoBehaviour {
         int nextEntityId = entityIdCounter;
         entityIdCounter++;
         return nextEntityId;
+    }
+
+    public int GetNextCardOrder() {
+        int nextCardOrder = cardOrder;
+        cardOrder++;
+        return nextCardOrder;
     }
 
     void SetupGame() {

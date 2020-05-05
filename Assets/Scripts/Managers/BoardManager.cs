@@ -58,14 +58,6 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
-    public void IncrementCardOrder(int value) {
-        cardOrder += value;
-    }
-
-    public int GetCardOrder() {
-        return cardOrder;
-    }
-
     public void DetectSummonableSpace() {
         int stage = 0;
         for (int row = 0; row < rowLimit; row++) {
@@ -119,8 +111,8 @@ public class BoardManager : MonoBehaviour {
                 Summon summonX = tileX.GetComponentInChildren<Summon>();
                 Summon summonY = tileY.GetComponentInChildren<Summon>();
                 int x, y;
-                x = summonX ? summonX.getOrder() : -1;
-                y = summonY ? summonY.getOrder() : -1;
+                x = summonX ? summonX.GetOrder() : -1;
+                y = summonY ? summonY.GetOrder() : -1;
                 return x - y;
             });
 

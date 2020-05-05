@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
     }
 
     public IEnumerator SetupPlayer() {
-        Debug.Log("Set up player " + numberOfCardsHeld);    
+        Debug.Log("Set up player " + numberOfCardsHeld);
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(DrawCard());
         }

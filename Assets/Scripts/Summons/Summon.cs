@@ -6,12 +6,10 @@ using UnityEngine;
 [RequireComponent(typeof(SummonController))]
 public class Summon : MonoBehaviour {
     public Entity entity;
-    Entity entityRef;
     int order;
     Animator animator;
     SpriteRenderer spriteRenderer;
     SummonController controller;
-    BoardManager boardManager;
     GameManager gameManager;
     Nullable<int> id;
 
@@ -19,14 +17,11 @@ public class Summon : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
         controller = GetComponent<SummonController>();
         animator = GetComponent<Animator>();
-        boardManager = FindObjectOfType<BoardManager>();
         gameManager = FindObjectOfType<GameManager>();
     }
 
     public virtual void Start() {
-        entityRef = Instantiate(entity);
-        setOrder(boardManager.GetCardOrder());
-        boardManager.IncrementCardOrder(1);
+        SetOrder(gameManager.GetNextCardOrder());
     }
 
     public virtual void Walk() {
@@ -45,11 +40,11 @@ public class Summon : MonoBehaviour {
         controller.Die();
     }
 
-    public virtual int getOrder() {
+    public virtual int GetOrder() {
         return order;
     }
 
-    public virtual void setOrder(int value) {
+    public virtual void SetOrder(int value) {
         order = value;
     }
 
