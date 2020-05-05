@@ -29,7 +29,7 @@ public class Tile : MonoBehaviour {
         }
         set {
             _currentState = value;
-            UpdatePrefab(value);
+            UpdateStatePrefab(value);
         }
     }
 
@@ -40,6 +40,7 @@ public class Tile : MonoBehaviour {
 
     private void OnMouseDown() {
         if (currentState == State.Valid) {
+            Debug.Log("Add");
             boardManager.AddToQueue(this);
         }
     }
@@ -47,19 +48,6 @@ public class Tile : MonoBehaviour {
     Summon GetSummon() {
         return GetComponent<Summon>();
     }
-
-    //public void Summon(Card card) {
-    //    foreach (Transform child in transform) {
-    //        if (child.CompareTag("Summon")) {
-    //            Debug.LogWarning("Overwriting summon...");
-    //        }
-    //    }
-
-    //GameObject summonObj = Instantiate(card.summonPrefab, transform);
-    //Summon summon = summonObj.GetComponent<Summon>();
-    //summon.InitSummon(card, boardManager.GetCardOrder());
-    //boardManager.IncrementCardOrder(1);
-    //}
 
     public void SetValidState() {
         UpdateState(State.Valid);
@@ -85,7 +73,7 @@ public class Tile : MonoBehaviour {
         currentState = state;
     }
 
-    void UpdatePrefab(State state) {
+    void UpdateStatePrefab(State state) {
         if (state == State.Invalid) {
             foreach (Transform child in transform) {
                 if (child.CompareTag("Indicator")) {

@@ -19,5 +19,4 @@ public class Entity : ScriptableObject {
     public int range = 1;
     public CardType type;
     public int movementSpeed = 1;
-    public CardEffect effect;
 }

@@ -186,14 +186,13 @@ public class BoardManager : MonoBehaviour {
         DetectSummonableSpace();
         yield return new WaitUntil(() => GetQueue().Count == 1);
         SetNeutral();
-        //GetQueue()[0].Summon(card);
         card.SummonAt(GetQueue()[0]);
         player.LoseMana(card.GetManaCost());
         ClearQueue();
+        Destroy(card.gameObject);
     }
 
     void PlaySpell(Card card) {
-        Debug.Log("Cast spell: " + card.name);
         card.ActivateEffect();
     }
 

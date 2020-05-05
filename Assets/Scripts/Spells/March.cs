@@ -13,12 +13,19 @@ public class March : CardEffect {
         boardManager = FindObjectOfType<BoardManager>();
     }
 
-    override public IEnumerator Apply() {
+    override public void Apply() {
+        StartCoroutine(MarchRoutine());
+    }
+
+    IEnumerator MarchRoutine() {
         player.LoseMana(card.GetManaCost());
         boardManager.DetectSummons();
+        Debug.Log("waiting...");
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         boardManager.SetNeutral();
         //boardManager.AdvanceSummon(boardManager.GetQueue()[0].GetComponent<Summon>());
         boardManager.ClearQueue();
+        Destroy(gameObject);
+        yield break;
     }
 }

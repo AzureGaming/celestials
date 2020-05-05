@@ -13,6 +13,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     TextMeshProUGUI attackDisplay;
     TextMeshProUGUI descriptionDisplay;
     Vector3 startingScale;
+    CardEffect effect;
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
@@ -20,6 +21,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
         attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
         descriptionDisplay = transform.Find("Description").GetComponent<TextMeshProUGUI>();
+        effect = GetComponent<CardEffect>();
     }
 
     private void Start() {
@@ -30,6 +32,13 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         attackDisplay.text = entity.attack.ToString();
         descriptionDisplay.text = entity.description;
     }
+
+
+    //private void Update() {
+    //    if (Input.GetKeyDown(KeyCode.G)) {
+    //        ActivateEffect();
+    //    }
+    //}
 
     public void OnPointerEnter(PointerEventData eventData) {
         transform.localScale = startingScale * 2;
@@ -46,7 +55,8 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     }
 
     public void ActivateEffect() {
-        //    effect?.Apply();
+        Debug.Log("Activate effect" + effect);
+        effect?.Apply();
     }
 
     public void SummonAt(Tile tile) {
