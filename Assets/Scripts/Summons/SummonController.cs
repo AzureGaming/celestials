@@ -54,7 +54,8 @@ public class SummonController : MonoBehaviour {
     }
 
     bool CheckWithinRange(int range, int id) {
-        if (boardManager.GetDestination(id, range) == null) {
+        Tile tileToAttack = boardManager.GetDestination(id, range);
+        if (tileToAttack?.type == TileType.Boss) {
             return true;
         }
         return false;
@@ -65,18 +66,18 @@ public class SummonController : MonoBehaviour {
     }
 
     IEnumerator WalkRoutine(int tiles, int id) {
-        Tile destination = boardManager.GetDestination(id, tiles);
-        if (destination == null) {
+        Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
+        if (tileToMoveTo?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine());
             yield break;
         }
         movementRoutineRunning = true;
         Vector3 currentPos = transform.position;
-        Vector3 endPos = destination.transform.position;
+        Vector3 endPos = tileToMoveTo.transform.position;
         animator.SetBool("isWalking", true);
         yield return StartCoroutine(UpdatePositionRoutine(currentPos, endPos));
         animator.SetBool("isWalking", false);
-        SetParent(destination);
+        SetParent(tileToMoveTo);
         movementRoutineRunning = false;
         yield break;
     }
@@ -86,8 +87,6 @@ public class SummonController : MonoBehaviour {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
             yield return new WaitUntil(() => !attackRoutineRunning);
-        } else {
-            Debug.Log("Not in range: ");
         }
         yield break;
     }

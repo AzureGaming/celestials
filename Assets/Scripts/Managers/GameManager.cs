@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour {
 
     public int GetNextEntityId() {
         int nextEntityId = entityIdCounter;
-        Debug.Log("next id" + nextEntityId);
         entityIdCounter++;
         return nextEntityId;
     }

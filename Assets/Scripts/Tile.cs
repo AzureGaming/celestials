@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum TileType {
+    Summon,
+    Boss
+}
 public class Tile : MonoBehaviour {
     [SerializeField] GameObject validPrefab;
     [SerializeField] GameObject invalidPrefab;
     [SerializeField] GameObject neutralPrefab;
+    public TileType type;
     public int column;
     public int row;
     public enum State {
@@ -50,10 +55,10 @@ public class Tile : MonoBehaviour {
     //        }
     //    }
 
-        //GameObject summonObj = Instantiate(card.summonPrefab, transform);
-        //Summon summon = summonObj.GetComponent<Summon>();
-        //summon.InitSummon(card, boardManager.GetCardOrder());
-        //boardManager.IncrementCardOrder(1);
+    //GameObject summonObj = Instantiate(card.summonPrefab, transform);
+    //Summon summon = summonObj.GetComponent<Summon>();
+    //summon.InitSummon(card, boardManager.GetCardOrder());
+    //boardManager.IncrementCardOrder(1);
     //}
 
     public void SetValidState() {

@@ -42,14 +42,19 @@ public class BoardManager : MonoBehaviour {
                 Tile tile = tiles[tileCounter];
                 tile.column = stage;
                 tile.row = row;
-                tile.tag = "[Tile] Summon";
+                tile.type = TileType.Summon;
                 grid[stage][row] = tile;
                 tileCounter++;
             }
         }
 
         for (int row = 0; row < rowLimit; row++) {
-            grid[3][row] = null;
+            Tile tile = tiles[tileCounter];
+            tile.column = 3;
+            tile.row = row;
+            tile.type = TileType.Boss;
+            grid[3][row] = tile;
+            tileCounter++;
         }
     }
 
@@ -107,7 +112,6 @@ public class BoardManager : MonoBehaviour {
     }
 
     public IEnumerator ResolveAttackPhase() {
-        Debug.Log("Resolve Attack Phase");
         for (int stage = stageLimit - 1; stage >= 0; stage--) {
             Tile[] tilesInStage = new Tile[stageLimit];
             Array.Copy(grid[stage], tilesInStage, stageLimit);
@@ -212,19 +216,5 @@ public class BoardManager : MonoBehaviour {
             Summon summon = tile2.GetComponentInChildren<Summon>();
             return summon && !summon.DoneMoving() ? true : false;
         }));
-    }
-
-
-    public bool CheckAttackRange(int range, int colIndex, int rowIndex) {
-        int targetColIndex = colIndex + range;
-        if (targetColIndex < grid.Length && rowIndex < grid.Length) {
-            Debug.Log("Check atack range" + " " + range + " " + colIndex + " " + rowIndex + " " + grid[targetColIndex][rowIndex]);
-            if (grid[targetColIndex][rowIndex] == null) {
-                return true;
-            }
-        } else {
-            Debug.LogWarning("Range check is invalid: Range - " + range + " colIndex: " + colIndex + " rowIndex: " + rowIndex);
-        }
-        return false;
     }
 }
