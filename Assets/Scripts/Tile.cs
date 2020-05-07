@@ -1,12 +1,19 @@
-﻿using System.Collections;
+﻿
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum TileType {
+    Summon,
+    Boss
+}
 public class Tile : MonoBehaviour {
     [SerializeField] GameObject validPrefab;
     [SerializeField] GameObject invalidPrefab;
     [SerializeField] GameObject neutralPrefab;
+    public TileType type;
     public int column;
     public int row;
     public enum State {
@@ -24,7 +31,7 @@ public class Tile : MonoBehaviour {
         }
         set {
             _currentState = value;
-            UpdatePrefab(value);
+            UpdateStatePrefab(value);
         }
     }
 
@@ -35,25 +42,9 @@ public class Tile : MonoBehaviour {
 
     private void OnMouseDown() {
         if (currentState == State.Valid) {
+            Debug.Log("Add");
             boardManager.AddToQueue(this);
         }
-    }
-
-    Summon GetSummon() {
-        return GetComponent<Summon>();
-    }
-
-    public void Summon(Card card) {
-        foreach (Transform child in transform) {
-            if (child.CompareTag("Summon")) {
-                Debug.LogWarning("Overwriting summon...");
-            }
-        }
-
-        GameObject summonObj = Instantiate(card.summonPrefab, transform);
-        Summon summon = summonObj.GetComponent<Summon>();
-        //summon.InitSummon(card, boardManager.GetCardOrder());
-        //boardManager.IncrementCardOrder(1);
     }
 
     public void SetValidState() {
@@ -76,35 +67,34 @@ public class Tile : MonoBehaviour {
         return false;
     }
 
+    public Summon GetSummon() {
+        return GetComponentInChildren<Summon>();
+    }
+
     void UpdateState(State state) {
         currentState = state;
     }
 
-    void UpdatePrefab(State state) {
+    void UpdateStatePrefab(State state) {
+        if (type == TileType.Boss) {
+            return;
+        }
+
         if (state == State.Invalid) {
-            foreach (Transform child in transform) {
-                if (child.CompareTag("Indicator")) {
-                    Destroy(child.gameObject);
-                    Instantiate(invalidPrefab, transform);
-                    break;
-                }
-            }
+            SetIndicatorPrefab(invalidPrefab);
         } else if (state == State.Valid) {
-            foreach (Transform child in transform) {
-                if (child.CompareTag("Indicator")) {
-                    Destroy(child.gameObject);
-                    Instantiate(validPrefab, transform);
-                    break;
-                }
-            }
+            SetIndicatorPrefab(validPrefab);
         } else {
-            foreach (Transform child in transform) {
-                if (child.CompareTag("Indicator")) {
-                    Destroy(child.gameObject);
-                    Instantiate(neutralPrefab, transform);
-                    break;
-                }
+            SetIndicatorPrefab(neutralPrefab);
+        }
+    }
+
+    void SetIndicatorPrefab(GameObject prefab) {
+        foreach (Transform childTransform in transform) {
+            if (childTransform.CompareTag("Indicator")) {
+                Destroy(childTransform.gameObject);
             }
         }
+        Instantiate(prefab, transform);
     }
 }

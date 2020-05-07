@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CardManager : MonoBehaviour {
     public GameObject cardPrefab;
-    GameObject[] cards;
+    Card[] cards;
     Hand hand;
 
     private void Awake() {
         hand = FindObjectOfType<Hand>();
-        cards = Resources.LoadAll<GameObject>("Loadable Cards");
+        cards = Resources.LoadAll<Card>("Loadable Cards");
         Debug.Log("Loaded cards" + cards.Length);
     }
 
@@ -21,10 +21,14 @@ public class CardManager : MonoBehaviour {
         return cardPrefab;
     }
 
+    GameObject CompileCard(Entity data) {
+        return cardPrefab;
+    }
+
     GameObject GetCardPrefab() {
         // Will break if no valid cards
         int randomIndex = Random.Range(0, cards.Length);
-        return cards[randomIndex];
+        return cards[randomIndex].gameObject;
         //if (!hand.handCardIds.Contains(cards[randomIndex].id)) {
         //    return cards[randomIndex];
         //}

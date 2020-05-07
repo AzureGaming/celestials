@@ -6,26 +6,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-    public System.Guid id;
-    public new string name;
-    public int manaCost;
-    public int attack;
-    public int range;
-    public CardType type;
-    public int movementSpeed;
-    public string description;
-    public Sprite artwork;
-    public GameObject summonPrefab;
-    CardEffect effect;
+    public Entity entity;
     Image imageDisplay;
     TextMeshProUGUI nameDisplay;
     TextMeshProUGUI manaDisplay;
     TextMeshProUGUI attackDisplay;
     TextMeshProUGUI descriptionDisplay;
-    GameManager gameManager;
-    TurnManager turnManager;
     Vector3 startingScale;
-    Player player;
+    CardEffect effect;
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
@@ -33,21 +21,24 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
         attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
         descriptionDisplay = transform.Find("Description").GetComponent<TextMeshProUGUI>();
-        gameManager = FindObjectOfType<GameManager>();
-        turnManager = FindObjectOfType<TurnManager>();
         effect = GetComponent<CardEffect>();
-        player = FindObjectOfType<Player>();
     }
 
     private void Start() {
         startingScale = transform.localScale;
-        imageDisplay.sprite = artwork;
-        nameDisplay.text = name;
-        manaDisplay.text = manaCost.ToString();
-        attackDisplay.text = attack.ToString();
-        descriptionDisplay.text = description;
-        id = System.Guid.NewGuid();
+        imageDisplay.sprite = entity.artwork;
+        nameDisplay.text = entity.name;
+        manaDisplay.text = entity.manaCost.ToString();
+        attackDisplay.text = entity.attack.ToString();
+        descriptionDisplay.text = entity.description;
     }
+
+
+    //private void Update() {
+    //    if (Input.GetKeyDown(KeyCode.G)) {
+    //        ActivateEffect();
+    //    }
+    //}
 
     public void OnPointerEnter(PointerEventData eventData) {
         transform.localScale = startingScale * 2;
@@ -58,12 +49,32 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-        if (turnManager.state == GameState.MULLIGAN) {
-            gameManager.SetMulligan(id);
-        }
+        //    if (turnManager.state == GameState.MULLIGAN) {
+        //        gameManager.SetMulligan(id);
+        //    }
     }
 
     public void ActivateEffect() {
+        Debug.Log("Activate effect" + effect);
         effect?.Apply();
+    }
+
+    public void SummonAt(Tile tile) {
+        if (tile.GetComponentInChildren<Summon>()) {
+            Debug.LogWarning("Overwriting summon at column, row: " + tile.column + " " + tile.row);
+        }
+        Instantiate(entity.summonPrefab, tile.transform);
+    }
+
+    public new CardType GetType() {
+        return entity.type;
+    }
+
+    public Entity GetEntity() {
+        return entity;
+    }
+
+    public int GetManaCost() {
+        return entity.manaCost;
     }
 }

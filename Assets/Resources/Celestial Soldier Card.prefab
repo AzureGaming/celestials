@@ -1,18 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3577932242768822350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000988956603549606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c4975f6074f4f643a6c1f9dcd381337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &1933019904592625705
+--- !u!1001 &5865070221423544644
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -22,24 +10,46 @@ PrefabInstance:
     - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: name
-      value: March
+      value: Celestial Soldier
       objectReference: {fileID: 0}
     - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
-      propertyPath: type
+      propertyPath: range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: movementSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: description
-      value: March!
+      value: A pawn in a greater game.
       objectReference: {fileID: 0}
     - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: artwork
       value: 
-      objectReference: {fileID: 21300000, guid: 5f513a1d32936104ca53a9d6267c87c1,
+      objectReference: {fileID: 21300000, guid: 5532e650f92a2a6478892998e45c9002,
         type: 3}
+    - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: summonPrefab
+      value: 
+      objectReference: {fileID: 7167678689689261049, guid: b937adf934890d3469071a4ea50f9467,
+        type: 3}
+    - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: entity
+      value: 
+      objectReference: {fileID: 11400000, guid: f5fcc864ca0eb944dbdda0b76ba1ae03,
+        type: 2}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -148,13 +158,7 @@ PrefabInstance:
     - target: {fileID: 1672890979875637135, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_Name
-      value: March
+      value: Celestial Soldier Card
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97662ae0c35ee9040ae654d5fd0a2aa4, type: 3}
---- !u!1 &1000988956603549606 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1672890979875637135, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1933019904592625705}
-  m_PrefabAsset: {fileID: 0}

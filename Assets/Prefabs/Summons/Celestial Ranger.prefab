@@ -33,6 +33,12 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4379188117566988816, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: entity
+      value: 
+      objectReference: {fileID: 11400000, guid: 30d3578d9ba6c6b43920012a2ec75984,
+        type: 2}
     - target: {fileID: 6818164089875801406, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -107,11 +113,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Celestial Ranger
-      objectReference: {fileID: 0}
-    - target: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}

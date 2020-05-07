@@ -1,16 +1,15 @@
-﻿using System;
+﻿
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public enum CONSTANTS {
-    summonSpacing = (int)2.15,
-}
 
 public class GameManager : MonoBehaviour {
     public List<System.Guid> mulligans;
     TurnManager turnManager;
     UIManager uiManager;
-
+    int entityIdCounter = 0;
+    int cardOrder = 0;
 
     private void Awake() {
         turnManager = FindObjectOfType<TurnManager>();
@@ -30,6 +29,18 @@ public class GameManager : MonoBehaviour {
             Debug.Log("Add" + cardId + " to mulligan");
             mulligans.Add(cardId);
         }
+    }
+
+    public int GetNextEntityId() {
+        int nextEntityId = entityIdCounter;
+        entityIdCounter++;
+        return nextEntityId;
+    }
+
+    public int GetNextCardOrder() {
+        int nextCardOrder = cardOrder;
+        cardOrder++;
+        return nextCardOrder;
     }
 
     void SetupGame() {

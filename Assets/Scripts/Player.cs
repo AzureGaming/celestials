@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
     }
 
     public IEnumerator SetupPlayer() {
-        Debug.Log("Set up player " + numberOfCardsHeld);    
+        Debug.Log("Set up player " + numberOfCardsHeld);
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(DrawCard());
         }
@@ -64,8 +64,8 @@ public class Player : MonoBehaviour {
         yield break;
     }
 
-    public IEnumerator ReturnCard(System.Guid id) {
-        hand.RemoveCard(id);
+    public IEnumerator ReturnCard(Entity entity) {
+        hand.RemoveCard(entity);
         deck.AddCard();
         yield break;
     }

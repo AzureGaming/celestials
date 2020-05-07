@@ -1,37 +1,40 @@
-﻿using System.Collections;
+﻿
+
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(SpriteRenderer))]
 public class SummonController : MonoBehaviour {
+    bool attackRoutineRunning = false;
+    bool movementRoutineRunning = false;
     Animator animator;
     BoardManager boardManager;
     SpriteRenderer spriteRenderer;
     Color color;
     float movementSpeed = 2f;
+    GameManager gameManager;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boardManager = FindObjectOfType<BoardManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void Start() {
         color = spriteRenderer.color;
     }
 
-    public void Walk(int tiles) {
-        StartCoroutine(WalkRoutine(tiles));
+    public void Walk(int movementSpeed, int id) {
+        StartCoroutine(WalkRoutine(movementSpeed, id));
     }
 
-    public void Attack(int damage) {
-        // check if in range
-        //if (boardManager.CheckAttackRange(cardPrefab.range, GetComponentInParent<Tile>().column, GetComponentInParent<Tile>().row)) {
-        //    if (boardManager.CheckAttackRange(0, GetComponentInParent<Tile>().column, GetComponentInParent<Tile>().row)) {
-        //        boardManager.IncrementAttacksToWaitFor();
-        //        Debug.Log("Attack boss");
-        //        animator.SetTrigger("isAttacking");
-        //    }
+    public void Attack(int range, int id) {
+        StartCoroutine(AttackRoutine(range, id));
     }
 
     public void Die() {
@@ -42,24 +45,66 @@ public class SummonController : MonoBehaviour {
 
     }
 
-    void OnAttackAnimationEnd() {
-        //StartCoroutine(boss.TakeDamage(card.attack));
-        //    StartCoroutine(boss.TakeDamage(0));
-        //    boardManager.IncrementAttackCounter();
+    public void OnAttackAnimationEnd() {
+        attackRoutineRunning = false;
+    }
+
+    public bool DoneMoving() {
+        return !movementRoutineRunning ? true : false;
+    }
+
+    public bool DoneAttacking() {
+        return !attackRoutineRunning ? true : false;
+    }
+
+    public void SetEffectPrefab(GameObject prefab) {
+        foreach (Transform childTransform in transform.Find("Effect")) {
+            Destroy(childTransform.gameObject);
+        }
+        Instantiate(prefab, transform.Find("Effect"));
+    }
+
+    public void RemoveEffectPrefab() {
+        foreach (Transform childTransform in transform.Find("Effect")) {
+            Destroy(childTransform.gameObject);
+        }
+    }
+
+    bool CheckWithinRange(int range, int id) {
+        Tile tileToAttack = boardManager.GetDestination(id, range);
+        if (tileToAttack?.type == TileType.Boss) {
+            return true;
+        }
+        return false;
     }
 
     void SetParent(Tile parent) {
         transform.SetParent(parent.transform);
     }
 
-    IEnumerator WalkRoutine(int tiles) {
-        Tile destination = boardManager.GetDestination(GetComponent<Summon>(), tiles);
+    public IEnumerator WalkRoutine(int tiles, int id) {
+        Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
+        if (tileToMoveTo?.type == TileType.Boss) {
+            yield return StartCoroutine(DieRoutine());
+            yield break;
+        }
+        movementRoutineRunning = true;
         Vector3 currentPos = transform.position;
-        Vector3 endPos = destination.transform.position;
+        Vector3 endPos = tileToMoveTo.transform.position;
         animator.SetBool("isWalking", true);
         yield return StartCoroutine(UpdatePositionRoutine(currentPos, endPos));
         animator.SetBool("isWalking", false);
-        SetParent(destination);
+        SetParent(tileToMoveTo);
+        movementRoutineRunning = false;
+        yield break;
+    }
+
+    IEnumerator AttackRoutine(int range, int id) {
+        if (CheckWithinRange(range, id)) {
+            attackRoutineRunning = true;
+            animator.SetTrigger("isAttacking");
+            yield return new WaitUntil(() => !attackRoutineRunning);
+        }
         yield break;
     }
 
@@ -70,14 +115,11 @@ public class SummonController : MonoBehaviour {
     }
 
     IEnumerator UpdatePositionRoutine(Vector3 currentPos, Vector3 endPos) {
-        Debug.Log("start" + transform.position);
-
         for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
             Vector3 lerpedPos = Vector3.Lerp(currentPos, endPos, Mathf.Min(1, t / movementSpeed));
             transform.position = lerpedPos;
             yield return null;
         }
-        Debug.Log("end" + transform.position);
 
         yield break;
     }

@@ -258,7 +258,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -270,7 +270,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -279,10 +279,10 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -291,7 +291,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -657,7 +657,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1684
-        y: 243
+        y: 244
         width: 142
         height: 222
       alignment: 9
@@ -737,34 +737,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Celestial Ranger-Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 226
-        width: 137
-        height: 10
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea1a9f9b46254a2a0800000000000000
-      internalID: -6727161350814326354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Celestial Ranger-Sheet_22
       rect:
         serializedVersion: 2
         x: 0
         y: 3
         width: 141
-        height: 53
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +761,10 @@ TextureImporter:
       name: Celestial Ranger-Sheet_23
       rect:
         serializedVersion: 2
-        x: 239
+        x: 240
         y: 3
-        width: 142
-        height: 57
+        width: 141
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,7 +785,7 @@ TextureImporter:
         x: 480
         y: 3
         width: 141
-        height: 77
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -826,8 +805,8 @@ TextureImporter:
         serializedVersion: 2
         x: 720
         y: 3
-        width: 142
-        height: 97
+        width: 141
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,7 +827,7 @@ TextureImporter:
         x: 960
         y: 3
         width: 141
-        height: 117
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,7 +848,7 @@ TextureImporter:
         x: 1200
         y: 3
         width: 141
-        height: 137
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -887,10 +866,10 @@ TextureImporter:
       name: Celestial Ranger-Sheet_28
       rect:
         serializedVersion: 2
-        x: 1439
+        x: 1440
         y: 3
-        width: 142
-        height: 157
+        width: 141
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -908,10 +887,10 @@ TextureImporter:
       name: Celestial Ranger-Sheet_29
       rect:
         serializedVersion: 2
-        x: 1679
+        x: 1680
         y: 3
-        width: 142
-        height: 173
+        width: 141
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -931,8 +910,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1920
         y: 3
-        width: 142
-        height: 193
+        width: 141
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,7 +932,7 @@ TextureImporter:
         x: 2160
         y: 3
         width: 141
-        height: 213
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -971,10 +950,10 @@ TextureImporter:
       name: Celestial Ranger-Sheet_32
       rect:
         serializedVersion: 2
-        x: 2404
+        x: 2400
         y: 3
-        width: 236
-        height: 222
+        width: 141
+        height: 232
       alignment: 9
       pivot: {x: 0.5, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}

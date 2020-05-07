@@ -30,11 +30,10 @@ public class Hand : MonoBehaviour {
         yield break;
     }
 
-    public void RemoveCard(System.Guid id) {
+    public void RemoveCard(Entity entity) {
         cards = GetComponentsInChildren<Card>();
         foreach (Card card in cards) {
-            if (card.id == id) {
-                Debug.Log("Remove card " + id);
+            if (card.GetEntity() == entity) {
                 Destroy(card.gameObject);
             }
         }

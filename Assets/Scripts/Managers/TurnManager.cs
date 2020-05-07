@@ -59,9 +59,9 @@ public class TurnManager : MonoBehaviour {
         SetMulliganConfirmed(false);
         yield return new WaitUntil(() => isMulliganConfirmed);
         Debug.Log("End Mulligan phase");
-        foreach (System.Guid id in gameManager.mulligans) {
-            yield return StartCoroutine(player.ReturnCard(id));
-        }
+        //foreach (System.Guid id in gameManager.mulligans) {
+        //    yield return StartCoroutine(player.ReturnCard(id));
+        //}
 
         foreach (System.Guid id in gameManager.mulligans) {
             yield return StartCoroutine(player.DrawCard());
@@ -71,9 +71,8 @@ public class TurnManager : MonoBehaviour {
     }
 
     IEnumerator ResolveSummonTurn() {
-        Debug.Log("Summons action");
         Summon[] summons = board.GetSummons();
-        //System.Array.Sort(summons, (x, y) => x.getOrder() - y.getOrder());
+        System.Array.Sort(summons, (x, y) => x.GetOrder() - y.GetOrder());
         //foreach (Summon summon in summons) {
         //    yield return StartCoroutine(summon.ExecuteAction());
         //    if (boss.getHealth() < 1) {
