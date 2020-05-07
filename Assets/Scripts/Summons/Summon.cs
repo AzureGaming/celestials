@@ -74,8 +74,4 @@ public class Summon : MonoBehaviour {
     public void RemoveEffect() {
         controller.RemoveEffectPrefab();
     }
-
-    void PlaySummonAnimation() {
-        animator.SetTrigger("isSummoned");
-    }
 }
