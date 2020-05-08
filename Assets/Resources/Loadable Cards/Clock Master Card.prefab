@@ -49,6 +49,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5186822937850323643, guid: 93a9c2744ccb291409b769c65a659581,
         type: 3}
+    - target: {fileID: -1070604632277360459, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: entity
+      value: 
+      objectReference: {fileID: 11400000, guid: ee2a78b5aee21474ba359ce8e3176b83,
+        type: 2}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -157,7 +163,7 @@ PrefabInstance:
     - target: {fileID: 1672890979875637135, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_Name
-      value: Clock Master
+      value: Clock Master Card
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97662ae0c35ee9040ae654d5fd0a2aa4, type: 3}

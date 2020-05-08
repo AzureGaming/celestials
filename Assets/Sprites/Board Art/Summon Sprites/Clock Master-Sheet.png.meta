@@ -383,162 +383,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Clock Master-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 2533
-        y: 436
-        width: 391
-        height: 383
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b00c3579d8109a20800000000000000
-      internalID: 3066978668493144248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 3137
-        y: 748
-        width: 7
-        height: 7
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a21396c8e3be1d40800000000000000
-      internalID: 5557076802567082659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 3153
-        y: 752
-        width: 7
-        height: 7
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d67eb673d74915680800000000000000
-      internalID: -8768063733992003731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 452
-        width: 167
-        height: 255
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c3486057d39fb3d0800000000000000
-      internalID: -3188667458178759743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 2953
-        y: 436
-        width: 311
-        height: 315
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d308fc2db36dad200800000000000000
-      internalID: 205712285427007549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 3373
-        y: 436
-        width: 279
-        height: 271
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eb30fe4f3b414490800000000000000
-      internalID: -7763841547330634777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 3649
-        y: 628
-        width: 7
-        height: 7
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a0b7edab2f0052c0800000000000000
-      internalID: -4445036151939026782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Clock Master-Sheet_23
       rect:
         serializedVersion: 2
-        x: 3793
-        y: 436
-        width: 167
-        height: 271
+        x: 420
+        y: 2100
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,12 +407,12 @@ TextureImporter:
       name: Clock Master-Sheet_24
       rect:
         serializedVersion: 2
-        x: 4213
-        y: 440
-        width: 167
-        height: 267
+        x: 840
+        y: 2100
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,12 +428,12 @@ TextureImporter:
       name: Clock Master-Sheet_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1712
-        width: 167
-        height: 255
+        x: 0
+        y: 3360
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,12 +449,12 @@ TextureImporter:
       name: Clock Master-Sheet_1
       rect:
         serializedVersion: 2
-        x: 433
-        y: 1712
-        width: 167
-        height: 251
+        x: 420
+        y: 3360
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,12 +470,12 @@ TextureImporter:
       name: Clock Master-Sheet_2
       rect:
         serializedVersion: 2
-        x: 853
-        y: 1712
-        width: 167
-        height: 255
+        x: 840
+        y: 3360
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,12 +491,12 @@ TextureImporter:
       name: Clock Master-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1273
-        y: 1712
-        width: 167
-        height: 251
+        x: 1260
+        y: 3360
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,12 +512,12 @@ TextureImporter:
       name: Clock Master-Sheet_4
       rect:
         serializedVersion: 2
-        x: 13
-        y: 872
-        width: 167
-        height: 255
+        x: 0
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,12 +533,12 @@ TextureImporter:
       name: Clock Master-Sheet_5
       rect:
         serializedVersion: 2
-        x: 433
-        y: 872
-        width: 167
-        height: 259
+        x: 420
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,12 +554,12 @@ TextureImporter:
       name: Clock Master-Sheet_6
       rect:
         serializedVersion: 2
-        x: 853
-        y: 872
-        width: 167
-        height: 259
+        x: 840
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -722,12 +575,12 @@ TextureImporter:
       name: Clock Master-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1273
-        y: 872
-        width: 167
-        height: 255
+        x: 1260
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -743,12 +596,12 @@ TextureImporter:
       name: Clock Master-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1693
-        y: 872
-        width: 167
-        height: 259
+        x: 1680
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,12 +617,12 @@ TextureImporter:
       name: Clock Master-Sheet_9
       rect:
         serializedVersion: 2
-        x: 2113
-        y: 872
-        width: 167
-        height: 259
+        x: 2100
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -785,12 +638,12 @@ TextureImporter:
       name: Clock Master-Sheet_10
       rect:
         serializedVersion: 2
-        x: 2533
-        y: 872
-        width: 167
-        height: 255
+        x: 2520
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -806,12 +659,12 @@ TextureImporter:
       name: Clock Master-Sheet_11
       rect:
         serializedVersion: 2
-        x: 433
-        y: 452
-        width: 167
-        height: 367
+        x: 2940
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -827,12 +680,12 @@ TextureImporter:
       name: Clock Master-Sheet_12
       rect:
         serializedVersion: 2
-        x: 853
-        y: 452
-        width: 167
-        height: 367
+        x: 3360
+        y: 2940
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -848,12 +701,12 @@ TextureImporter:
       name: Clock Master-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1277
-        y: 452
-        width: 167
-        height: 367
+        x: 0
+        y: 2520
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -869,12 +722,12 @@ TextureImporter:
       name: Clock Master-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1693
-        y: 452
-        width: 167
-        height: 367
+        x: 420
+        y: 2520
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -890,12 +743,12 @@ TextureImporter:
       name: Clock Master-Sheet_15
       rect:
         serializedVersion: 2
-        x: 2113
-        y: 452
-        width: 167
-        height: 367
+        x: 840
+        y: 2520
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -908,57 +761,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock Master-Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 4633
-        y: 440
-        width: 167
-        height: 267
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c015c336af8c15d20800000000000000
-      internalID: 3265612182552596748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clock Master-Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 4653
-        y: 288
-        width: 123
-        height: 7
-      alignment: 9
-      pivot: {x: 0.5, y: 0.12}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cafefe6d7014b970800000000000000
-      internalID: 8769652505316358849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Clock Master-Sheet_27
       rect:
         serializedVersion: 2
-        x: 13
-        y: 32
-        width: 167
-        height: 55
+        x: 840
+        y: 1680
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -974,12 +785,12 @@ TextureImporter:
       name: Clock Master-Sheet_28
       rect:
         serializedVersion: 2
-        x: 433
-        y: 32
-        width: 167
-        height: 63
+        x: 1260
+        y: 1680
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -995,12 +806,12 @@ TextureImporter:
       name: Clock Master-Sheet_29
       rect:
         serializedVersion: 2
-        x: 853
-        y: 32
-        width: 167
-        height: 83
+        x: 1680
+        y: 1680
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1016,12 +827,12 @@ TextureImporter:
       name: Clock Master-Sheet_30
       rect:
         serializedVersion: 2
-        x: 1273
-        y: 32
-        width: 167
-        height: 103
+        x: 2100
+        y: 1680
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1037,12 +848,12 @@ TextureImporter:
       name: Clock Master-Sheet_31
       rect:
         serializedVersion: 2
-        x: 1693
-        y: 32
-        width: 167
-        height: 123
+        x: 2520
+        y: 1680
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1058,12 +869,12 @@ TextureImporter:
       name: Clock Master-Sheet_32
       rect:
         serializedVersion: 2
-        x: 2113
-        y: 32
-        width: 167
-        height: 143
+        x: 0
+        y: 1260
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1079,12 +890,12 @@ TextureImporter:
       name: Clock Master-Sheet_33
       rect:
         serializedVersion: 2
-        x: 2533
-        y: 32
-        width: 167
-        height: 163
+        x: 420
+        y: 1260
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1100,12 +911,12 @@ TextureImporter:
       name: Clock Master-Sheet_34
       rect:
         serializedVersion: 2
-        x: 2953
-        y: 32
-        width: 167
-        height: 183
+        x: 840
+        y: 1260
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1121,12 +932,12 @@ TextureImporter:
       name: Clock Master-Sheet_35
       rect:
         serializedVersion: 2
-        x: 3373
-        y: 32
-        width: 167
-        height: 203
+        x: 1260
+        y: 1260
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1139,22 +950,211 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock Master-Sheet_36
+      name: Clock Master-Sheet_16
       rect:
         serializedVersion: 2
-        x: 3793
-        y: 32
-        width: 167
-        height: 223
+        x: 1260
+        y: 2520
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3018ce664680120800000000000000
-      internalID: 2380262796282627039
+      spriteID: 0af8d628486c095a0800000000000000
+      internalID: -6516490388378906720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2520
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4c0d95a6dd21820800000000000000
+      internalID: 2887613759941035245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2520
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b3889a311dae970800000000000000
+      internalID: 8785063905518435144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2520
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f41b114bf03350b0800000000000000
+      internalID: -5741191244280032015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 2520
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a4b20cce4878960800000000000000
+      internalID: 7604192648209582706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 2520
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505047107b2955b70800000000000000
+      internalID: 8887170754386593029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302a0bf215c14a8d0800000000000000
+      internalID: -2836110730318536189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23c20a01b7846e40800000000000000
+      internalID: 5648789027076358957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1680
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a09547f337907d0800000000000000
+      internalID: -2951701364392523191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1260
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d35131b685d67c0800000000000000
+      internalID: -4076504870795526765
       vertices: []
       indices: 
       edges: []
@@ -1163,19 +1163,19 @@ TextureImporter:
       name: Clock Master-Sheet_37
       rect:
         serializedVersion: 2
-        x: 4213
-        y: 32
-        width: 167
-        height: 243
+        x: 2100
+        y: 1260
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e482bd2aa9f1f4930800000000000000
-      internalID: 4129554132339730510
+      spriteID: 2cfeb1a9d9f84e120800000000000000
+      internalID: 2442234804999811010
       vertices: []
       indices: 
       edges: []
@@ -1184,19 +1184,376 @@ TextureImporter:
       name: Clock Master-Sheet_38
       rect:
         serializedVersion: 2
-        x: 4633
-        y: 32
-        width: 167
-        height: 255
+        x: 2520
+        y: 1260
+        width: 420
+        height: 420
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.22, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aaa0f671a51a5c20800000000000000
-      internalID: 3195890668802189987
+      spriteID: eafac54d3fafa22d0800000000000000
+      internalID: -3302551451575996498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 1260
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa1bb381d243bee0800000000000000
+      internalID: -1246579204225819992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 1260
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a96f2eb58c5b3d70800000000000000
+      internalID: 9023908007858104736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971e2d7bcaee57410800000000000000
+      internalID: 1474346878619541881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 840
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cf59f194d2db6b0800000000000000
+      internalID: -5279013396122567647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 840
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56af6a62d51c07e0800000000000000
+      internalID: -1798038157754653094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adfae718e7ea5b80800000000000000
+      internalID: -8405150770513904222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f34df51dd0cd7c0800000000000000
+      internalID: -4045343172378476783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab850d471d70de770800000000000000
+      internalID: 8641571856183220410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73acc61e3acbaa1b0800000000000000
+      internalID: -5644491770907801033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8ba41ef188ca630800000000000000
+      internalID: 3939673444547475617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efed755faad8034b0800000000000000
+      internalID: -5462710582600278274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa257fb747a9912f0800000000000000
+      internalID: -1001599617026534742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e1d326ec0804a20800000000000000
+      internalID: 3044574972002246237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 420
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2e22a2f0fca3d60800000000000000
+      internalID: 7870830962821751484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72b6d8585fa440e0800000000000000
+      internalID: -2286509916814921089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ea4819b0b466f00800000000000000
+      internalID: 1109656871251521100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Master-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 420
+        height: 420
+      alignment: 9
+      pivot: {x: 0.22, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111adeb0080b137a0800000000000000
+      internalID: -6399139531514339055
       vertices: []
       indices: 
       edges: []

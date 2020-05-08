@@ -11,13 +11,11 @@ public class TimeGolemController : SummonController {
         if (tileToMoveTo?.type == TileType.Boss && isRewind) {
             yield return StartCoroutine(DieRoutine());
         } else if (tileToMoveTo?.type == TileType.Boss) {
-            Debug.Log("Rewind");
             skipMove = true;
             yield return StartCoroutine(Rewind());
         } else if (skipMove) {
             yield break;
         } else {
-            Debug.Log("normal");
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
         }
     }
