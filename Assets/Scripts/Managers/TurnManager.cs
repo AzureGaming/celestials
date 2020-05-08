@@ -71,8 +71,11 @@ public class TurnManager : MonoBehaviour {
     }
 
     IEnumerator ResolveSummonTurn() {
-        Summon[] summons = board.GetSummons();
-        System.Array.Sort(summons, (x, y) => x.GetOrder() - y.GetOrder());
+        //Summon[] summonsOnBoard = board.GetSummons();
+        //Summon[] summons = new Summon[summonsOnBoard.Length];
+        //System.Array.Copy(summonsOnBoard, summons, summons.Length);
+
+        //System.Array.Sort(summons, (x, y) => x.GetOrder() - y.GetOrder());
         //foreach (Summon summon in summons) {
         //    yield return StartCoroutine(summon.ExecuteAction());
         //    if (boss.getHealth() < 1) {
@@ -82,9 +85,7 @@ public class TurnManager : MonoBehaviour {
         //    }
         //}
 
-        //yield return StartCoroutine(boardManager.ResolvePowerAbilityPhase());
-        yield return StartCoroutine(boardManager.ResolveAttackPhase());
-        yield return StartCoroutine(boardManager.ResolveMovePhase());
+        yield return StartCoroutine(boardManager.ResolveStagesRoutine());
     }
 
     IEnumerator StartPlayerTurn() {

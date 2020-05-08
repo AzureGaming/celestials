@@ -299,12 +299,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 722
-        width: 138
-        height: 227
+        x: 0
+        y: 720
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_1
       rect:
         serializedVersion: 2
-        x: 244
-        y: 722
-        width: 137
-        height: 222
+        x: 240
+        y: 720
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_2
       rect:
         serializedVersion: 2
-        x: 484
-        y: 722
-        width: 137
-        height: 222
+        x: 480
+        y: 720
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 483
-        width: 138
-        height: 221
+        x: 0
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_4
       rect:
         serializedVersion: 2
-        x: 244
-        y: 483
-        width: 137
-        height: 225
+        x: 240
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_5
       rect:
         serializedVersion: 2
-        x: 484
-        y: 483
-        width: 137
-        height: 221
+        x: 480
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_6
       rect:
         serializedVersion: 2
-        x: 724
-        y: 483
-        width: 138
-        height: 225
+        x: 720
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,12 +446,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_7
       rect:
         serializedVersion: 2
-        x: 964
-        y: 483
-        width: 137
-        height: 225
+        x: 960
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,12 +467,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 483
-        width: 137
-        height: 221
+        x: 1200
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1443
-        y: 483
-        width: 138
-        height: 221
+        x: 1440
+        y: 480
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_10
       rect:
         serializedVersion: 2
-        x: 3
-        y: 243
-        width: 138
-        height: 222
+        x: 0
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,12 +530,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_11
       rect:
         serializedVersion: 2
-        x: 244
-        y: 243
-        width: 137
-        height: 222
+        x: 240
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_12
       rect:
         serializedVersion: 2
-        x: 484
-        y: 243
-        width: 142
-        height: 222
+        x: 480
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_13
       rect:
         serializedVersion: 2
-        x: 724
-        y: 243
-        width: 142
-        height: 222
+        x: 720
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,12 +593,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_14
       rect:
         serializedVersion: 2
-        x: 964
-        y: 243
-        width: 141
-        height: 222
+        x: 960
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,12 +614,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 243
-        width: 154
-        height: 222
+        x: 1200
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,12 +635,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1443
-        y: 243
-        width: 142
-        height: 222
+        x: 1440
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_17
       rect:
         serializedVersion: 2
-        x: 1684
-        y: 244
-        width: 142
-        height: 222
+        x: 1680
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_18
       rect:
         serializedVersion: 2
-        x: 1924
-        y: 243
-        width: 142
-        height: 222
+        x: 1920
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,12 +698,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_19
       rect:
         serializedVersion: 2
-        x: 2164
-        y: 243
-        width: 141
-        height: 222
+        x: 2160
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,12 +719,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_20
       rect:
         serializedVersion: 2
-        x: 2404
-        y: 243
-        width: 141
-        height: 222
+        x: 2400
+        y: 240
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,12 +740,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 141
-        height: 232
+        x: 240
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_23
       rect:
         serializedVersion: 2
-        x: 240
-        y: 3
-        width: 141
-        height: 232
+        x: 480
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,12 +782,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_24
       rect:
         serializedVersion: 2
-        x: 480
-        y: 3
-        width: 141
-        height: 232
+        x: 720
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_25
       rect:
         serializedVersion: 2
-        x: 720
-        y: 3
-        width: 141
-        height: 232
+        x: 960
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -824,12 +824,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_26
       rect:
         serializedVersion: 2
-        x: 960
-        y: 3
-        width: 141
-        height: 232
+        x: 1200
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -845,12 +845,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_27
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 3
-        width: 141
-        height: 232
+        x: 1440
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -866,12 +866,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_28
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 3
-        width: 141
-        height: 232
+        x: 1680
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -887,12 +887,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_29
       rect:
         serializedVersion: 2
-        x: 1680
-        y: 3
-        width: 141
-        height: 232
+        x: 1920
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -908,12 +908,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_30
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 3
-        width: 141
-        height: 232
+        x: 2160
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -929,12 +929,12 @@ TextureImporter:
       name: Celestial Ranger-Sheet_31
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 3
-        width: 141
-        height: 232
+        x: 2400
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -947,22 +947,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Celestial Ranger-Sheet_32
+      name: Celestial Ranger-Sheet_21
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 3
-        width: 141
-        height: 232
+        x: 0
+        y: 0
+        width: 240
+        height: 240
       alignment: 9
-      pivot: {x: 0.5, y: 0.12}
+      pivot: {x: 0.3, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c48f2ab7aabbca40800000000000000
-      internalID: 5389606608624911560
+      spriteID: ea1a9f9b46254a2a0800000000000000
+      internalID: -6727161350814326354
       vertices: []
       indices: 
       edges: []

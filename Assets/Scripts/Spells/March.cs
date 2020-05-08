@@ -18,6 +18,8 @@ public class March : CardEffect {
         StartCoroutine(MarchRoutine());
     }
 
+    // summon is must have a unoccupied tile (boss tiles are unoccupied) to move to for march to be played on them
+    // march triggers attack phase and movement phase
     IEnumerator MarchRoutine() {
         player.LoseMana(card.GetManaCost());
         boardManager.DetectSummons();

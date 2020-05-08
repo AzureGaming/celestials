@@ -91,40 +91,6 @@ public class BoardManager : MonoBehaviour {
         uiManager.SetLocationSelectionPrompt(false);
     }
 
-    public IEnumerator ResolveMovePhase() {
-        for (int stage = stageLimit - 1; stage >= 0; stage--) {
-            yield return StartCoroutine(ResolveStageMovement(stage));
-        }
-    }
-
-    public IEnumerator ResolvePowerAbilityPhase() {
-        yield break;
-    }
-
-    public IEnumerator ResolveAttackPhase() {
-        for (int stage = stageLimit - 1; stage >= 0; stage--) {
-            Tile[] tilesInStage = new Tile[stageLimit];
-            Array.Copy(grid[stage], tilesInStage, stageLimit);
-            System.Array.Sort(tilesInStage, (tileX, tileY) => {
-                Summon summonX = tileX.GetComponentInChildren<Summon>();
-                Summon summonY = tileY.GetComponentInChildren<Summon>();
-                int x, y;
-                x = summonX ? summonX.GetOrder() : -1;
-                y = summonY ? summonY.GetOrder() : -1;
-                return x - y;
-            });
-
-            foreach (Tile tile in tilesInStage) {
-                Summon summon = tile.GetComponentInChildren<Summon>();
-                if (summon != null) {
-                    summon.Attack();
-                    yield return new WaitUntil(() => summon.DoneAttacking());
-                }
-            }
-        }
-        yield break;
-    }
-
     public void IncrementAttackCounter() {
         attackCounter += 1;
     }
@@ -166,6 +132,12 @@ public class BoardManager : MonoBehaviour {
         });
     }
 
+    public IEnumerator ResolveStagesRoutine() {
+        for (int i = stageLimit - 1; i >= 0; i--) {
+            yield return StartCoroutine(StageRoutine(i));
+        }
+    }
+
     Tile GetCurrentTile(int id) {
         return Array.Find(tiles, (Tile tile) => {
             Summon summon = tile.GetComponentInChildren<Summon>();
@@ -194,7 +166,13 @@ public class BoardManager : MonoBehaviour {
         card.ActivateEffect();
     }
 
-    IEnumerator ResolveStageMovement(int stageIndex) {
+    IEnumerator StageRoutine(int stageIndex) {
+        yield return StartCoroutine(ResolveAbilitiesForStage(stageIndex));
+        yield return StartCoroutine(ResolveAttacksForStage(stageIndex));
+        yield return StartCoroutine(ResolveMovementForStage(stageIndex));
+    }
+
+    IEnumerator ResolveMovementForStage(int stageIndex) {
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();
@@ -205,5 +183,30 @@ public class BoardManager : MonoBehaviour {
             Summon summon = tile2.GetComponentInChildren<Summon>();
             return summon && !summon.DoneMoving() ? true : false;
         }));
+    }
+
+    IEnumerator ResolveAttacksForStage(int stageIndex) {
+        Tile[] tilesInStage = new Tile[stageLimit];
+        Array.Copy(grid[stageIndex], tilesInStage, stageLimit);
+        System.Array.Sort(tilesInStage, (tileX, tileY) => {
+            Summon summonX = tileX.GetComponentInChildren<Summon>();
+            Summon summonY = tileY.GetComponentInChildren<Summon>();
+            int x, y;
+            x = summonX ? summonX.GetOrder() : -1;
+            y = summonY ? summonY.GetOrder() : -1;
+            return x - y;
+        });
+
+        foreach (Tile tile in tilesInStage) {
+            Summon summon = tile.GetComponentInChildren<Summon>();
+            if (summon != null) {
+                summon.Attack();
+                yield return new WaitUntil(() => summon.DoneAttacking());
+            }
+        }
+    }
+
+    IEnumerator ResolveAbilitiesForStage(int stageIndex) {
+        yield break;
     }
 }
