@@ -1,7 +1,238 @@
 fileFormatVersion: 2
 guid: e59435b6854f6374ea9999221af6a53a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2433455309433930453
+    second: Time Golem-Sheet_0
+  - first:
+      213: -516612297359365681
+    second: Time Golem-Sheet_1
+  - first:
+      213: -2309715400851374535
+    second: Time Golem-Sheet_2
+  - first:
+      213: -7125515631679252655
+    second: Time Golem-Sheet_3
+  - first:
+      213: -4932709583267271940
+    second: Time Golem-Sheet_4
+  - first:
+      213: 3262749355015415088
+    second: Time Golem-Sheet_5
+  - first:
+      213: 1211343268211583203
+    second: Time Golem-Sheet_6
+  - first:
+      213: -6294557289086292179
+    second: Time Golem-Sheet_7
+  - first:
+      213: 5280296634090524545
+    second: Time Golem-Sheet_8
+  - first:
+      213: -3632111734141448928
+    second: Time Golem-Sheet_9
+  - first:
+      213: 3620057885572761533
+    second: Time Golem-Sheet_10
+  - first:
+      213: -4347475903368822492
+    second: Time Golem-Sheet_11
+  - first:
+      213: -8699800209415430302
+    second: Time Golem-Sheet_12
+  - first:
+      213: 2812112438283690781
+    second: Time Golem-Sheet_13
+  - first:
+      213: -7910151546060480312
+    second: Time Golem-Sheet_14
+  - first:
+      213: -4387903447424624626
+    second: Time Golem-Sheet_15
+  - first:
+      213: 3283908197693271680
+    second: Time Golem-Sheet_16
+  - first:
+      213: 6525887489671913260
+    second: Time Golem-Sheet_17
+  - first:
+      213: -5380957404110757656
+    second: Time Golem-Sheet_18
+  - first:
+      213: -7827058923760130307
+    second: Time Golem-Sheet_19
+  - first:
+      213: 938717314844946996
+    second: Time Golem-Sheet_20
+  - first:
+      213: 3555957586343843413
+    second: Time Golem-Sheet_21
+  - first:
+      213: -5980031503494258832
+    second: Time Golem-Sheet_22
+  - first:
+      213: 7360455624138862921
+    second: Time Golem-Sheet_23
+  - first:
+      213: 6253509505415896096
+    second: Time Golem-Sheet_24
+  - first:
+      213: 4735942005875375903
+    second: Time Golem-Sheet_25
+  - first:
+      213: 7017750566973758348
+    second: Time Golem-Sheet_26
+  - first:
+      213: 2041715021316358252
+    second: Time Golem-Sheet_27
+  - first:
+      213: 2307770631744464416
+    second: Time Golem-Sheet_28
+  - first:
+      213: -3542398477856140827
+    second: Time Golem-Sheet_29
+  - first:
+      213: -6628512963423772192
+    second: Time Golem-Sheet_30
+  - first:
+      213: 1066368382370704190
+    second: Time Golem-Sheet_31
+  - first:
+      213: -7772622573684742249
+    second: Time Golem-Sheet_32
+  - first:
+      213: 1560945813449680692
+    second: Time Golem-Sheet_33
+  - first:
+      213: -3576270795244987855
+    second: Time Golem-Sheet_34
+  - first:
+      213: -6400773629973440108
+    second: Time Golem-Sheet_35
+  - first:
+      213: 204605010364661311
+    second: Time Golem-Sheet_36
+  - first:
+      213: 3566818095992480954
+    second: Time Golem-Sheet_37
+  - first:
+      213: 5587465244904888083
+    second: Time Golem-Sheet_38
+  - first:
+      213: -5811110880002833869
+    second: Time Golem-Sheet_39
+  - first:
+      213: -3942115840976243015
+    second: Time Golem-Sheet_40
+  - first:
+      213: -7444458487855339517
+    second: Time Golem-Sheet_41
+  - first:
+      213: 8709849168151705636
+    second: Time Golem-Sheet_42
+  - first:
+      213: 4991663798150339659
+    second: Time Golem-Sheet_43
+  - first:
+      213: 7359615084107856836
+    second: Time Golem-Sheet_44
+  - first:
+      213: 8033481152284313941
+    second: Time Golem-Sheet_45
+  - first:
+      213: 430913581933759128
+    second: Time Golem-Sheet_46
+  - first:
+      213: -6507541857356740731
+    second: Time Golem-Sheet_47
+  - first:
+      213: 4809177266563840946
+    second: Time Golem-Sheet_48
+  - first:
+      213: 7545955302031323748
+    second: Time Golem-Sheet_49
+  - first:
+      213: -3555538991068512450
+    second: Time Golem-Sheet_50
+  - first:
+      213: -6436036030934031514
+    second: Time Golem-Sheet_51
+  - first:
+      213: 2577874669817957494
+    second: Time Golem-Sheet_52
+  - first:
+      213: 7901611865111554809
+    second: Time Golem-Sheet_53
+  - first:
+      213: -3075019211011459034
+    second: Time Golem-Sheet_54
+  - first:
+      213: 5302879413338725702
+    second: Time Golem-Sheet_55
+  - first:
+      213: -4496644896033097517
+    second: Time Golem-Sheet_56
+  - first:
+      213: 9126825311756100241
+    second: Time Golem-Sheet_57
+  - first:
+      213: 2138033211167370420
+    second: Time Golem-Sheet_58
+  - first:
+      213: -8292837022968942576
+    second: Time Golem-Sheet_59
+  - first:
+      213: 5282634606191285923
+    second: Time Golem-Sheet_60
+  - first:
+      213: -7133244289596342868
+    second: Time Golem-Sheet_61
+  - first:
+      213: 5258001218640275086
+    second: Time Golem-Sheet_62
+  - first:
+      213: -4207585919918683847
+    second: Time Golem-Sheet_63
+  - first:
+      213: -6014834697019225378
+    second: Time Golem-Sheet_64
+  - first:
+      213: -7759171328152257313
+    second: Time Golem-Sheet_65
+  - first:
+      213: -6831817204289686192
+    second: Time Golem-Sheet_66
+  - first:
+      213: -7711018760446432889
+    second: Time Golem-Sheet_67
+  - first:
+      213: -6993316341891333893
+    second: Time Golem-Sheet_68
+  - first:
+      213: -763745784042272417
+    second: Time Golem-Sheet_69
+  - first:
+      213: -2668765316358596349
+    second: Time Golem-Sheet_70
+  - first:
+      213: 2493989083462801347
+    second: Time Golem-Sheet_71
+  - first:
+      213: 5262569136124643572
+    second: Time Golem-Sheet_72
+  - first:
+      213: 6275296150794430220
+    second: Time Golem-Sheet_73
+  - first:
+      213: -2751725640638063127
+    second: Time Golem-Sheet_74
+  - first:
+      213: 5237163448397885504
+    second: Time Golem-Sheet_75
+  - first:
+      213: -7846995745607270083
+    second: Time Golem-Sheet_76
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +271,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +301,1650 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Time Golem-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2099ff5be55c120800000000000000
+      internalID: 2433455309433930453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 3200
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9eb494adf94d8f0800000000000000
+      internalID: -516612297359365681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 3200
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e3100941e32ffd0800000000000000
+      internalID: -2309715400851374535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 3200
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157d34c19451d1d90800000000000000
+      internalID: -7125515631679252655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 3200
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa6035c4ce7b8bb0800000000000000
+      internalID: -4932709583267271940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3200
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03524d8604d974d20800000000000000
+      internalID: 3262749355015415088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8efc2d84e8fc010800000000000000
+      internalID: 1211343268211583203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f6aadde7d35a8a0800000000000000
+      internalID: -6294557289086292179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f08afffc1674940800000000000000
+      internalID: 5280296634090524545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d88fd1f95289dc0800000000000000
+      internalID: -3632111734141448928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db78aef87770d3230800000000000000
+      internalID: 3620057885572761533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421812623b9aaa3c0800000000000000
+      internalID: -4347475903368822492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f9ce49dc9144780800000000000000
+      internalID: -8699800209415430302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 2880
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d136b580d51a60720800000000000000
+      internalID: 2812112438283690781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0ee81241f793290800000000000000
+      internalID: -7910151546060480312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e081b8b00190b13c0800000000000000
+      internalID: -4387903447424624626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e208e5b19c29d20800000000000000
+      internalID: 3283908197693271680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f5f02a81c909a50800000000000000
+      internalID: 6525887489671913260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0687020cff255b0800000000000000
+      internalID: -5380957404110757656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6e93dd063b06390800000000000000
+      internalID: -7827058923760130307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43277df9c6ef60d00800000000000000
+      internalID: 938717314844946996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5565162a59c495130800000000000000
+      internalID: 3555957586343843413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 2560
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5498f709a20da0800000000000000
+      internalID: -5980031503494258832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2240
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941b2dd8467952660800000000000000
+      internalID: 7360455624138862921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2240
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cd7dd33cde8c650800000000000000
+      internalID: 6253509505415896096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2240
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f7d09892279b140800000000000000
+      internalID: 4735942005875375903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2240
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b54c285fe046160800000000000000
+      internalID: 7017750566973758348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6004229ef0a55c10800000000000000
+      internalID: 2041715021316358252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02625389929d60020800000000000000
+      internalID: 2307770631744464416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e110825a5fd6dec0800000000000000
+      internalID: -3542398477856140827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1ed02449ac204a0800000000000000
+      internalID: -6628512963423772192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3be9e6d4608cce00800000000000000
+      internalID: 1066368382370704190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797a65a43f8122490800000000000000
+      internalID: -7772622573684742249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4372d4472f799a510800000000000000
+      internalID: 1560945813449680692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a91dcd8a88e5ec0800000000000000
+      internalID: -3576270795244987855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 1920
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499deb9db42eb27a0800000000000000
+      internalID: -6400773629973440108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3efc024c27e6d200800000000000000
+      internalID: 204605010364661311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1600
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab421161922ef7130800000000000000
+      internalID: 3566818095992480954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1600
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317956d590aaa8d40800000000000000
+      internalID: 5587465244904888083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1600
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33206077179ca5fa0800000000000000
+      internalID: -5811110880002833869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1600
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6bb23678aca49c0800000000000000
+      internalID: -3942115840976243015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1600
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308ad3e9278ffa890800000000000000
+      internalID: -7444458487855339517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428f9e2fba99fd870800000000000000
+      internalID: 8709849168151705636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c9de607c3f54540800000000000000
+      internalID: 4991663798150339659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbfad31dea922660800000000000000
+      internalID: 7359615084107856836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559c3b77b88ac7f60800000000000000
+      internalID: 8033481152284313941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a8d04ae99eaf500800000000000000
+      internalID: 430913581933759128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587044fb82190b5a0800000000000000
+      internalID: -6507541857356740731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbfb6b6e31adb240800000000000000
+      internalID: 4809177266563840946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 1280
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4627d84fd5e98b860800000000000000
+      internalID: 7545955302031323748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f7f4c202038aec0800000000000000
+      internalID: -3555538991068512450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663ef86545b9ea6a0800000000000000
+      internalID: -6436036030934031514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c0af1aa5376c320800000000000000
+      internalID: 2577874669817957494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa6cf4702a28ad60800000000000000
+      internalID: 7901611865111554809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628f82ad1565355d0800000000000000
+      internalID: -3075019211011459034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d59c60bbc979940800000000000000
+      internalID: 5302879413338725702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8bfd29a45b891c0800000000000000
+      internalID: -4496644896033097517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192244ad34ff8ae70800000000000000
+      internalID: 9126825311756100241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 960
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc6e95b0e1dbad10800000000000000
+      internalID: 2138033211167370420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0107ab93aace9ec80800000000000000
+      internalID: -8292837022968942576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 640
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6973c8f20bf4940800000000000000
+      internalID: 5282634606191285923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 640
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadb686bc10a10d90800000000000000
+      internalID: -7133244289596342868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 640
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86ef91104c28f840800000000000000
+      internalID: 5258001218640275086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939cf4906e6ab95c0800000000000000
+      internalID: -4207585919918683847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda897506b3078ca0800000000000000
+      internalID: -6014834697019225378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcb61279c2e15490800000000000000
+      internalID: -7759171328152257313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05539eff2728031a0800000000000000
+      internalID: -6831817204289686192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789a737ca45fcf490800000000000000
+      internalID: -7711018760446432889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf002a7d6dfb2fe90800000000000000
+      internalID: -6993316341891333893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5945738141a665f0800000000000000
+      internalID: -763745784042272417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3091091a514a6fad0800000000000000
+      internalID: -2668765316358596349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 320
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c790819bdd6c9220800000000000000
+      internalID: 2493989083462801347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8c4ac3fb6680940800000000000000
+      internalID: 5262569136124643572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c076a78e994561750800000000000000
+      internalID: 6275296150794430220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed1f6eeb18efc9d0800000000000000
+      internalID: -2751725640638063127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0407a6c98642ea840800000000000000
+      internalID: 5237163448397885504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time Golem-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 460
+        height: 320
+      alignment: 9
+      pivot: {x: 0.34, y: 0.11}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31c31dc1fed91390800000000000000
+      internalID: -7846995745607270083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

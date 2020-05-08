@@ -1,26 +1,23 @@
-﻿
-
-
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator), typeof(SpriteRenderer), typeof(Summon))]
 public class SummonController : MonoBehaviour {
-    bool attackRoutineRunning = false;
-    bool movementRoutineRunning = false;
-    Animator animator;
-    BoardManager boardManager;
-    SpriteRenderer spriteRenderer;
-    Color color;
-    float movementSpeed = 2f;
-    GameManager gameManager;
+    protected bool attackRoutineRunning = false;
+    protected bool movementRoutineRunning = false;
+    protected Animator animator;
+    protected BoardManager boardManager;
+    protected SpriteRenderer spriteRenderer;
+    protected Color color;
+    protected float movementSpeed = 2f;
+    protected GameManager gameManager;
+    protected Summon summon;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        summon = GetComponent<Summon>();
         boardManager = FindObjectOfType<BoardManager>();
         gameManager = FindObjectOfType<GameManager>();
     }
@@ -41,7 +38,7 @@ public class SummonController : MonoBehaviour {
         StartCoroutine(DieRoutine());
     }
 
-    public void ExecuteAction() {
+    public virtual void ExecuteAction() {
 
     }
 
@@ -70,6 +67,43 @@ public class SummonController : MonoBehaviour {
         }
     }
 
+    public virtual IEnumerator WalkRoutine(int tiles, int id) {
+        Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
+        if (tileToMoveTo?.type == TileType.Boss) {
+            yield return StartCoroutine(DieRoutine());
+        } else {
+            yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
+        }
+    }
+
+    protected void SetParent(Tile parent) {
+        transform.SetParent(parent.transform);
+    }
+
+    protected IEnumerator DieRoutine() {
+        yield return StartCoroutine(FlashRed());
+        yield return StartCoroutine(FadeOut());
+        Destroy(transform.gameObject);
+    }
+
+    protected virtual IEnumerator UpdatePositionRoutine(Vector3 currentPos, Tile tileToMoveTo) {
+        movementRoutineRunning = true;
+        animator.SetBool("isWalking", true);
+        for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
+            Vector3 lerpedPos = Vector3.Lerp(currentPos, tileToMoveTo.transform.position, Mathf.Min(1, t / movementSpeed));
+            transform.position = lerpedPos;
+            yield return null;
+        }
+        SetParent(tileToMoveTo);
+        animator.SetBool("isWalking", false);
+        movementRoutineRunning = false;
+        yield break;
+    }
+
+    protected int GetSummonId() {
+        return summon.GetId();
+    }
+
     bool CheckWithinRange(int range, int id) {
         Tile tileToAttack = boardManager.GetDestination(id, range);
         if (tileToAttack?.type == TileType.Boss) {
@@ -78,49 +112,12 @@ public class SummonController : MonoBehaviour {
         return false;
     }
 
-    void SetParent(Tile parent) {
-        transform.SetParent(parent.transform);
-    }
-
-    public IEnumerator WalkRoutine(int tiles, int id) {
-        Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
-        if (tileToMoveTo?.type == TileType.Boss) {
-            yield return StartCoroutine(DieRoutine());
-            yield break;
-        }
-        movementRoutineRunning = true;
-        Vector3 currentPos = transform.position;
-        Vector3 endPos = tileToMoveTo.transform.position;
-        animator.SetBool("isWalking", true);
-        yield return StartCoroutine(UpdatePositionRoutine(currentPos, endPos));
-        animator.SetBool("isWalking", false);
-        SetParent(tileToMoveTo);
-        movementRoutineRunning = false;
-        yield break;
-    }
-
     IEnumerator AttackRoutine(int range, int id) {
         if (CheckWithinRange(range, id)) {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
             yield return new WaitUntil(() => !attackRoutineRunning);
         }
-        yield break;
-    }
-
-    IEnumerator DieRoutine() {
-        yield return StartCoroutine(FlashRed());
-        yield return StartCoroutine(FadeOut());
-        Destroy(transform.gameObject);
-    }
-
-    IEnumerator UpdatePositionRoutine(Vector3 currentPos, Vector3 endPos) {
-        for (float t = 0; t < movementSpeed; t += Time.deltaTime) {
-            Vector3 lerpedPos = Vector3.Lerp(currentPos, endPos, Mathf.Min(1, t / movementSpeed));
-            transform.position = lerpedPos;
-            yield return null;
-        }
-
         yield break;
     }
 

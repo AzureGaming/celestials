@@ -132,6 +132,16 @@ public class BoardManager : MonoBehaviour {
         });
     }
 
+    public Tile GetFirstTileInRow(int id) {
+        Tile currentTile = GetCurrentTile(id);
+        return Array.Find(tiles, (Tile tile) => {
+            if (currentTile && tile.row == currentTile.row && tile.column == 0) {
+                return true;
+            }
+            return false;
+        });
+    }
+
     public IEnumerator ResolveStagesRoutine() {
         for (int i = stageLimit - 1; i >= 0; i--) {
             yield return StartCoroutine(StageRoutine(i));
@@ -176,7 +186,7 @@ public class BoardManager : MonoBehaviour {
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();
-            summon?.Walk();
+            summon?.Walk(); 
         }
 
         yield return new WaitWhile(() => Array.Find(tiles, (Tile tile2) => {
