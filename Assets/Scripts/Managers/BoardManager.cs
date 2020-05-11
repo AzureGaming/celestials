@@ -132,10 +132,10 @@ public class BoardManager : MonoBehaviour {
         });
     }
 
-    public Tile GetFirstTileInRow(int id) {
+    public Tile GetFirstTileInRowIfValid(int id) {
         Tile currentTile = GetCurrentTile(id);
         return Array.Find(tiles, (Tile tile) => {
-            if (currentTile && tile.row == currentTile.row && tile.column == 0) {
+            if (currentTile && tile.row == currentTile.row && tile.column == 0 && !GetTileIsOccupied(tile)) {
                 return true;
             }
             return false;
@@ -146,6 +146,13 @@ public class BoardManager : MonoBehaviour {
         for (int i = stageLimit - 1; i >= 0; i--) {
             yield return StartCoroutine(StageRoutine(i));
         }
+    }
+
+    bool GetTileIsOccupied(Tile tile) {
+        if (tile.GetSummon() == null) {
+            return false;
+        }
+        return true;
     }
 
     Tile GetCurrentTile(int id) {
@@ -186,7 +193,7 @@ public class BoardManager : MonoBehaviour {
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();
-            summon?.Walk(); 
+            summon?.Walk();
         }
 
         yield return new WaitWhile(() => Array.Find(tiles, (Tile tile2) => {

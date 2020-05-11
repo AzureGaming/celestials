@@ -21,10 +21,14 @@ public class TimeGolemController : SummonController {
     }
 
     IEnumerator Rewind() {
-        Tile destination = boardManager.GetFirstTileInRow(GetSummonId());
-        isRewind = true;
-        animator.SetBool("isRewind", true);
-        yield return StartCoroutine(UpdatePositionRoutine(transform.position, destination));
-        animator.SetBool("isRewind", false);
+        Tile destination = boardManager.GetFirstTileInRowIfValid(GetSummonId());
+        if (destination == null) {
+            Die();
+        } else {
+            isRewind = true;
+            animator.SetBool("isRewind", true);
+            yield return StartCoroutine(UpdatePositionRoutine(transform.position, destination));
+            animator.SetBool("isRewind", false);
+        }
     }
 }
