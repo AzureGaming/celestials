@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Time Golem_Rewind
+  m_Name: Time Golem_Rewind_Start
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,10 +20,22 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1560945813449680692, guid: e59435b6854f6374ea9999221af6a53a,
+      value: {fileID: 2041715021316358252, guid: e59435b6854f6374ea9999221af6a53a,
         type: 3}
     - time: 0.016666668
-      value: {fileID: -3576270795244987855, guid: e59435b6854f6374ea9999221af6a53a,
+      value: {fileID: 2307770631744464416, guid: e59435b6854f6374ea9999221af6a53a,
+        type: 3}
+    - time: 0.033333335
+      value: {fileID: -3542398477856140827, guid: e59435b6854f6374ea9999221af6a53a,
+        type: 3}
+    - time: 0.05
+      value: {fileID: -6628512963423772192, guid: e59435b6854f6374ea9999221af6a53a,
+        type: 3}
+    - time: 0.06666667
+      value: {fileID: 1066368382370704190, guid: e59435b6854f6374ea9999221af6a53a,
+        type: 3}
+    - time: 0.083333336
+      value: {fileID: -7772622573684742249, guid: e59435b6854f6374ea9999221af6a53a,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -44,17 +56,21 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1560945813449680692, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
-    - {fileID: -3576270795244987855, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
+    - {fileID: 2041715021316358252, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
+    - {fileID: 2307770631744464416, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
+    - {fileID: -3542398477856140827, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
+    - {fileID: -6628512963423772192, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
+    - {fileID: 1066368382370704190, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
+    - {fileID: -7772622573684742249, guid: e59435b6854f6374ea9999221af6a53a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.033333335
+    m_StopTime: 0.1
     m_OrientationOffsetY: 0
     m_Level: 0
-    m_CycleOffset: 0
+    m_CycleOffset: -0.85
     m_HasAdditiveReferencePose: 0
     m_LoopTime: 0
     m_LoopBlend: 0
@@ -70,11 +86,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.016666668
-    functionName: OnRewindAnimationEventEnd
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
