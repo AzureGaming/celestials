@@ -1,11 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(SpriteRenderer), typeof(Summon))]
 public class SummonController : MonoBehaviour {
+    public GameObject barrierPrefab;
+    public GameObject marchPrefab;
+    public Entity entity;
     protected bool attackRoutineRunning = false;
     protected bool movementRoutineRunning = false;
+    protected bool hasBarrier = false;
     protected Animator animator;
     protected BoardManager boardManager;
     protected SpriteRenderer spriteRenderer;
@@ -13,6 +17,8 @@ public class SummonController : MonoBehaviour {
     protected float movementSpeed = 2f;
     protected GameManager gameManager;
     protected Summon summon;
+    protected Nullable<int> id;
+    protected int order;
 
     private void Awake() {
         animator = GetComponent<Animator>();
@@ -24,14 +30,15 @@ public class SummonController : MonoBehaviour {
 
     private void Start() {
         color = spriteRenderer.color;
+        SetOrder(gameManager.GetNextCardOrder());
     }
 
-    public void Walk(int movementSpeed, int id) {
-        StartCoroutine(WalkRoutine(movementSpeed, id));
+    public void Walk() {
+        StartCoroutine(WalkRoutine(entity.movementSpeed, GetId()));
     }
 
-    public void Attack(int range, int id) {
-        StartCoroutine(AttackRoutine(range, id));
+    public void Attack() {
+        StartCoroutine(AttackRoutine(entity.range, GetId()));
     }
 
     public void Die() {
@@ -40,6 +47,25 @@ public class SummonController : MonoBehaviour {
 
     public virtual void ExecuteAction() {
 
+    }
+
+    void SetOrder(int value) {
+        order = value;
+    }
+
+    public int GetOrder() {
+        return order;
+    }
+
+    public int GetId() {
+        if (id == null) {
+            id = gameManager.GetNextEntityId();
+        }
+        return (int)id;
+    }
+
+    public int GetRange() {
+        return entity.range;
     }
 
     public void OnAttackAnimationEnd() {
@@ -54,19 +80,6 @@ public class SummonController : MonoBehaviour {
         return !attackRoutineRunning ? true : false;
     }
 
-    public void SetEffectPrefab(GameObject prefab) {
-        foreach (Transform childTransform in transform.Find("Effect")) {
-            Destroy(childTransform.gameObject);
-        }
-        Instantiate(prefab, transform.Find("Effect"));
-    }
-
-    public void RemoveEffectPrefab() {
-        foreach (Transform childTransform in transform.Find("Effect")) {
-            Destroy(childTransform.gameObject);
-        }
-    }
-
     public virtual IEnumerator WalkRoutine(int tiles, int id) {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
         if (tileToMoveTo?.type == TileType.Boss) {
@@ -74,6 +87,26 @@ public class SummonController : MonoBehaviour {
         } else {
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
         }
+    }
+
+    public void TakeDamage() {
+        if (hasBarrier) {
+            GetComponentInChildren<BarrierEffect>().Deactivate();
+            hasBarrier = false;
+        } else {
+            Die();
+        }
+    }
+
+    public IEnumerator ActivateBarrier() {
+        barrierPrefab.SetActive(true);
+        yield return StartCoroutine(barrierPrefab.GetComponent<BarrierEffect>().Activate());
+        hasBarrier = true;
+    }
+
+    public IEnumerator ActivateMarch() {
+        marchPrefab.SetActive(true);
+        yield return StartCoroutine(marchPrefab.GetComponent<MarchEffect>().Activate());
     }
 
     protected void SetParent(Tile parent) {
@@ -98,10 +131,6 @@ public class SummonController : MonoBehaviour {
         animator.SetBool("isWalking", false);
         movementRoutineRunning = false;
         yield break;
-    }
-
-    protected int GetSummonId() {
-        return summon.GetId();
     }
 
     bool CheckWithinRange(int range, int id) {

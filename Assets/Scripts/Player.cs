@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+    public List<int> cardsInhand;
     GameManager gameManager;
     TurnManager turnManager;
+    CardManager cardManager;
     UIManager uiManager;
     Deck deck;
     Hand hand;
@@ -21,6 +23,7 @@ public class Player : MonoBehaviour {
         gameManager = FindObjectOfType<GameManager>();
         turnManager = FindObjectOfType<TurnManager>();
         uiManager = FindObjectOfType<UIManager>();
+        cardManager = FindObjectOfType<CardManager>();
     }
 
     private void Start() {
@@ -30,10 +33,6 @@ public class Player : MonoBehaviour {
         mana = 0;
         maxMana = 0;
         numberOfCardsHeld = hand.transform.childCount;
-    }
-
-    public Hand GetHand() {
-        return hand;
     }
 
     public bool GetIsTurnDone() {
@@ -59,9 +58,7 @@ public class Player : MonoBehaviour {
     }
 
     public IEnumerator DrawCard() {
-        deck.RemoveCard();
-        StartCoroutine(hand.DrawCard());
-        yield break;
+        yield return StartCoroutine(cardManager.HandleCardDraw());
     }
 
     public IEnumerator ReturnCard(Entity entity) {

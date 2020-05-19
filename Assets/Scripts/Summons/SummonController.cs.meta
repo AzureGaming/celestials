@@ -3,7 +3,12 @@ guid: 09b9b46b503112a49b0d37cfc2666771
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - barrierPrefab: {fileID: 3074073728842816382, guid: 04ad125e35c8ffa419d954b5c6b711ff,
+      type: 3}
+  - marchPrefab: {fileID: 2228589767349008820, guid: e4c539590ef4b88459333ca5860dfbd3,
+      type: 3}
+  - entity: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

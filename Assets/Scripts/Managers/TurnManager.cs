@@ -16,6 +16,7 @@ public class TurnManager : MonoBehaviour {
     Hand hand;
     GameManager gameManager;
     BoardManager boardManager;
+    CardManager cardManager;
     bool isMulliganConfirmed;
 
     private void Awake() {
@@ -26,6 +27,7 @@ public class TurnManager : MonoBehaviour {
         hand = FindObjectOfType<Hand>();
         gameManager = FindObjectOfType<GameManager>();
         boardManager = FindObjectOfType<BoardManager>();
+        cardManager = FindObjectOfType<CardManager>();
     }
 
     private void Start() {
@@ -40,13 +42,12 @@ public class TurnManager : MonoBehaviour {
     }
 
     public IEnumerator Initialize() {
-        yield return StartCoroutine(deck.SetupDeck());
-        yield return StartCoroutine(player.SetupPlayer());
+        //yield return StartCoroutine(deck.SetupDeck());
+        //yield return StartCoroutine(player.SetupPlayer());
         //yield return StartCoroutine(StartMulligan());
         //yield return StartCoroutine(boss.SetupBoss());
         //yield return StartCoroutine(ResolveSummonTurn());
-        //StartCoroutine(StartPlayerTurn());
-        yield break;
+        yield return StartCoroutine(StartPlayerTurn());
     }
 
     public void SetMulliganConfirmed(bool value) {
@@ -90,7 +91,7 @@ public class TurnManager : MonoBehaviour {
 
     IEnumerator StartPlayerTurn() {
         Debug.Log("Fill hand");
-        while (player.GetHand().handCardIds.Count < 5) {
+        while (cardManager.GetCardsInHand().Count < 5) {
             yield return StartCoroutine(player.DrawCard());
 
             if (deck.GetCardsInDeck() < 1) {
@@ -103,17 +104,17 @@ public class TurnManager : MonoBehaviour {
 
         Debug.Log("Player agency starts");
         state = GameState.PLAYERTURN;
-        player.SetIsTurnDone(false);
-        board.EnablePlay();
-        yield return new WaitUntil(() => player.GetIsTurnDone());
-        StartCoroutine(StartEnemyTurn());
-        yield break;
+        //player.SetIsTurnDone(false);
+        //board.EnablePlay();
+        //yield return new WaitUntil(() => player.GetIsTurnDone());
+        //StartCoroutine(StartEnemyTurn());
+        //yield break;
     }
 
     IEnumerator StartEnemyTurn() {
         Debug.Log("Start enemy turn");
         state = GameState.ENEMYTURN;
-        board.DisablePlay();
+        //board.DisablePlay();
         yield return StartCoroutine(boss.RunTurnRoutine());
         if (player.GetHealth() < 1) {
             state = GameState.LOSE;

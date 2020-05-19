@@ -10,6 +10,7 @@ TagManager:
   - Summon
   - '[Tile] Summon'
   - '[Tile] Boss'
+  - Barrier
   layers:
   - Default
   - TransparentFX
@@ -53,7 +54,7 @@ TagManager:
   - name: Board_FG
     uniqueID: 47887971
     locked: 0
-  - name: Board
+  - name: Summon
     uniqueID: 30382619
     locked: 0
   - name: Card

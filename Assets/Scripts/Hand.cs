@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +14,6 @@ public class Hand : MonoBehaviour {
     private void Awake() {
         text = GetComponentInChildren<Text>();
         cardManager = FindObjectOfType<CardManager>();
-        idsDisplay = GameObject.Find("Ids").GetComponent<Text>();
         cards = GetComponentsInChildren<Card>();
     }
 
@@ -37,13 +34,5 @@ public class Hand : MonoBehaviour {
                 Destroy(card.gameObject);
             }
         }
-    }
-
-    void UpdateIdsDisplay() {
-        idsDisplay.text = "";
-        foreach (int handCardId in handCardIds) {
-            idsDisplay.text += handCardId.ToString() + "\n";
-        }
-        text.text = "Hand Counter: " + handCardIds.Count;
     }
 }

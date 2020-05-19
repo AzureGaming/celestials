@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: 9a6824a4090924f449fc12f2a33b7a56
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8224295797984154780
+    second: Aegis-Sheet_0
+  - first:
+      213: 2307640065042177638
+    second: Aegis-Sheet_1
+  - first:
+      213: 5332327605695799444
+    second: Aegis-Sheet_2
+  - first:
+      213: -4779470852379663732
+    second: Aegis-Sheet_3
+  - first:
+      213: -9036560154675811810
+    second: Aegis-Sheet_4
+  - first:
+      213: -5847378495371403424
+    second: Aegis-Sheet_5
+  - first:
+      213: -4911513503135996364
+    second: Aegis-Sheet_6
+  - first:
+      213: 8198983254609587667
+    second: Aegis-Sheet_7
+  - first:
+      213: -8240419443668377905
+    second: Aegis-Sheet_8
+  - first:
+      213: 8908895372285859412
+    second: Aegis-Sheet_9
+  - first:
+      213: 320545568371908310
+    second: Aegis-Sheet_10
+  - first:
+      213: -1683890251701124345
+    second: Aegis-Sheet_11
+  - first:
+      213: 7027070472297838856
+    second: Aegis-Sheet_12
+  - first:
+      213: -6189650811297000617
+    second: Aegis-Sheet_13
+  - first:
+      213: 7116252040397705917
+    second: Aegis-Sheet_14
+  - first:
+      213: -3950871383529940201
+    second: Aegis-Sheet_15
+  - first:
+      213: -852307486554533086
+    second: Aegis-Sheet_16
+  - first:
+      213: 1144479778895106742
+    second: Aegis-Sheet_17
+  - first:
+      213: 5771009444592771907
+    second: Aegis-Sheet_18
+  - first:
+      213: 3945720988515974687
+    second: Aegis-Sheet_19
+  - first:
+      213: -5997360071029663859
+    second: Aegis-Sheet_20
+  - first:
+      213: -3002370716041055414
+    second: Aegis-Sheet_21
+  - first:
+      213: 9210322253493602655
+    second: Aegis-Sheet_22
+  - first:
+      213: 8681036137460887653
+    second: Aegis-Sheet_23
+  - first:
+      213: -7541850634332003909
+    second: Aegis-Sheet_24
+  - first:
+      213: 8968531589557725689
+    second: Aegis-Sheet_25
+  - first:
+      213: -5771868170062558114
+    second: Aegis-Sheet_26
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +177,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Aegis-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46baa61cb8e6ddd80800000000000000
+      internalID: -8224295797984154780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e5c4aa962660020800000000000000
+      internalID: 2307640065042177638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490e18b94bb300a40800000000000000
+      internalID: 5332327605695799444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82a39d1598ebadb0800000000000000
+      internalID: -4779470852379663732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a6915ca60b79280800000000000000
+      internalID: -9036560154675811810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f112c3d30f9dea0800000000000000
+      internalID: -5847378495371403424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4366b00cd7cc6dbb0800000000000000
+      internalID: -4911513503135996364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd616a74d3a8c170800000000000000
+      internalID: 8198983254609587667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 912
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce9ce3fc2624ad80800000000000000
+      internalID: -8240419443668377905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4565836c321c2ab70800000000000000
+      internalID: 8908895372285859412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 456
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de12210f7ec27400800000000000000
+      internalID: 320545568371908310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 456
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7038c9adcbe91a8e0800000000000000
+      internalID: -1683890251701124345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 456
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809f2f01d5b258160800000000000000
+      internalID: 7027070472297838856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 456
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7531fec9161f91aa0800000000000000
+      internalID: -6189650811297000617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 456
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2dd08f68102c260800000000000000
+      internalID: 7116252040397705917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b1177c86fab29c0800000000000000
+      internalID: -3950871383529940201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223d2805bdefb24f0800000000000000
+      internalID: -852307486554533086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b219a19b4202ef00800000000000000
+      internalID: 1144479778895106742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3436064838eb61050800000000000000
+      internalID: 5771009444592771907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e3c4f655402c630800000000000000
+      internalID: 3945720988515974687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d875a207ac815cca0800000000000000
+      internalID: -5997360071029663859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a437652bdbf6556d0800000000000000
+      internalID: -3002370716041055414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f598c5a8a43a1df70800000000000000
+      internalID: 9210322253493602655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5607fa77f5c397870800000000000000
+      internalID: 8681036137460887653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb126977ec6f55790800000000000000
+      internalID: -7541850634332003909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aegis-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 480
+        height: 456
+      alignment: 9
+      pivot: {x: 0.475, y: 0.453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f92570a6ff967c70800000000000000
+      internalID: 8968531589557725689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

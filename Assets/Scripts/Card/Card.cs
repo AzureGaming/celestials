@@ -41,11 +41,11 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     //}
 
     public void OnPointerEnter(PointerEventData eventData) {
-        transform.localScale = startingScale * 2;
+        //    transform.localScale = startingScale * 2;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-        transform.localScale = startingScale;
+        //    transform.localScale = startingScale;
     }
 
     public void OnPointerClick(PointerEventData eventData) {

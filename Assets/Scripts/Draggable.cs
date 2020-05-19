@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler {
-    public Transform parentToReturnTo;
+    Transform parentToReturnTo;
     Vector3 startingScale;
 
-    public void OnBeginDrag(PointerEventData eventData) {
+    private void Start() {
         parentToReturnTo = transform.parent;
+    }
+
+    public void OnBeginDrag(PointerEventData eventData) {
         startingScale = eventData.pointerDrag.transform.localScale;
         transform.SetParent(transform.parent.parent);
-        eventData.pointerDrag.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        //eventData.pointerDrag.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
@@ -20,8 +23,8 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     }
 
     public void OnEndDrag(PointerEventData eventData) {
-        transform.SetParent(parentToReturnTo);
-        transform.localScale = startingScale;
+        transform.SetParent(parentToReturnTo, false);
+        //transform.localScale = startingScale;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

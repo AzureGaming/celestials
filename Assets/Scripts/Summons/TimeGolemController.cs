@@ -29,7 +29,7 @@ public class TimeGolemController : SummonController {
     }
 
     void Rewind() {
-        rewindDestination = boardManager.GetFirstTileInRowIfValid(GetSummonId());
+        rewindDestination = boardManager.GetFirstTileInRowIfValid(GetId());
         if (rewindDestination == null) {
             Die();
         } else {

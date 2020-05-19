@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class HoverSizeIncrease : MonoBehaviour {
+public class UIHoverSize : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+    public GameState hoverTrigger;
     TurnManager turnManager;
     Vector3 startingScale;
 
@@ -14,13 +16,13 @@ public class HoverSizeIncrease : MonoBehaviour {
         startingScale = transform.localScale;
     }
 
-    private void OnMouseOver() {
-        if (turnManager.state == GameState.PLAYERTURN) {
-            transform.localScale = startingScale * 2;
+    public void OnPointerEnter(PointerEventData eventData) {
+        if (turnManager.state == hoverTrigger) {
+            transform.localScale = startingScale * 1.5f;
         }
     }
 
-    private void OnMouseExit() {
+    public void OnPointerExit(PointerEventData eventData) {
         transform.localScale = startingScale;
     }
 }
