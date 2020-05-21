@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
     UIManager uiManager;
     int entityIdCounter = 0;
     int cardOrder = 0;
+    bool waitForCompletion = false;
 
     private void Awake() {
         turnManager = FindObjectOfType<TurnManager>();
@@ -28,6 +29,14 @@ public class GameManager : MonoBehaviour {
             Debug.Log("Add" + cardId + " to mulligan");
             mulligans.Add(cardId);
         }
+    }
+
+    public bool GetWaitForCompletion() {
+        return waitForCompletion;
+    }
+
+    public void SetWaitForCompletion(bool value) {
+        waitForCompletion = value;
     }
 
     public int GetNextEntityId() {

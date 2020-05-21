@@ -5,9 +5,19 @@ using UnityEngine;
 [RequireComponent(typeof(SummonerController))]
 public class Summoner : MonoBehaviour {
     SummonerController controller;
+    SpriteRenderer spriteRenderer;
+    Animator animator;
+    protected int health = 30;
+    protected Color color;
 
-    private void Awake() {
-        controller = GetComponent<SummonerController>();    
+    public virtual void Awake() {
+        controller = GetComponent<SummonerController>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+    }
+
+    public virtual void Start() {
+        color = spriteRenderer.color;
     }
 
     public void Summon() {
@@ -15,6 +25,30 @@ public class Summoner : MonoBehaviour {
     }
 
     public void OnCastAnimationEventEnd() {
-        
+
+    }
+
+    public virtual void TakeDamage() {
+        animator.SetTrigger("isHurt");
+        health -= 1;
+        StartCoroutine(FlashRed());
+        if (health < 0) {
+            Die();
+        }
+    }
+
+    public virtual void Die() {
+    }
+
+    IEnumerator FlashRed() {
+        int duration = 2;
+        for (int t = 0; t < duration; t++) {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
+        spriteRenderer.color = color;
+        yield break;
     }
 }

@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: d2476fd997bd91a44ae2764e18046198
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2921365627669435634
+    second: Earth Elemental Crystalize-Sheet_0
+  - first:
+      213: 8822424634759624299
+    second: Earth Elemental Crystalize-Sheet_1
+  - first:
+      213: -5173803463336174175
+    second: Earth Elemental Crystalize-Sheet_2
+  - first:
+      213: 8444881423135316373
+    second: Earth Elemental Crystalize-Sheet_3
+  - first:
+      213: 6150637284857890804
+    second: Earth Elemental Crystalize-Sheet_4
+  - first:
+      213: -9057050217473712321
+    second: Earth Elemental Crystalize-Sheet_5
+  - first:
+      213: 2752075622503253107
+    second: Earth Elemental Crystalize-Sheet_6
+  - first:
+      213: 8680374905275693289
+    second: Earth Elemental Crystalize-Sheet_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +94,201 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b2abf80793577d0800000000000000
+      internalID: -2921365627669435634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1596
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66b08c467c8f6a70800000000000000
+      internalID: 8822424634759624299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1596
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad592e7925f238b0800000000000000
+      internalID: -5173803463336174175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599964459ee323570800000000000000
+      internalID: 8444881423135316373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 798
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f74a3ae5047b5550800000000000000
+      internalID: 6150637284857890804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 798
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fda9240d4ee4280800000000000000
+      internalID: -9057050217473712321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37481529236513620800000000000000
+      internalID: 2752075622503253107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth Elemental Crystalize-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 0
+        width: 774
+        height: 798
+      alignment: 9
+      pivot: {x: 0.5636047, y: 0.09329139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e83c2a5cf2e67870800000000000000
+      internalID: 8680374905275693289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -37,7 +37,7 @@ public class TurnManager : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.T)) {
-            StartCoroutine(ResolveSummonTurn());
+            StartCoroutine(StartEnemyTurn());
         }
     }
 
@@ -47,7 +47,8 @@ public class TurnManager : MonoBehaviour {
         //yield return StartCoroutine(StartMulligan());
         //yield return StartCoroutine(boss.SetupBoss());
         //yield return StartCoroutine(ResolveSummonTurn());
-        yield return StartCoroutine(StartPlayerTurn());
+        //yield return StartCoroutine(StartPlayerTurn());
+        yield break;
     }
 
     public void SetMulliganConfirmed(bool value) {
@@ -121,7 +122,7 @@ public class TurnManager : MonoBehaviour {
             Debug.Log("Implement Lose scenario");
             yield break;
         }
-        StartCoroutine(StartPlayerTurn());
+        //StartCoroutine(StartPlayerTurn());
         yield break;
     }
 }

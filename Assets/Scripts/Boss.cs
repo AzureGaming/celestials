@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss : MonoBehaviour {
-    int health;
-    SpriteRenderer spriteRenderer;
-    Color color;
+    protected int health;
+    protected SpriteRenderer spriteRenderer;
+    protected Animator animator;
+    protected Color color;
 
-    private void Awake() {
+    public virtual void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
-    private void Start() {
+    public virtual void Start() {
         health = 30;
         color = spriteRenderer.color;
     }
@@ -24,7 +26,7 @@ public class Boss : MonoBehaviour {
         return health;
     }
 
-    public IEnumerator RunTurnRoutine() {
+    public virtual IEnumerator RunTurnRoutine() {
         Debug.Log("Implement Boss AI turn AI");
         yield break;
     }
@@ -35,6 +37,10 @@ public class Boss : MonoBehaviour {
         if (health < 0) {
             Debug.Log("Implement win scneario");
         }
+    }
+
+    protected virtual IEnumerator Attack() {
+        yield break;
     }
 
     IEnumerator FlashRed() {
