@@ -382,7 +382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4eb357aebdaff4ebadeaabe90dda22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentToReturnTo: {fileID: 0}
 --- !u!114 &-1070604632277360459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 0}
+  frame: {fileID: 21300000, guid: c587b302059d33b4c83f913fc6ff0a25, type: 3}
 --- !u!225 &8463325482069829207
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c587b302059d33b4c83f913fc6ff0a25, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

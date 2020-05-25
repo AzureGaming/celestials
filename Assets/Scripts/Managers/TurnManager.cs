@@ -43,7 +43,7 @@ public class TurnManager : MonoBehaviour {
 
     public IEnumerator Initialize() {
         //yield return StartCoroutine(deck.SetupDeck());
-        //yield return StartCoroutine(player.SetupPlayer());
+        yield return StartCoroutine(player.SetupPlayer());
         //yield return StartCoroutine(StartMulligan());
         //yield return StartCoroutine(boss.SetupBoss());
         //yield return StartCoroutine(ResolveSummonTurn());
@@ -92,12 +92,12 @@ public class TurnManager : MonoBehaviour {
 
     IEnumerator StartPlayerTurn() {
         Debug.Log("Fill hand");
-        while (cardManager.GetCardsInHand().Count < 5) {
+        while (cardManager.GetCardsInHand().Length < 5) {
             yield return StartCoroutine(player.DrawCard());
 
-            if (deck.GetCardsInDeck() < 1) {
-                deck.Reload();
-            }
+            //if (deck.GetCardsInDeck() < 1) {
+            //    deck.Reload();
+            //}
         }
         Debug.Log("Refresh mana");
         yield return StartCoroutine(player.GainMaxMana(1));

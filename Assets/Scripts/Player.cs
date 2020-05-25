@@ -61,12 +61,6 @@ public class Player : MonoBehaviour {
         yield return StartCoroutine(cardManager.HandleCardDraw());
     }
 
-    public IEnumerator ReturnCard(Entity entity) {
-        hand.RemoveCard(entity);
-        deck.AddCard();
-        yield break;
-    }
-
     public IEnumerator GainMana(int amount) {
         mana += amount;
         if (mana > maxMana) {

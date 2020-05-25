@@ -1894,7 +1894,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441d148d4c5fa8340928d0e3dbe83a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handCardIds: 
 --- !u!1 &1252966641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +1983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330709855}
   - component: {fileID: 1330709854}
+  - component: {fileID: 1330709856}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2017,6 +2017,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1330709856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330709853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967705e635369a54787625fb0ce6e0df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1406651526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1414825836647424259, guid: 99beb93fc2132454eb2999fe40d23d3b,

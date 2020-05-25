@@ -16,6 +16,8 @@ MonoBehaviour:
     type: 3}
   boulderSpawner: {fileID: 4974695846075347589, guid: 9ae467e17da37834fb08edf0e40e902f,
     type: 3}
+  pebbleStormCardPrefab: {fileID: 3338291003009719233, guid: 0b77d8aaeee329648b61f671e9c47c55,
+    type: 3}
 --- !u!1001 &1292022170531552197
 PrefabInstance:
   m_ObjectHideFlags: 0

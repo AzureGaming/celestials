@@ -7,14 +7,14 @@ public class CardManager : MonoBehaviour {
     Card[] cards;
     Deck deck;
     Hand hand;
-    List<int> cardsInHand;
+    DiscardPile discardPile;
 
     private void Awake() {
         hand = FindObjectOfType<Hand>();
         cards = Resources.LoadAll<Card>("Loadable Cards");
         Debug.Log("Loaded cards" + cards.Length);
         deck = FindObjectOfType<Deck>();
-        cardsInHand = new List<int>();
+        discardPile = FindObjectOfType<DiscardPile>();
     }
 
     public GameObject CreateCard() {
@@ -26,15 +26,25 @@ public class CardManager : MonoBehaviour {
     }
 
     public IEnumerator HandleCardDraw() {
-        deck.RemoveCard();
-        GameObject card = CreateCard();
+        Card card = deck.RemoveCard();
         card.transform.SetParent(hand.transform);
-        cardsInHand.Add(card.GetInstanceID());
         yield break;
     }
 
-    public List<int> GetCardsInHand() {
-        return cardsInHand;
+    public void AddToDeck(Card card) {
+        deck.AddCard(card);
+    }
+
+    public Card[] GetCardsInHand() {
+        return hand.GetCards();
+    }
+
+    public void AddToDiscard(Card card) {
+        discardPile.AddCard(card);
+    }
+
+    public void TrashCard(Card card) {
+        Destroy(card.gameObject);
     }
 
     GameObject CompileCard(Entity data) {

@@ -5,14 +5,18 @@ using UnityEngine;
 public class EarthElemental : Boss {
     public GameObject boulderPrefab;
     public GameObject boulderSpawner;
+    public GameObject pebbleStormCardPrefab;
     Summoner summoner;
     GameManager gameManager;
+    BoardManager boardManager;
+    CardManager cardManager;
     bool attackRoutineRunning = false;
 
     public override void Awake() {
         base.Awake();
         summoner = FindObjectOfType<Summoner>();
         gameManager = FindObjectOfType<GameManager>();
+        cardManager = FindObjectOfType<CardManager>();
     }
 
     public override void Start() {
@@ -38,13 +42,13 @@ public class EarthElemental : Boss {
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
         attackRoutineRunning = true;
-        ExecuteAttack(1);
+        ExecuteAttack(0);
         yield break;
     }
 
     void ExecuteAttack(int randomAttack) {
         if (randomAttack == 0) {
-            PebbleStorm();
+            StartCoroutine(PebbleStorm());
         } else if (randomAttack == 1) {
             StartCoroutine(BoulderDrop());
         } else if (randomAttack == 2) {
@@ -56,8 +60,12 @@ public class EarthElemental : Boss {
         }
     }
 
-    void PebbleStorm() {
+    IEnumerator PebbleStorm() {
         animator.SetTrigger("Attack1");
+        cardManager.AddToDeck(Instantiate(pebbleStormCardPrefab).GetComponent<Card>());
+        cardManager.AddToDeck(Instantiate(pebbleStormCardPrefab).GetComponent<Card>());
+        yield return new WaitUntil(() => DoneActions());
+        yield return StartCoroutine(cardManager.HandleCardDraw());
     }
 
     IEnumerator BoulderDrop() {

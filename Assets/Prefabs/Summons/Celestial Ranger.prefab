@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4b802f0f9d6d8544c9606bbada8941a1, type: 2}
+    - target: {fileID: 3132395710482516451, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.34
+      objectReference: {fileID: 0}
     - target: {fileID: 3838097514557706253, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_Sprite
@@ -39,6 +44,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 30d3578d9ba6c6b43920012a2ec75984,
         type: 2}
+    - target: {fileID: 5229943877902025761, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.88
+      objectReference: {fileID: 0}
     - target: {fileID: 6818164089875801406, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_LocalPosition.x
