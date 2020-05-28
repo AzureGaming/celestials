@@ -1,7 +1,262 @@
 fileFormatVersion: 2
 guid: 894a517a69b9d8e4987a739c72681c5d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3438357857353562210
+    second: Blocking Crystal-Sheet_0
+  - first:
+      213: -1237638242184747021
+    second: Blocking Crystal-Sheet_1
+  - first:
+      213: 2719585230723963780
+    second: Blocking Crystal-Sheet_2
+  - first:
+      213: 4352502934171490879
+    second: Blocking Crystal-Sheet_3
+  - first:
+      213: -5391378013963112808
+    second: Blocking Crystal-Sheet_4
+  - first:
+      213: 8170774501812624467
+    second: Blocking Crystal-Sheet_5
+  - first:
+      213: -840667941579703242
+    second: Blocking Crystal-Sheet_6
+  - first:
+      213: 8405723663398214581
+    second: Blocking Crystal-Sheet_7
+  - first:
+      213: -4622013235140731064
+    second: Blocking Crystal-Sheet_8
+  - first:
+      213: -9083496686866375863
+    second: Blocking Crystal-Sheet_9
+  - first:
+      213: -1084128958594909961
+    second: Blocking Crystal-Sheet_10
+  - first:
+      213: -7001512559637539138
+    second: Blocking Crystal-Sheet_11
+  - first:
+      213: 5289943727203637929
+    second: Blocking Crystal-Sheet_12
+  - first:
+      213: -2041630415641678196
+    second: Blocking Crystal-Sheet_13
+  - first:
+      213: -1965562227147304281
+    second: Blocking Crystal-Sheet_14
+  - first:
+      213: -1801113494663196151
+    second: Blocking Crystal-Sheet_15
+  - first:
+      213: 3336059749217900689
+    second: Blocking Crystal-Sheet_16
+  - first:
+      213: -2805356345599989549
+    second: Blocking Crystal-Sheet_17
+  - first:
+      213: -3167192852186485261
+    second: Blocking Crystal-Sheet_18
+  - first:
+      213: 1559835129142126294
+    second: Blocking Crystal-Sheet_19
+  - first:
+      213: -3503662561582192190
+    second: Blocking Crystal-Sheet_20
+  - first:
+      213: 8240263095750681816
+    second: Blocking Crystal-Sheet_21
+  - first:
+      213: 6429031662457607149
+    second: Blocking Crystal-Sheet_22
+  - first:
+      213: -8999375851945550474
+    second: Blocking Crystal-Sheet_23
+  - first:
+      213: 3026883188999606502
+    second: Blocking Crystal-Sheet_24
+  - first:
+      213: 118574061620277294
+    second: Blocking Crystal-Sheet_25
+  - first:
+      213: -4985869207458178137
+    second: Blocking Crystal-Sheet_26
+  - first:
+      213: 3153574262085708835
+    second: Blocking Crystal-Sheet_27
+  - first:
+      213: -6010088939692238484
+    second: Blocking Crystal-Sheet_28
+  - first:
+      213: 7079788269305820204
+    second: Blocking Crystal-Sheet_29
+  - first:
+      213: -8082724562770962100
+    second: Blocking Crystal-Sheet_30
+  - first:
+      213: -7679096491141087705
+    second: Blocking Crystal-Sheet_31
+  - first:
+      213: -2994873109661856718
+    second: Blocking Crystal-Sheet_32
+  - first:
+      213: -5263720757900268622
+    second: Blocking Crystal-Sheet_33
+  - first:
+      213: 3112740387016336846
+    second: Blocking Crystal-Sheet_34
+  - first:
+      213: -3234816850043176167
+    second: Blocking Crystal-Sheet_35
+  - first:
+      213: 1734425528776329921
+    second: Blocking Crystal-Sheet_36
+  - first:
+      213: -2661684328862039323
+    second: Blocking Crystal-Sheet_37
+  - first:
+      213: -8830476090623076607
+    second: Blocking Crystal-Sheet_38
+  - first:
+      213: -5725026430064907399
+    second: Blocking Crystal-Sheet_39
+  - first:
+      213: -4392710166264675248
+    second: Blocking Crystal-Sheet_40
+  - first:
+      213: -8797124886557553599
+    second: Blocking Crystal-Sheet_41
+  - first:
+      213: -9129641080333707395
+    second: Blocking Crystal-Sheet_42
+  - first:
+      213: -8220887631133862115
+    second: Blocking Crystal-Sheet_43
+  - first:
+      213: 6837132713823979355
+    second: Blocking Crystal-Sheet_44
+  - first:
+      213: 4997514443905846240
+    second: Blocking Crystal-Sheet_45
+  - first:
+      213: -5828748842822722009
+    second: Blocking Crystal-Sheet_46
+  - first:
+      213: 2091001823449519099
+    second: Blocking Crystal-Sheet_47
+  - first:
+      213: 8459776614549836710
+    second: Blocking Crystal-Sheet_48
+  - first:
+      213: 7336139449016863013
+    second: Blocking Crystal-Sheet_49
+  - first:
+      213: 983678217203724083
+    second: Blocking Crystal-Sheet_50
+  - first:
+      213: 9150995757571303982
+    second: Blocking Crystal-Sheet_51
+  - first:
+      213: -8165407440666522153
+    second: Blocking Crystal-Sheet_52
+  - first:
+      213: 5136203765283098166
+    second: Blocking Crystal-Sheet_53
+  - first:
+      213: 6903490342400655901
+    second: Blocking Crystal-Sheet_54
+  - first:
+      213: -7780785680678479873
+    second: Blocking Crystal-Sheet_55
+  - first:
+      213: 8235858054674003228
+    second: Blocking Crystal-Sheet_56
+  - first:
+      213: -1004105346428503903
+    second: Blocking Crystal-Sheet_57
+  - first:
+      213: -1407589976606761044
+    second: Blocking Crystal-Sheet_58
+  - first:
+      213: -1939808594729523606
+    second: Blocking Crystal-Sheet_59
+  - first:
+      213: 4214487047204312166
+    second: Blocking Crystal-Sheet_60
+  - first:
+      213: 8270546367103563937
+    second: Blocking Crystal-Sheet_61
+  - first:
+      213: 7675388084972379493
+    second: Blocking Crystal-Sheet_62
+  - first:
+      213: 8870376387589792300
+    second: Blocking Crystal-Sheet_63
+  - first:
+      213: 3093177641449406246
+    second: Blocking Crystal-Sheet_64
+  - first:
+      213: 7615462906340637579
+    second: Blocking Crystal-Sheet_65
+  - first:
+      213: 6679674510889621004
+    second: Blocking Crystal-Sheet_66
+  - first:
+      213: -2384631491514281751
+    second: Blocking Crystal-Sheet_67
+  - first:
+      213: 2094432431264434504
+    second: Blocking Crystal-Sheet_68
+  - first:
+      213: -3518347246861222960
+    second: Blocking Crystal-Sheet_69
+  - first:
+      213: -6632764981902073188
+    second: Blocking Crystal-Sheet_70
+  - first:
+      213: 4339936129637491543
+    second: Blocking Crystal-Sheet_71
+  - first:
+      213: -3711739844104184465
+    second: Blocking Crystal-Sheet_72
+  - first:
+      213: -2297090534801204688
+    second: Blocking Crystal-Sheet_73
+  - first:
+      213: -8900615457655905652
+    second: Blocking Crystal-Sheet_74
+  - first:
+      213: -5972132155924165261
+    second: Blocking Crystal-Sheet_75
+  - first:
+      213: 5788020310633733550
+    second: Blocking Crystal-Sheet_76
+  - first:
+      213: -5566807027787183543
+    second: Blocking Crystal-Sheet_77
+  - first:
+      213: -3793149510225296955
+    second: Blocking Crystal-Sheet_78
+  - first:
+      213: -7696928963994809015
+    second: Blocking Crystal-Sheet_79
+  - first:
+      213: 2813052315618982518
+    second: Blocking Crystal-Sheet_80
+  - first:
+      213: -8681151995357199084
+    second: Blocking Crystal-Sheet_81
+  - first:
+      213: -2686288884230499789
+    second: Blocking Crystal-Sheet_82
+  - first:
+      213: -7115715000768562756
+    second: Blocking Crystal-Sheet_83
+  - first:
+      213: -5050806593330670776
+    second: Blocking Crystal-Sheet_84
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +295,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +325,474 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9784c5febf7840d0800000000000000
+      internalID: -3438357857353562210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7a326739603dee0800000000000000
+      internalID: -1237638242184747021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b53bdbb58edb520800000000000000
+      internalID: 2719585230723963780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a132bab52376c30800000000000000
+      internalID: 4352502934171490879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ea0e3d24afd25b0800000000000000
+      internalID: -5391378013963112808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c5c586e1c646170800000000000000
+      internalID: 8170774501812624467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c351016f85554f0800000000000000
+      internalID: -840667941579703242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb12fce22127a470800000000000000
+      internalID: 8405723663398214581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f584c737f4bdfb0800000000000000
+      internalID: -4622013235140731064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b54e4c3efe0f180800000000000000
+      internalID: -9083496686866375863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f87c34c47664f0f0800000000000000
+      internalID: -1084128958594909961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb65e503c61a5de90800000000000000
+      internalID: -7001512559637539138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa57c5eac7a96940800000000000000
+      internalID: 5289943727203637929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e6b0934fbaaa3e0800000000000000
+      internalID: -2041630415641678196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a295f2819be8b4e0800000000000000
+      internalID: -1965562227147304281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902107eb1d82107e0800000000000000
+      internalID: -1801113494663196151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1989c9daaa01c4e20800000000000000
+      internalID: 3336059749217900689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8ef10644f5119d0800000000000000
+      internalID: -2805356345599989549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fda446a1eedb04d0800000000000000
+      internalID: -3167192852186485261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d621bc19c5a5a510800000000000000
+      internalID: 1559835129142126294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blocking Crystal-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4931593, y: 0.2332115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9ee04a67d706fc0800000000000000
+      internalID: -3503662561582192190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

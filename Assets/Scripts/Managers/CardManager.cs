@@ -8,6 +8,7 @@ public class CardManager : MonoBehaviour {
     Deck deck;
     Hand hand;
     DiscardPile discardPile;
+    Mulligan mulligan;
 
     private void Awake() {
         hand = FindObjectOfType<Hand>();
@@ -15,6 +16,7 @@ public class CardManager : MonoBehaviour {
         Debug.Log("Loaded cards" + cards.Length);
         deck = FindObjectOfType<Deck>();
         discardPile = FindObjectOfType<DiscardPile>();
+        mulligan = FindObjectOfType<Mulligan>();
     }
 
     public GameObject CreateCard() {
@@ -25,8 +27,8 @@ public class CardManager : MonoBehaviour {
         return cardPrefab;
     }
 
-    public IEnumerator HandleCardDraw() {
-        Card card = deck.RemoveCard();
+    public IEnumerator DrawToHand() {
+        Card card = DrawCard();
         card.transform.SetParent(hand.transform);
         yield break;
     }
@@ -46,6 +48,17 @@ public class CardManager : MonoBehaviour {
     public void TrashCard(Card card) {
         Destroy(card.gameObject);
     }
+
+    public Card DrawCard() {
+        return deck.RemoveCard();
+    }
+
+    //public void StartMulligan() {
+    //    for (int i = 0; i < 3; i++) {
+    //        Card card = DrawCard();
+    //        mulligan.AddCard(card);
+    //    }
+    //}
 
     GameObject CompileCard(Entity data) {
         return cardPrefab;
