@@ -50,20 +50,10 @@ public class Player : MonoBehaviour {
     public IEnumerator SetupPlayer() {
         Debug.Log("Set up player " + numberOfCardsHeld);
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
-            yield return StartCoroutine(DrawCard());
+            yield return StartCoroutine(cardManager.DrawToHand());
         }
         yield return StartCoroutine(GainMaxMana(1));
         yield return StartCoroutine(GainMana(1));
-        yield break;
-    }
-
-    public IEnumerator DrawCard() {
-        yield return StartCoroutine(cardManager.HandleCardDraw());
-    }
-
-    public IEnumerator ReturnCard(Entity entity) {
-        hand.RemoveCard(entity);
-        deck.AddCard();
         yield break;
     }
 

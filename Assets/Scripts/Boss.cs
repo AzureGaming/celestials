@@ -31,7 +31,7 @@ public class Boss : MonoBehaviour {
         yield break;
     }
 
-    public IEnumerator TakeDamage(int damage) {
+    public virtual IEnumerator TakeDamage(int damage) {
         health -= damage;
         yield return StartCoroutine(FlashRed());
         if (health < 0) {

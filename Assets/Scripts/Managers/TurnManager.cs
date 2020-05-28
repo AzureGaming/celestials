@@ -39,6 +39,9 @@ public class TurnManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.T)) {
             StartCoroutine(StartEnemyTurn());
         }
+        if (Input.GetKeyDown(KeyCode.Y)) {
+            StartCoroutine(ResolveSummonTurn());
+        }
     }
 
     public IEnumerator Initialize() {
@@ -55,22 +58,22 @@ public class TurnManager : MonoBehaviour {
         isMulliganConfirmed = value;
     }
 
-    IEnumerator StartMulligan() {
-        Debug.Log("Start Mulligan");
-        state = GameState.MULLIGAN;
-        SetMulliganConfirmed(false);
-        yield return new WaitUntil(() => isMulliganConfirmed);
-        Debug.Log("End Mulligan phase");
-        //foreach (System.Guid id in gameManager.mulligans) {
-        //    yield return StartCoroutine(player.ReturnCard(id));
-        //}
+    //IEnumerator StartMulligan() {
+    //    Debug.Log("Start Mulligan");
+    //    state = GameState.MULLIGAN;
+    //    SetMulliganConfirmed(false);
+    //    yield return new WaitUntil(() => isMulliganConfirmed);
+    //    Debug.Log("End Mulligan phase");
+    //    //foreach (System.Guid id in gameManager.mulligans) {
+    //    //    yield return StartCoroutine(player.ReturnCard(id));
+    //    //}
 
-        foreach (System.Guid id in gameManager.mulligans) {
-            yield return StartCoroutine(player.DrawCard());
-        }
+    //    foreach (System.Guid id in gameManager.mulligans) {
+    //        yield return StartCoroutine(cardManager.DrawToHand());
+    //    }
 
-        yield break;
-    }
+    //    yield break;
+    //}
 
     IEnumerator ResolveSummonTurn() {
         //Summon[] summonsOnBoard = board.GetSummons();
@@ -92,12 +95,12 @@ public class TurnManager : MonoBehaviour {
 
     IEnumerator StartPlayerTurn() {
         Debug.Log("Fill hand");
-        while (cardManager.GetCardsInHand().Count < 5) {
-            yield return StartCoroutine(player.DrawCard());
+        while (cardManager.GetCardsInHand().Length < 5) {
+            yield return StartCoroutine(cardManager.DrawToHand());
 
-            if (deck.GetCardsInDeck() < 1) {
-                deck.Reload();
-            }
+            //if (deck.GetCardsInDeck() < 1) {
+            //    deck.Reload();
+            //}
         }
         Debug.Log("Refresh mana");
         yield return StartCoroutine(player.GainMaxMana(1));

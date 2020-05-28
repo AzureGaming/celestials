@@ -5,9 +5,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
+public class Card : MonoBehaviour, IPointerClickHandler {
     public Entity entity;
+    public Sprite frame;
     Image imageDisplay;
+    Image cardFrame;
     TextMeshProUGUI nameDisplay;
     TextMeshProUGUI manaDisplay;
     TextMeshProUGUI attackDisplay;
@@ -22,6 +24,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
         descriptionDisplay = transform.Find("Description").GetComponent<TextMeshProUGUI>();
         effect = GetComponent<CardEffect>();
+        cardFrame = transform.Find("Card Frame").GetComponent<Image>();
     }
 
     private void Start() {
@@ -31,21 +34,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         manaDisplay.text = entity.manaCost.ToString();
         attackDisplay.text = entity.attack.ToString();
         descriptionDisplay.text = entity.description;
-    }
-
-
-    //private void Update() {
-    //    if (Input.GetKeyDown(KeyCode.G)) {
-    //        ActivateEffect();
-    //    }
-    //}
-
-    public void OnPointerEnter(PointerEventData eventData) {
-        //    transform.localScale = startingScale * 2;
-    }
-
-    public void OnPointerExit(PointerEventData eventData) {
-        //    transform.localScale = startingScale;
+        cardFrame.sprite = frame;
     }
 
     public void OnPointerClick(PointerEventData eventData) {
@@ -55,7 +44,6 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     }
 
     public void ActivateEffect() {
-        Debug.Log("Activate effect" + effect);
         effect?.Apply();
     }
 

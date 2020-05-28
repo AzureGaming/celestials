@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Celestial Ranger_Walk
+  m_Name: Earth Elemental_Crystalize
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,19 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -9184440928546816113, guid: a8caf7e795a452649902b2202a970625,
-        type: 3}
-    - time: 0.016666668
-      value: {fileID: -8908962021357776082, guid: a8caf7e795a452649902b2202a970625,
-        type: 3}
-    - time: 0.033333335
-      value: {fileID: -8965795829538672043, guid: a8caf7e795a452649902b2202a970625,
-        type: 3}
-    - time: 0.05
-      value: {fileID: 4802029094807713792, guid: a8caf7e795a452649902b2202a970625,
-        type: 3}
-    - time: 0.06666667
-      value: {fileID: 5371033151017965041, guid: a8caf7e795a452649902b2202a970625,
+      value: {fileID: 8680374905275693289, guid: d2476fd997bd91a44ae2764e18046198,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -53,17 +41,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -9184440928546816113, guid: a8caf7e795a452649902b2202a970625, type: 3}
-    - {fileID: -8908962021357776082, guid: a8caf7e795a452649902b2202a970625, type: 3}
-    - {fileID: -8965795829538672043, guid: a8caf7e795a452649902b2202a970625, type: 3}
-    - {fileID: 4802029094807713792, guid: a8caf7e795a452649902b2202a970625, type: 3}
-    - {fileID: 5371033151017965041, guid: a8caf7e795a452649902b2202a970625, type: 3}
+    - {fileID: 8680374905275693289, guid: d2476fd997bd91a44ae2764e18046198, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.083333336
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -19,6 +19,7 @@ public class SummonController : MonoBehaviour {
     protected Summon summon;
     protected Nullable<int> id;
     protected int order;
+    protected Boss boss;
 
     private void Awake() {
         animator = GetComponent<Animator>();
@@ -26,6 +27,7 @@ public class SummonController : MonoBehaviour {
         summon = GetComponent<Summon>();
         boardManager = FindObjectOfType<BoardManager>();
         gameManager = FindObjectOfType<GameManager>();
+        boss = FindObjectOfType<Boss>();
     }
 
     private void Start() {
@@ -146,6 +148,7 @@ public class SummonController : MonoBehaviour {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
             yield return new WaitUntil(() => !attackRoutineRunning);
+            yield return StartCoroutine(boss.TakeDamage(entity.attack));
         }
         yield break;
     }

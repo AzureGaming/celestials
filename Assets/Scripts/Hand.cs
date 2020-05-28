@@ -5,20 +5,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Hand : MonoBehaviour {
-    Text text;
-    [SerializeField] public List<int> handCardIds;
     CardManager cardManager;
-    Text idsDisplay;
-    Card[] cards;
 
     private void Awake() {
-        text = GetComponentInChildren<Text>();
         cardManager = FindObjectOfType<CardManager>();
-        cards = GetComponentsInChildren<Card>();
     }
 
-    private void Start() {
-        handCardIds = new List<int>();
+    public Card[] GetCards() {
+        return GetComponentsInChildren<Card>();
     }
 
     public IEnumerator DrawCard() {
@@ -28,8 +22,7 @@ public class Hand : MonoBehaviour {
     }
 
     public void RemoveCard(Entity entity) {
-        cards = GetComponentsInChildren<Card>();
-        foreach (Card card in cards) {
+        foreach (Card card in GetComponentsInChildren<Card>()) {
             if (card.GetEntity() == entity) {
                 Destroy(card.gameObject);
             }

@@ -11,6 +11,7 @@ public class BoardManager : MonoBehaviour {
     Tile[] tiles;
     UIManager uiManager;
     GameManager gameManager;
+    CardManager cardManager;
     Player player;
     int cardOrder = 0;
     int stageLimit = 3;
@@ -25,6 +26,7 @@ public class BoardManager : MonoBehaviour {
         board = GetComponent<Board>();
         tiles = GetComponentsInChildren<Tile>();
         gameManager = FindObjectOfType<GameManager>();
+        cardManager = FindObjectOfType<CardManager>();
         grid = new Tile[4][];
         grid[0] = new Tile[3];
         grid[1] = new Tile[3];
@@ -66,6 +68,10 @@ public class BoardManager : MonoBehaviour {
                 tile.SetValidState();
             }
         }
+    }
+
+    public void GetFirstSummonInRow() {
+
     }
 
     public void SetNeutral() {
@@ -121,6 +127,7 @@ public class BoardManager : MonoBehaviour {
         queue.Clear();
     }
 
+    // TODO: Move to Card Manager
     public void PlayCard(Card card) {
         CardType type = card.GetType();
         if (type == CardType.Summon) {
@@ -186,11 +193,14 @@ public class BoardManager : MonoBehaviour {
         card.SummonAt(GetQueue()[0]);
         player.LoseMana(card.GetManaCost());
         ClearQueue();
-        Destroy(card.gameObject);
+        cardManager.AddToDiscard(card);
     }
 
     void PlaySpell(Card card) {
         card.ActivateEffect();
+        if (card) {
+            cardManager.AddToDiscard(card);
+        }
     }
 
     IEnumerator StageRoutine(int stageIndex) {
