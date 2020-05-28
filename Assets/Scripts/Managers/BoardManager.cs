@@ -70,6 +70,19 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
+    public List<Tile> GetSummonableTiles() {
+        int stage = 0;
+        List<Tile> tiles = new List<Tile>();
+        for (int row = 0; row < rowLimit; row++) {
+            Tile tile = grid[stage][row];
+            if (!tile.CheckOccupied()) {
+                tiles.Add(tile);
+            }
+        }
+
+        return tiles;
+    }
+
     public void GetFirstSummonInRow() {
 
     }

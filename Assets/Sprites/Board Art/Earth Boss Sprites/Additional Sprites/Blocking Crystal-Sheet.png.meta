@@ -257,6 +257,69 @@ TextureImporter:
   - first:
       213: -5050806593330670776
     second: Blocking Crystal-Sheet_84
+  - first:
+      213: -6419776997356750319
+    second: Blocking Crystal-Sheet_0
+  - first:
+      213: 5528452504586221805
+    second: Blocking Crystal-Sheet_1
+  - first:
+      213: -8621773161779073757
+    second: Blocking Crystal-Sheet_2
+  - first:
+      213: 5573936188545517936
+    second: Blocking Crystal-Sheet_3
+  - first:
+      213: 2564542408489260764
+    second: Blocking Crystal-Sheet_4
+  - first:
+      213: -8660236217481636272
+    second: Blocking Crystal-Sheet_5
+  - first:
+      213: 2782359082967585973
+    second: Blocking Crystal-Sheet_6
+  - first:
+      213: 826861174411787182
+    second: Blocking Crystal-Sheet_7
+  - first:
+      213: -2339703443100812056
+    second: Blocking Crystal-Sheet_8
+  - first:
+      213: -8001885683202672547
+    second: Blocking Crystal-Sheet_9
+  - first:
+      213: 7258024101794666167
+    second: Blocking Crystal-Sheet_10
+  - first:
+      213: 4700384340221937375
+    second: Blocking Crystal-Sheet_11
+  - first:
+      213: 3029995727738420041
+    second: Blocking Crystal-Sheet_12
+  - first:
+      213: 3390411770960267124
+    second: Blocking Crystal-Sheet_13
+  - first:
+      213: -7053279693006382091
+    second: Blocking Crystal-Sheet_14
+  - first:
+      213: -8420841195419914211
+    second: Blocking Crystal-Sheet_15
+  - first:
+      213: 5300781897730843657
+    second: Blocking Crystal-Sheet_16
+  - first:
+      213: -109439582100361879
+    second: Blocking Crystal-Sheet_17
+  - first:
+      213: -3892325684296275778
+    second: Blocking Crystal-Sheet_18
+  - first:
+      213: -6401081196074894139
+    second: Blocking Crystal-Sheet_19
+  - first:
+      213: 3443359857456941974
+    second: Blocking Crystal-Sheet_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -357,18 +420,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 128
-        height: 128
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9784c5febf7840d0800000000000000
-      internalID: -3438357857353562210
+      spriteID: 11ab35795de58e6a0800000000000000
+      internalID: -6419776997356750319
       vertices: []
       indices: 
       edges: []
@@ -377,19 +440,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f7a326739603dee0800000000000000
-      internalID: -1237638242184747021
+      spriteID: de8fa7d034209bc40800000000000000
+      internalID: 5528452504586221805
       vertices: []
       indices: 
       edges: []
@@ -398,19 +461,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b53bdbb58edb520800000000000000
-      internalID: 2719585230723963780
+      spriteID: 32d692e4dfe495880800000000000000
+      internalID: -8621773161779073757
       vertices: []
       indices: 
       edges: []
@@ -419,19 +482,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
-        width: 128
-        height: 128
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3a132bab52376c30800000000000000
-      internalID: 4352502934171490879
+      spriteID: 07943f67e699a5d40800000000000000
+      internalID: 5573936188545517936
       vertices: []
       indices: 
       edges: []
@@ -440,19 +503,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 128
-        height: 128
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ea0e3d24afd25b0800000000000000
-      internalID: -5391378013963112808
+      spriteID: cd65d65abb5179320800000000000000
+      internalID: 2564542408489260764
       vertices: []
       indices: 
       edges: []
@@ -461,19 +524,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 256
-        width: 128
-        height: 128
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35c5c586e1c646170800000000000000
-      internalID: 8170774501812624467
+      spriteID: 056d80a4b09a0d780800000000000000
+      internalID: -8660236217481636272
       vertices: []
       indices: 
       edges: []
@@ -482,19 +545,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 128
-        height: 128
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c351016f85554f0800000000000000
-      internalID: -840667941579703242
+      spriteID: 5b45dd928dcec9620800000000000000
+      internalID: 2782359082967585973
       vertices: []
       indices: 
       edges: []
@@ -503,19 +566,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 256
-        width: 128
-        height: 128
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb12fce22127a470800000000000000
-      internalID: 8405723663398214581
+      spriteID: eab70637bd9997b00800000000000000
+      internalID: 826861174411787182
       vertices: []
       indices: 
       edges: []
@@ -524,19 +587,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 128
-        height: 128
+        x: 2048
+        y: 512
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84f584c737f4bdfb0800000000000000
-      internalID: -4622013235140731064
+      spriteID: 8ecb7326d14b78fd0800000000000000
+      internalID: -2339703443100812056
       vertices: []
       indices: 
       edges: []
@@ -546,18 +609,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 128
-        height: 128
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b54e4c3efe0f180800000000000000
-      internalID: -9083496686866375863
+      spriteID: d58bb6fed5793f090800000000000000
+      internalID: -8001885683202672547
       vertices: []
       indices: 
       edges: []
@@ -566,19 +629,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_10
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f87c34c47664f0f0800000000000000
-      internalID: -1084128958594909961
+      spriteID: 7b6d1b6477ea9b460800000000000000
+      internalID: 7258024101794666167
       vertices: []
       indices: 
       edges: []
@@ -587,19 +650,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_11
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb65e503c61a5de90800000000000000
-      internalID: -7001512559637539138
+      spriteID: fd6ccba57ae1b3140800000000000000
+      internalID: 4700384340221937375
       vertices: []
       indices: 
       edges: []
@@ -608,19 +671,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_12
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aa57c5eac7a96940800000000000000
-      internalID: 5289943727203637929
+      spriteID: 94bbcce8f05bc0a20800000000000000
+      internalID: 3029995727738420041
       vertices: []
       indices: 
       edges: []
@@ -629,19 +692,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_13
       rect:
         serializedVersion: 2
-        x: 512
-        y: 128
-        width: 128
-        height: 128
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8e6b0934fbaaa3e0800000000000000
-      internalID: -2041630415641678196
+      spriteID: 477c362ea892d0f20800000000000000
+      internalID: 3390411770960267124
       vertices: []
       indices: 
       edges: []
@@ -650,19 +713,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_14
       rect:
         serializedVersion: 2
-        x: 640
-        y: 128
-        width: 128
-        height: 128
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a295f2819be8b4e0800000000000000
-      internalID: -1965562227147304281
+      spriteID: 5fbd0e43d77bd1e90800000000000000
+      internalID: -7053279693006382091
       vertices: []
       indices: 
       edges: []
@@ -671,19 +734,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_15
       rect:
         serializedVersion: 2
-        x: 768
-        y: 128
-        width: 128
-        height: 128
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 902107eb1d82107e0800000000000000
-      internalID: -1801113494663196151
+      spriteID: d10350d5c89232b80800000000000000
+      internalID: -8420841195419914211
       vertices: []
       indices: 
       edges: []
@@ -692,19 +755,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_16
       rect:
         serializedVersion: 2
-        x: 896
-        y: 128
-        width: 128
-        height: 128
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1989c9daaa01c4e20800000000000000
-      internalID: 3336059749217900689
+      spriteID: 904611e1d09209940800000000000000
+      internalID: 5300781897730843657
       vertices: []
       indices: 
       edges: []
@@ -713,19 +776,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_17
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 128
-        width: 128
-        height: 128
+        x: 2048
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d8ef10644f5119d0800000000000000
-      internalID: -2805356345599989549
+      spriteID: 96d6a88a7413b7ef0800000000000000
+      internalID: -109439582100361879
       vertices: []
       indices: 
       edges: []
@@ -734,19 +797,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_18
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 128
-        width: 128
-        height: 128
+        x: 2304
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fda446a1eedb04d0800000000000000
-      internalID: -3167192852186485261
+      spriteID: eb8246d996eabf9c0800000000000000
+      internalID: -3892325684296275778
       vertices: []
       indices: 
       edges: []
@@ -755,19 +818,19 @@ TextureImporter:
       name: Blocking Crystal-Sheet_19
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 128
-        width: 128
-        height: 128
+        x: 2560
+        y: 256
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d621bc19c5a5a510800000000000000
-      internalID: 1559835129142126294
+      spriteID: 5ccf589019aca27a0800000000000000
+      internalID: -6401081196074894139
       vertices: []
       indices: 
       edges: []
@@ -778,17 +841,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.4931593, y: 0.2332115}
+      pivot: {x: 0.4974225, y: 0.2319411}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c9ee04a67d706fc0800000000000000
-      internalID: -3503662561582192190
+      spriteID: 69b8f81fb8549cf20800000000000000
+      internalID: 3443359857456941974
       vertices: []
       indices: 
       edges: []

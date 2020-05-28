@@ -18,6 +18,8 @@ MonoBehaviour:
     type: 3}
   pebbleStormCardPrefab: {fileID: 3338291003009719233, guid: 0b77d8aaeee329648b61f671e9c47c55,
     type: 3}
+  blockingCrystalPrefab: {fileID: 7381904007666532172, guid: 09066b71efc6bdd44950b8825012733b,
+    type: 3}
 --- !u!1001 &1292022170531552197
 PrefabInstance:
   m_ObjectHideFlags: 0

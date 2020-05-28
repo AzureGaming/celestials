@@ -6,17 +6,23 @@ public class EarthElemental : Boss {
     public GameObject boulderPrefab;
     public GameObject boulderSpawner;
     public GameObject pebbleStormCardPrefab;
+    public GameObject blockingCrystalPrefab;
     Summoner summoner;
     GameManager gameManager;
     BoardManager boardManager;
     CardManager cardManager;
+    BlockingCrystal blockingCrystal;
     bool attackRoutineRunning = false;
+    GameObject blockingCrystalRunTimeReference;
+    bool doneSpawningBlockingCrystal = false;
+    bool spawnedBlockingCrystal = false;
 
     public override void Awake() {
         base.Awake();
         summoner = FindObjectOfType<Summoner>();
         gameManager = FindObjectOfType<GameManager>();
         cardManager = FindObjectOfType<CardManager>();
+        boardManager = FindObjectOfType<BoardManager>();
     }
 
     public override void Start() {
@@ -26,6 +32,11 @@ public class EarthElemental : Boss {
     public override IEnumerator RunTurnRoutine() {
         if (GetIsProtected()) {
             SetIsProtected(false);
+        }
+
+        if (spawnedBlockingCrystal) {
+            BlockingCrystal blockingCrystal = FindObjectOfType<BlockingCrystal>().GetComponent<BlockingCrystal>();
+            yield return StartCoroutine(blockingCrystal.Break());
         }
         yield return StartCoroutine(Attack());
     }
@@ -41,13 +52,17 @@ public class EarthElemental : Boss {
     public void OnAttackAnimationEnd() {
         attackRoutineRunning = false;
     }
+
+    public void OnBlockingCrystalSpawnAnimationEnd() {
+        doneSpawningBlockingCrystal = true;
+    }
     // rock throw => throw 2 rocks at 2 different lanes, hitting the first summon
     // lane block
     // block a tile for a turn
 
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
-        ExecuteAttack(4);
+        ExecuteAttack(3);
         yield break;
     }
 
@@ -60,7 +75,7 @@ public class EarthElemental : Boss {
         } else if (randomAttack == 2) {
             RockThrow();
         } else if (randomAttack == 3) {
-            CrystalBlock();
+            StartCoroutine(CrystalBlock());
         } else if (randomAttack == 4) {
             StartCoroutine(Crystalize());
         }
@@ -87,8 +102,16 @@ public class EarthElemental : Boss {
         animator.SetTrigger("Attack1");
     }
 
-    void CrystalBlock() {
+    IEnumerator CrystalBlock() {
         animator.SetTrigger("Attack2");
+        yield return new WaitUntil(() => DoneActions());
+        List<Tile> validTiles = boardManager.GetSummonableTiles();
+        int randomIndex = Random.Range(0, validTiles.Count);
+        Tile tileToBlock = validTiles[randomIndex];
+        spawnedBlockingCrystal = true;
+        blockingCrystalRunTimeReference = Instantiate(blockingCrystalPrefab, tileToBlock.transform);
+        BlockingCrystal blockingCrystal = blockingCrystalRunTimeReference.GetComponent<BlockingCrystal>();
+        yield return new WaitUntil(() => !blockingCrystal.GetIsSpawning());
     }
 
     IEnumerator Crystalize() {
@@ -103,6 +126,10 @@ public class EarthElemental : Boss {
 
     bool DoneBoulderDrop() {
         return !gameManager.GetWaitForCompletion();
+    }
+
+    bool DoneSpawningBlockingCrystal() {
+        return doneSpawningBlockingCrystal;
     }
 
     bool GetIsProtected() {
