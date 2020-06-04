@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EarthElemental : Boss {
-    public GameObject boulderPrefab;
+    public GameObject boulderDropPrefab;
+    public GameObject boulderThrowPrefab;
     public GameObject boulderSpawner;
+    public GameObject boulderThrowSpawner;
     public GameObject pebbleStormCardPrefab;
     public GameObject blockingCrystalPrefab;
     Summoner summoner;
@@ -56,13 +59,10 @@ public class EarthElemental : Boss {
     public void OnBlockingCrystalSpawnAnimationEnd() {
         doneSpawningBlockingCrystal = true;
     }
-    // rock throw => throw 2 rocks at 2 different lanes, hitting the first summon
-    // lane block
-    // block a tile for a turn
 
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
-        ExecuteAttack(3);
+        ExecuteAttack(2);
         yield break;
     }
 
@@ -73,7 +73,7 @@ public class EarthElemental : Boss {
         } else if (randomAttack == 1) {
             StartCoroutine(BoulderDrop());
         } else if (randomAttack == 2) {
-            RockThrow();
+            StartCoroutine(RockThrow());
         } else if (randomAttack == 3) {
             StartCoroutine(CrystalBlock());
         } else if (randomAttack == 4) {
@@ -92,14 +92,33 @@ public class EarthElemental : Boss {
     IEnumerator BoulderDrop() {
         animator.SetTrigger("Attack1");
         gameManager.SetWaitForCompletion(true);
-        Instantiate(boulderPrefab, boulderSpawner.transform);
+        Instantiate(boulderDropPrefab, boulderSpawner.transform);
         yield return new WaitUntil(() => DoneBoulderDrop());
         yield return new WaitUntil(() => DoneActions());
-        summoner.TakeDamage();
+        summoner.TakeDamage(3);
     }
 
-    void RockThrow() {
+    IEnumerator RockThrow() {
+        // rock throw => throw 2 rocks at 2 different lanes, hitting the first summon
         animator.SetTrigger("Attack1");
+        yield return new WaitUntil(() => DoneActions());
+        Tile[] validTiles = boardManager.GetFirstSummonInRows();
+        List<Tile> tiles = new List<Tile>();
+        foreach (Tile tile in validTiles) {
+            if (tile?.GetSummon()) {
+                tiles.Add(tile);
+            }
+        }
+
+        List<Tile> randomList = tiles.OrderBy(tile => Random.Range(0f, 1f)).ToList();
+        for (int i = 0; i < 2; i++) {
+            GameObject boulder = Instantiate(boulderThrowPrefab, boulderThrowSpawner.transform);
+            if (randomList.ElementAtOrDefault(i) != null) {
+                StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(randomList[i].GetSummon().transform.position, randomList[i].GetSummon()));
+            } else {
+                StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(summoner.transform.position, summoner));
+            }
+        }
     }
 
     IEnumerator CrystalBlock() {

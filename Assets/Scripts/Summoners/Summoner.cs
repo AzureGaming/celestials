@@ -28,9 +28,9 @@ public class Summoner : MonoBehaviour {
 
     }
 
-    public virtual void TakeDamage() {
+    public virtual void TakeDamage(int damage) {
         animator.SetTrigger("isHurt");
-        health -= 1;
+        health -= damage;
         StartCoroutine(FlashRed());
         if (health < 0) {
             Die();
