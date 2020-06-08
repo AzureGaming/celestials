@@ -1907,6 +1907,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252966641}
   m_CullTransparentMesh: 0
+--- !u!1 &1262056110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4974695846075347589, guid: 9ae467e17da37834fb08edf0e40e902f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3403996551956244036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1330709853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2202,7 @@ PrefabInstance:
     - target: {fileID: 564710992514536311, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 564710992514536311, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
@@ -2287,6 +2293,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1129860820523223033, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+        type: 3}
+      propertyPath: boulderThrowSpawner
+      value: 
+      objectReference: {fileID: 4974695846116824282}
+    - target: {fileID: 1129860820523223033, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+        type: 3}
+      propertyPath: boulderSpawner
+      value: 
+      objectReference: {fileID: 1262056110}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5f46779f5f9644aa6d561313c2d8c, type: 3}
 --- !u!1 &2006069656
@@ -2479,6 +2495,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae467e17da37834fb08edf0e40e902f, type: 3}
+--- !u!1 &4974695846116824282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6195719217809007387, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1221098160642242497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8401865781244766740
 PrefabInstance:
   m_ObjectHideFlags: 0

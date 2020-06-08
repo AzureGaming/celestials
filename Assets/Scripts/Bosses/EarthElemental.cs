@@ -99,7 +99,6 @@ public class EarthElemental : Boss {
     }
 
     IEnumerator RockThrow() {
-        // rock throw => throw 2 rocks at 2 different lanes, hitting the first summon
         animator.SetTrigger("Attack1");
         yield return new WaitUntil(() => DoneActions());
         Tile[] validTiles = boardManager.GetFirstSummonInRows();
