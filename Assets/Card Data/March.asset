@@ -22,4 +22,4 @@ MonoBehaviour:
   range: 0
   type: 1
   movementSpeed: 0
-  effect: {fileID: 0}
+  cardBase: 1

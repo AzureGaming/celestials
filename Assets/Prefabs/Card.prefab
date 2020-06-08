@@ -395,7 +395,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 0}
-  frame: {fileID: 21300000, guid: c587b302059d33b4c83f913fc6ff0a25, type: 3}
+  basicFrame: {fileID: 21300000, guid: c587b302059d33b4c83f913fc6ff0a25, type: 3}
+  pixFrame: {fileID: 21300000, guid: cd1f12c51247b184d826a8f29f2bcd2c, type: 3}
+  bossFrame: {fileID: 21300000, guid: ed2ae258bdcb42c4b99ab443ba0e6fae, type: 3}
 --- !u!225 &8463325482069829207
 CanvasGroup:
   m_ObjectHideFlags: 0

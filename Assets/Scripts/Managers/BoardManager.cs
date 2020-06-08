@@ -71,20 +71,31 @@ public class BoardManager : MonoBehaviour {
     }
 
     public List<Tile> GetSummonableTiles() {
-        int stage = 0;
         List<Tile> tiles = new List<Tile>();
-        for (int row = 0; row < rowLimit; row++) {
-            Tile tile = grid[stage][row];
-            if (!tile.CheckOccupied()) {
-                tiles.Add(tile);
+        for (int stage = 0; stage < stageLimit; stage++) {
+            for (int row = 0; row < rowLimit; row++) {
+                Tile tile = grid[stage][row];
+                if (!tile.CheckOccupied()) {
+                    tiles.Add(tile);
+                }
             }
         }
 
         return tiles;
     }
 
-    public void GetFirstSummonInRow() {
-
+    public Tile[] GetFirstSummonInRows() {
+        // index is row
+        Tile[] tiles = new Tile[3];
+        for (int stage = 0; stage < stageLimit; stage++) {
+            for (int row = 0; row < rowLimit; row++) {
+                Tile tile = grid[stage][row];
+                if (tile && tile.CheckOccupied()) {
+                    tiles[row] = tile;
+                }
+            }
+        }
+        return tiles;
     }
 
     public void SetNeutral() {

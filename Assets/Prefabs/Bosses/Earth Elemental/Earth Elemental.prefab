@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104d65f0e5a050b4c94e77c9653c5f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boulderPrefab: {fileID: 6899321150750685673, guid: 0f401d0dcf2b15a44a8644758eb2d2dd,
+  boulderDropPrefab: {fileID: 6899321150750685673, guid: 0f401d0dcf2b15a44a8644758eb2d2dd,
+    type: 3}
+  boulderThrowPrefab: {fileID: 6899321150750685673, guid: ae40b7bb6c7b54f47a2bba9707727371,
     type: 3}
   boulderSpawner: {fileID: 4974695846075347589, guid: 9ae467e17da37834fb08edf0e40e902f,
+    type: 3}
+  boulderThrowSpawner: {fileID: 6195719217809007387, guid: 5e7bbd50023f3c1429859f531c6e80dc,
     type: 3}
   pebbleStormCardPrefab: {fileID: 3338291003009719233, guid: 0b77d8aaeee329648b61f671e9c47c55,
     type: 3}

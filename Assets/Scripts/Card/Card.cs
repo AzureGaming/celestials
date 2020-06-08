@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IPointerClickHandler {
     public Entity entity;
-    public Sprite frame;
+    public Sprite basicFrame;
+    public Sprite pixFrame;
+    public Sprite bossFrame;
     Image imageDisplay;
     Image cardFrame;
     TextMeshProUGUI nameDisplay;
@@ -34,7 +36,13 @@ public class Card : MonoBehaviour, IPointerClickHandler {
         manaDisplay.text = entity.manaCost.ToString();
         attackDisplay.text = entity.attack.ToString();
         descriptionDisplay.text = entity.description;
-        cardFrame.sprite = frame;
+        if (entity.cardBase == CardBase.Basic) {
+            cardFrame.sprite = basicFrame;
+        } else if (entity.cardBase == CardBase.Pix) {
+            cardFrame.sprite = pixFrame;
+        } else if (entity.cardBase == CardBase.Boss) {
+            cardFrame.sprite = bossFrame;
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData) {

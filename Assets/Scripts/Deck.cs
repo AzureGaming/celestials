@@ -14,7 +14,6 @@ public class Deck : MonoBehaviour {
     public void AddCard(Card card) {
         int randomIndex = Random.Range(0, cards.Count);
         cards.Insert(randomIndex, card);
-        Debug.Log("Hello" + cards.Count);
     }
 
     public Card RemoveCard() {

@@ -8,6 +8,12 @@ public enum CardType {
     Spell
 }
 
+public enum CardBase {
+    Pix,
+    Basic,
+    Boss
+}
+
 [CreateAssetMenu(fileName = "New Entity Object", menuName = "Entity")]
 public class Entity : ScriptableObject {
     public new string name;
@@ -19,4 +25,5 @@ public class Entity : ScriptableObject {
     public int range = 1;
     public CardType type;
     public int movementSpeed = 1;
+    public CardBase cardBase;
 }
