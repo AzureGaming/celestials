@@ -2,9 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Hand : MonoBehaviour {
+public class Hand : MonoBehaviour, IDropHandler {
     CardManager cardManager;
 
     private void Awake() {
@@ -21,5 +22,10 @@ public class Hand : MonoBehaviour {
                 Destroy(card.gameObject);
             }
         }
+    }
+
+    public void OnDrop(PointerEventData eventData) {
+        eventData.pointerDrag.transform.SetParent(transform);
+        eventData.pointerDrag.gameObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

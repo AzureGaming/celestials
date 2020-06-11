@@ -14,7 +14,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler {
     public void OnBeginDrag(PointerEventData eventData) {
         startingScale = eventData.pointerDrag.transform.localScale;
         transform.SetParent(transform.parent.parent);
-        //eventData.pointerDrag.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         GetComponent<CanvasGroup>().blocksRaycasts = false;
         Debug.Log("Start");
     }
@@ -22,11 +21,4 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler {
     public void OnDrag(PointerEventData eventData) {
         transform.position = eventData.position;
     }
-
-    //public void OnEndDrag(PointerEventData eventData) {
-    //    Debug.Log(eventData.pointerEnter);
-    //    //transform.SetParent(parentToReturnTo, false);
-    //    transform.localScale = startingScale;
-    //    //GetComponent<CanvasGroup>().blocksRaycasts = true;
-    //}
 }

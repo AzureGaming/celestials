@@ -57,6 +57,10 @@ public class Player : MonoBehaviour {
         yield break;
     }
 
+    public int GetMana() {
+        return mana;
+    }
+
     public IEnumerator GainMana(int amount) {
         mana += amount;
         if (mana > maxMana) {

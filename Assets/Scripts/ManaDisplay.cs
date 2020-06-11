@@ -14,6 +14,7 @@ public class ManaDisplay : MonoBehaviour {
     }
 
     public void UpdateCurrentMana(int mana) {
+        Debug.Log("update current mana");
         currentMana.text = mana.ToString();
     }
 
