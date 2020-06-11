@@ -13,8 +13,8 @@ public class March : CardEffect {
         boardManager = FindObjectOfType<BoardManager>();
     }
 
-    override public void Apply() {
-        StartCoroutine(MarchRoutine());
+    override public IEnumerator Apply() {
+        yield return StartCoroutine(MarchRoutine());
     }
 
     IEnumerator MarchRoutine() {

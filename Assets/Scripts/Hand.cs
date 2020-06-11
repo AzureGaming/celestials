@@ -15,12 +15,6 @@ public class Hand : MonoBehaviour {
         return GetComponentsInChildren<Card>();
     }
 
-    public IEnumerator DrawCard() {
-        GameObject card = cardManager.CreateCard();
-        card.transform.SetParent(transform);
-        yield break;
-    }
-
     public void RemoveCard(Entity entity) {
         foreach (Card card in GetComponentsInChildren<Card>()) {
             if (card.GetEntity() == entity) {

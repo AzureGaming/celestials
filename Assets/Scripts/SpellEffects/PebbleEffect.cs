@@ -9,7 +9,8 @@ public class PebbleEffect : CardEffect {
         cardManager = FindObjectOfType<CardManager>();
     }
 
-    public override void Apply() {
+    public override IEnumerator Apply() {
         cardManager.TrashCard(GetComponent<Card>());
+        yield break;
     }
 }

@@ -45,9 +45,7 @@ public class TurnManager : MonoBehaviour {
     }
 
     public IEnumerator Initialize() {
-        //yield return StartCoroutine(deck.SetupDeck());
-        //yield return StartCoroutine(player.SetupPlayer());
-        //yield return StartCoroutine(StartMulligan());
+        yield return StartCoroutine(player.SetupPlayer());
         //yield return StartCoroutine(boss.SetupBoss());
         //yield return StartCoroutine(ResolveSummonTurn());
         //yield return StartCoroutine(StartPlayerTurn());
@@ -57,23 +55,6 @@ public class TurnManager : MonoBehaviour {
     public void SetMulliganConfirmed(bool value) {
         isMulliganConfirmed = value;
     }
-
-    //IEnumerator StartMulligan() {
-    //    Debug.Log("Start Mulligan");
-    //    state = GameState.MULLIGAN;
-    //    SetMulliganConfirmed(false);
-    //    yield return new WaitUntil(() => isMulliganConfirmed);
-    //    Debug.Log("End Mulligan phase");
-    //    //foreach (System.Guid id in gameManager.mulligans) {
-    //    //    yield return StartCoroutine(player.ReturnCard(id));
-    //    //}
-
-    //    foreach (System.Guid id in gameManager.mulligans) {
-    //        yield return StartCoroutine(cardManager.DrawToHand());
-    //    }
-
-    //    yield break;
-    //}
 
     IEnumerator ResolveSummonTurn() {
         //Summon[] summonsOnBoard = board.GetSummons();

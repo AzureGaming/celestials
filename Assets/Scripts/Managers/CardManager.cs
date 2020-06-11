@@ -21,7 +21,6 @@ public class CardManager : MonoBehaviour {
 
     public GameObject CreateCard() {
         GameObject cardPrefab = Instantiate(GetCardPrefab(), transform);
-        cardPrefab.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         //card.GetComponent<Card>().LoadCard(GetValidCardData());
 
         return cardPrefab;
@@ -30,6 +29,7 @@ public class CardManager : MonoBehaviour {
     public IEnumerator DrawToHand() {
         Card card = DrawCard();
         card.transform.SetParent(hand.transform);
+        card.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         yield break;
     }
 

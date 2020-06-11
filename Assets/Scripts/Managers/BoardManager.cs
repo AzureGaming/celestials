@@ -157,7 +157,7 @@ public class BoardManager : MonoBehaviour {
         if (type == CardType.Summon) {
             StartCoroutine(PlaySummon(card));
         } else if (type == CardType.Spell) {
-            PlaySpell(card);
+            StartCoroutine(PlaySpell(card));
         } else {
             Debug.Log("Unknown cardtype encountered: " + type);
         }
@@ -218,10 +218,11 @@ public class BoardManager : MonoBehaviour {
         player.LoseMana(card.GetManaCost());
         ClearQueue();
         cardManager.AddToDiscard(card);
+        Destroy(card.gameObject);
     }
 
-    void PlaySpell(Card card) {
-        card.ActivateEffect();
+    IEnumerator PlaySpell(Card card) {
+        yield return StartCoroutine(card.ActivateEffect());
         if (card) {
             cardManager.AddToDiscard(card);
         }
