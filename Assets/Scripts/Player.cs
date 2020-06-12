@@ -12,7 +12,6 @@ public class Player : MonoBehaviour {
     Hand hand;
     int handLimit;
     int health;
-    bool isTurnDone;
     int mana;
     int maxMana;
     int numberOfCardsHeld;
@@ -29,22 +28,13 @@ public class Player : MonoBehaviour {
     private void Start() {
         handLimit = 5;
         health = 30;
-        isTurnDone = false;
         mana = 0;
         maxMana = 0;
         numberOfCardsHeld = hand.transform.childCount;
     }
 
-    public bool GetIsTurnDone() {
-        return isTurnDone;
-    }
-
     public int GetHealth() {
         return health;
-    }
-
-    public void SetIsTurnDone(bool value) {
-        isTurnDone = value;
     }
 
     public IEnumerator SetupPlayer() {

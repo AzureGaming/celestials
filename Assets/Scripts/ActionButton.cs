@@ -10,9 +10,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler {
 
     public void OnPointerClick(PointerEventData eventData) {
         if (turnManager.state == GameState.PLAYERTURN) {
-            player.SetIsTurnDone(true);
-        } else if (turnManager.state == GameState.MULLIGAN) {
-            turnManager.SetMulliganConfirmed(true);
+            turnManager.SetWaitForPlayer(false);
         }
     }
 

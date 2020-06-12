@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Deck : MonoBehaviour {
+    public CardManager cardManager;
     int deckLimit = 30;
     List<Card> cards = new List<Card>();
 
@@ -17,18 +19,26 @@ public class Deck : MonoBehaviour {
     }
 
     public Card RemoveCard() {
-        Card card = cards[0];
-        cards.RemoveAt(0);
-        return card;
+        if (cards.Count < 0) {
+            Reload();
+        }
+        Card cardToRemove = cards.SkipWhile(card => !card).Skip(1).DefaultIfEmpty(cards[0]).FirstOrDefault();
+        cards.Remove(cardToRemove);
+        return cardToRemove;
     }
 
     void FillDeck() {
         Card[] loadedCards = Resources.LoadAll<Card>("Loadable Cards");
         int randomIndex = Random.Range(0, loadedCards.Length);
         Card randomCard = loadedCards[randomIndex];
-        for (int i = 0; i < 5; i++) {
-            // TODO: Place instantiated cards in a container
-            AddCard(Instantiate(randomCard));
+        for (int i = 0; i < 30; i++) {
+            //AddCard(Instantiate(randomCard));
+            AddCard(randomCard);
         }
+    }
+
+    void Reload() {
+        cards = cardManager.GetDiscardPile();
+        cardManager.ClearDiscardPile();
     }
 }

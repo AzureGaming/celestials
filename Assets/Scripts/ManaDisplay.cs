@@ -4,14 +4,8 @@ using TMPro;
 using UnityEngine;
 
 public class ManaDisplay : MonoBehaviour {
-    TextMeshProUGUI currentMana;
-    TextMeshProUGUI maxMana;
-
-    private void Awake() {
-        TextMeshProUGUI[] refs = GetComponentsInChildren<TextMeshProUGUI>();
-        currentMana = refs[0];
-        maxMana = refs[1];
-    }
+    public TextMeshProUGUI currentMana;
+    public TextMeshProUGUI maxMana;
 
     public void UpdateCurrentMana(int mana) {
         Debug.Log("update current mana");
@@ -19,6 +13,7 @@ public class ManaDisplay : MonoBehaviour {
     }
 
     public void UpdateMaxMana(int mana) {
+        Debug.Log("Update max mana");
         maxMana.text = mana.ToString();
     }
 }

@@ -13,7 +13,7 @@ public class ThrowBoulder : MonoBehaviour {
 
     public IEnumerator Attack(Vector3 location, Summon summon) {
         yield return StartCoroutine(MoveRoutine(transform.position, location));
-        summon.Die();
+        summon.TakeDamage();
     }
 
     public IEnumerator Attack(Vector3 location, Summoner summoner) {
