@@ -15,7 +15,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler {
         startingScale = eventData.pointerDrag.transform.localScale;
         transform.SetParent(transform.parent.parent);
         GetComponent<CanvasGroup>().blocksRaycasts = false;
-        Debug.Log("Start");
     }
 
     public void OnDrag(PointerEventData eventData) {

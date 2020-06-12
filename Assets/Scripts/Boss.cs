@@ -27,7 +27,6 @@ public class Boss : MonoBehaviour {
     }
 
     public virtual IEnumerator RunTurnRoutine() {
-        Debug.Log("Implement Boss AI turn AI");
         yield break;
     }
 

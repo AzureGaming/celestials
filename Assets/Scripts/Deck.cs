@@ -32,9 +32,9 @@ public class Deck : MonoBehaviour {
 
     void FillDeck() {
         Card[] loadedCards = Resources.LoadAll<Card>("Loadable Cards");
+        for (int i = 0; i < 30; i++) {
         int randomIndex = Random.Range(0, loadedCards.Length);
         Card randomCard = loadedCards[randomIndex];
-        for (int i = 0; i < 30; i++) {
             //AddCard(Instantiate(randomCard));
             AddCard(randomCard);
         }

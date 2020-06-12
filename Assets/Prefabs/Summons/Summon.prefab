@@ -118,8 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrierPrefab: {fileID: 9086294496397449281}
-  marchPrefab: {fileID: 2228589767349008820, guid: e4c539590ef4b88459333ca5860dfbd3,
-    type: 3}
+  marchPrefab: {fileID: 1110650094083230273}
   entity: {fileID: 0}
 --- !u!114 &4379188117566988816
 MonoBehaviour:
@@ -205,6 +204,12 @@ PrefabInstance:
 --- !u!4 &3132395710482516451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8846090478936783096, guid: 62044dd749e51a840aba76294aa599ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 5889337365293003035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1110650094083230273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6832791046031457114, guid: 62044dd749e51a840aba76294aa599ba,
     type: 3}
   m_PrefabInstance: {fileID: 5889337365293003035}
   m_PrefabAsset: {fileID: 0}

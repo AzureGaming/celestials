@@ -15,7 +15,6 @@ public class Aegis : CardEffect {
 
     IEnumerator AegisRoutine() {
         boardManager.DetectSummons();
-        Debug.Log("routine");
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         Summon summon = boardManager.GetQueue()[0].GetSummon();
         boardManager.SetNeutral();

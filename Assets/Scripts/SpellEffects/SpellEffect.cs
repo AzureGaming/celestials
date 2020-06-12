@@ -10,13 +10,12 @@ public abstract class SpellEffect : MonoBehaviour {
     }
 
     public virtual IEnumerator Activate() {
-        Debug.Log("Spell effect acitvate");
         animator.SetTrigger("Active");
         yield break;
     }
 
     public virtual void Deactivate() {
-        animator.SetTrigger("Inactive");
+        GetComponent<Animator>().SetTrigger("Inactive");
     }
 
     public void OnDestroyAnimationEnd() {

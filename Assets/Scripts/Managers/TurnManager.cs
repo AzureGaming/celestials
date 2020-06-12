@@ -39,7 +39,6 @@ public class TurnManager : MonoBehaviour {
         yield return StartCoroutine(StartPlayerTurn());
         //yield return StartCoroutine(boss.SetupBoss());
         //yield return StartCoroutine(ResolveSummonTurn());
-        yield break;
     }
 
     public void SetWaitForPlayer(bool shouldWait) {
@@ -63,6 +62,7 @@ public class TurnManager : MonoBehaviour {
         //}
 
         yield return StartCoroutine(boardManager.ResolveStagesRoutine());
+        yield return StartCoroutine(StartPlayerTurn());
     }
 
     IEnumerator StartPlayerTurn() {
@@ -75,8 +75,7 @@ public class TurnManager : MonoBehaviour {
 
         SetWaitForPlayer(true);
         yield return new WaitUntil(() => !waitForPlayer);
-        StartCoroutine(StartEnemyTurn());
-        yield break;
+        yield return StartCoroutine(StartEnemyTurn());
     }
 
     IEnumerator StartEnemyTurn() {
@@ -88,7 +87,6 @@ public class TurnManager : MonoBehaviour {
             Debug.Log("Implement Lose scenario");
             yield break;
         }
-        StartCoroutine(StartPlayerTurn());
-        yield break;
+        yield return StartCoroutine(ResolveSummonTurn());
     }
 }
