@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Deck : MonoBehaviour {
     public CardManager cardManager;
+    public GameObject display;
     int deckLimit = 30;
     List<Card> cards = new List<Card>();
 
@@ -16,6 +17,7 @@ public class Deck : MonoBehaviour {
     public void AddCard(Card card) {
         int randomIndex = Random.Range(0, cards.Count);
         cards.Insert(randomIndex, card);
+        display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);
     }
 
     public Card RemoveCard() {
@@ -24,6 +26,7 @@ public class Deck : MonoBehaviour {
         }
         Card cardToRemove = cards.SkipWhile(card => !card).Skip(1).DefaultIfEmpty(cards[0]).FirstOrDefault();
         cards.Remove(cardToRemove);
+        display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);
         return cardToRemove;
     }
 
@@ -35,10 +38,12 @@ public class Deck : MonoBehaviour {
             //AddCard(Instantiate(randomCard));
             AddCard(randomCard);
         }
+        display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);
     }
 
     void Reload() {
         cards = cardManager.GetDiscardPile();
         cardManager.ClearDiscardPile();
+        display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);
     }
 }

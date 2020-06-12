@@ -38,7 +38,6 @@ public class Player : MonoBehaviour {
     }
 
     public IEnumerator SetupPlayer() {
-        Debug.Log("Set up player " + numberOfCardsHeld);
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(cardManager.DrawToHand());
         }
@@ -56,7 +55,7 @@ public class Player : MonoBehaviour {
         if (mana > maxMana) {
             mana = maxMana;
         }
-        uiManager.SetCurrentMana(mana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
@@ -65,25 +64,25 @@ public class Player : MonoBehaviour {
         if (mana < 0) {
             mana = 0;
         }
-        uiManager.SetCurrentMana(mana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
     public IEnumerator GainMaxMana(int amount) {
         maxMana += amount;
-        uiManager.SetMaxMana(maxMana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
     public IEnumerator LoseMaxMana(int amount) {
         maxMana -= amount;
-        uiManager.SetMaxMana(maxMana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
     public IEnumerator RefreshMana() {
         mana = maxMana;
-        uiManager.SetCurrentMana(mana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 }
