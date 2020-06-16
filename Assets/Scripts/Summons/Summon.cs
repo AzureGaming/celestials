@@ -26,6 +26,10 @@ public class Summon : MonoBehaviour {
         controller.Attack();
     }
 
+    public virtual void TakeDamage() {
+        controller.TakeDamage();
+    }
+
     public virtual void Die() {
         controller.Die();
     }

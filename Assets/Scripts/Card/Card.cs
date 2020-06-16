@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Card : MonoBehaviour, IPointerClickHandler {
+public class Card : MonoBehaviour {
     public Entity entity;
     public Sprite basicFrame;
     public Sprite pixFrame;
@@ -21,10 +21,10 @@ public class Card : MonoBehaviour, IPointerClickHandler {
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
-        nameDisplay = transform.Find("Name").GetComponent<TextMeshProUGUI>();
+        nameDisplay = transform.Find("Card Frame").Find("Name").GetComponent<TextMeshProUGUI>();
         manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
         attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
-        descriptionDisplay = transform.Find("Description").GetComponent<TextMeshProUGUI>();
+        descriptionDisplay = transform.Find("Card Frame").Find("Description").GetComponent<TextMeshProUGUI>();
         effect = GetComponent<CardEffect>();
         cardFrame = transform.Find("Card Frame").GetComponent<Image>();
     }
@@ -45,14 +45,9 @@ public class Card : MonoBehaviour, IPointerClickHandler {
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData) {
-        //    if (turnManager.state == GameState.MULLIGAN) {
-        //        gameManager.SetMulligan(id);
-        //    }
-    }
-
-    public void ActivateEffect() {
-        effect?.Apply();
+    public IEnumerator ActivateEffect() {
+        yield return StartCoroutine(effect?.Apply());
+        Destroy(gameObject);
     }
 
     public void SummonAt(Tile tile) {

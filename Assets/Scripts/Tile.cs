@@ -42,7 +42,6 @@ public class Tile : MonoBehaviour {
 
     private void OnMouseDown() {
         if (currentState == State.Valid) {
-            Debug.Log("Add");
             boardManager.AddToQueue(this);
         }
     }

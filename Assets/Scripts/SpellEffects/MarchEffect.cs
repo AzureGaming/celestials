@@ -15,6 +15,7 @@ public class MarchEffect : SpellEffect {
         yield return new WaitUntil(() => summon.DoneAttacking());
         summon.Walk();
         yield return new WaitUntil(() => summon.DoneMoving());
+        gameObject.SetActive(false);
         base.Deactivate();
     }
 }

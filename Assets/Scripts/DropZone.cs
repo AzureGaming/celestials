@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,11 +11,6 @@ public class DropZone : MonoBehaviour, IDropHandler {
     }
 
     public void OnDrop(PointerEventData eventData) {
-        Draggable droppedObject = eventData.pointerDrag.GetComponent<Draggable>();
-        if (droppedObject != null) {
-            droppedObject.gameObject.GetComponent<CanvasGroup>().alpha = 0;
-            //droppedObject.parentToReturnTo = transform;
-            boardManager.PlayCard(droppedObject.GetComponent<Card>());
-        }
+
     }
 }

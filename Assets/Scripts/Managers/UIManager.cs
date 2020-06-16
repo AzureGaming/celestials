@@ -15,11 +15,7 @@ public class UIManager : MonoBehaviour {
         locationSelection.gameObject.SetActive(value);
     }
 
-    public void SetCurrentMana(int mana) {
-        manaDisplay.UpdateCurrentMana(mana);
-    }
-
-    public void SetMaxMana(int mana) {
-        manaDisplay.UpdateMaxMana(mana);
+    public void SetMana(int current, int max) {
+        manaDisplay.UpdateText(current, max);
     }
 }

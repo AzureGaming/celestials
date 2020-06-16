@@ -40,6 +40,7 @@ public class EarthElemental : Boss {
         if (spawnedBlockingCrystal) {
             BlockingCrystal blockingCrystal = FindObjectOfType<BlockingCrystal>().GetComponent<BlockingCrystal>();
             yield return StartCoroutine(blockingCrystal.Break());
+            spawnedBlockingCrystal = false;
         }
         yield return StartCoroutine(Attack());
     }
@@ -62,22 +63,21 @@ public class EarthElemental : Boss {
 
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
-        ExecuteAttack(2);
-        yield break;
+        yield return ExecuteAttack(randomAttack);
     }
 
-    void ExecuteAttack(int randomAttack) {
+    IEnumerator ExecuteAttack(int randomAttack) {
         attackRoutineRunning = true;
         if (randomAttack == 0) {
-            StartCoroutine(PebbleStorm());
+            yield return StartCoroutine(PebbleStorm());
         } else if (randomAttack == 1) {
-            StartCoroutine(BoulderDrop());
+            yield return StartCoroutine(BoulderDrop());
         } else if (randomAttack == 2) {
-            StartCoroutine(RockThrow());
+            yield return StartCoroutine(RockThrow());
         } else if (randomAttack == 3) {
-            StartCoroutine(CrystalBlock());
+            yield return StartCoroutine(CrystalBlock());
         } else if (randomAttack == 4) {
-            StartCoroutine(Crystalize());
+            yield return StartCoroutine(Crystalize());
         }
     }
 

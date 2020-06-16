@@ -7,7 +7,7 @@ public class CardManager : MonoBehaviour {
     Card[] cards;
     Deck deck;
     Hand hand;
-    DiscardPile discardPile;
+    List<Card> discardPile = new List<Card>();
     Mulligan mulligan;
 
     private void Awake() {
@@ -15,21 +15,19 @@ public class CardManager : MonoBehaviour {
         cards = Resources.LoadAll<Card>("Loadable Cards");
         Debug.Log("Loaded cards" + cards.Length);
         deck = FindObjectOfType<Deck>();
-        discardPile = FindObjectOfType<DiscardPile>();
         mulligan = FindObjectOfType<Mulligan>();
     }
 
     public GameObject CreateCard() {
         GameObject cardPrefab = Instantiate(GetCardPrefab(), transform);
-        cardPrefab.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-        //card.GetComponent<Card>().LoadCard(GetValidCardData());
-
         return cardPrefab;
     }
 
     public IEnumerator DrawToHand() {
         Card card = DrawCard();
-        card.transform.SetParent(hand.transform);
+        GameObject instance = Instantiate(card.gameObject);
+        instance.transform.SetParent(hand.transform);
+        instance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         yield break;
     }
 
@@ -42,7 +40,7 @@ public class CardManager : MonoBehaviour {
     }
 
     public void AddToDiscard(Card card) {
-        discardPile.AddCard(card);
+        discardPile.Add(card);
     }
 
     public void TrashCard(Card card) {
@@ -53,12 +51,13 @@ public class CardManager : MonoBehaviour {
         return deck.RemoveCard();
     }
 
-    //public void StartMulligan() {
-    //    for (int i = 0; i < 3; i++) {
-    //        Card card = DrawCard();
-    //        mulligan.AddCard(card);
-    //    }
-    //}
+    public List<Card> GetDiscardPile() {
+        return discardPile;
+    }
+
+    public void ClearDiscardPile() {
+        discardPile.Clear();
+    }
 
     GameObject CompileCard(Entity data) {
         return cardPrefab;

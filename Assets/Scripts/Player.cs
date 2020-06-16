@@ -12,7 +12,6 @@ public class Player : MonoBehaviour {
     Hand hand;
     int handLimit;
     int health;
-    bool isTurnDone;
     int mana;
     int maxMana;
     int numberOfCardsHeld;
@@ -29,26 +28,16 @@ public class Player : MonoBehaviour {
     private void Start() {
         handLimit = 5;
         health = 30;
-        isTurnDone = false;
         mana = 0;
         maxMana = 0;
         numberOfCardsHeld = hand.transform.childCount;
-    }
-
-    public bool GetIsTurnDone() {
-        return isTurnDone;
     }
 
     public int GetHealth() {
         return health;
     }
 
-    public void SetIsTurnDone(bool value) {
-        isTurnDone = value;
-    }
-
     public IEnumerator SetupPlayer() {
-        Debug.Log("Set up player " + numberOfCardsHeld);
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(cardManager.DrawToHand());
         }
@@ -57,12 +46,16 @@ public class Player : MonoBehaviour {
         yield break;
     }
 
+    public int GetMana() {
+        return mana;
+    }
+
     public IEnumerator GainMana(int amount) {
         mana += amount;
         if (mana > maxMana) {
             mana = maxMana;
         }
-        uiManager.SetCurrentMana(mana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
@@ -71,25 +64,25 @@ public class Player : MonoBehaviour {
         if (mana < 0) {
             mana = 0;
         }
-        uiManager.SetCurrentMana(mana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
     public IEnumerator GainMaxMana(int amount) {
         maxMana += amount;
-        uiManager.SetMaxMana(maxMana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
     public IEnumerator LoseMaxMana(int amount) {
         maxMana -= amount;
-        uiManager.SetMaxMana(maxMana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 
     public IEnumerator RefreshMana() {
         mana = maxMana;
-        uiManager.SetCurrentMana(mana);
+        uiManager.SetMana(mana, maxMana);
         yield break;
     }
 }

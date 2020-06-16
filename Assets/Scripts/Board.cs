@@ -16,14 +16,6 @@ public class Board : MonoBehaviour {
         return GetComponentsInChildren<Summon>();
     }
 
-    //public void EnablePlay() {
-    //    SetColliderTrigger(true);
-    //}
-
-    //public void DisablePlay() {
-    //    SetColliderTrigger(false);
-    //}
-
     void SetColliderTrigger(bool value) {
         collider2d.isTrigger = value;
     }

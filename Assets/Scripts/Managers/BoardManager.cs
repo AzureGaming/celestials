@@ -13,6 +13,7 @@ public class BoardManager : MonoBehaviour {
     GameManager gameManager;
     CardManager cardManager;
     Player player;
+    Hand hand;
     int cardOrder = 0;
     int stageLimit = 3;
     int rowLimit = 3;
@@ -27,6 +28,7 @@ public class BoardManager : MonoBehaviour {
         tiles = GetComponentsInChildren<Tile>();
         gameManager = FindObjectOfType<GameManager>();
         cardManager = FindObjectOfType<CardManager>();
+        hand = FindObjectOfType<Hand>();
         grid = new Tile[4][];
         grid[0] = new Tile[3];
         grid[1] = new Tile[3];
@@ -157,7 +159,7 @@ public class BoardManager : MonoBehaviour {
         if (type == CardType.Summon) {
             StartCoroutine(PlaySummon(card));
         } else if (type == CardType.Spell) {
-            PlaySpell(card);
+            StartCoroutine(PlaySpell(card));
         } else {
             Debug.Log("Unknown cardtype encountered: " + type);
         }
@@ -215,13 +217,15 @@ public class BoardManager : MonoBehaviour {
         yield return new WaitUntil(() => GetQueue().Count == 1);
         SetNeutral();
         card.SummonAt(GetQueue()[0]);
-        player.LoseMana(card.GetManaCost());
+        yield return StartCoroutine(player.LoseMana(card.GetManaCost()));
         ClearQueue();
         cardManager.AddToDiscard(card);
+        Destroy(card.gameObject);
     }
 
-    void PlaySpell(Card card) {
-        card.ActivateEffect();
+    IEnumerator PlaySpell(Card card) {
+        yield return StartCoroutine(player.LoseMana(card.GetManaCost()));
+        yield return StartCoroutine(card.ActivateEffect());
         if (card) {
             cardManager.AddToDiscard(card);
         }
@@ -234,6 +238,7 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveMovementForStage(int stageIndex) {
+        Debug.Log("hello");
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();

@@ -10,6 +10,7 @@ public abstract class CardEffect : MonoBehaviour {
     // boss does last move
     // save mana
     // see next 3 cards on deck
-    public virtual void Apply() {
+    public virtual IEnumerator Apply() {
+        yield break;
     }
 }
