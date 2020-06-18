@@ -44,8 +44,6 @@ public class TurnManager : MonoBehaviour {
     public IEnumerator Initialize() {
         yield return StartCoroutine(player.SetupPlayer());
         yield return StartCoroutine(StartPlayerTurn());
-        //yield return StartCoroutine(boss.SetupBoss());
-        //yield return StartCoroutine(ResolveSummonTurn());
     }
 
     public void SetWaitForPlayer(bool shouldWait) {
@@ -88,7 +86,7 @@ public class TurnManager : MonoBehaviour {
     IEnumerator StartEnemyTurn() {
         Debug.Log("Start enemy turn");
         state = GameState.ENEMYTURN;
-        //yield return StartCoroutine(boss.RunTurnRoutine());
+        yield return StartCoroutine(boss.RunTurnRoutine());
         if (player.GetHealth() < 1) {
             state = GameState.LOSE;
             Debug.Log("Implement Lose scenario");
