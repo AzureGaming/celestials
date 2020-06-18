@@ -9,7 +9,6 @@ public class Aegis : CardEffect {
         boardManager = FindObjectOfType<BoardManager>();
     }
     public override IEnumerator Apply() {
-        Debug.Log("Hello");
         yield return StartCoroutine(AegisRoutine());
     }
 

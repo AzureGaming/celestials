@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &654911711764660672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2829858153339142681}
+  m_Layer: 0
+  m_Name: Projectile Collision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2829858153339142681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654911711764660672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 4.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871585752063383366}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4014359285142916201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871585752063383361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e8dd81c636ad841826af6b5d6cb51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicators:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1129860820523223033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,14 +59,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104d65f0e5a050b4c94e77c9653c5f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileCollision: {fileID: 654911711764660672}
   boulderDropPrefab: {fileID: 6899321150750685673, guid: 0f401d0dcf2b15a44a8644758eb2d2dd,
     type: 3}
   boulderThrowPrefab: {fileID: 6899321150750685673, guid: ae40b7bb6c7b54f47a2bba9707727371,
     type: 3}
-  boulderSpawner: {fileID: 4974695846075347589, guid: 9ae467e17da37834fb08edf0e40e902f,
-    type: 3}
-  boulderThrowSpawner: {fileID: 6195719217809007387, guid: 5e7bbd50023f3c1429859f531c6e80dc,
-    type: 3}
+  boulderSpawner: {fileID: 4525091036098862344}
+  boulderThrowSpawner: {fileID: 3404168844083640509}
   pebbleStormCardPrefab: {fileID: 3338291003009719233, guid: 0b77d8aaeee329648b61f671e9c47c55,
     type: 3}
   blockingCrystalPrefab: {fileID: 7381904007666532172, guid: 09066b71efc6bdd44950b8825012733b,
@@ -125,4 +171,135 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2159003017438940292, guid: 373a58e4e97e07648b9a53fe0eda981b,
     type: 3}
   m_PrefabInstance: {fileID: 1292022170531552197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &871585752063383366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2159003017438940291, guid: 373a58e4e97e07648b9a53fe0eda981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292022170531552197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8846640090510760870
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871585752063383366}
+    m_Modifications:
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.715007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635633692441598064, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195719217809007387, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock Throw Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e7bbd50023f3c1429859f531c6e80dc, type: 3}
+--- !u!1 &3404168844083640509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6195719217809007387, guid: 5e7bbd50023f3c1429859f531c6e80dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8846640090510760870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8918800518438236045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871585752063383366}
+    m_Modifications:
+    - target: {fileID: 4974695846075347589, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_Name
+      value: Boulder Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811651257230674414, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811651257230674414, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811651257230674414, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811651257230674414, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811651257230674414, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.289997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811651257230674414, guid: 9ae467e17da37834fb08edf0e40e902f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.730001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ae467e17da37834fb08edf0e40e902f, type: 3}
+--- !u!1 &4525091036098862344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4974695846075347589, guid: 9ae467e17da37834fb08edf0e40e902f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8918800518438236045}
   m_PrefabAsset: {fileID: 0}

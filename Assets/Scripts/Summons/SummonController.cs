@@ -70,7 +70,7 @@ public class SummonController : MonoBehaviour {
         return entity.range;
     }
 
-    public void OnAttackAnimationEnd() {
+    public virtual void OnAttackAnimationEnd() {
         attackRoutineRunning = false;
     }
 
@@ -135,7 +135,7 @@ public class SummonController : MonoBehaviour {
         yield break;
     }
 
-    bool CheckWithinRange(int range, int id) {
+    protected bool CheckWithinRange(int range, int id) {
         Tile tileToAttack = boardManager.GetDestination(id, range);
         if (tileToAttack?.type == TileType.Boss) {
             return true;
@@ -143,7 +143,7 @@ public class SummonController : MonoBehaviour {
         return false;
     }
 
-    IEnumerator AttackRoutine(int range, int id) {
+    public virtual IEnumerator AttackRoutine(int range, int id) {
         if (CheckWithinRange(range, id)) {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
