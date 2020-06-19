@@ -12,7 +12,6 @@ public abstract class BossSkillIndicators : MonoBehaviour {
     }
 
     protected void SetIndicator(int index) {
-        Debug.Log("Aldsaf");
         spriteRenderer.sprite = indicators[index];
     }
 

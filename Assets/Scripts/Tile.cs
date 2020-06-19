@@ -1,6 +1,4 @@
-﻿
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,13 +11,14 @@ public class Tile : MonoBehaviour {
     [SerializeField] GameObject validPrefab;
     [SerializeField] GameObject invalidPrefab;
     [SerializeField] GameObject neutralPrefab;
+    public EffectIndicator attackIndicator;
     public TileType type;
     public int column;
     public int row;
     public enum State {
         Neutral,
         Invalid,
-        Valid
+        Valid,
     }
     GameManager gameManager;
     BoardManager boardManager;
@@ -56,6 +55,14 @@ public class Tile : MonoBehaviour {
 
     public void SetNeutralState() {
         UpdateState(State.Neutral);
+    }
+
+    public void ShowAttackIndicator() {
+        attackIndicator.ShowIndicator();
+    }
+
+    public void HideAttackIndicator() {
+        attackIndicator.HideIndicator();
     }
 
     public bool CheckOccupied() {
