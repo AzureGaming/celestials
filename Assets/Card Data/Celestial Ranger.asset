@@ -19,7 +19,7 @@ MonoBehaviour:
   attack: 1
   summonPrefab: {fileID: 7227906665000558127, guid: 9f0204a545afb5840954aa7ba7b1c403,
     type: 3}
-  range: 2
+  range: 3
   type: 0
   movementSpeed: 1
   cardBase: 1

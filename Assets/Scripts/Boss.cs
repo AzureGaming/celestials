@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss : MonoBehaviour {
+    public GameObject projectileCollision;
+
     protected int health;
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
@@ -28,6 +30,10 @@ public class Boss : MonoBehaviour {
 
     public virtual IEnumerator RunTurnRoutine() {
         yield break;
+    }
+
+    public Transform GetTransformToHit() {
+        return projectileCollision.transform;
     }
 
     public virtual IEnumerator TakeDamage(int damage) {

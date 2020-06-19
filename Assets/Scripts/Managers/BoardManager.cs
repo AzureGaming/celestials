@@ -238,7 +238,6 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveMovementForStage(int stageIndex) {
-        Debug.Log("hello");
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();

@@ -4,6 +4,13 @@ using System.Linq;
 using UnityEngine;
 
 public class EarthElemental : Boss {
+    enum Moves {
+        PEBBLESTORM,
+        BOULDERDROP,
+        ROCKTHROW,
+        CRYSTALBLOCK,
+        CRYSTALIZE
+    }
     public GameObject boulderDropPrefab;
     public GameObject boulderThrowPrefab;
     public GameObject boulderSpawner;
@@ -19,6 +26,9 @@ public class EarthElemental : Boss {
     GameObject blockingCrystalRunTimeReference;
     bool doneSpawningBlockingCrystal = false;
     bool spawnedBlockingCrystal = false;
+    Moves nextAttack;
+    EarthElementalSkillIndicators skillIndicators;
+
 
     public override void Awake() {
         base.Awake();
@@ -26,6 +36,7 @@ public class EarthElemental : Boss {
         gameManager = FindObjectOfType<GameManager>();
         cardManager = FindObjectOfType<CardManager>();
         boardManager = FindObjectOfType<BoardManager>();
+        skillIndicators = GetComponent<EarthElementalSkillIndicators>();
     }
 
     public override void Start() {
@@ -43,6 +54,7 @@ public class EarthElemental : Boss {
             spawnedBlockingCrystal = false;
         }
         yield return StartCoroutine(Attack());
+        StoreNextAttack();
     }
 
     public override IEnumerator TakeDamage(int damage) {
@@ -63,21 +75,41 @@ public class EarthElemental : Boss {
 
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
-        yield return ExecuteAttack(randomAttack);
+        if (nextAttack >= 0) {
+            yield return ExecuteAttack(nextAttack);
+        } else {
+            yield return ExecuteAttack((Moves)randomAttack);
+        }
     }
 
-    IEnumerator ExecuteAttack(int randomAttack) {
+    IEnumerator ExecuteAttack(Moves randomAttack) {
         attackRoutineRunning = true;
-        if (randomAttack == 0) {
+        if (randomAttack == Moves.PEBBLESTORM) {
             yield return StartCoroutine(PebbleStorm());
-        } else if (randomAttack == 1) {
+        } else if (randomAttack == Moves.BOULDERDROP) {
             yield return StartCoroutine(BoulderDrop());
-        } else if (randomAttack == 2) {
+        } else if (randomAttack == Moves.ROCKTHROW) {
             yield return StartCoroutine(RockThrow());
-        } else if (randomAttack == 3) {
+        } else if (randomAttack == Moves.CRYSTALBLOCK) {
             yield return StartCoroutine(CrystalBlock());
-        } else if (randomAttack == 4) {
+        } else if (randomAttack == Moves.CRYSTALIZE) {
             yield return StartCoroutine(Crystalize());
+        }
+    }
+
+    void StoreNextAttack() {
+        int randomAttack = Random.Range(0, 5);
+        nextAttack = (Moves)randomAttack;
+        if (nextAttack == Moves.PEBBLESTORM) {
+            skillIndicators.SetPebbleStorm();
+        } else if (nextAttack == Moves.BOULDERDROP) {
+            skillIndicators.SetBoulderDrop();
+        } else if (nextAttack == Moves.ROCKTHROW) {
+            skillIndicators.SetBoulderThrow();
+        } else if (nextAttack == Moves.CRYSTALBLOCK) {
+            skillIndicators.SetBlockingCrystal();
+        } else if (nextAttack == Moves.CRYSTALIZE) {
+            skillIndicators.SetCrystalize();
         }
     }
 

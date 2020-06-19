@@ -34,11 +34,16 @@ public class TurnManager : MonoBehaviour {
         state = GameState.START;
     }
 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            StartCoroutine(ResolveSummonTurn());
+
+        }
+    }
+
     public IEnumerator Initialize() {
         yield return StartCoroutine(player.SetupPlayer());
         yield return StartCoroutine(StartPlayerTurn());
-        //yield return StartCoroutine(boss.SetupBoss());
-        //yield return StartCoroutine(ResolveSummonTurn());
     }
 
     public void SetWaitForPlayer(bool shouldWait) {

@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4136357767389440870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7227906665000558127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69be63b2f5783348af8bd08de681961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrierPrefab: {fileID: 3074073728842816382, guid: 04ad125e35c8ffa419d954b5c6b711ff,
+    type: 3}
+  marchPrefab: {fileID: 2228589767349008820, guid: e4c539590ef4b88459333ca5860dfbd3,
+    type: 3}
+  entity: {fileID: 11400000, guid: 30d3578d9ba6c6b43920012a2ec75984, type: 2}
+  arrowPrefab: {fileID: 8952812741212013840, guid: 9a910eb8ad99cde4ca6116378c775f7e,
+    type: 3}
 --- !u!1001 &909199760313036415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,5 +149,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Celestial Ranger
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8789592534453370440, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}
+--- !u!1 &7227906665000558127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 909199760313036415}
+  m_PrefabAsset: {fileID: 0}
