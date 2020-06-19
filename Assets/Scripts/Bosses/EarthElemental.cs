@@ -26,9 +26,8 @@ public class EarthElemental : Boss {
     GameObject blockingCrystalRunTimeReference;
     bool doneSpawningBlockingCrystal = false;
     bool spawnedBlockingCrystal = false;
-    Moves nextAttack;
+    List<Moves> attackQueue = new List<Moves>();
     EarthElementalSkillIndicators skillIndicators;
-
 
     public override void Awake() {
         base.Awake();
@@ -41,6 +40,8 @@ public class EarthElemental : Boss {
 
     public override void Start() {
         base.Start();
+        QueueAttack();
+        QueueAttack();
     }
 
     public override IEnumerator RunTurnRoutine() {
@@ -54,7 +55,7 @@ public class EarthElemental : Boss {
             spawnedBlockingCrystal = false;
         }
         yield return StartCoroutine(Attack());
-        StoreNextAttack();
+        QueueAttack();
     }
 
     public override IEnumerator TakeDamage(int damage) {
@@ -75,11 +76,14 @@ public class EarthElemental : Boss {
 
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
-        if (nextAttack >= 0) {
-            yield return ExecuteAttack(nextAttack);
+        if (attackQueue.Count > 0) {
+            yield return ExecuteAttack(attackQueue.First());
+            attackQueue.RemoveAt(0);
         } else {
             yield return ExecuteAttack((Moves)randomAttack);
         }
+
+        skillIndicators.ClearIndicator();
     }
 
     IEnumerator ExecuteAttack(Moves randomAttack) {
@@ -97,9 +101,10 @@ public class EarthElemental : Boss {
         }
     }
 
-    void StoreNextAttack() {
+    void QueueAttack() {
         int randomAttack = Random.Range(0, 5);
-        nextAttack = (Moves)randomAttack;
+        Moves nextAttack = (Moves)randomAttack;
+        attackQueue.Add(nextAttack);
         if (nextAttack == Moves.PEBBLESTORM) {
             skillIndicators.SetPebbleStorm();
         } else if (nextAttack == Moves.BOULDERDROP) {
