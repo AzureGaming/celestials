@@ -27,6 +27,7 @@ public class EarthElemental : Boss {
     bool doneSpawningBlockingCrystal = false;
     bool spawnedBlockingCrystal = false;
     List<Moves> attackQueue = new List<Moves>();
+    List<Tile> tilesToAttack = new List<Tile>();
     EarthElementalSkillIndicators skillIndicators;
 
     public override void Awake() {
@@ -56,6 +57,7 @@ public class EarthElemental : Boss {
         }
         yield return StartCoroutine(Attack());
         QueueAttack();
+        yield return new WaitUntil(() => DoneActions());
     }
 
     public override IEnumerator TakeDamage(int damage) {
@@ -102,15 +104,22 @@ public class EarthElemental : Boss {
     }
 
     void QueueAttack() {
+        foreach (Tile tile in tilesToAttack) {
+            tile.HideAttackIndicator();
+        }
         int randomAttack = Random.Range(0, 5);
-        Moves nextAttack = (Moves)randomAttack;
+        Moves nextAttack = /*(Moves)randomAttack*/ Moves.ROCKTHROW;
         attackQueue.Add(nextAttack);
         if (nextAttack == Moves.PEBBLESTORM) {
             skillIndicators.SetPebbleStorm();
         } else if (nextAttack == Moves.BOULDERDROP) {
             skillIndicators.SetBoulderDrop();
         } else if (nextAttack == Moves.ROCKTHROW) {
+            QueueBoulderThrowTargets();
             skillIndicators.SetBoulderThrow();
+            for (int i = 0; i < 2; i++) {
+                tilesToAttack[i].ShowAttackIndicator();
+            }
         } else if (nextAttack == Moves.CRYSTALBLOCK) {
             skillIndicators.SetBlockingCrystal();
         } else if (nextAttack == Moves.CRYSTALIZE) {
@@ -126,6 +135,7 @@ public class EarthElemental : Boss {
         yield return StartCoroutine(cardManager.DrawToHand());
     }
 
+
     IEnumerator BoulderDrop() {
         animator.SetTrigger("Attack1");
         gameManager.SetWaitForCompletion(true);
@@ -133,28 +143,43 @@ public class EarthElemental : Boss {
         yield return new WaitUntil(() => DoneBoulderDrop());
         yield return new WaitUntil(() => DoneActions());
         summoner.TakeDamage(3);
+        yield break;
+    }
+
+    void QueueBoulderThrowTargets() {
+        int numberOfTargets = 2;
+        List<Tile> randomList = boardManager.GetFirstSummonInRows().OrderBy(tile => Random.Range(0f, 1f)).ToList();
+        for (int i = 0; i < numberOfTargets; i++) {
+            tilesToAttack.Add(randomList[i]);
+            //randomList[i].ShowAttackIndicator();
+        }
     }
 
     IEnumerator RockThrow() {
         animator.SetTrigger("Attack1");
         yield return new WaitUntil(() => DoneActions());
-        Tile[] validTiles = boardManager.GetFirstSummonInRows();
-        List<Tile> tiles = new List<Tile>();
-        foreach (Tile tile in validTiles) {
-            if (tile?.GetSummon()) {
-                tiles.Add(tile);
-            }
-        }
-
-        List<Tile> randomList = tiles.OrderBy(tile => Random.Range(0f, 1f)).ToList();
-        for (int i = 0; i < 2; i++) {
+        List<Tile> targets = new List<Tile>();
+        targets.Add(TakeFromTileQueue());
+        targets.Add(TakeFromTileQueue());
+        foreach (Tile tile in targets) {
             GameObject boulder = Instantiate(boulderThrowPrefab, boulderThrowSpawner.transform);
-            if (randomList.ElementAtOrDefault(i) != null) {
-                StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(randomList[i].GetSummon().transform.position, randomList[i].GetSummon()));
+            Summon summon = tile.GetSummon();
+            if (summon) {
+                yield return StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(summon.transform.position, summon));
+                Debug.Log("done attacking summon");
             } else {
-                StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(summoner.transform.position, summoner));
+                yield return StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(summoner.transform.position, summoner));
             }
         }
+    }
+
+    Tile TakeFromTileQueue() {
+        Tile tile = tilesToAttack.First();
+        if (!tile) {
+            Debug.LogError("Tile Queue was empty");
+        }
+        tilesToAttack.Remove(tile);
+        return tile;
     }
 
     IEnumerator CrystalBlock() {

@@ -26,12 +26,13 @@ public class Summon : MonoBehaviour {
         controller.Attack();
     }
 
-    public virtual void TakeDamage() {
-        controller.TakeDamage();
+    public IEnumerator TakeDamage() {
+        yield return StartCoroutine(controller.TakeDamage());
+        Debug.Log("take damage fone");
     }
 
-    public virtual void Die() {
-        controller.Die();
+    public virtual IEnumerator Die() {
+        yield return StartCoroutine(controller.Die());
     }
 
     public virtual bool DoneMoving() {

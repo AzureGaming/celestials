@@ -88,7 +88,11 @@ public class BoardManager : MonoBehaviour {
 
     public Tile[] GetFirstSummonInRows() {
         // index is row
-        Tile[] tiles = new Tile[3];
+        List<Tile> tiles = new List<Tile>();
+        // prepopulate with the first tiles
+        tiles.Add(grid[0][0]);
+        tiles.Add(grid[0][1]);
+        tiles.Add(grid[0][2]);
         for (int stage = 0; stage < stageLimit; stage++) {
             for (int row = 0; row < rowLimit; row++) {
                 Tile tile = grid[stage][row];
@@ -97,7 +101,8 @@ public class BoardManager : MonoBehaviour {
                 }
             }
         }
-        return tiles;
+
+        return tiles.ToArray();
     }
 
     public void SetNeutral() {
@@ -211,7 +216,6 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator PlaySummon(Card card) {
-        Debug.Log("Summon: " + card.name);
         uiManager.SetLocationSelectionPrompt(true);
         DetectSummonableSpace();
         yield return new WaitUntil(() => GetQueue().Count == 1);

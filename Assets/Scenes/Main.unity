@@ -1344,12 +1344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 350909181}
---- !u!4 &1044894386 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1414825836647424259, guid: 99beb93fc2132454eb2999fe40d23d3b,
-    type: 3}
-  m_PrefabInstance: {fileID: 8401865781244766740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1071403075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,80 +1570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441d148d4c5fa8340928d0e3dbe83a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1245845367
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1044894386}
-    m_Modifications:
-    - target: {fileID: 3681523792135562542, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042121760497188020, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8338209750071241178, guid: c7f189c9181dfb54ca7b35321a9cec86,
-        type: 3}
-      propertyPath: m_Name
-      value: Time Golem
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c7f189c9181dfb54ca7b35321a9cec86, type: 3}
 --- !u!1 &1252966641
 GameObject:
   m_ObjectHideFlags: 0

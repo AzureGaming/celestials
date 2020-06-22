@@ -43,8 +43,8 @@ public class SummonController : MonoBehaviour {
         StartCoroutine(AttackRoutine(entity.range, GetId()));
     }
 
-    public void Die() {
-        StartCoroutine(DieRoutine());
+    public IEnumerator Die() {
+        yield return StartCoroutine(DieRoutine());
     }
 
     public virtual void ExecuteAction() {
@@ -91,12 +91,13 @@ public class SummonController : MonoBehaviour {
         }
     }
 
-    public void TakeDamage() {
+    public IEnumerator TakeDamage() {
         if (hasBarrier) {
             GetComponentInChildren<BarrierEffect>().Deactivate();
             hasBarrier = false;
+            // timing?
         } else {
-            Die();
+            yield return StartCoroutine(Die());
         }
     }
 
@@ -132,7 +133,6 @@ public class SummonController : MonoBehaviour {
         SetParent(tileToMoveTo);
         animator.SetBool("isWalking", false);
         movementRoutineRunning = false;
-        yield break;
     }
 
     protected bool CheckWithinRange(int range, int id) {
@@ -150,7 +150,6 @@ public class SummonController : MonoBehaviour {
             yield return new WaitUntil(() => !attackRoutineRunning);
             yield return StartCoroutine(boss.TakeDamage(entity.attack));
         }
-        yield break;
     }
 
     IEnumerator FlashRed() {
@@ -162,18 +161,19 @@ public class SummonController : MonoBehaviour {
             yield return new WaitForSeconds(0.1f);
         }
         spriteRenderer.color = color;
-        yield break;
     }
 
     IEnumerator FadeOut() {
         float duration = 1f;
         for (float t = 0; t < duration; t += Time.deltaTime) {
             float alpha = Mathf.Lerp(spriteRenderer.color.a, 0, Mathf.Min(1, t / duration));
+            if (alpha < 0.1) {
+                yield break;
+            }
             Color newColor = spriteRenderer.color;
             newColor.a = alpha;
             spriteRenderer.color = newColor;
             yield return null;
         }
-        yield break;
     }
 }

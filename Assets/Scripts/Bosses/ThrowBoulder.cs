@@ -6,6 +6,7 @@ public class ThrowBoulder : MonoBehaviour {
     Vector3 startLoc;
     Summoner summoner;
     float duration = 1f;
+    public SpriteRenderer spriteR;
 
     private void Awake() {
         summoner = FindObjectOfType<Summoner>();
@@ -13,7 +14,11 @@ public class ThrowBoulder : MonoBehaviour {
 
     public IEnumerator Attack(Vector3 location, Summon summon) {
         yield return StartCoroutine(MoveRoutine(transform.position, location));
-        summon.TakeDamage();
+        Color color = spriteR.color;
+        color.a = 0;
+        spriteR.color = color;
+        yield return StartCoroutine(summon.TakeDamage());
+        Destroy(gameObject);
     }
 
     public IEnumerator Attack(Vector3 location, Summoner summoner) {
@@ -26,6 +31,5 @@ public class ThrowBoulder : MonoBehaviour {
             transform.position = Vector3.Lerp(start, destination, Mathf.Min(1, t / duration));
             yield return null;
         }
-        Destroy(gameObject);
     }
 }

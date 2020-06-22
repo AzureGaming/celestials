@@ -11,8 +11,8 @@ public class EffectIndicator : MonoBehaviour {
     }
 
     public void ShowIndicator() {
-        Vector3 newPos = GetPositionRelativeToSummon();
-        transform.position = newPos;
+        //Vector3 newPos = GetPositionRelativeToSummon();
+        //transform.position = newPos;
         spriteR.enabled = true;
     }
 

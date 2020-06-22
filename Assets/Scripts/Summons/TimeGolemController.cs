@@ -18,7 +18,7 @@ public class TimeGolemController : SummonController {
             yield return StartCoroutine(DieRoutine());
         } else if (tileToMoveTo?.type == TileType.Boss) {
             skipMove = true;
-            Rewind();
+           yield return StartCoroutine(Rewind());
         } else {
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
         }
@@ -28,10 +28,10 @@ public class TimeGolemController : SummonController {
         StartCoroutine(EndRewindAnimationRoutine());
     }
 
-    void Rewind() {
+    IEnumerator Rewind() {
         rewindDestination = boardManager.GetFirstTileInRowIfValid(GetId());
         if (rewindDestination == null) {
-            Die();
+            yield return StartCoroutine(Die());
         } else {
             isRewind = true;
             animator.SetBool("isRewind", true);
