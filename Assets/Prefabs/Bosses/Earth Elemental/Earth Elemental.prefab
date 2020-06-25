@@ -43,6 +43,28 @@ MonoBehaviour:
     type: 3}
   blockingCrystalPrefab: {fileID: 7381904007666532172, guid: 09066b71efc6bdd44950b8825012733b,
     type: 3}
+  attackQueueManager: {fileID: 0}
+  rockThrow: {fileID: 1331957666442940799}
+--- !u!114 &1331957666442940799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871585752063383361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1667d0c3d97e34fba8176047f292d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 871585752063383360}
+  skillIndicators: {fileID: -3958895877849751442}
+  queueManager: {fileID: 0}
+  boardManager: {fileID: 0}
+  rockPrefab: {fileID: 6899321150750685673, guid: ae40b7bb6c7b54f47a2bba9707727371,
+    type: 3}
+  rockSpawner: {fileID: 3404168844083640509}
+  isCasting: 0
 --- !u!212 &5180265105706314667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -283,6 +305,12 @@ GameObject:
 --- !u!4 &871585752063383366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2159003017438940291, guid: 373a58e4e97e07648b9a53fe0eda981b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292022170531552197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &871585752063383360 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2159003017438940293, guid: 373a58e4e97e07648b9a53fe0eda981b,
     type: 3}
   m_PrefabInstance: {fileID: 1292022170531552197}
   m_PrefabAsset: {fileID: 0}

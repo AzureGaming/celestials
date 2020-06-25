@@ -23,7 +23,11 @@ public class ThrowBoulder : MonoBehaviour {
 
     public IEnumerator Attack(Vector3 location, Summoner summoner) {
         yield return StartCoroutine(MoveRoutine(transform.position, location));
-        summoner.TakeDamage(2);
+        Color color = spriteR.color;
+        color.a = 0;
+        spriteR.color = color;
+        yield return StartCoroutine(summoner.TakeDamage(2));
+        Destroy(gameObject);
     }
 
     IEnumerator MoveRoutine(Vector3 start, Vector3 destination) {

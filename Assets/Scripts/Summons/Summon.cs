@@ -28,7 +28,6 @@ public class Summon : MonoBehaviour {
 
     public IEnumerator TakeDamage() {
         yield return StartCoroutine(controller.TakeDamage());
-        Debug.Log("take damage fone");
     }
 
     public virtual IEnumerator Die() {
