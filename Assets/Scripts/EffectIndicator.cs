@@ -10,14 +10,14 @@ public class EffectIndicator : MonoBehaviour {
         origPos = transform.position;
     }
 
-    public void ShowIndicator() {
-        //Vector3 newPos = GetPositionRelativeToSummon();
-        //transform.position = newPos;
-        spriteR.enabled = true;
+    public bool GetIsTargeted() {
+        return spriteR.enabled;
     }
 
-    public void HideIndicator() {
-        spriteR.enabled = false;
+    public void SetIndicator(bool value) {
+        //Vector3 newPos = GetPositionRelativeToSummon();
+        //transform.position = newPos;
+        spriteR.enabled = value;
     }
 
     Vector3 GetPositionRelativeToSummon() {

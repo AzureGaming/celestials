@@ -57,12 +57,12 @@ public class Tile : MonoBehaviour {
         UpdateState(State.Neutral);
     }
 
-    public void ShowAttackIndicator() {
-        attackIndicator.ShowIndicator();
+    public void SetAttackIndicator(bool value) {
+        attackIndicator.SetIndicator(value);
     }
 
-    public void HideAttackIndicator() {
-        attackIndicator.HideIndicator();
+    public void SetActiveAttackIndicator(bool value) {
+        attackIndicator.gameObject.SetActive(value);
     }
 
     public bool CheckOccupied() {
@@ -75,6 +75,10 @@ public class Tile : MonoBehaviour {
 
     public Summon GetSummon() {
         return GetComponentInChildren<Summon>();
+    }
+
+    public bool GetIsTargeted() {
+        return attackIndicator.GetIsTargeted();
     }
 
     void UpdateState(State state) {

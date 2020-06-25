@@ -60,6 +60,14 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
+    public void ResetAllIndicators() {
+        for (int stage = 0; stage < stageLimit; stage++) {
+            for (int row = 0; row < rowLimit; row++) {
+                grid[stage][row].GetComponentInChildren<EffectIndicator>()?.SetIndicator(false);
+            }
+        }
+    }
+
     public void DetectSummonableSpace() {
         int stage = 0;
         for (int row = 0; row < rowLimit; row++) {
@@ -83,6 +91,32 @@ public class BoardManager : MonoBehaviour {
             }
         }
 
+        return tiles;
+    }
+
+    public Tile GetTile(int column, int row) {
+        return grid[column][row];
+    }
+
+    public List<Tile[]> GetRandomRows(int maxNum) {
+        Tile[][] gridClone = grid.Select(row => (Tile[])row.Clone()).ToArray();
+        List<int> randomList = new List<int>();
+        for (int i = 0; i < maxNum; i++) {
+            int numToAdd = UnityEngine.Random.Range(0, maxNum + 1);
+            while (randomList.Contains(numToAdd)) {
+                numToAdd = UnityEngine.Random.Range(0, maxNum + 1);
+            }
+            randomList.Add(numToAdd);
+        }
+
+        List<Tile[]> tiles = new List<Tile[]>();
+        foreach (int num in randomList) {
+            Tile[] row = new Tile[rowLimit];
+            for (int i = 0; i < stageLimit; i++) {
+                row[i] = gridClone[i][num];
+            }
+            tiles.Add(row);
+        }
         return tiles;
     }
 

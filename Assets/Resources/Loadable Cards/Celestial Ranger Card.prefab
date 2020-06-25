@@ -123,5 +123,55 @@ PrefabInstance:
       propertyPath: m_Name
       value: Celestial Ranger Card
       objectReference: {fileID: 0}
+    - target: {fileID: 1672890981284780585, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672890981284780585, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033390533801175160, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033390533801175160, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568228834756998318, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568228834756998318, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803844128550374305, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803844128550374305, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734755106560257764, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734755106560257764, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97662ae0c35ee9040ae654d5fd0a2aa4, type: 3}

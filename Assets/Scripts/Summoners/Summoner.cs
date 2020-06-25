@@ -28,16 +28,18 @@ public class Summoner : MonoBehaviour {
 
     }
 
-    public virtual void TakeDamage(int damage) {
+    public virtual IEnumerator TakeDamage(int damage) {
         animator.SetTrigger("isHurt");
         health -= damage;
-        StartCoroutine(FlashRed());
+        yield return StartCoroutine(FlashRed());
         if (health < 0) {
-            Die();
+            yield return StartCoroutine(Die());
         }
     }
 
-    public virtual void Die() {
+    public virtual IEnumerator Die() {
+        Debug.Log("Implement summoner death");
+        yield break;
     }
 
     IEnumerator FlashRed() {

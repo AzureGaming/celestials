@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 public class EarthElemental : Boss {
-    enum Moves {
+    public enum Moves {
         PEBBLESTORM,
         BOULDERDROP,
         ROCKTHROW,
@@ -17,6 +17,8 @@ public class EarthElemental : Boss {
     public GameObject boulderThrowSpawner;
     public GameObject pebbleStormCardPrefab;
     public GameObject blockingCrystalPrefab;
+    public AttackQueueManager attackQueueManager;
+    public ThrowBoulderSkill rockThrow;
     Summoner summoner;
     GameManager gameManager;
     BoardManager boardManager;
@@ -27,8 +29,6 @@ public class EarthElemental : Boss {
     bool doneSpawningBlockingCrystal = false;
     bool spawnedBlockingCrystal = false;
     List<Moves> attackQueue = new List<Moves>();
-    List<Tile> tilesToAttack = new List<Tile>();
-    EarthElementalSkillIndicators skillIndicators;
 
     public override void Awake() {
         base.Awake();
@@ -36,13 +36,22 @@ public class EarthElemental : Boss {
         gameManager = FindObjectOfType<GameManager>();
         cardManager = FindObjectOfType<CardManager>();
         boardManager = FindObjectOfType<BoardManager>();
-        skillIndicators = GetComponent<EarthElementalSkillIndicators>();
     }
 
     public override void Start() {
         base.Start();
         QueueAttack();
-        QueueAttack();
+        //QueueAttack();
+    }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            StartCoroutine(Attack());
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y)) {
+            QueueAttack();
+        }
     }
 
     public override IEnumerator RunTurnRoutine() {
@@ -56,8 +65,8 @@ public class EarthElemental : Boss {
             spawnedBlockingCrystal = false;
         }
         yield return StartCoroutine(Attack());
-        QueueAttack();
         yield return new WaitUntil(() => DoneActions());
+        //QueueAttack();
     }
 
     public override IEnumerator TakeDamage(int damage) {
@@ -79,13 +88,13 @@ public class EarthElemental : Boss {
     protected override IEnumerator Attack() {
         int randomAttack = Random.Range(0, 5);
         if (attackQueue.Count > 0) {
-            yield return ExecuteAttack(attackQueue.First());
-            attackQueue.RemoveAt(0);
+            Moves attack = attackQueue.Last();
+            yield return ExecuteAttack(attack);
+            Debug.Log("Remove from queue");
+            attackQueue.Remove(attack);
         } else {
             yield return ExecuteAttack((Moves)randomAttack);
         }
-
-        skillIndicators.ClearIndicator();
     }
 
     IEnumerator ExecuteAttack(Moves randomAttack) {
@@ -95,7 +104,7 @@ public class EarthElemental : Boss {
         } else if (randomAttack == Moves.BOULDERDROP) {
             yield return StartCoroutine(BoulderDrop());
         } else if (randomAttack == Moves.ROCKTHROW) {
-            yield return StartCoroutine(RockThrow());
+            yield return StartCoroutine(rockThrow.CastSkill());
         } else if (randomAttack == Moves.CRYSTALBLOCK) {
             yield return StartCoroutine(CrystalBlock());
         } else if (randomAttack == Moves.CRYSTALIZE) {
@@ -104,26 +113,25 @@ public class EarthElemental : Boss {
     }
 
     void QueueAttack() {
-        foreach (Tile tile in tilesToAttack) {
-            tile.HideAttackIndicator();
+        Debug.Log("Queue attack" + attackQueue.Count);
+        if (attackQueue.Count >= 2) {
+            Debug.LogWarning("Queue is full");
+            return;
         }
         int randomAttack = Random.Range(0, 5);
         Moves nextAttack = /*(Moves)randomAttack*/ Moves.ROCKTHROW;
         attackQueue.Add(nextAttack);
         if (nextAttack == Moves.PEBBLESTORM) {
-            skillIndicators.SetPebbleStorm();
+            //skillIndicators.SetPebbleStorm();
         } else if (nextAttack == Moves.BOULDERDROP) {
-            skillIndicators.SetBoulderDrop();
+            //skillIndicators.SetBoulderDrop();
         } else if (nextAttack == Moves.ROCKTHROW) {
-            QueueBoulderThrowTargets();
-            skillIndicators.SetBoulderThrow();
-            for (int i = 0; i < 2; i++) {
-                tilesToAttack[i].ShowAttackIndicator();
-            }
+            rockThrow.QueueSkill();
+            //QueueBoulderThrowTargets();
         } else if (nextAttack == Moves.CRYSTALBLOCK) {
-            skillIndicators.SetBlockingCrystal();
+            //skillIndicators.SetBlockingCrystal();
         } else if (nextAttack == Moves.CRYSTALIZE) {
-            skillIndicators.SetCrystalize();
+            //skillIndicators.SetCrystalize();
         }
     }
 
@@ -144,42 +152,6 @@ public class EarthElemental : Boss {
         yield return new WaitUntil(() => DoneActions());
         summoner.TakeDamage(3);
         yield break;
-    }
-
-    void QueueBoulderThrowTargets() {
-        int numberOfTargets = 2;
-        List<Tile> randomList = boardManager.GetFirstSummonInRows().OrderBy(tile => Random.Range(0f, 1f)).ToList();
-        for (int i = 0; i < numberOfTargets; i++) {
-            tilesToAttack.Add(randomList[i]);
-            //randomList[i].ShowAttackIndicator();
-        }
-    }
-
-    IEnumerator RockThrow() {
-        animator.SetTrigger("Attack1");
-        yield return new WaitUntil(() => DoneActions());
-        List<Tile> targets = new List<Tile>();
-        targets.Add(TakeFromTileQueue());
-        targets.Add(TakeFromTileQueue());
-        foreach (Tile tile in targets) {
-            GameObject boulder = Instantiate(boulderThrowPrefab, boulderThrowSpawner.transform);
-            Summon summon = tile.GetSummon();
-            if (summon) {
-                yield return StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(summon.transform.position, summon));
-                Debug.Log("done attacking summon");
-            } else {
-                yield return StartCoroutine(boulder.GetComponent<ThrowBoulder>().Attack(summoner.transform.position, summoner));
-            }
-        }
-    }
-
-    Tile TakeFromTileQueue() {
-        Tile tile = tilesToAttack.First();
-        if (!tile) {
-            Debug.LogError("Tile Queue was empty");
-        }
-        tilesToAttack.Remove(tile);
-        return tile;
     }
 
     IEnumerator CrystalBlock() {
