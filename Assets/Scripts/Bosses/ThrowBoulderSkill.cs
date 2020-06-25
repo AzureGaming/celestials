@@ -24,19 +24,24 @@ public class ThrowBoulderSkill : MonoBehaviour {
         isCasting = false;
     }
 
-    public IEnumerator CastSkill() {
+    public IEnumerator CastSkill(AttackQueueManager.AttackCommand command) {
         isCasting = true;
         animator.SetTrigger("Attack1");
         yield return new WaitUntil(() => !isCasting);
-        LoadTargets();
+        LoadTargets(command.coords);
         yield return StartCoroutine(ThrowBoulders());
         skillIndicators.ClearIndicator();
-        queueManager.RefreshIndicators();
+        //queueManager.RefreshIndicators();
+        pendingAttacks.Clear();
         Debug.Log("Done");
     }
 
     public void QueueSkill() {
         skillIndicators.SetBoulderThrow();
+        queueManager.Queue(new AttackQueueManager.AttackCommand(EarthElemental.Moves.ROCKTHROW, CalculateTargets()));
+    }
+
+    public int[][] CalculateTargets() {
         List<Tile[]> rows = boardManager.GetRandomRows(numberOfTargets);
         if (rows.Count > numberOfTargets || rows.Count < numberOfTargets) {
             Debug.LogWarning("Rows queued do not match number of targets" + numberOfTargets);
@@ -61,13 +66,12 @@ public class ThrowBoulderSkill : MonoBehaviour {
             i++;
         }
 
-        queueManager.Queue(new AttackQueueManager.AttackCommand(EarthElemental.Moves.ROCKTHROW, coords));
+        return coords;
     }
 
-    void LoadTargets() {
-        AttackQueueManager.AttackCommand attackCommand = queueManager.DeQueue();
+    void LoadTargets(int[][] coords) {
         pendingAttacks = new List<Tile>();
-        foreach (int[] coord in attackCommand.coords) {
+        foreach (int[] coord in coords) {
             pendingAttacks.Add(boardManager.GetTile(coord[0], coord[1]));
         }
 

@@ -1749,6 +1749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boardManager: {fileID: 468281726}
+  rockThrow: {fileID: 2102707360}
 --- !u!4 &1507855072
 Transform:
   m_ObjectHideFlags: 0
@@ -1793,6 +1794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  queueManager: {fileID: 1507855071}
 --- !u!4 &1549477768
 Transform:
   m_ObjectHideFlags: 0
@@ -2007,6 +2009,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006069656}
   m_CullTransparentMesh: 0
+--- !u!114 &2102707360 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1331957666442940799, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1933306719}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1667d0c3d97e34fba8176047f292d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8401865781244766740
 PrefabInstance:
   m_ObjectHideFlags: 0
