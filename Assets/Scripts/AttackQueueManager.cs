@@ -15,20 +15,44 @@ public class AttackQueueManager : MonoBehaviour {
     }
     public List<AttackCommand> attackCommands = new List<AttackCommand>();
     public BoardManager boardManager;
+    public ThrowBoulderSkill rockThrow;
 
-    public void Queue(AttackCommand attackCommand) {
+    public void Queue(AttackCommand command) {
+        if (attackCommands.Count >= 2) {
+            Debug.LogWarning("Queue is full");
+            return;
+        }
         boardManager.ResetAllIndicators();
-        attackCommands.Add(attackCommand);
-        UpdateIndicators(attackCommand);
+        attackCommands.Add(command);
+        foreach (int[] coord in command.coords) {
+            boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+        }
+    }
+
+    public IEnumerator ProcessNextAttack() {
+        AttackCommand command = DeQueue();
+        if (command.moveName == EarthElemental.Moves.PEBBLESTORM) {
+        } else if (command.moveName == EarthElemental.Moves.BOULDERDROP) {
+        } else if (command.moveName == EarthElemental.Moves.ROCKTHROW) {
+            yield return StartCoroutine(rockThrow.CastSkill(command));
+        } else if (command.moveName == EarthElemental.Moves.CRYSTALBLOCK) {
+        } else if (command.moveName == EarthElemental.Moves.CRYSTALIZE) {
+        } else {
+            Debug.LogWarning("Unknown Attack processed");
+        }
     }
 
     public AttackCommand DeQueue() {
-        if (attackCommands.Count < 0) {
+        if (attackCommands.Count <= 0) {
             Debug.LogWarning("No attack command dequeued");
         }
         AttackCommand attackCommand = attackCommands.Last();
         attackCommands.Remove(attackCommand);
-        UpdateIndicators(attackCommand);
+        boardManager.ResetAllIndicators();
+        foreach (int[] coord in attackCommand.coords) {
+            boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+        }
+        //UpdateIndicators(attackCommand);
         return attackCommand;
     }
 
@@ -38,8 +62,19 @@ public class AttackQueueManager : MonoBehaviour {
         }
     }
 
-    void UpdateIndicators(AttackCommand attackCommand) {
-        foreach (int[] coord in attackCommand.coords) {
+    void UpdateIndicators(AttackCommand command) {
+        boardManager.ResetAllIndicators();
+        if (command.moveName == EarthElemental.Moves.PEBBLESTORM) {
+        } else if (command.moveName == EarthElemental.Moves.BOULDERDROP) {
+        } else if (command.moveName == EarthElemental.Moves.ROCKTHROW) {
+            command.coords = rockThrow.CalculateTargets();
+        } else if (command.moveName == EarthElemental.Moves.CRYSTALBLOCK) {
+        } else if (command.moveName == EarthElemental.Moves.CRYSTALIZE) {
+        } else {
+            Debug.LogWarning("Unknown Attack processed");
+        }
+
+        foreach (int[] coord in command.coords) {
             boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
         }
     }

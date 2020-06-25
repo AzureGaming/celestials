@@ -9,6 +9,7 @@ public enum GameState {
 
 public class TurnManager : MonoBehaviour {
     public GameState state;
+    public AttackQueueManager queueManager;
     Player player;
     Boss boss;
     Deck deck;
@@ -60,6 +61,7 @@ public class TurnManager : MonoBehaviour {
         //}
 
         yield return StartCoroutine(boardManager.ResolveStagesRoutine());
+        queueManager.RefreshIndicators();
         yield return StartCoroutine(StartPlayerTurn());
     }
 

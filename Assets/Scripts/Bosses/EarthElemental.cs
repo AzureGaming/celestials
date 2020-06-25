@@ -28,7 +28,6 @@ public class EarthElemental : Boss {
     GameObject blockingCrystalRunTimeReference;
     bool doneSpawningBlockingCrystal = false;
     bool spawnedBlockingCrystal = false;
-    List<Moves> attackQueue = new List<Moves>();
 
     public override void Awake() {
         base.Awake();
@@ -40,8 +39,6 @@ public class EarthElemental : Boss {
 
     public override void Start() {
         base.Start();
-        QueueAttack();
-        //QueueAttack();
     }
 
     private void Update() {
@@ -66,7 +63,6 @@ public class EarthElemental : Boss {
         }
         yield return StartCoroutine(Attack());
         yield return new WaitUntil(() => DoneActions());
-        //QueueAttack();
     }
 
     public override IEnumerator TakeDamage(int damage) {
@@ -86,53 +82,22 @@ public class EarthElemental : Boss {
     }
 
     protected override IEnumerator Attack() {
-        int randomAttack = Random.Range(0, 5);
-        if (attackQueue.Count > 0) {
-            Moves attack = attackQueue.Last();
-            yield return ExecuteAttack(attack);
-            Debug.Log("Remove from queue");
-            attackQueue.Remove(attack);
-        } else {
-            yield return ExecuteAttack((Moves)randomAttack);
-        }
-    }
-
-    IEnumerator ExecuteAttack(Moves randomAttack) {
-        attackRoutineRunning = true;
-        if (randomAttack == Moves.PEBBLESTORM) {
-            yield return StartCoroutine(PebbleStorm());
-        } else if (randomAttack == Moves.BOULDERDROP) {
-            yield return StartCoroutine(BoulderDrop());
-        } else if (randomAttack == Moves.ROCKTHROW) {
-            yield return StartCoroutine(rockThrow.CastSkill());
-        } else if (randomAttack == Moves.CRYSTALBLOCK) {
-            yield return StartCoroutine(CrystalBlock());
-        } else if (randomAttack == Moves.CRYSTALIZE) {
-            yield return StartCoroutine(Crystalize());
-        }
+        yield return StartCoroutine(ExecuteNextCommand());
     }
 
     void QueueAttack() {
-        Debug.Log("Queue attack" + attackQueue.Count);
-        if (attackQueue.Count >= 2) {
-            Debug.LogWarning("Queue is full");
-            return;
-        }
-        int randomAttack = Random.Range(0, 5);
-        Moves nextAttack = /*(Moves)randomAttack*/ Moves.ROCKTHROW;
-        attackQueue.Add(nextAttack);
-        if (nextAttack == Moves.PEBBLESTORM) {
-            //skillIndicators.SetPebbleStorm();
-        } else if (nextAttack == Moves.BOULDERDROP) {
-            //skillIndicators.SetBoulderDrop();
-        } else if (nextAttack == Moves.ROCKTHROW) {
+        Moves randomAttack = Moves.ROCKTHROW;
+        if (randomAttack == Moves.PEBBLESTORM) {
+        } else if (randomAttack == Moves.BOULDERDROP) {
+        } else if (randomAttack == Moves.ROCKTHROW) {
             rockThrow.QueueSkill();
-            //QueueBoulderThrowTargets();
-        } else if (nextAttack == Moves.CRYSTALBLOCK) {
-            //skillIndicators.SetBlockingCrystal();
-        } else if (nextAttack == Moves.CRYSTALIZE) {
-            //skillIndicators.SetCrystalize();
+        } else if (randomAttack == Moves.CRYSTALBLOCK) {
+        } else if (randomAttack == Moves.CRYSTALIZE) {
         }
+    }
+
+    IEnumerator ExecuteNextCommand() {
+        yield return StartCoroutine(attackQueueManager.ProcessNextAttack());
     }
 
     IEnumerator PebbleStorm() {

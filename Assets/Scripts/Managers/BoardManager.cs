@@ -63,7 +63,7 @@ public class BoardManager : MonoBehaviour {
     public void ResetAllIndicators() {
         for (int stage = 0; stage < stageLimit; stage++) {
             for (int row = 0; row < rowLimit; row++) {
-                grid[stage][row].GetComponentInChildren<EffectIndicator>()?.SetIndicator(false);
+                grid[stage][row].SetAttackIndicator(false);
             }
         }
     }
