@@ -207,6 +207,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52196069}
   m_CullTransparentMesh: 0
+--- !u!1 &197562057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 616755373093621050, guid: 8a97e7669fa04c541931ed14398e3a12,
+    type: 3}
+  m_PrefabInstance: {fileID: 1703007919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207242876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1476,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardManager: {fileID: 0}
   display: {fileID: 1043868854}
+--- !u!1 &1165486614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3087257521417169887, guid: 8a97e7669fa04c541931ed14398e3a12,
+    type: 3}
+  m_PrefabInstance: {fileID: 1703007919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1186051765 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6198869027334389983, guid: 8a97e7669fa04c541931ed14398e3a12,
@@ -1848,6 +1860,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3163856518097046420, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4257279918883667840, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
       propertyPath: flyingCard
@@ -1961,11 +1978,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3985409806031429068, guid: 555c377fbfbc8f741957e4f5d8e85920,
         type: 3}
+    - target: {fileID: 5865887476814804093, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6880761096996055407, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
       propertyPath: m_Name
       value: Pix
       objectReference: {fileID: 0}
+    - target: {fileID: 7927426925535827032, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: slot1
+      value: 
+      objectReference: {fileID: 197562057}
+    - target: {fileID: 7927426925535827032, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: slot2
+      value: 
+      objectReference: {fileID: 1165486614}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a97e7669fa04c541931ed14398e3a12, type: 3}
 --- !u!1001 &1933306719

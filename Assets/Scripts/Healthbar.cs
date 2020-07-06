@@ -6,11 +6,16 @@ using UnityEngine;
 public class Healthbar : MonoBehaviour {
     public Sprite[] sprites;
     public GameObject[] bars;
+    public HealthValue healthValue;
     int health = 30;
     List<Sprite> greenBars = new List<Sprite>();
     List<Sprite> yellowBars = new List<Sprite>();
     List<Sprite> orangeBars = new List<Sprite>();
     List<Sprite> redBars = new List<Sprite>();
+
+    private void Awake() {
+        healthValue = GetComponentInChildren<HealthValue>();
+    }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.W)) {
@@ -38,6 +43,8 @@ public class Healthbar : MonoBehaviour {
     public void TakeDamage(int value) {
         health -= value;
         UpdateSprites();
+        healthValue.SetValue(health);
+        Debug.Log("Took damage" + health);
     }
 
     void UpdateSprites() {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FlyingCard : MonoBehaviour {
-    public float journeyTime = 1.0f;
+    public float journeyTime = 0.1f;
     float startTime;
     Transform sunrise;
     public Transform sunset;

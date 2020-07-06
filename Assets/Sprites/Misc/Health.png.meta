@@ -1,94 +1,37 @@
 fileFormatVersion: 2
-guid: 22590036b9f2d6941b1f903b32507aba
+guid: bfd3d5c505809f4489d8e13e3d394315
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1726072533183625762
-    second: Pix Summoning Sprite-Sheet_0
+      213: -8630923909508717717
+    second: Health_4
   - first:
-      213: 2495862882005215515
-    second: Pix Summoning Sprite-Sheet_1
+      213: 5407656843090688360
+    second: Health_6
   - first:
-      213: -1156482931930826133
-    second: Pix Summoning Sprite-Sheet_2
+      213: -5731162285055332302
+    second: Health_4
   - first:
-      213: 365473773005725121
-    second: Pix Summoning Sprite-Sheet_3
+      213: 8133923789288904650
+    second: Health_6
   - first:
-      213: 5529856026971530484
-    second: Pix Summoning Sprite-Sheet_4
+      213: 5670370932310569416
+    second: Health_0
   - first:
-      213: 3924649457627067226
-    second: Pix Summoning Sprite-Sheet_5
+      213: -5388755749296596579
+    second: Health_4
   - first:
-      213: 4482208876489112015
-    second: Pix Summoning Sprite-Sheet_6
+      213: 8599707562563145997
+    second: Health_1
   - first:
-      213: -4889455512120395118
-    second: Pix Summoning Sprite-Sheet_7
+      213: -2813353791512989102
+    second: Health_0
   - first:
-      213: 5522968524390905183
-    second: Pix Summoning Sprite-Sheet_0
+      213: -1197829253625875407
+    second: Health_8
   - first:
-      213: -8222654377767527548
-    second: Pix Summoning Sprite-Sheet_1
-  - first:
-      213: 8326872991249345865
-    second: Pix Summoning Sprite-Sheet_2
-  - first:
-      213: 2831209335458638387
-    second: Pix Summoning Sprite-Sheet_3
-  - first:
-      213: 1945135276082326748
-    second: Pix Summoning Sprite-Sheet_4
-  - first:
-      213: -7845443848498080786
-    second: Pix Summoning Sprite-Sheet_5
-  - first:
-      213: -1027993307936254542
-    second: Pix Summoning Sprite-Sheet_6
-  - first:
-      213: -4461508154641162891
-    second: Pix Summoning Sprite-Sheet_7
-  - first:
-      213: 1639787007064737063
-    second: Pix Summoning Sprite-Sheet_8
-  - first:
-      213: 5846401239683106597
-    second: Pix Summoning Sprite-Sheet_9
-  - first:
-      213: -1063321656192433681
-    second: Pix Summoning Sprite-Sheet_10
-  - first:
-      213: -7784674771736003745
-    second: Pix Summoning Sprite-Sheet_11
-  - first:
-      213: 151783269032724234
-    second: Pix Summoning Sprite-Sheet_12
-  - first:
-      213: 4930895640600473150
-    second: Pix Summoning Sprite-Sheet_13
-  - first:
-      213: 7286795973335785695
-    second: Pix Summoning Sprite-Sheet_14
-  - first:
-      213: 3671763843733007302
-    second: Pix Summoning Sprite-Sheet_15
-  - first:
-      213: -4940297716272870955
-    second: Pix Summoning Sprite-Sheet_16
-  - first:
-      213: -571298485695422708
-    second: Pix Summoning Sprite-Sheet_17
-  - first:
-      213: -2599334489258757447
-    second: Pix Summoning Sprite-Sheet_18
-  - first:
-      213: 3736250467292901190
-    second: Pix Summoning Sprite-Sheet_19
-  - first:
-      213: 2472458868222346291
-    second: Pix Summoning Sprite-Sheet_20
+      213: -4119642778357871254
+    second: Health_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -185,169 +128,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_0
+      name: Health_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 34
-        height: 34
+        x: 20
+        y: 160
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f55bbf96c9685ac40800000000000000
-      internalID: 5522968524390905183
+      spriteID: b63ae42de6cc83880800000000000000
+      internalID: -8630923909508717717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_1
+      name: Health_3
       rect:
         serializedVersion: 2
-        x: 34
-        y: 0
-        width: 34
-        height: 34
+        x: 120
+        y: 160
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b1b5ea86343ed80800000000000000
-      internalID: -8222654377767527548
+      spriteID: 86971af6f3bdb0b40800000000000000
+      internalID: 5407656843090688360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_2
+      name: Health_5
       rect:
         serializedVersion: 2
-        x: 68
-        y: 0
-        width: 34
-        height: 34
+        x: 220
+        y: 160
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94d263d2edefe8370800000000000000
-      internalID: 8326872991249345865
+      spriteID: 23039294442d670b0800000000000000
+      internalID: -5731162285055332302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_3
+      name: Health_6
       rect:
         serializedVersion: 2
-        x: 102
-        y: 0
-        width: 34
-        height: 34
+        x: 350
+        y: 160
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a28c4e3e97a4720800000000000000
-      internalID: 2831209335458638387
+      spriteID: ac71aaa479081e070800000000000000
+      internalID: 8133923789288904650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_4
+      name: Health_7
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
-        width: 34
-        height: 34
+        x: 450
+        y: 160
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdce7f25a328efa10800000000000000
-      internalID: 1945135276082326748
+      spriteID: 8c1721de15431be40800000000000000
+      internalID: 5670370932310569416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_5
+      name: Health_4
       rect:
         serializedVersion: 2
-        x: 170
-        y: 0
-        width: 34
-        height: 34
+        x: 20
+        y: 40
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee39ff003626f1390800000000000000
-      internalID: -7845443848498080786
+      spriteID: d9915d5623b4735b0800000000000000
+      internalID: -5388755749296596579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_6
+      name: Health_1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
-        width: 34
-        height: 34
+        x: 120
+        y: 40
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b51bf07885dbb1f0800000000000000
-      internalID: -1027993307936254542
+      spriteID: d0111d6077c485770800000000000000
+      internalID: 8599707562563145997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pix Summoning Sprite-Sheet_7
+      name: Health_9
       rect:
         serializedVersion: 2
-        x: 238
-        y: 0
-        width: 34
-        height: 34
+        x: 220
+        y: 40
+        width: 90
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57dda10b8f98512c0800000000000000
-      internalID: -4461508154641162891
+      spriteID: 252be55e1a5f4f8d0800000000000000
+      internalID: -2813353791512989102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_8
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 40
+        width: 90
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134fe04e3a4706fe0800000000000000
+      internalID: -1197829253625875407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_0
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 40
+        width: 90
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dc97a48b614d6c0800000000000000
+      internalID: -4119642778357871254
       vertices: []
       indices: 
       edges: []

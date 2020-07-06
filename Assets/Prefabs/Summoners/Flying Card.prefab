@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf793e95ed6e0094bb1c68ca0e85d6b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  journeyTime: 1
+  journeyTime: 0.5
   sunset: {fileID: 0}
 --- !u!95 &805395522014705039
 Animator:
