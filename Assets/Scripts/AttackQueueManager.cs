@@ -22,11 +22,14 @@ public class AttackQueueManager : MonoBehaviour {
             Debug.LogWarning("Queue is full");
             return;
         }
-        boardManager.ResetAllIndicators();
-        attackCommands.Add(command);
-        foreach (int[] coord in command.coords) {
-            boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+        if (attackCommands.Count == 0) {
+            boardManager.ResetAllIndicators();
+            foreach (int[] coord in command.coords) {
+                boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+            }
         }
+
+        attackCommands.Add(command);
     }
 
     public IEnumerator ProcessNextAttack() {
@@ -46,23 +49,31 @@ public class AttackQueueManager : MonoBehaviour {
         if (attackCommands.Count <= 0) {
             Debug.LogWarning("No attack command dequeued");
         }
-        AttackCommand attackCommand = attackCommands.Last();
+        AttackCommand attackCommand = attackCommands.First();
         attackCommands.Remove(attackCommand);
-        boardManager.ResetAllIndicators();
-        foreach (int[] coord in attackCommand.coords) {
-            boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
-        }
-        //UpdateIndicators(attackCommand);
+        //boardManager.ResetAllIndicators();
+        //foreach (int[] coord in attackCommand.coords) {
+        //    boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+        //}
         return attackCommand;
     }
 
-    public void RefreshIndicators() {
+    public void RefreshIndicators(bool recalculate) {
         if (attackCommands.Count > 0) {
-            UpdateIndicators(attackCommands.Last());
+            if (recalculate) {
+                UpdateCommand(attackCommands.First());
+            } else {
+                boardManager.ResetAllIndicators();
+                foreach (int[] coord in attackCommands.First().coords) {
+                    boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+                }
+                //UpdateIndicators(attackCommands.First());
+            }
+
         }
     }
 
-    void UpdateIndicators(AttackCommand command) {
+    void UpdateCommand(AttackCommand command) {
         boardManager.ResetAllIndicators();
         if (command.moveName == EarthElemental.Moves.PEBBLESTORM) {
         } else if (command.moveName == EarthElemental.Moves.BOULDERDROP) {

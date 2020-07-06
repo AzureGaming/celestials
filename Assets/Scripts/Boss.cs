@@ -36,6 +36,9 @@ public class Boss : MonoBehaviour {
         return projectileCollision.transform;
     }
 
+    public virtual void Initialize() {
+    }
+
     public virtual IEnumerator TakeDamage(int damage) {
         health -= damage;
         yield return StartCoroutine(FlashRed());

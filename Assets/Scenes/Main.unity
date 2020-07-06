@@ -352,8 +352,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282795590
+  m_fontColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c587b302059d33b4c83f913fc6ff0a25, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08bee1973ce14f145b227d900fd75753, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1836,6 +1836,113 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1763227366312457825, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 6604629554235651492, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -5899865133778505547, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -3353677720775829790, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -7251991954480073022, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 5275516720719196707, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 10399300926650060, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 1014196955977516810, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 7402273450886629449, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 2723348445603706063, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[10]
+      value: 
+      objectReference: {fileID: -2555480398966338123, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[11]
+      value: 
+      objectReference: {fileID: 3958205159266488329, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[12]
+      value: 
+      objectReference: {fileID: -7608409592717659800, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[13]
+      value: 
+      objectReference: {fileID: -1865450607167602475, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[14]
+      value: 
+      objectReference: {fileID: -8102148752781218848, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[15]
+      value: 
+      objectReference: {fileID: -3985409806031429068, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
+    - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
+        type: 3}
+      propertyPath: sprites.Array.data[16]
+      value: 
+      objectReference: {fileID: -3985409806031429068, guid: 555c377fbfbc8f741957e4f5d8e85920,
+        type: 3}
     - target: {fileID: 6880761096996055407, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
       propertyPath: m_Name

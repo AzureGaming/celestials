@@ -253,8 +253,10 @@ public class BoardManager : MonoBehaviour {
         uiManager.SetLocationSelectionPrompt(true);
         DetectSummonableSpace();
         yield return new WaitUntil(() => GetQueue().Count == 1);
+        Tile tile = GetQueue()[0];
         SetNeutral();
-        card.SummonAt(GetQueue()[0]);
+        card.SummonAt(tile);
+        tile.UpdateIndicatorPosition();
         yield return StartCoroutine(player.LoseMana(card.GetManaCost()));
         ClearQueue();
         cardManager.AddToDiscard(card);

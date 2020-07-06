@@ -85,6 +85,11 @@ public class EarthElemental : Boss {
         yield return StartCoroutine(ExecuteNextCommand());
     }
 
+    public override void Initialize() {
+        QueueAttack();
+        QueueAttack();
+    }
+
     void QueueAttack() {
         Moves randomAttack = Moves.ROCKTHROW;
         if (randomAttack == Moves.PEBBLESTORM) {
