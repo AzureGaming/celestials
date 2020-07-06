@@ -65,6 +65,10 @@ public class Tile : MonoBehaviour {
         attackIndicator.gameObject.SetActive(value);
     }
 
+    public void UpdateIndicatorPosition() {
+        attackIndicator.RefreshPosition();
+    }
+
     public bool CheckOccupied() {
         if (GetComponentInChildren<Summon>()) {
             return true;

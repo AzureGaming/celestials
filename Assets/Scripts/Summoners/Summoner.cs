@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SummonerController))]
 public class Summoner : MonoBehaviour {
     SummonerController controller;
     SpriteRenderer spriteRenderer;
@@ -20,12 +19,25 @@ public class Summoner : MonoBehaviour {
         color = spriteRenderer.color;
     }
 
-    public void Summon() {
-        controller.Summon();
+    public void Summon(Tile tile) {
+        controller.Summon(tile);
     }
 
-    public void OnCastAnimationEventEnd() {
+    public void CastSpell() {
+        controller.CastSpell();
+    }
 
+    public bool GetAnimationDone() {
+        return controller.GetDoneAnimation();
+    }
+
+    public bool GetDone() {
+        return !controller.GetRoutineRunning();
+    }
+
+    public void FlyingCardDone(FlyingCard flyingCard) {
+        controller.SetRoutineRunning(false);
+        Destroy(flyingCard.gameObject);
     }
 
     public virtual IEnumerator TakeDamage(int damage) {

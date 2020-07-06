@@ -37,6 +37,7 @@ public class TurnManager : MonoBehaviour {
 
     public IEnumerator Initialize() {
         yield return StartCoroutine(player.SetupPlayer());
+        boss.Initialize();
         yield return StartCoroutine(StartPlayerTurn());
     }
 
@@ -56,12 +57,12 @@ public class TurnManager : MonoBehaviour {
         //    if (boss.getHealth() < 1) {
         //        state = GameState.WIN;
         //        Debug.Log("Implement win scenario");
-        //        yield break;
+        //        yield break; 
         //    }
         //}
 
         yield return StartCoroutine(boardManager.ResolveStagesRoutine());
-        queueManager.RefreshIndicators();
+        queueManager.RefreshIndicators(true);
         yield return StartCoroutine(StartPlayerTurn());
     }
 

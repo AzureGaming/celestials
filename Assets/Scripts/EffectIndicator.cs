@@ -15,9 +15,13 @@ public class EffectIndicator : MonoBehaviour {
     }
 
     public void SetIndicator(bool value) {
-        //Vector3 newPos = GetPositionRelativeToSummon();
-        //transform.position = newPos;
+        Vector3 newPos = GetPositionRelativeToSummon();
+        transform.position = newPos;
         spriteR.enabled = value;
+    }
+
+    public void RefreshPosition() {
+        transform.position = GetPositionRelativeToSummon();
     }
 
     Vector3 GetPositionRelativeToSummon() {
@@ -27,6 +31,6 @@ public class EffectIndicator : MonoBehaviour {
             float summonHeight = summonSpriteR.bounds.max.y - summonSpriteR.bounds.min.y;
             return new Vector3(origPos.x, origPos.y + summonHeight);
         }
-        return transform.position;
+        return origPos;
     }
 }

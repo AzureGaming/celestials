@@ -31,8 +31,6 @@ public class ThrowBoulderSkill : MonoBehaviour {
         LoadTargets(command.coords);
         yield return StartCoroutine(ThrowBoulders());
         skillIndicators.ClearIndicator();
-        //queueManager.RefreshIndicators();
-        pendingAttacks.Clear();
         Debug.Log("Done");
     }
 
@@ -92,5 +90,6 @@ public class ThrowBoulderSkill : MonoBehaviour {
             }
             tile.SetAttackIndicator(false);
         }
+        pendingAttacks.Clear();
     }
 }
