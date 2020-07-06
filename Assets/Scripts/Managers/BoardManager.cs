@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine;
 
 public class BoardManager : MonoBehaviour {
+    public Summoner summoner;
     Tile[][] grid;
     GameObject tilePrefab;
     Board board;
@@ -255,6 +256,8 @@ public class BoardManager : MonoBehaviour {
         yield return new WaitUntil(() => GetQueue().Count == 1);
         Tile tile = GetQueue()[0];
         SetNeutral();
+        summoner.Summon(tile);
+        yield return new WaitUntil(() => summoner.GetDone());
         card.SummonAt(tile);
         tile.UpdateIndicatorPosition();
         yield return StartCoroutine(player.LoseMana(card.GetManaCost()));
@@ -264,6 +267,8 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator PlaySpell(Card card) {
+        summoner.CastSpell();
+        yield return new WaitUntil(() => summoner.GetAnimationDone());
         yield return StartCoroutine(player.LoseMana(card.GetManaCost()));
         yield return StartCoroutine(card.ActivateEffect());
         if (card) {
