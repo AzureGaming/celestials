@@ -17,11 +17,6 @@ public class Healthbar : MonoBehaviour {
         healthValue = GetComponentInChildren<HealthValue>();
     }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.W)) {
-            TakeDamage(1);
-        }
-    }
     private void Start() {
         foreach (Sprite sprite in sprites.Take(4)) {
             greenBars.Add(sprite);
@@ -38,13 +33,15 @@ public class Healthbar : MonoBehaviour {
         foreach (Sprite sprite in sprites.Skip(12).Take(4)) {
             redBars.Add(sprite);
         }
+
+        UpdateSprites();
+        healthValue.SetValue(health);
     }
 
     public void TakeDamage(int value) {
         health -= value;
         UpdateSprites();
         healthValue.SetValue(health);
-        Debug.Log("Took damage" + health);
     }
 
     void UpdateSprites() {

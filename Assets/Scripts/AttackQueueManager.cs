@@ -34,6 +34,10 @@ public class AttackQueueManager : MonoBehaviour {
 
     public IEnumerator ProcessNextAttack() {
         AttackCommand command = DeQueue();
+        if (command == null) {
+            Debug.LogWarning("No command dequeued");
+            yield break;
+        }
         if (command.moveName == EarthElemental.Moves.PEBBLESTORM) {
         } else if (command.moveName == EarthElemental.Moves.BOULDERDROP) {
         } else if (command.moveName == EarthElemental.Moves.ROCKTHROW) {
@@ -48,6 +52,7 @@ public class AttackQueueManager : MonoBehaviour {
     public AttackCommand DeQueue() {
         if (attackCommands.Count <= 0) {
             Debug.LogWarning("No attack command dequeued");
+            return null;
         }
         AttackCommand attackCommand = attackCommands.First();
         attackCommands.Remove(attackCommand);
