@@ -166,6 +166,16 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
+    public Summon GetRandomSummonInStage(int stage) {
+        List<Summon> summons = new List<Summon>();
+        foreach (Tile tile in grid[stage]) {
+            if (tile.CheckOccupied()) {
+                summons.Add(tile.GetSummon());
+            }
+        }
+        return summons[UnityEngine.Random.Range(0, summons.Count)];
+    }
+
     public void HandleSummoned() {
         foreach (Tile tile in tiles) {
             tile.SetNeutralState();

@@ -43,8 +43,8 @@ public class SummonController : MonoBehaviour {
         StartCoroutine(AttackRoutine(entity.range, GetId()));
     }
 
-    public IEnumerator Die() {
-        yield return StartCoroutine(DieRoutine());
+    public IEnumerator Die(bool dyingWish) {
+        yield return StartCoroutine(DieRoutine(dyingWish));
     }
 
     public virtual void ExecuteAction() {
@@ -85,7 +85,7 @@ public class SummonController : MonoBehaviour {
     public virtual IEnumerator WalkRoutine(int tiles, int id) {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
         if (tileToMoveTo?.type == TileType.Boss) {
-            yield return StartCoroutine(DieRoutine());
+            yield return StartCoroutine(DieRoutine(false));
         } else {
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
         }
@@ -97,7 +97,7 @@ public class SummonController : MonoBehaviour {
             hasBarrier = false;
             // timing?
         } else {
-            yield return StartCoroutine(Die());
+            yield return StartCoroutine(Die(true));
         }
     }
 
@@ -116,10 +116,17 @@ public class SummonController : MonoBehaviour {
         transform.SetParent(parent.transform);
     }
 
-    protected IEnumerator DieRoutine() {
+    protected IEnumerator DieRoutine(bool dyingWish) {
         yield return StartCoroutine(FlashRed());
         yield return StartCoroutine(FadeOut());
+        if (dyingWish) {
+            yield return StartCoroutine(DyingWish());
+        }
         Destroy(transform.gameObject);
+    }
+
+    protected virtual IEnumerator DyingWish() {
+        yield break;
     }
 
     protected virtual IEnumerator UpdatePositionRoutine(Vector3 currentPos, Tile tileToMoveTo) {

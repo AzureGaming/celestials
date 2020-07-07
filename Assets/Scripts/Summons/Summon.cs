@@ -30,8 +30,8 @@ public class Summon : MonoBehaviour {
         yield return StartCoroutine(controller.TakeDamage());
     }
 
-    public virtual IEnumerator Die() {
-        yield return StartCoroutine(controller.Die());
+    public virtual IEnumerator Die(bool dyingWish) {
+        yield return StartCoroutine(controller.Die(dyingWish));
     }
 
     public virtual bool DoneMoving() {
