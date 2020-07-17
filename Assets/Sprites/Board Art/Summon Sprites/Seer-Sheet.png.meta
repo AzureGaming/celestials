@@ -1,7 +1,211 @@
 fileFormatVersion: 2
 guid: ce406716a7aa4064db6e372d8198c96f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5603117464381328279
+    second: Seer-Sheet_0
+  - first:
+      213: -4038739852493875758
+    second: Seer-Sheet_1
+  - first:
+      213: 1046745503076005355
+    second: Seer-Sheet_2
+  - first:
+      213: 2024852079692623792
+    second: Seer-Sheet_3
+  - first:
+      213: 6325660024231130552
+    second: Seer-Sheet_4
+  - first:
+      213: -2868720000076406610
+    second: Seer-Sheet_5
+  - first:
+      213: -6443681912628886324
+    second: Seer-Sheet_6
+  - first:
+      213: -6704732170947008021
+    second: Seer-Sheet_7
+  - first:
+      213: 3013025530967099094
+    second: Seer-Sheet_8
+  - first:
+      213: -5193975507652710270
+    second: Seer-Sheet_9
+  - first:
+      213: 4539523401372486261
+    second: Seer-Sheet_10
+  - first:
+      213: -3425082368184386993
+    second: Seer-Sheet_11
+  - first:
+      213: -1342961418739250624
+    second: Seer-Sheet_12
+  - first:
+      213: -4825078478303957557
+    second: Seer-Sheet_13
+  - first:
+      213: -3769264309660597004
+    second: Seer-Sheet_14
+  - first:
+      213: -3276660129453470456
+    second: Seer-Sheet_15
+  - first:
+      213: -8223761023614690519
+    second: Seer-Sheet_16
+  - first:
+      213: -6220457297958015992
+    second: Seer-Sheet_17
+  - first:
+      213: 5524304168076098379
+    second: Seer-Sheet_18
+  - first:
+      213: -5142710000481851700
+    second: Seer-Sheet_19
+  - first:
+      213: 4143708836111298959
+    second: Seer-Sheet_20
+  - first:
+      213: -3731365825902774715
+    second: Seer-Sheet_21
+  - first:
+      213: -8981293200990923000
+    second: Seer-Sheet_22
+  - first:
+      213: -2720015173593439519
+    second: Seer-Sheet_23
+  - first:
+      213: -6945566948967172148
+    second: Seer-Sheet_24
+  - first:
+      213: -8605956925897910521
+    second: Seer-Sheet_25
+  - first:
+      213: 6324227382080841324
+    second: Seer-Sheet_26
+  - first:
+      213: 1936115575314743630
+    second: Seer-Sheet_27
+  - first:
+      213: 2076369609083101400
+    second: Seer-Sheet_28
+  - first:
+      213: 7115229686933087618
+    second: Seer-Sheet_29
+  - first:
+      213: -26984291007948568
+    second: Seer-Sheet_30
+  - first:
+      213: 2419853654214817787
+    second: Seer-Sheet_31
+  - first:
+      213: 830680060353106271
+    second: Seer-Sheet_32
+  - first:
+      213: 3462270625077350852
+    second: Seer-Sheet_33
+  - first:
+      213: -860869988381367931
+    second: Seer-Sheet_0
+  - first:
+      213: 7096420630857658111
+    second: Seer-Sheet_1
+  - first:
+      213: 8069839242518222717
+    second: Seer-Sheet_2
+  - first:
+      213: -3873564911771544405
+    second: Seer-Sheet_3
+  - first:
+      213: -7209477404761603386
+    second: Seer-Sheet_4
+  - first:
+      213: -8725898059005459243
+    second: Seer-Sheet_5
+  - first:
+      213: -4275707858665026871
+    second: Seer-Sheet_6
+  - first:
+      213: -1056572411015977622
+    second: Seer-Sheet_7
+  - first:
+      213: 8973395753396807183
+    second: Seer-Sheet_8
+  - first:
+      213: -150202999990938330
+    second: Seer-Sheet_9
+  - first:
+      213: -4644408423870845076
+    second: Seer-Sheet_10
+  - first:
+      213: 2813296051959429050
+    second: Seer-Sheet_11
+  - first:
+      213: -730513479484863568
+    second: Seer-Sheet_12
+  - first:
+      213: 629751775229822125
+    second: Seer-Sheet_13
+  - first:
+      213: -7887971734797081531
+    second: Seer-Sheet_14
+  - first:
+      213: 5703527533221967374
+    second: Seer-Sheet_15
+  - first:
+      213: -1926797135269690549
+    second: Seer-Sheet_16
+  - first:
+      213: -5652128216844973592
+    second: Seer-Sheet_17
+  - first:
+      213: -3171403721075917377
+    second: Seer-Sheet_18
+  - first:
+      213: 1505060003231538010
+    second: Seer-Sheet_19
+  - first:
+      213: 5471313588305326634
+    second: Seer-Sheet_20
+  - first:
+      213: 3069204833001780131
+    second: Seer-Sheet_21
+  - first:
+      213: 6009152448468940767
+    second: Seer-Sheet_22
+  - first:
+      213: -3065884312556788703
+    second: Seer-Sheet_23
+  - first:
+      213: -1381904924100693052
+    second: Seer-Sheet_24
+  - first:
+      213: 8253912098221555139
+    second: Seer-Sheet_25
+  - first:
+      213: -6896916591273158519
+    second: Seer-Sheet_26
+  - first:
+      213: -7382824884369453949
+    second: Seer-Sheet_27
+  - first:
+      213: -3103776014371327165
+    second: Seer-Sheet_28
+  - first:
+      213: -3327806236060475583
+    second: Seer-Sheet_29
+  - first:
+      213: -6773969880325495896
+    second: Seer-Sheet_30
+  - first:
+      213: -8993301033609126181
+    second: Seer-Sheet_31
+  - first:
+      213: -1879616676197500907
+    second: Seer-Sheet_32
+  - first:
+      213: 1085922328802518499
+    second: Seer-Sheet_33
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +235,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +244,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,7 +267,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +288,721 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Seer-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581ebb08e439d04f0800000000000000
+      internalID: -860869988381367931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 900
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe260f17fc8b7260800000000000000
+      internalID: 7096420630857658111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 900
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d775ec40904ddff60800000000000000
+      internalID: 8069839242518222717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 900
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4907b5c355e3ac0800000000000000
+      internalID: -3873564911771544405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 900
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2caf07f7ac2fb90800000000000000
+      internalID: -7209477404761603386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d485b672f167e680800000000000000
+      internalID: -8725898059005459243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cacce03b52a9a4c0800000000000000
+      internalID: -4275707858665026871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a652ae97dfc4651f0800000000000000
+      internalID: -1056572411015977622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06273605e7e78c70800000000000000
+      internalID: 8973395753396807183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6259755da2f5aedf0800000000000000
+      internalID: -150202999990938330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fa857452fbb8fb0800000000000000
+      internalID: -4644408423870845076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7fc019ad5da0720800000000000000
+      internalID: 2813296051959429050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 600
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb8baf5cd1bcd5f0800000000000000
+      internalID: -730513479484863568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4ce3b27e35db800800000000000000
+      internalID: 629751775229822125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544291ddf7b488290800000000000000
+      internalID: -7887971734797081531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06fa58a210072f40800000000000000
+      internalID: 5703527533221967374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43820ec634a245e0800000000000000
+      internalID: -1926797135269690549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e94ef1455b9f81b0800000000000000
+      internalID: -5652128216844973592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdfae55e19ecf3d0800000000000000
+      internalID: -3171403721075917377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b934a491c03e410800000000000000
+      internalID: 1505060003231538010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22f4b568b20eeb40800000000000000
+      internalID: 5471313588305326634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3bbf5c881089a20800000000000000
+      internalID: 3069204833001780131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7f824605cc46350800000000000000
+      internalID: 6009152448468940767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 300
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1242c93267ac375d0800000000000000
+      internalID: -3065884312556788703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c37d9d0bcc72dce0800000000000000
+      internalID: -1381904924100693052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7bcd7259cb8270800000000000000
+      internalID: 8253912098221555139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9885aa3d6ea3940a0800000000000000
+      internalID: -6896916591273158519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c8e3032efea8990800000000000000
+      internalID: -7382824884369453949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343f401d82c2de4d0800000000000000
+      internalID: -3103776014371327165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f194a1cd141d1d0800000000000000
+      internalID: -3327806236060475583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3e00ca8460ef1a0800000000000000
+      internalID: -6773969880325495896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde1395cb50613380800000000000000
+      internalID: -8993301033609126181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518f85577924ae5e0800000000000000
+      internalID: -1879616676197500907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seer-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 260
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e560f5ca98f11f00800000000000000
+      internalID: 1085922328802518499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
