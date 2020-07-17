@@ -3,290 +3,173 @@ guid: cddb9b7d0b4ce2647bdb6dc738c52ea8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 391137366418119325
-    second: Clock Master-Sheet_0
-  - first:
-      213: 8586069583831802316
-    second: Clock Master-Sheet_1
-  - first:
-      213: -8215903930771243766
-    second: Clock Master-Sheet_2
-  - first:
-      213: 7544113430113636125
-    second: Clock Master-Sheet_3
-  - first:
-      213: -7435554915423349164
-    second: Clock Master-Sheet_4
-  - first:
-      213: -5277488589538062185
-    second: Clock Master-Sheet_5
-  - first:
-      213: 832156117124726916
-    second: Clock Master-Sheet_6
-  - first:
-      213: -5968541641387799545
-    second: Clock Master-Sheet_7
-  - first:
-      213: 3301407416634067704
-    second: Clock Master-Sheet_8
-  - first:
-      213: 3858693247661033182
-    second: Clock Master-Sheet_9
-  - first:
-      213: 6816287023107676306
-    second: Clock Master-Sheet_10
-  - first:
-      213: 515268720372930603
-    second: Clock Master-Sheet_11
-  - first:
-      213: -2212260664977296159
-    second: Clock Master-Sheet_12
-  - first:
-      213: -4820733193133262222
-    second: Clock Master-Sheet_13
-  - first:
-      213: -7713058538689649137
-    second: Clock Master-Sheet_14
-  - first:
-      213: -8791795478872061502
-    second: Clock Master-Sheet_15
-  - first:
-      213: 3066978668493144248
-    second: Clock Master-Sheet_16
-  - first:
-      213: 5557076802567082659
-    second: Clock Master-Sheet_17
-  - first:
-      213: -8768063733992003731
-    second: Clock Master-Sheet_18
-  - first:
-      213: -3188667458178759743
-    second: Clock Master-Sheet_19
-  - first:
-      213: 205712285427007549
-    second: Clock Master-Sheet_20
-  - first:
-      213: -7763841547330634777
-    second: Clock Master-Sheet_21
-  - first:
-      213: -4445036151939026782
-    second: Clock Master-Sheet_22
-  - first:
-      213: 350207546525026651
+      213: 21300000
     second: Clock Master-Sheet_23
   - first:
-      213: -1512888269562469069
+      213: 21300002
     second: Clock Master-Sheet_24
   - first:
-      213: 5648789027076358957
-    second: Clock Master-Sheet_25
+      213: 21300004
+    second: Clock Master-Sheet_0
   - first:
-      213: -2951701364392523191
-    second: Clock Master-Sheet_26
+      213: 21300006
+    second: Clock Master-Sheet_1
   - first:
-      213: -8091816000199696982
+      213: 21300008
+    second: Clock Master-Sheet_2
+  - first:
+      213: 21300010
+    second: Clock Master-Sheet_3
+  - first:
+      213: 21300012
+    second: Clock Master-Sheet_4
+  - first:
+      213: 21300014
+    second: Clock Master-Sheet_5
+  - first:
+      213: 21300016
+    second: Clock Master-Sheet_6
+  - first:
+      213: 21300018
+    second: Clock Master-Sheet_7
+  - first:
+      213: 21300020
+    second: Clock Master-Sheet_8
+  - first:
+      213: 21300022
+    second: Clock Master-Sheet_9
+  - first:
+      213: 21300024
+    second: Clock Master-Sheet_10
+  - first:
+      213: 21300026
+    second: Clock Master-Sheet_11
+  - first:
+      213: 21300028
+    second: Clock Master-Sheet_12
+  - first:
+      213: 21300030
+    second: Clock Master-Sheet_13
+  - first:
+      213: 21300032
+    second: Clock Master-Sheet_14
+  - first:
+      213: 21300034
+    second: Clock Master-Sheet_15
+  - first:
+      213: 21300036
     second: Clock Master-Sheet_27
   - first:
-      213: -1707424627953916976
+      213: 21300038
     second: Clock Master-Sheet_28
   - first:
-      213: 5117246124234205053
+      213: 21300040
     second: Clock Master-Sheet_29
   - first:
-      213: 6259082810541067148
+      213: 21300042
     second: Clock Master-Sheet_30
   - first:
-      213: 6058850544542553460
+      213: 21300044
     second: Clock Master-Sheet_31
   - first:
-      213: -455799049386202832
+      213: 21300046
     second: Clock Master-Sheet_32
   - first:
-      213: 1648257918580450552
+      213: 21300048
     second: Clock Master-Sheet_33
   - first:
-      213: -7500627083153209776
+      213: 21300050
     second: Clock Master-Sheet_34
   - first:
-      213: -1164040951955493427
+      213: 21300052
     second: Clock Master-Sheet_35
   - first:
-      213: -4076504870795526765
+      213: 21300054
+    second: Clock Master-Sheet_16
+  - first:
+      213: 21300056
+    second: Clock Master-Sheet_17
+  - first:
+      213: 21300058
+    second: Clock Master-Sheet_18
+  - first:
+      213: 21300060
+    second: Clock Master-Sheet_19
+  - first:
+      213: 21300062
+    second: Clock Master-Sheet_20
+  - first:
+      213: 21300064
+    second: Clock Master-Sheet_21
+  - first:
+      213: 21300066
+    second: Clock Master-Sheet_22
+  - first:
+      213: 21300068
+    second: Clock Master-Sheet_25
+  - first:
+      213: 21300070
+    second: Clock Master-Sheet_26
+  - first:
+      213: 21300072
     second: Clock Master-Sheet_36
   - first:
-      213: 2442234804999811010
+      213: 21300074
     second: Clock Master-Sheet_37
   - first:
-      213: -3302551451575996498
+      213: 21300076
     second: Clock Master-Sheet_38
   - first:
-      213: -1246579204225819992
+      213: 21300078
     second: Clock Master-Sheet_39
   - first:
-      213: 9023908007858104736
+      213: 21300080
     second: Clock Master-Sheet_40
   - first:
-      213: 1474346878619541881
+      213: 21300082
     second: Clock Master-Sheet_41
   - first:
-      213: -5279013396122567647
+      213: 21300084
     second: Clock Master-Sheet_42
   - first:
-      213: -1798038157754653094
+      213: 21300086
     second: Clock Master-Sheet_43
   - first:
-      213: -8405150770513904222
+      213: 21300088
     second: Clock Master-Sheet_44
   - first:
-      213: -4045343172378476783
+      213: 21300090
     second: Clock Master-Sheet_45
   - first:
-      213: 8641571856183220410
+      213: 21300092
     second: Clock Master-Sheet_46
   - first:
-      213: -5644491770907801033
+      213: 21300094
     second: Clock Master-Sheet_47
   - first:
-      213: 3939673444547475617
+      213: 21300096
     second: Clock Master-Sheet_48
   - first:
-      213: -5462710582600278274
+      213: 21300098
     second: Clock Master-Sheet_49
   - first:
-      213: -1001599617026534742
+      213: 21300100
     second: Clock Master-Sheet_50
   - first:
-      213: 3044574972002246237
+      213: 21300102
     second: Clock Master-Sheet_51
   - first:
-      213: 7870830962821751484
+      213: 21300104
     second: Clock Master-Sheet_52
   - first:
-      213: -2286509916814921089
+      213: 21300106
     second: Clock Master-Sheet_53
   - first:
-      213: 1109656871251521100
+      213: 21300108
     second: Clock Master-Sheet_54
   - first:
-      213: -6399139531514339055
+      213: 21300110
     second: Clock Master-Sheet_55
-  - first:
-      213: -4079172965902621287
-    second: Clock Master-Sheet_0
-  - first:
-      213: -6553959188851432352
-    second: Clock Master-Sheet_1
-  - first:
-      213: -620821701939426927
-    second: Clock Master-Sheet_2
-  - first:
-      213: -3921087731467334116
-    second: Clock Master-Sheet_3
-  - first:
-      213: -4333922529223762344
-    second: Clock Master-Sheet_4
-  - first:
-      213: 1701826561800295148
-    second: Clock Master-Sheet_5
-  - first:
-      213: -2315864341720853454
-    second: Clock Master-Sheet_6
-  - first:
-      213: 1056646713364682724
-    second: Clock Master-Sheet_7
-  - first:
-      213: -4688245246787797060
-    second: Clock Master-Sheet_8
-  - first:
-      213: -8367780458346963699
-    second: Clock Master-Sheet_9
-  - first:
-      213: -9095012780485722790
-    second: Clock Master-Sheet_10
-  - first:
-      213: 6306125288616280215
-    second: Clock Master-Sheet_11
-  - first:
-      213: 8421365546909464849
-    second: Clock Master-Sheet_12
-  - first:
-      213: 7669486781192612809
-    second: Clock Master-Sheet_13
-  - first:
-      213: -4296949850349734727
-    second: Clock Master-Sheet_14
-  - first:
-      213: 1323691052399115423
-    second: Clock Master-Sheet_15
-  - first:
-      213: 3265612182552596748
-    second: Clock Master-Sheet_25
-  - first:
-      213: 8769652505316358849
-    second: Clock Master-Sheet_26
-  - first:
-      213: 5302778660821437997
-    second: Clock Master-Sheet_27
-  - first:
-      213: -1151570027028819894
-    second: Clock Master-Sheet_28
-  - first:
-      213: 7167390991548706705
-    second: Clock Master-Sheet_29
-  - first:
-      213: -4284208369732915242
-    second: Clock Master-Sheet_30
-  - first:
-      213: 8866816726990408324
-    second: Clock Master-Sheet_31
-  - first:
-      213: 1817816680813082267
-    second: Clock Master-Sheet_32
-  - first:
-      213: -3513847134854262186
-    second: Clock Master-Sheet_33
-  - first:
-      213: -3753157726236197399
-    second: Clock Master-Sheet_34
-  - first:
-      213: 3750054548793155673
-    second: Clock Master-Sheet_35
-  - first:
-      213: 2380262796282627039
-    second: Clock Master-Sheet_36
-  - first:
-      213: 4129554132339730510
-    second: Clock Master-Sheet_37
-  - first:
-      213: 3195890668802189987
-    second: Clock Master-Sheet_38
-  - first:
-      213: -6516490388378906720
-    second: Clock Master-Sheet_16
-  - first:
-      213: 2887613759941035245
-    second: Clock Master-Sheet_17
-  - first:
-      213: 8785063905518435144
-    second: Clock Master-Sheet_18
-  - first:
-      213: -5741191244280032015
-    second: Clock Master-Sheet_19
-  - first:
-      213: 7604192648209582706
-    second: Clock Master-Sheet_20
-  - first:
-      213: 8887170754386593029
-    second: Clock Master-Sheet_21
-  - first:
-      213: -2836110730318536189
-    second: Clock Master-Sheet_22
-  - first:
-      213: 726283969399518163
-    second: Clock Master-Sheet_23
-  - first:
-      213: 709431045993693738
-    second: Clock Master-Sheet_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -354,7 +237,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 8192
@@ -366,7 +249,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 8192
@@ -378,7 +261,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -398,7 +281,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b59094878ef2cd400800000000000000
-      internalID: 350207546525026651
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -419,7 +302,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 335afdb6224210be0800000000000000
-      internalID: -1512888269562469069
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -440,7 +323,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9956ff5cccdd367c0800000000000000
-      internalID: -4079172965902621287
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -461,7 +344,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0646a1497d8ab05a0800000000000000
-      internalID: -6553959188851432352
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -482,7 +365,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1990c0b83f56267f0800000000000000
-      internalID: -620821701939426927
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -503,7 +386,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c1e4fb8ab7f7599c0800000000000000
-      internalID: -3921087731467334116
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -524,7 +407,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 85e1e89fb60dad3c0800000000000000
-      internalID: -4333922529223762344
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -545,7 +428,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ce25e65cd3a1e9710800000000000000
-      internalID: 1701826561800295148
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -566,7 +449,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2341cb3b6a56cdfd0800000000000000
-      internalID: -2315864341720853454
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -587,7 +470,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4e79f236696f9ae00800000000000000
-      internalID: 1056646713364682724
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -608,7 +491,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cbfbc4599c100feb0800000000000000
-      internalID: -4688245246787797060
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -629,7 +512,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d0d16cde10cafdb80800000000000000
-      internalID: -8367780458346963699
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -650,7 +533,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a5db287401608c180800000000000000
-      internalID: -9095012780485722790
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -671,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 790c419e98bd38750800000000000000
-      internalID: 6306125288616280215
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -692,7 +575,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 119704bb853bed470800000000000000
-      internalID: 8421365546909464849
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -713,7 +596,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9cb2a82c79d7f6a60800000000000000
-      internalID: 7669486781192612809
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -734,7 +617,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9b47c3890ea2e54c0800000000000000
-      internalID: -4296949850349734727
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -755,7 +638,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f9cbc9abff1be5210800000000000000
-      internalID: 1323691052399115423
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -776,7 +659,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d2e88c0c811479940800000000000000
-      internalID: 5302778660821437997
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -797,7 +680,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a40d5f4692dc400f0800000000000000
-      internalID: -1151570027028819894
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -818,7 +701,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 19f6891e120b77360800000000000000
-      internalID: 7167390991548706705
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -839,7 +722,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6df605abf2f6b84c0800000000000000
-      internalID: -4284208369732915242
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -860,7 +743,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 48a41c4b5d24d0b70800000000000000
-      internalID: 8866816726990408324
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -881,7 +764,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b96b4a6d3ae2a3910800000000000000
-      internalID: 1817816680813082267
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -902,7 +785,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 652dcf3e5ae4c3fc0800000000000000
-      internalID: -3513847134854262186
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -923,7 +806,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9edbdaddeea1aebc0800000000000000
-      internalID: -3753157726236197399
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -944,7 +827,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 95067255ebeda0430800000000000000
-      internalID: 3750054548793155673
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -965,7 +848,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0af8d628486c095a0800000000000000
-      internalID: -6516490388378906720
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -986,7 +869,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de4c0d95a6dd21820800000000000000
-      internalID: 2887613759941035245
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -1007,7 +890,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 84b3889a311dae970800000000000000
-      internalID: 8785063905518435144
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -1028,7 +911,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1f41b114bf03350b0800000000000000
-      internalID: -5741191244280032015
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -1049,7 +932,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 27a4b20cce4878960800000000000000
-      internalID: 7604192648209582706
+      internalID: 21300062
       vertices: []
       indices: 
       edges: []
@@ -1070,7 +953,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 505047107b2955b70800000000000000
-      internalID: 8887170754386593029
+      internalID: 21300064
       vertices: []
       indices: 
       edges: []
@@ -1091,7 +974,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 302a0bf215c14a8d0800000000000000
-      internalID: -2836110730318536189
+      internalID: 21300066
       vertices: []
       indices: 
       edges: []
@@ -1112,7 +995,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d23c20a01b7846e40800000000000000
-      internalID: 5648789027076358957
+      internalID: 21300068
       vertices: []
       indices: 
       edges: []
@@ -1133,7 +1016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 94a09547f337907d0800000000000000
-      internalID: -2951701364392523191
+      internalID: 21300070
       vertices: []
       indices: 
       edges: []
@@ -1154,7 +1037,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 39d35131b685d67c0800000000000000
-      internalID: -4076504870795526765
+      internalID: 21300072
       vertices: []
       indices: 
       edges: []
@@ -1175,7 +1058,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2cfeb1a9d9f84e120800000000000000
-      internalID: 2442234804999811010
+      internalID: 21300074
       vertices: []
       indices: 
       edges: []
@@ -1196,7 +1079,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eafac54d3fafa22d0800000000000000
-      internalID: -3302551451575996498
+      internalID: 21300076
       vertices: []
       indices: 
       edges: []
@@ -1217,7 +1100,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8aa1bb381d243bee0800000000000000
-      internalID: -1246579204225819992
+      internalID: 21300078
       vertices: []
       indices: 
       edges: []
@@ -1238,7 +1121,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0a96f2eb58c5b3d70800000000000000
-      internalID: 9023908007858104736
+      internalID: 21300080
       vertices: []
       indices: 
       edges: []
@@ -1259,7 +1142,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 971e2d7bcaee57410800000000000000
-      internalID: 1474346878619541881
+      internalID: 21300082
       vertices: []
       indices: 
       edges: []
@@ -1280,7 +1163,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 12cf59f194d2db6b0800000000000000
-      internalID: -5279013396122567647
+      internalID: 21300084
       vertices: []
       indices: 
       edges: []
@@ -1301,7 +1184,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a56af6a62d51c07e0800000000000000
-      internalID: -1798038157754653094
+      internalID: 21300086
       vertices: []
       indices: 
       edges: []
@@ -1322,7 +1205,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2adfae718e7ea5b80800000000000000
-      internalID: -8405150770513904222
+      internalID: 21300088
       vertices: []
       indices: 
       edges: []
@@ -1343,7 +1226,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 11f34df51dd0cd7c0800000000000000
-      internalID: -4045343172378476783
+      internalID: 21300090
       vertices: []
       indices: 
       edges: []
@@ -1364,7 +1247,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ab850d471d70de770800000000000000
-      internalID: 8641571856183220410
+      internalID: 21300092
       vertices: []
       indices: 
       edges: []
@@ -1385,7 +1268,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 73acc61e3acbaa1b0800000000000000
-      internalID: -5644491770907801033
+      internalID: 21300094
       vertices: []
       indices: 
       edges: []
@@ -1406,7 +1289,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a8ba41ef188ca630800000000000000
-      internalID: 3939673444547475617
+      internalID: 21300096
       vertices: []
       indices: 
       edges: []
@@ -1427,7 +1310,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: efed755faad8034b0800000000000000
-      internalID: -5462710582600278274
+      internalID: 21300098
       vertices: []
       indices: 
       edges: []
@@ -1448,7 +1331,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aa257fb747a9912f0800000000000000
-      internalID: -1001599617026534742
+      internalID: 21300100
       vertices: []
       indices: 
       edges: []
@@ -1469,7 +1352,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d5e1d326ec0804a20800000000000000
-      internalID: 3044574972002246237
+      internalID: 21300102
       vertices: []
       indices: 
       edges: []
@@ -1490,7 +1373,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cb2e22a2f0fca3d60800000000000000
-      internalID: 7870830962821751484
+      internalID: 21300104
       vertices: []
       indices: 
       edges: []
@@ -1511,7 +1394,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f72b6d8585fa440e0800000000000000
-      internalID: -2286509916814921089
+      internalID: 21300106
       vertices: []
       indices: 
       edges: []
@@ -1532,7 +1415,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c4ea4819b0b466f00800000000000000
-      internalID: 1109656871251521100
+      internalID: 21300108
       vertices: []
       indices: 
       edges: []
@@ -1553,7 +1436,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 111adeb0080b137a0800000000000000
-      internalID: -6399139531514339055
+      internalID: 21300110
       vertices: []
       indices: 
       edges: []

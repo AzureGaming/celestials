@@ -3,1505 +3,101 @@ guid: 4a4e9f7571452b04ea5c6b43a2929b3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7919987069915980634
+      213: 21300000
     second: Celestial Soldier Sprite Sheet_0
   - first:
-      213: 5293687848840039590
+      213: 21300002
     second: Celestial Soldier Sprite Sheet_1
   - first:
-      213: 2415949555037014140
+      213: 21300004
     second: Celestial Soldier Sprite Sheet_2
   - first:
-      213: -8924380351128919372
+      213: 21300006
     second: Celestial Soldier Sprite Sheet_3
   - first:
-      213: 3595613183988972718
+      213: 21300008
     second: Celestial Soldier Sprite Sheet_4
   - first:
-      213: -1199534233292736329
+      213: 21300010
     second: Celestial Soldier Sprite Sheet_5
   - first:
-      213: -7907013845904287813
+      213: 21300012
     second: Celestial Soldier Sprite Sheet_6
   - first:
-      213: 4023271559840894551
+      213: 21300014
     second: Celestial Soldier Sprite Sheet_7
   - first:
-      213: 4091147664359946506
+      213: 21300016
     second: Celestial Soldier Sprite Sheet_8
   - first:
-      213: -3888647290256065385
+      213: 21300018
     second: Celestial Soldier Sprite Sheet_9
   - first:
-      213: -7276238116196978870
+      213: 21300020
     second: Celestial Soldier Sprite Sheet_10
   - first:
-      213: 545958425611504815
+      213: 21300022
     second: Celestial Soldier Sprite Sheet_11
   - first:
-      213: -844812089931956125
+      213: 21300024
     second: Celestial Soldier Sprite Sheet_12
   - first:
-      213: -1663465139555561008
+      213: 21300026
     second: Celestial Soldier Sprite Sheet_13
   - first:
-      213: 4223504299701094161
+      213: 21300028
     second: Celestial Soldier Sprite Sheet_14
   - first:
-      213: 3675173746176173574
+      213: 21300030
     second: Celestial Soldier Sprite Sheet_15
   - first:
-      213: -4301612423516453501
+      213: 21300032
     second: Celestial Soldier Sprite Sheet_16
   - first:
-      213: -4301035672027870492
+      213: 21300034
     second: Celestial Soldier Sprite Sheet_17
   - first:
-      213: -1457724405819519616
-    second: Celestial Soldier Sprite Sheet_0
-  - first:
-      213: 8959062492766448074
-    second: Celestial Soldier Sprite Sheet_1
-  - first:
-      213: 7136978698484123006
-    second: Celestial Soldier Sprite Sheet_2
-  - first:
-      213: 3582318230287136673
-    second: Celestial Soldier Sprite Sheet_3
-  - first:
-      213: -8483514723459469357
-    second: Celestial Soldier Sprite Sheet_4
-  - first:
-      213: -6195855701782339446
-    second: Celestial Soldier Sprite Sheet_5
-  - first:
-      213: 5936710946732838574
-    second: Celestial Soldier Sprite Sheet_6
-  - first:
-      213: -7031667135234322778
-    second: Celestial Soldier Sprite Sheet_7
-  - first:
-      213: 6479228830015921277
-    second: Celestial Soldier Sprite Sheet_8
-  - first:
-      213: 1784089022889716804
-    second: Celestial Soldier Sprite Sheet_9
-  - first:
-      213: -4842976588345063880
-    second: Celestial Soldier Sprite Sheet_10
-  - first:
-      213: 6637099978416744308
-    second: Celestial Soldier Sprite Sheet_11
-  - first:
-      213: -6996669411965434918
-    second: Celestial Soldier Sprite Sheet_12
-  - first:
-      213: 5089658872383867802
-    second: Celestial Soldier Sprite Sheet_13
-  - first:
-      213: 7356958101572374564
-    second: Celestial Soldier Sprite Sheet_14
-  - first:
-      213: 989156451624729012
-    second: Celestial Soldier Sprite Sheet_15
-  - first:
-      213: -2347729645008177711
-    second: Celestial Soldier Sprite Sheet_16
-  - first:
-      213: 2913960403323098229
-    second: Celestial Soldier Sprite Sheet_17
-  - first:
-      213: -8725770066049676312
+      213: 21300036
     second: Celestial Soldier Sprite Sheet_18
   - first:
-      213: 2847321935129289418
+      213: 21300038
     second: Celestial Soldier Sprite Sheet_19
   - first:
-      213: 4949876794609641594
+      213: 21300040
     second: Celestial Soldier Sprite Sheet_20
   - first:
-      213: -7851499246805876210
+      213: 21300042
     second: Celestial Soldier Sprite Sheet_21
   - first:
-      213: -1379316999692939100
+      213: 21300044
     second: Celestial Soldier Sprite Sheet_22
   - first:
-      213: -7201526923339385866
+      213: 21300046
     second: Celestial Soldier Sprite Sheet_23
   - first:
-      213: 5778690038421559432
+      213: 21300048
     second: Celestial Soldier Sprite Sheet_24
   - first:
-      213: -3990265397228252606
+      213: 21300050
     second: Celestial Soldier Sprite Sheet_25
   - first:
-      213: 63129337705851658
+      213: 21300052
     second: Celestial Soldier Sprite Sheet_26
   - first:
-      213: -2115937012161370870
+      213: 21300054
     second: Celestial Soldier Sprite Sheet_27
   - first:
-      213: -3835148430803980457
+      213: 21300056
     second: Celestial Soldier Sprite Sheet_28
   - first:
-      213: -6599338321416042582
+      213: 21300058
     second: Celestial Soldier Sprite Sheet_29
   - first:
-      213: -6838261144621157638
+      213: 21300060
     second: Celestial Soldier Sprite Sheet_30
   - first:
-      213: -6863432075423865313
+      213: 21300062
     second: Celestial Soldier Sprite Sheet_31
-  - first:
-      213: 1928606802964878290
-    second: Celestial Soldier Sprite Sheet_18
-  - first:
-      213: -7004587790107743460
-    second: Celestial Soldier Sprite Sheet_19
-  - first:
-      213: -7822655800784803674
-    second: Celestial Soldier Sprite Sheet_20
-  - first:
-      213: 5292085315960930270
-    second: Celestial Soldier Sprite Sheet_21
-  - first:
-      213: 3334790343209068001
-    second: Celestial Soldier Sprite Sheet_22
-  - first:
-      213: -5141427396675780540
-    second: Celestial Soldier Sprite Sheet_23
-  - first:
-      213: -5183405493595728968
-    second: Celestial Soldier Sprite Sheet_24
-  - first:
-      213: 183979221315366752
-    second: Celestial Soldier Sprite Sheet_25
-  - first:
-      213: -6889460659493009417
-    second: Celestial Soldier Sprite Sheet_26
-  - first:
-      213: -5221483013675856231
-    second: Celestial Soldier Sprite Sheet_27
-  - first:
-      213: -8361857641290477642
-    second: Celestial Soldier Sprite Sheet_28
-  - first:
-      213: 7400324511354077824
-    second: Celestial Soldier Sprite Sheet_29
-  - first:
-      213: -6638847257071317872
-    second: Celestial Soldier Sprite Sheet_30
-  - first:
-      213: -2606405250879073312
-    second: Celestial Soldier Sprite Sheet_31
-  - first:
-      213: -8880981960650567771
-    second: Celestial Soldier Sprite Sheet_32
-  - first:
-      213: 8329772367826631762
-    second: Celestial Soldier Sprite Sheet_33
-  - first:
-      213: 1273371178528900392
-    second: Celestial Soldier Sprite Sheet_34
-  - first:
-      213: 2148806634682931877
-    second: Celestial Soldier Sprite Sheet_35
-  - first:
-      213: 4642075020592728870
-    second: Celestial Soldier Sprite Sheet_36
-  - first:
-      213: 5854724289030236648
-    second: Celestial Soldier Sprite Sheet_37
-  - first:
-      213: 5379864298182273490
-    second: Celestial Soldier Sprite Sheet_38
-  - first:
-      213: -3569679514685295337
-    second: Celestial Soldier Sprite Sheet_39
-  - first:
-      213: -7609380046395511555
-    second: Celestial Soldier Sprite Sheet_40
-  - first:
-      213: 5644554343491985089
-    second: Celestial Soldier Sprite Sheet_41
-  - first:
-      213: -5583109619889468212
-    second: Celestial Soldier Sprite Sheet_42
-  - first:
-      213: -7129672049662946910
-    second: Celestial Soldier Sprite Sheet_43
-  - first:
-      213: 2178773160004446409
-    second: Celestial Soldier Sprite Sheet_44
-  - first:
-      213: -1322792482765562616
-    second: Celestial Soldier Sprite Sheet_45
-  - first:
-      213: 545367236892618673
-    second: Celestial Soldier Sprite Sheet_46
-  - first:
-      213: 1285795328558780565
-    second: Celestial Soldier Sprite Sheet_47
-  - first:
-      213: -8107711207940526490
-    second: Celestial Soldier Sprite Sheet_48
-  - first:
-      213: -4306557502781949741
-    second: Celestial Soldier Sprite Sheet_49
-  - first:
-      213: 3478935676031196752
-    second: Celestial Soldier Sprite Sheet_50
-  - first:
-      213: -4493195040307580315
-    second: Celestial Soldier Sprite Sheet_51
-  - first:
-      213: -2434749037125512522
-    second: Celestial Soldier Sprite Sheet_52
-  - first:
-      213: -302484762171088968
-    second: Celestial Soldier Sprite Sheet_53
-  - first:
-      213: -405891479086193377
-    second: Celestial Soldier Sprite Sheet_54
-  - first:
-      213: 8529543408062553900
-    second: Celestial Soldier Sprite Sheet_55
-  - first:
-      213: -807856928314923641
-    second: Celestial Soldier Sprite Sheet_56
-  - first:
-      213: 5273143900986452949
-    second: Celestial Soldier Sprite Sheet_57
-  - first:
-      213: 6002829476583119937
-    second: Celestial Soldier Sprite Sheet_58
-  - first:
-      213: 5287533793750129576
-    second: Celestial Soldier Sprite Sheet_59
-  - first:
-      213: -1978614217284048995
-    second: Celestial Soldier Sprite Sheet_60
-  - first:
-      213: 7749800488350360632
-    second: Celestial Soldier Sprite Sheet_61
-  - first:
-      213: -2992554478399648662
-    second: Celestial Soldier Sprite Sheet_62
-  - first:
-      213: -3088861635271979556
-    second: Celestial Soldier Sprite Sheet_63
-  - first:
-      213: 4420003736899003997
-    second: Celestial Soldier Sprite Sheet_64
-  - first:
-      213: 4646470336162004016
-    second: Celestial Soldier Sprite Sheet_65
-  - first:
-      213: 8337451740251232933
-    second: Celestial Soldier Sprite Sheet_66
-  - first:
-      213: -3025914044668267628
-    second: Celestial Soldier Sprite Sheet_67
-  - first:
-      213: -7030839576031277122
-    second: Celestial Soldier Sprite Sheet_68
-  - first:
-      213: 1433216922802783880
-    second: Celestial Soldier Sprite Sheet_69
-  - first:
-      213: 2257718622231164354
-    second: Celestial Soldier Sprite Sheet_70
-  - first:
-      213: -8733515294291192432
-    second: Celestial Soldier Sprite Sheet_71
-  - first:
-      213: 4545010955727592977
-    second: Celestial Soldier Sprite Sheet_72
-  - first:
-      213: 4445306837693386118
-    second: Celestial Soldier Sprite Sheet_73
-  - first:
-      213: -7557401912278173970
-    second: Celestial Soldier Sprite Sheet_74
-  - first:
-      213: -4159390816495445602
-    second: Celestial Soldier Sprite Sheet_75
-  - first:
-      213: -3189054323668157239
-    second: Celestial Soldier Sprite Sheet_76
-  - first:
-      213: -2752867559905035430
-    second: Celestial Soldier Sprite Sheet_77
-  - first:
-      213: -6067376070537431404
-    second: Celestial Soldier Sprite Sheet_78
-  - first:
-      213: -8712770648512520749
-    second: Celestial Soldier Sprite Sheet_79
-  - first:
-      213: 8015935538472587192
-    second: Celestial Soldier Sprite Sheet_80
-  - first:
-      213: 2351562835155497477
-    second: Celestial Soldier Sprite Sheet_81
-  - first:
-      213: -5243898051220981270
-    second: Celestial Soldier Sprite Sheet_82
-  - first:
-      213: -7771018089846702662
-    second: Celestial Soldier Sprite Sheet_83
-  - first:
-      213: -5787423139834469575
-    second: Celestial Soldier Sprite Sheet_84
-  - first:
-      213: 8760524279677728174
-    second: Celestial Soldier Sprite Sheet_85
-  - first:
-      213: -7437460563199137393
-    second: Celestial Soldier Sprite Sheet_86
-  - first:
-      213: -2934735950920276473
-    second: Celestial Soldier Sprite Sheet_87
-  - first:
-      213: 8279957623537523308
-    second: Celestial Soldier Sprite Sheet_88
-  - first:
-      213: -5130563730723898381
-    second: Celestial Soldier Sprite Sheet_89
-  - first:
-      213: -8126994036125625463
-    second: Celestial Soldier Sprite Sheet_90
-  - first:
-      213: -81993368477328950
-    second: Celestial Soldier Sprite Sheet_91
-  - first:
-      213: -2572761549869616434
-    second: Celestial Soldier Sprite Sheet_92
-  - first:
-      213: -376811176076563562
-    second: Celestial Soldier Sprite Sheet_93
-  - first:
-      213: 9019947045351691468
-    second: Celestial Soldier Sprite Sheet_94
-  - first:
-      213: 1692086836798769827
-    second: Celestial Soldier Sprite Sheet_95
-  - first:
-      213: 6265341466490419988
-    second: Celestial Soldier Sprite Sheet_96
-  - first:
-      213: 1954707959006375348
-    second: Celestial Soldier Sprite Sheet_97
-  - first:
-      213: -556296711577531232
-    second: Celestial Soldier Sprite Sheet_98
-  - first:
-      213: -558036277815233332
-    second: Celestial Soldier Sprite Sheet_99
-  - first:
-      213: -8977178663779590863
-    second: Celestial Soldier Sprite Sheet_100
-  - first:
-      213: 820392585281461956
-    second: Celestial Soldier Sprite Sheet_101
-  - first:
-      213: -5813203869567476506
-    second: Celestial Soldier Sprite Sheet_102
-  - first:
-      213: -983355498893101418
-    second: Celestial Soldier Sprite Sheet_103
-  - first:
-      213: -8875654937501712328
-    second: Celestial Soldier Sprite Sheet_104
-  - first:
-      213: 6421543378234041347
-    second: Celestial Soldier Sprite Sheet_105
-  - first:
-      213: 6818761969359821216
-    second: Celestial Soldier Sprite Sheet_106
-  - first:
-      213: -2945913980776341996
-    second: Celestial Soldier Sprite Sheet_107
-  - first:
-      213: -8600726776144164181
-    second: Celestial Soldier Sprite Sheet_108
-  - first:
-      213: -8292689959704376221
-    second: Celestial Soldier Sprite Sheet_109
-  - first:
-      213: 2553033473803739863
-    second: Celestial Soldier Sprite Sheet_110
-  - first:
-      213: 8744871325479988946
-    second: Celestial Soldier Sprite Sheet_111
-  - first:
-      213: 8259722185359372885
-    second: Celestial Soldier Sprite Sheet_112
-  - first:
-      213: 9063676720694346994
-    second: Celestial Soldier Sprite Sheet_113
-  - first:
-      213: 7194739396478012450
-    second: Celestial Soldier Sprite Sheet_114
-  - first:
-      213: -1636806099537108409
-    second: Celestial Soldier Sprite Sheet_115
-  - first:
-      213: 5466420061781491444
-    second: Celestial Soldier Sprite Sheet_116
-  - first:
-      213: 2914581793986861985
-    second: Celestial Soldier Sprite Sheet_117
-  - first:
-      213: 4896268413166870907
-    second: Celestial Soldier Sprite Sheet_118
-  - first:
-      213: -5301931884308900676
-    second: Celestial Soldier Sprite Sheet_119
-  - first:
-      213: -3215754777156350072
-    second: Celestial Soldier Sprite Sheet_120
-  - first:
-      213: 5477788399209684611
-    second: Celestial Soldier Sprite Sheet_121
-  - first:
-      213: -5502949961126612667
-    second: Celestial Soldier Sprite Sheet_122
-  - first:
-      213: 1661945761575421113
-    second: Celestial Soldier Sprite Sheet_123
-  - first:
-      213: 8715278947132040960
-    second: Celestial Soldier Sprite Sheet_124
-  - first:
-      213: 2176638986452610286
-    second: Celestial Soldier Sprite Sheet_125
-  - first:
-      213: 5140049361501014958
-    second: Celestial Soldier Sprite Sheet_126
-  - first:
-      213: 5926828536911666362
-    second: Celestial Soldier Sprite Sheet_127
-  - first:
-      213: -8599731442891188562
-    second: Celestial Soldier Sprite Sheet_128
-  - first:
-      213: 5786485987413683603
-    second: Celestial Soldier Sprite Sheet_129
-  - first:
-      213: -6204089997871659103
-    second: Celestial Soldier Sprite Sheet_130
-  - first:
-      213: -1944340268473060576
-    second: Celestial Soldier Sprite Sheet_131
-  - first:
-      213: -1959325896377513744
-    second: Celestial Soldier Sprite Sheet_132
-  - first:
-      213: -2667422813577174570
-    second: Celestial Soldier Sprite Sheet_133
-  - first:
-      213: 4728054663830108592
-    second: Celestial Soldier Sprite Sheet_134
-  - first:
-      213: 1336728697150734115
-    second: Celestial Soldier Sprite Sheet_135
-  - first:
-      213: -866188768249971501
-    second: Celestial Soldier Sprite Sheet_136
-  - first:
-      213: 4894066784895488540
-    second: Celestial Soldier Sprite Sheet_137
-  - first:
-      213: -2778293500229016836
-    second: Celestial Soldier Sprite Sheet_138
-  - first:
-      213: 593042138384765684
-    second: Celestial Soldier Sprite Sheet_139
-  - first:
-      213: 6993602392280843724
-    second: Celestial Soldier Sprite Sheet_140
-  - first:
-      213: -7885970321860725112
-    second: Celestial Soldier Sprite Sheet_141
-  - first:
-      213: 6063101522124038652
-    second: Celestial Soldier Sprite Sheet_142
-  - first:
-      213: 7161283496116963331
-    second: Celestial Soldier Sprite Sheet_143
-  - first:
-      213: 5044895825097165032
-    second: Celestial Soldier Sprite Sheet_144
-  - first:
-      213: 7972739991321362380
-    second: Celestial Soldier Sprite Sheet_145
-  - first:
-      213: 4232202250397718795
-    second: Celestial Soldier Sprite Sheet_146
-  - first:
-      213: 2337026947041807113
-    second: Celestial Soldier Sprite Sheet_147
-  - first:
-      213: -1821949825680793240
-    second: Celestial Soldier Sprite Sheet_148
-  - first:
-      213: 5381221830467363136
-    second: Celestial Soldier Sprite Sheet_149
-  - first:
-      213: 3200388033025690712
-    second: Celestial Soldier Sprite Sheet_150
-  - first:
-      213: 6283939335067296945
-    second: Celestial Soldier Sprite Sheet_151
-  - first:
-      213: 3768852107998806809
-    second: Celestial Soldier Sprite Sheet_152
-  - first:
-      213: -6041217934790494262
-    second: Celestial Soldier Sprite Sheet_153
-  - first:
-      213: 2397981185698977656
-    second: Celestial Soldier Sprite Sheet_154
-  - first:
-      213: 6914158881701813466
-    second: Celestial Soldier Sprite Sheet_155
-  - first:
-      213: 2810555668898004529
-    second: Celestial Soldier Sprite Sheet_156
-  - first:
-      213: 3573790830841384027
-    second: Celestial Soldier Sprite Sheet_157
-  - first:
-      213: 3741734196300457406
-    second: Celestial Soldier Sprite Sheet_158
-  - first:
-      213: 1250056972198335987
-    second: Celestial Soldier Sprite Sheet_159
-  - first:
-      213: 4511472609343618866
-    second: Celestial Soldier Sprite Sheet_160
-  - first:
-      213: -421108148208072762
-    second: Celestial Soldier Sprite Sheet_161
-  - first:
-      213: -8191236927817497420
-    second: Celestial Soldier Sprite Sheet_162
-  - first:
-      213: 6447288362770247169
-    second: Celestial Soldier Sprite Sheet_163
-  - first:
-      213: -3371600387102900846
-    second: Celestial Soldier Sprite Sheet_164
-  - first:
-      213: 2244051856791343206
-    second: Celestial Soldier Sprite Sheet_165
-  - first:
-      213: -5033510641118805195
-    second: Celestial Soldier Sprite Sheet_166
-  - first:
-      213: -6519687451631638434
-    second: Celestial Soldier Sprite Sheet_167
-  - first:
-      213: 6569761994911026863
-    second: Celestial Soldier Sprite Sheet_168
-  - first:
-      213: -5617277635910534421
-    second: Celestial Soldier Sprite Sheet_169
-  - first:
-      213: 3452496220237969610
-    second: Celestial Soldier Sprite Sheet_170
-  - first:
-      213: -3889322778331408055
-    second: Celestial Soldier Sprite Sheet_171
-  - first:
-      213: -558599113476197611
-    second: Celestial Soldier Sprite Sheet_172
-  - first:
-      213: -7419486204202260005
-    second: Celestial Soldier Sprite Sheet_173
-  - first:
-      213: 4396278335363998267
-    second: Celestial Soldier Sprite Sheet_174
-  - first:
-      213: -1081249578946340023
-    second: Celestial Soldier Sprite Sheet_175
-  - first:
-      213: -2155193602726266837
-    second: Celestial Soldier Sprite Sheet_176
-  - first:
-      213: -4477958581838815619
-    second: Celestial Soldier Sprite Sheet_177
-  - first:
-      213: -7967975661624524764
-    second: Celestial Soldier Sprite Sheet_178
-  - first:
-      213: 6389183723054806965
-    second: Celestial Soldier Sprite Sheet_179
-  - first:
-      213: -2942512705261625286
-    second: Celestial Soldier Sprite Sheet_180
-  - first:
-      213: 4278827348855333613
-    second: Celestial Soldier Sprite Sheet_181
-  - first:
-      213: -7607474253182351012
-    second: Celestial Soldier Sprite Sheet_182
-  - first:
-      213: 3408831284007082436
-    second: Celestial Soldier Sprite Sheet_183
-  - first:
-      213: 5484674382034363563
-    second: Celestial Soldier Sprite Sheet_184
-  - first:
-      213: 3602661921497297983
-    second: Celestial Soldier Sprite Sheet_185
-  - first:
-      213: 602528254758499280
-    second: Celestial Soldier Sprite Sheet_186
-  - first:
-      213: -413532591252009820
-    second: Celestial Soldier Sprite Sheet_187
-  - first:
-      213: 4249261437898910840
-    second: Celestial Soldier Sprite Sheet_188
-  - first:
-      213: 3538775540300646887
-    second: Celestial Soldier Sprite Sheet_189
-  - first:
-      213: -5106608781010009889
-    second: Celestial Soldier Sprite Sheet_190
-  - first:
-      213: 6433960378100519823
-    second: Celestial Soldier Sprite Sheet_191
-  - first:
-      213: 1776879892431817413
-    second: Celestial Soldier Sprite Sheet_192
-  - first:
-      213: 3774569942568376622
-    second: Celestial Soldier Sprite Sheet_193
-  - first:
-      213: 5225497022166571318
-    second: Celestial Soldier Sprite Sheet_194
-  - first:
-      213: 7212086355519379819
-    second: Celestial Soldier Sprite Sheet_195
-  - first:
-      213: -9061151839998655163
-    second: Celestial Soldier Sprite Sheet_196
-  - first:
-      213: -8836684261724715378
-    second: Celestial Soldier Sprite Sheet_197
-  - first:
-      213: 6777748935149276164
-    second: Celestial Soldier Sprite Sheet_198
-  - first:
-      213: 7379291670229385071
-    second: Celestial Soldier Sprite Sheet_199
-  - first:
-      213: 5751192738736047784
-    second: Celestial Soldier Sprite Sheet_200
-  - first:
-      213: -930534330659192408
-    second: Celestial Soldier Sprite Sheet_201
-  - first:
-      213: 4101502604987255123
-    second: Celestial Soldier Sprite Sheet_202
-  - first:
-      213: -8822079904773306535
-    second: Celestial Soldier Sprite Sheet_203
-  - first:
-      213: 6690469580000654861
-    second: Celestial Soldier Sprite Sheet_204
-  - first:
-      213: -3444790319776155808
-    second: Celestial Soldier Sprite Sheet_205
-  - first:
-      213: 1270581600773319892
-    second: Celestial Soldier Sprite Sheet_206
-  - first:
-      213: 4334117439851008237
-    second: Celestial Soldier Sprite Sheet_207
-  - first:
-      213: 66970716624101769
-    second: Celestial Soldier Sprite Sheet_208
-  - first:
-      213: -312087288700991898
-    second: Celestial Soldier Sprite Sheet_209
-  - first:
-      213: 5384965863772445617
-    second: Celestial Soldier Sprite Sheet_210
-  - first:
-      213: -5776989062963204566
-    second: Celestial Soldier Sprite Sheet_211
-  - first:
-      213: 2616234320550418286
-    second: Celestial Soldier Sprite Sheet_212
-  - first:
-      213: 3669197977907540563
-    second: Celestial Soldier Sprite Sheet_213
-  - first:
-      213: -6609684017310629583
-    second: Celestial Soldier Sprite Sheet_214
-  - first:
-      213: -4117643681665374014
-    second: Celestial Soldier Sprite Sheet_215
-  - first:
-      213: 4824828312519008345
-    second: Celestial Soldier Sprite Sheet_216
-  - first:
-      213: 8273390692790957194
-    second: Celestial Soldier Sprite Sheet_217
-  - first:
-      213: 3505390009014344893
-    second: Celestial Soldier Sprite Sheet_218
-  - first:
-      213: 8389260899907733255
-    second: Celestial Soldier Sprite Sheet_219
-  - first:
-      213: 8824147078489008259
-    second: Celestial Soldier Sprite Sheet_220
-  - first:
-      213: -7897669850154603829
-    second: Celestial Soldier Sprite Sheet_221
-  - first:
-      213: 2670500676167304177
-    second: Celestial Soldier Sprite Sheet_222
-  - first:
-      213: -8401928720533727354
-    second: Celestial Soldier Sprite Sheet_223
-  - first:
-      213: -3048276674096967938
-    second: Celestial Soldier Sprite Sheet_224
-  - first:
-      213: 7793176292846432685
-    second: Celestial Soldier Sprite Sheet_225
-  - first:
-      213: 3067918391994155587
-    second: Celestial Soldier Sprite Sheet_226
-  - first:
-      213: -8408835007700130170
-    second: Celestial Soldier Sprite Sheet_227
-  - first:
-      213: -9044303963086727756
-    second: Celestial Soldier Sprite Sheet_228
-  - first:
-      213: 3464239700691454924
-    second: Celestial Soldier Sprite Sheet_229
-  - first:
-      213: 586120112636248919
-    second: Celestial Soldier Sprite Sheet_230
-  - first:
-      213: 7263334873297545530
-    second: Celestial Soldier Sprite Sheet_231
-  - first:
-      213: 8786083710039316827
-    second: Celestial Soldier Sprite Sheet_232
-  - first:
-      213: -5919922015073064487
-    second: Celestial Soldier Sprite Sheet_233
-  - first:
-      213: -519459288323968939
-    second: Celestial Soldier Sprite Sheet_234
-  - first:
-      213: -8490777408236182169
-    second: Celestial Soldier Sprite Sheet_235
-  - first:
-      213: 6778871430256791318
-    second: Celestial Soldier Sprite Sheet_236
-  - first:
-      213: -1829310969722756274
-    second: Celestial Soldier Sprite Sheet_237
-  - first:
-      213: 3426684244828382742
-    second: Celestial Soldier Sprite Sheet_238
-  - first:
-      213: 8045121213837490350
-    second: Celestial Soldier Sprite Sheet_239
-  - first:
-      213: -6965068654608407212
-    second: Celestial Soldier Sprite Sheet_240
-  - first:
-      213: 4725391568734693777
-    second: Celestial Soldier Sprite Sheet_241
-  - first:
-      213: 1518423077473105780
-    second: Celestial Soldier Sprite Sheet_242
-  - first:
-      213: -3558017339912199215
-    second: Celestial Soldier Sprite Sheet_243
-  - first:
-      213: -2148410971718050710
-    second: Celestial Soldier Sprite Sheet_244
-  - first:
-      213: -4156258162262896172
-    second: Celestial Soldier Sprite Sheet_245
-  - first:
-      213: -7839711524230798031
-    second: Celestial Soldier Sprite Sheet_246
-  - first:
-      213: -5885899120906296354
-    second: Celestial Soldier Sprite Sheet_247
-  - first:
-      213: -1323235734258331113
-    second: Celestial Soldier Sprite Sheet_248
-  - first:
-      213: 5231569120190348100
-    second: Celestial Soldier Sprite Sheet_249
-  - first:
-      213: 2625598703997764884
-    second: Celestial Soldier Sprite Sheet_250
-  - first:
-      213: 2988877014156006418
-    second: Celestial Soldier Sprite Sheet_251
-  - first:
-      213: 2970723569507012589
-    second: Celestial Soldier Sprite Sheet_252
-  - first:
-      213: -8978158462115086107
-    second: Celestial Soldier Sprite Sheet_253
-  - first:
-      213: 3795307024715817461
-    second: Celestial Soldier Sprite Sheet_254
-  - first:
-      213: 8634787960111597642
-    second: Celestial Soldier Sprite Sheet_255
-  - first:
-      213: -4385046459328569545
-    second: Celestial Soldier Sprite Sheet_256
-  - first:
-      213: 690107099942733143
-    second: Celestial Soldier Sprite Sheet_257
-  - first:
-      213: 7871176347691301065
-    second: Celestial Soldier Sprite Sheet_258
-  - first:
-      213: -3427883770369480675
-    second: Celestial Soldier Sprite Sheet_259
-  - first:
-      213: 3706086848880872547
-    second: Celestial Soldier Sprite Sheet_260
-  - first:
-      213: -2909385827722830956
-    second: Celestial Soldier Sprite Sheet_261
-  - first:
-      213: -7468444978797703205
-    second: Celestial Soldier Sprite Sheet_262
-  - first:
-      213: 4558047162713863752
-    second: Celestial Soldier Sprite Sheet_263
-  - first:
-      213: 2855639471870015598
-    second: Celestial Soldier Sprite Sheet_264
-  - first:
-      213: 5117325735919540838
-    second: Celestial Soldier Sprite Sheet_265
-  - first:
-      213: 117691558848384573
-    second: Celestial Soldier Sprite Sheet_266
-  - first:
-      213: -3640353733585512439
-    second: Celestial Soldier Sprite Sheet_267
-  - first:
-      213: 4129379375802687426
-    second: Celestial Soldier Sprite Sheet_268
-  - first:
-      213: 8538870272369825831
-    second: Celestial Soldier Sprite Sheet_269
-  - first:
-      213: -5660020542249836145
-    second: Celestial Soldier Sprite Sheet_270
-  - first:
-      213: 2091665257037697764
-    second: Celestial Soldier Sprite Sheet_271
-  - first:
-      213: 9134463662264380415
-    second: Celestial Soldier Sprite Sheet_272
-  - first:
-      213: -3377330484317211128
-    second: Celestial Soldier Sprite Sheet_273
-  - first:
-      213: 5323205956801942264
-    second: Celestial Soldier Sprite Sheet_274
-  - first:
-      213: -3187681456388619092
-    second: Celestial Soldier Sprite Sheet_275
-  - first:
-      213: -8985343749727109229
-    second: Celestial Soldier Sprite Sheet_276
-  - first:
-      213: 9090891737053711899
-    second: Celestial Soldier Sprite Sheet_277
-  - first:
-      213: -3390327124936014288
-    second: Celestial Soldier Sprite Sheet_278
-  - first:
-      213: -3313902154983724006
-    second: Celestial Soldier Sprite Sheet_279
-  - first:
-      213: -6983709452703619063
-    second: Celestial Soldier Sprite Sheet_280
-  - first:
-      213: -5835718009156994589
-    second: Celestial Soldier Sprite Sheet_281
-  - first:
-      213: -3054140934092607130
-    second: Celestial Soldier Sprite Sheet_282
-  - first:
-      213: 8389132766294881688
-    second: Celestial Soldier Sprite Sheet_283
-  - first:
-      213: 2184075286228599632
-    second: Celestial Soldier Sprite Sheet_284
-  - first:
-      213: -2557811741250329268
-    second: Celestial Soldier Sprite Sheet_285
-  - first:
-      213: -7671676082096270348
-    second: Celestial Soldier Sprite Sheet_286
-  - first:
-      213: -5152896105019769122
-    second: Celestial Soldier Sprite Sheet_287
-  - first:
-      213: -7141986927093038832
-    second: Celestial Soldier Sprite Sheet_288
-  - first:
-      213: -1316984492086277487
-    second: Celestial Soldier Sprite Sheet_289
-  - first:
-      213: 7407367626992974505
-    second: Celestial Soldier Sprite Sheet_290
-  - first:
-      213: -5416374715575052702
-    second: Celestial Soldier Sprite Sheet_291
-  - first:
-      213: -6851209177753919977
-    second: Celestial Soldier Sprite Sheet_292
-  - first:
-      213: 455299079625793223
-    second: Celestial Soldier Sprite Sheet_293
-  - first:
-      213: -205036167066162386
-    second: Celestial Soldier Sprite Sheet_294
-  - first:
-      213: -3054541173447900471
-    second: Celestial Soldier Sprite Sheet_295
-  - first:
-      213: -559858959790792143
-    second: Celestial Soldier Sprite Sheet_296
-  - first:
-      213: 1634611664956404252
-    second: Celestial Soldier Sprite Sheet_297
-  - first:
-      213: -28774330484531679
-    second: Celestial Soldier Sprite Sheet_298
-  - first:
-      213: 2171988904846257949
-    second: Celestial Soldier Sprite Sheet_299
-  - first:
-      213: 5186305685193635356
-    second: Celestial Soldier Sprite Sheet_300
-  - first:
-      213: -2978429572057422807
-    second: Celestial Soldier Sprite Sheet_301
-  - first:
-      213: 1637034097876057636
-    second: Celestial Soldier Sprite Sheet_302
-  - first:
-      213: 9046850314209924306
-    second: Celestial Soldier Sprite Sheet_303
-  - first:
-      213: -705265015011576733
-    second: Celestial Soldier Sprite Sheet_304
-  - first:
-      213: -7489277435952700829
-    second: Celestial Soldier Sprite Sheet_305
-  - first:
-      213: -3844191304418850267
-    second: Celestial Soldier Sprite Sheet_306
-  - first:
-      213: 9201402009938497441
-    second: Celestial Soldier Sprite Sheet_307
-  - first:
-      213: 173299726413201668
-    second: Celestial Soldier Sprite Sheet_308
-  - first:
-      213: -2111325486458463527
-    second: Celestial Soldier Sprite Sheet_309
-  - first:
-      213: 2133030403129062974
-    second: Celestial Soldier Sprite Sheet_310
-  - first:
-      213: 4316036174351811919
-    second: Celestial Soldier Sprite Sheet_311
-  - first:
-      213: -7206231783927107746
-    second: Celestial Soldier Sprite Sheet_312
-  - first:
-      213: -7347094637968361265
-    second: Celestial Soldier Sprite Sheet_313
-  - first:
-      213: 7232366904466963342
-    second: Celestial Soldier Sprite Sheet_314
-  - first:
-      213: -656851312111956719
-    second: Celestial Soldier Sprite Sheet_315
-  - first:
-      213: -9150079549052594258
-    second: Celestial Soldier Sprite Sheet_316
-  - first:
-      213: 6224855606225688116
-    second: Celestial Soldier Sprite Sheet_317
-  - first:
-      213: -2000581273165309827
-    second: Celestial Soldier Sprite Sheet_318
-  - first:
-      213: -7480549100410025781
-    second: Celestial Soldier Sprite Sheet_319
-  - first:
-      213: -2723392379688474263
-    second: Celestial Soldier Sprite Sheet_320
-  - first:
-      213: -69132884121904601
-    second: Celestial Soldier Sprite Sheet_321
-  - first:
-      213: -2869178764260892070
-    second: Celestial Soldier Sprite Sheet_322
-  - first:
-      213: 1219474768152224500
-    second: Celestial Soldier Sprite Sheet_323
-  - first:
-      213: -5168813203601767065
-    second: Celestial Soldier Sprite Sheet_324
-  - first:
-      213: -4622069439097149511
-    second: Celestial Soldier Sprite Sheet_325
-  - first:
-      213: 6227329117832164643
-    second: Celestial Soldier Sprite Sheet_326
-  - first:
-      213: 792066318758711611
-    second: Celestial Soldier Sprite Sheet_327
-  - first:
-      213: -9052609109107553890
-    second: Celestial Soldier Sprite Sheet_328
-  - first:
-      213: 2852372049191381085
-    second: Celestial Soldier Sprite Sheet_329
-  - first:
-      213: 2371995956859043494
-    second: Celestial Soldier Sprite Sheet_330
-  - first:
-      213: 2176042980949896008
-    second: Celestial Soldier Sprite Sheet_331
-  - first:
-      213: -6780458871905953325
-    second: Celestial Soldier Sprite Sheet_332
-  - first:
-      213: 405872349820138044
-    second: Celestial Soldier Sprite Sheet_333
-  - first:
-      213: 4224814995182695740
-    second: Celestial Soldier Sprite Sheet_334
-  - first:
-      213: -5993871227484197019
-    second: Celestial Soldier Sprite Sheet_335
-  - first:
-      213: 5838729866990737049
-    second: Celestial Soldier Sprite Sheet_336
-  - first:
-      213: 8594559149309150311
-    second: Celestial Soldier Sprite Sheet_337
-  - first:
-      213: 629798046786540090
-    second: Celestial Soldier Sprite Sheet_338
-  - first:
-      213: -4631567983417001631
-    second: Celestial Soldier Sprite Sheet_339
-  - first:
-      213: 1292832065766255608
-    second: Celestial Soldier Sprite Sheet_340
-  - first:
-      213: 32429663375971331
-    second: Celestial Soldier Sprite Sheet_341
-  - first:
-      213: 1965492239259900196
-    second: Celestial Soldier Sprite Sheet_342
-  - first:
-      213: 6879477591797014421
-    second: Celestial Soldier Sprite Sheet_343
-  - first:
-      213: -2932445366411923929
-    second: Celestial Soldier Sprite Sheet_344
-  - first:
-      213: -7597232164941425567
-    second: Celestial Soldier Sprite Sheet_345
-  - first:
-      213: -726814376129254101
-    second: Celestial Soldier Sprite Sheet_346
-  - first:
-      213: 3497436299972342568
-    second: Celestial Soldier Sprite Sheet_347
-  - first:
-      213: -54866988310546796
-    second: Celestial Soldier Sprite Sheet_348
-  - first:
-      213: 6971911047181517635
-    second: Celestial Soldier Sprite Sheet_349
-  - first:
-      213: -1109057478583803735
-    second: Celestial Soldier Sprite Sheet_350
-  - first:
-      213: 7773851325699471618
-    second: Celestial Soldier Sprite Sheet_351
-  - first:
-      213: -2226968027078086387
-    second: Celestial Soldier Sprite Sheet_352
-  - first:
-      213: -3500273603863032816
-    second: Celestial Soldier Sprite Sheet_353
-  - first:
-      213: 2450109676009983614
-    second: Celestial Soldier Sprite Sheet_354
-  - first:
-      213: -257107545046273694
-    second: Celestial Soldier Sprite Sheet_355
-  - first:
-      213: -1848260070066272163
-    second: Celestial Soldier Sprite Sheet_356
-  - first:
-      213: -2165646412549062103
-    second: Celestial Soldier Sprite Sheet_357
-  - first:
-      213: -2443303214568600265
-    second: Celestial Soldier Sprite Sheet_358
-  - first:
-      213: 4293893318937020807
-    second: Celestial Soldier Sprite Sheet_359
-  - first:
-      213: 502727534719563923
-    second: Celestial Soldier Sprite Sheet_360
-  - first:
-      213: 2722833403021147175
-    second: Celestial Soldier Sprite Sheet_361
-  - first:
-      213: -6743260385111936159
-    second: Celestial Soldier Sprite Sheet_362
-  - first:
-      213: 286430335967532409
-    second: Celestial Soldier Sprite Sheet_363
-  - first:
-      213: 8750711157026090788
-    second: Celestial Soldier Sprite Sheet_364
-  - first:
-      213: 3860742511644732376
-    second: Celestial Soldier Sprite Sheet_365
-  - first:
-      213: 6758486712347141774
-    second: Celestial Soldier Sprite Sheet_366
-  - first:
-      213: 705520238942686488
-    second: Celestial Soldier Sprite Sheet_367
-  - first:
-      213: 6277369074325327712
-    second: Celestial Soldier Sprite Sheet_368
-  - first:
-      213: -7180821135489916140
-    second: Celestial Soldier Sprite Sheet_369
-  - first:
-      213: 7869377232072470980
-    second: Celestial Soldier Sprite Sheet_370
-  - first:
-      213: 4301710322925873570
-    second: Celestial Soldier Sprite Sheet_371
-  - first:
-      213: 4569027347798615035
-    second: Celestial Soldier Sprite Sheet_372
-  - first:
-      213: -7204317292412370366
-    second: Celestial Soldier Sprite Sheet_373
-  - first:
-      213: 801488290505593135
-    second: Celestial Soldier Sprite Sheet_374
-  - first:
-      213: -7719185510839534888
-    second: Celestial Soldier Sprite Sheet_375
-  - first:
-      213: 7584759589626125968
-    second: Celestial Soldier Sprite Sheet_376
-  - first:
-      213: 7291739821060524263
-    second: Celestial Soldier Sprite Sheet_377
-  - first:
-      213: 7092495433799293150
-    second: Celestial Soldier Sprite Sheet_378
-  - first:
-      213: -7866380718816066605
-    second: Celestial Soldier Sprite Sheet_379
-  - first:
-      213: -4095763035764377752
-    second: Celestial Soldier Sprite Sheet_380
-  - first:
-      213: 1525539915391157554
-    second: Celestial Soldier Sprite Sheet_381
-  - first:
-      213: -9075732334228032516
-    second: Celestial Soldier Sprite Sheet_382
-  - first:
-      213: -7315316166873453612
-    second: Celestial Soldier Sprite Sheet_383
-  - first:
-      213: -7818094723759667408
-    second: Celestial Soldier Sprite Sheet_384
-  - first:
-      213: -6246498508401466077
-    second: Celestial Soldier Sprite Sheet_385
-  - first:
-      213: 7205261798912780355
-    second: Celestial Soldier Sprite Sheet_386
-  - first:
-      213: 587631005596675953
-    second: Celestial Soldier Sprite Sheet_387
-  - first:
-      213: -7097672333500065490
-    second: Celestial Soldier Sprite Sheet_388
-  - first:
-      213: 7965680584308292535
-    second: Celestial Soldier Sprite Sheet_389
-  - first:
-      213: -5399182357967002397
-    second: Celestial Soldier Sprite Sheet_390
-  - first:
-      213: 406160581880490116
-    second: Celestial Soldier Sprite Sheet_391
-  - first:
-      213: 4015051349187319518
-    second: Celestial Soldier Sprite Sheet_392
-  - first:
-      213: 6361612288355986043
-    second: Celestial Soldier Sprite Sheet_393
-  - first:
-      213: 466068620775630644
-    second: Celestial Soldier Sprite Sheet_394
-  - first:
-      213: -7702880202341890475
-    second: Celestial Soldier Sprite Sheet_395
-  - first:
-      213: -7876005975542625654
-    second: Celestial Soldier Sprite Sheet_396
-  - first:
-      213: -3841507164546090571
-    second: Celestial Soldier Sprite Sheet_397
-  - first:
-      213: -8768005508531919948
-    second: Celestial Soldier Sprite Sheet_398
-  - first:
-      213: 4840920559417178385
-    second: Celestial Soldier Sprite Sheet_399
-  - first:
-      213: 6975061438716282848
-    second: Celestial Soldier Sprite Sheet_400
-  - first:
-      213: -5289271013437468036
-    second: Celestial Soldier Sprite Sheet_401
-  - first:
-      213: 268231968044928933
-    second: Celestial Soldier Sprite Sheet_402
-  - first:
-      213: 7877717399259650479
-    second: Celestial Soldier Sprite Sheet_403
-  - first:
-      213: 6173134300144749894
-    second: Celestial Soldier Sprite Sheet_404
-  - first:
-      213: -7705577245983027500
-    second: Celestial Soldier Sprite Sheet_405
-  - first:
-      213: -4465468669195417784
-    second: Celestial Soldier Sprite Sheet_406
-  - first:
-      213: 4471557065384873397
-    second: Celestial Soldier Sprite Sheet_407
-  - first:
-      213: -8127948786700901867
-    second: Celestial Soldier Sprite Sheet_408
-  - first:
-      213: 6130110260675344191
-    second: Celestial Soldier Sprite Sheet_409
-  - first:
-      213: -8895676883754489376
-    second: Celestial Soldier Sprite Sheet_410
-  - first:
-      213: 1546749406545789264
-    second: Celestial Soldier Sprite Sheet_411
-  - first:
-      213: 1475681861947744335
-    second: Celestial Soldier Sprite Sheet_412
-  - first:
-      213: -3031246055422705945
-    second: Celestial Soldier Sprite Sheet_413
-  - first:
-      213: 5589396666473695354
-    second: Celestial Soldier Sprite Sheet_414
-  - first:
-      213: -6594546508555938348
-    second: Celestial Soldier Sprite Sheet_415
-  - first:
-      213: 7375022584588814206
-    second: Celestial Soldier Sprite Sheet_416
-  - first:
-      213: 3137436704875222058
-    second: Celestial Soldier Sprite Sheet_417
-  - first:
-      213: 1302336169747151343
-    second: Celestial Soldier Sprite Sheet_418
-  - first:
-      213: -5833159307431470976
-    second: Celestial Soldier Sprite Sheet_419
-  - first:
-      213: -7734032918464321966
-    second: Celestial Soldier Sprite Sheet_420
-  - first:
-      213: 3533314127581037247
-    second: Celestial Soldier Sprite Sheet_421
-  - first:
-      213: -8624427834369555182
-    second: Celestial Soldier Sprite Sheet_422
-  - first:
-      213: 3857145172984829531
-    second: Celestial Soldier Sprite Sheet_423
-  - first:
-      213: -6547306641974614204
-    second: Celestial Soldier Sprite Sheet_424
-  - first:
-      213: 3406589395945892245
-    second: Celestial Soldier Sprite Sheet_425
-  - first:
-      213: -2023721716272236838
-    second: Celestial Soldier Sprite Sheet_426
-  - first:
-      213: -3126029675118113870
-    second: Celestial Soldier Sprite Sheet_427
-  - first:
-      213: 8692151189379536364
-    second: Celestial Soldier Sprite Sheet_428
-  - first:
-      213: 3832800007184211346
-    second: Celestial Soldier Sprite Sheet_429
-  - first:
-      213: 8301492956120290251
-    second: Celestial Soldier Sprite Sheet_430
-  - first:
-      213: -2341214564268872383
-    second: Celestial Soldier Sprite Sheet_431
-  - first:
-      213: 3507132943619074021
-    second: Celestial Soldier Sprite Sheet_432
-  - first:
-      213: 5228845736954111426
-    second: Celestial Soldier Sprite Sheet_433
-  - first:
-      213: 7088065910325069217
-    second: Celestial Soldier Sprite Sheet_434
-  - first:
-      213: 6216654759862366120
-    second: Celestial Soldier Sprite Sheet_435
-  - first:
-      213: -2519999188500582427
-    second: Celestial Soldier Sprite Sheet_436
-  - first:
-      213: -7811281658990710811
-    second: Celestial Soldier Sprite Sheet_437
-  - first:
-      213: -9101346515661326247
-    second: Celestial Soldier Sprite Sheet_438
-  - first:
-      213: 4906350603988931012
-    second: Celestial Soldier Sprite Sheet_439
-  - first:
-      213: 4421934122667775242
-    second: Celestial Soldier Sprite Sheet_440
-  - first:
-      213: -6584404259442627315
-    second: Celestial Soldier Sprite Sheet_441
-  - first:
-      213: -6012381832075412911
-    second: Celestial Soldier Sprite Sheet_442
-  - first:
-      213: -13022974378969025
-    second: Celestial Soldier Sprite Sheet_443
-  - first:
-      213: -5334049805866018894
-    second: Celestial Soldier Sprite Sheet_444
-  - first:
-      213: 7174109223630622363
-    second: Celestial Soldier Sprite Sheet_445
-  - first:
-      213: 3885772677085383722
-    second: Celestial Soldier Sprite Sheet_446
-  - first:
-      213: 2461605467774088226
-    second: Celestial Soldier Sprite Sheet_447
-  - first:
-      213: 7300311389177686104
-    second: Celestial Soldier Sprite Sheet_448
-  - first:
-      213: -7989670451827583859
-    second: Celestial Soldier Sprite Sheet_449
-  - first:
-      213: 404451477121484067
-    second: Celestial Soldier Sprite Sheet_450
-  - first:
-      213: 2886450100915829481
-    second: Celestial Soldier Sprite Sheet_451
-  - first:
-      213: -2560359930173987249
-    second: Celestial Soldier Sprite Sheet_452
-  - first:
-      213: 533122425533572011
-    second: Celestial Soldier Sprite Sheet_453
-  - first:
-      213: 1298563647934067992
-    second: Celestial Soldier Sprite Sheet_454
-  - first:
-      213: -6845543337382647136
-    second: Celestial Soldier Sprite Sheet_455
-  - first:
-      213: -464831521592741192
-    second: Celestial Soldier Sprite Sheet_456
-  - first:
-      213: 3511857943791009095
-    second: Celestial Soldier Sprite Sheet_457
-  - first:
-      213: -3888419255076356738
-    second: Celestial Soldier Sprite Sheet_458
-  - first:
-      213: 7787537821290887702
-    second: Celestial Soldier Sprite Sheet_459
-  - first:
-      213: 7174874423321630935
-    second: Celestial Soldier Sprite Sheet_460
-  - first:
-      213: 237200837056952463
-    second: Celestial Soldier Sprite Sheet_461
-  - first:
-      213: -1552885783929558099
-    second: Celestial Soldier Sprite Sheet_462
-  - first:
-      213: -4349772926849760888
-    second: Celestial Soldier Sprite Sheet_463
-  - first:
-      213: -511165242793872993
-    second: Celestial Soldier Sprite Sheet_464
-  - first:
-      213: -1168714288767505470
-    second: Celestial Soldier Sprite Sheet_465
-  - first:
-      213: 5679136583993714310
-    second: Celestial Soldier Sprite Sheet_466
-  - first:
-      213: -7479485055876555829
-    second: Celestial Soldier Sprite Sheet_467
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1569,7 +165,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 4096
@@ -1581,7 +177,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 4096
@@ -1593,7 +189,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1613,7 +209,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 08dc5b2506f15cbe0800000000000000
-      internalID: -1457724405819519616
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -1634,7 +230,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ac9aed9bedbf45c70800000000000000
-      internalID: 8959062492766448074
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -1655,7 +251,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e750dac1054ab0360800000000000000
-      internalID: 7136978698484123006
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -1676,7 +272,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a7bba45373f6b130800000000000000
-      internalID: 3582318230287136673
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -1697,7 +293,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3dfe66d7e40844a80800000000000000
-      internalID: -8483514723459469357
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -1718,7 +314,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a806fa7f016e30aa0800000000000000
-      internalID: -6195855701782339446
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -1739,7 +335,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eae0f2ae62f636250800000000000000
-      internalID: 5936710946732838574
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -1760,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6aec191feff7a6e90800000000000000
-      internalID: -7031667135234322778
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -1781,7 +377,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d7c919fda48dae950800000000000000
-      internalID: 6479228830015921277
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -1802,7 +398,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 44ce309838b52c810800000000000000
-      internalID: 1784089022889716804
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -1823,7 +419,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 836c82cb37a4accb0800000000000000
-      internalID: -4842976588345063880
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -1844,7 +440,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4776848f347bb1c50800000000000000
-      internalID: 6637099978416744308
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -1865,7 +461,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ad385f06d36d6ee90800000000000000
-      internalID: -6996669411965434918
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -1886,7 +482,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a9b0b5c37c912a640800000000000000
-      internalID: 5089658872383867802
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -1907,7 +503,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 42057af1a6a291660800000000000000
-      internalID: 7356958101572374564
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -1928,7 +524,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4b9b06e4d803abd00800000000000000
-      internalID: 989156451624729012
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -1949,7 +545,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1d532a0a3503b6fd0800000000000000
-      internalID: -2347729645008177711
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -1970,7 +566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 57490a94c87707820800000000000000
-      internalID: 2913960403323098229
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -1991,7 +587,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2d39f1a4ba9c3ca10800000000000000
-      internalID: 1928606802964878290
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -2012,7 +608,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c1be69c4484bace90800000000000000
-      internalID: -7004587790107743460
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -2033,7 +629,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6a8a212def7507390800000000000000
-      internalID: -7822655800784803674
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -2054,7 +650,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: edf79e26e83417940800000000000000
-      internalID: 5292085315960930270
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -2075,7 +671,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1e5216f062e874e20800000000000000
-      internalID: 3334790343209068001
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -2096,7 +692,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 440cdaee50bf5a8b0800000000000000
-      internalID: -5141427396675780540
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -2117,7 +713,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8b31b6b9a28d018b0800000000000000
-      internalID: -5183405493595728968
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -2138,7 +734,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 06f2e848020ad8200800000000000000
-      internalID: 183979221315366752
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -2159,7 +755,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7f704e83808b360a0800000000000000
-      internalID: -6889460659493009417
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -2180,7 +776,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 99e4d191dd09987b0800000000000000
-      internalID: -5221483013675856231
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -2201,7 +797,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6bfce7c37c6b4fb80800000000000000
-      internalID: -8361857641290477642
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -2222,7 +818,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 08240e93feb33b660800000000000000
-      internalID: 7400324511354077824
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -2243,7 +839,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 09c003408931ed3a0800000000000000
-      internalID: -6638847257071317872
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -2264,7 +860,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0e3d3a0db3034dbd0800000000000000
-      internalID: -2606405250879073312
+      internalID: 21300062
       vertices: []
       indices: 
       edges: []

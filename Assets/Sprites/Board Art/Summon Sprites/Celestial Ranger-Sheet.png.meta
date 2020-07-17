@@ -3,203 +3,101 @@ guid: a8caf7e795a452649902b2202a970625
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -947819407271700587
+      213: 21300000
     second: Celestial Ranger-Sheet_0
   - first:
-      213: -7053189692410567437
+      213: 21300002
     second: Celestial Ranger-Sheet_1
   - first:
-      213: 9191271348739126655
+      213: 21300004
     second: Celestial Ranger-Sheet_2
   - first:
-      213: 192918453941905121
+      213: 21300006
     second: Celestial Ranger-Sheet_3
   - first:
-      213: -9184440928546816113
+      213: 21300008
     second: Celestial Ranger-Sheet_4
   - first:
-      213: -8908962021357776082
+      213: 21300010
     second: Celestial Ranger-Sheet_5
   - first:
-      213: -8965795829538672043
+      213: 21300012
     second: Celestial Ranger-Sheet_6
   - first:
-      213: 4802029094807713792
+      213: 21300014
     second: Celestial Ranger-Sheet_7
   - first:
-      213: 5371033151017965041
+      213: 21300016
     second: Celestial Ranger-Sheet_8
   - first:
-      213: 2759216040266506393
+      213: 21300018
     second: Celestial Ranger-Sheet_9
   - first:
-      213: -375254902087298990
+      213: 21300020
     second: Celestial Ranger-Sheet_10
   - first:
-      213: 6450817037470992472
+      213: 21300022
     second: Celestial Ranger-Sheet_11
   - first:
-      213: -5942557344020207967
+      213: 21300024
     second: Celestial Ranger-Sheet_12
   - first:
-      213: 2304625403255907306
+      213: 21300026
     second: Celestial Ranger-Sheet_13
   - first:
-      213: -4264417414349786300
+      213: 21300028
     second: Celestial Ranger-Sheet_14
   - first:
-      213: 4193453942686591425
+      213: 21300030
     second: Celestial Ranger-Sheet_15
   - first:
-      213: -5756936427497305554
+      213: 21300032
     second: Celestial Ranger-Sheet_16
   - first:
-      213: -5561329604148714373
+      213: 21300034
     second: Celestial Ranger-Sheet_17
   - first:
-      213: 6339049513025712093
+      213: 21300036
     second: Celestial Ranger-Sheet_18
   - first:
-      213: 4100591633384462107
+      213: 21300038
     second: Celestial Ranger-Sheet_19
   - first:
-      213: 263565855944746776
+      213: 21300040
     second: Celestial Ranger-Sheet_20
   - first:
-      213: -8029942389404109168
-    second: Celestial Ranger-Sheet_0
-  - first:
-      213: 3377211405446032793
-    second: Celestial Ranger-Sheet_1
-  - first:
-      213: -4947913074732953912
-    second: Celestial Ranger-Sheet_2
-  - first:
-      213: 657065731700381109
-    second: Celestial Ranger-Sheet_3
-  - first:
-      213: -3178843620568827657
-    second: Celestial Ranger-Sheet_4
-  - first:
-      213: -3037873289068042697
-    second: Celestial Ranger-Sheet_5
-  - first:
-      213: 8863211049178673165
-    second: Celestial Ranger-Sheet_6
-  - first:
-      213: -4446872861146967810
-    second: Celestial Ranger-Sheet_7
-  - first:
-      213: -7084745027264035182
-    second: Celestial Ranger-Sheet_8
-  - first:
-      213: 6841653448641394477
-    second: Celestial Ranger-Sheet_9
-  - first:
-      213: 1607409098690909286
-    second: Celestial Ranger-Sheet_10
-  - first:
-      213: -8642943241087558228
-    second: Celestial Ranger-Sheet_11
-  - first:
-      213: -5468339014047628503
-    second: Celestial Ranger-Sheet_12
-  - first:
-      213: -3605141481586635675
-    second: Celestial Ranger-Sheet_13
-  - first:
-      213: 6359612359130239030
-    second: Celestial Ranger-Sheet_14
-  - first:
-      213: 3102430230390880651
-    second: Celestial Ranger-Sheet_15
-  - first:
-      213: -8796069812252280633
-    second: Celestial Ranger-Sheet_16
-  - first:
-      213: -3897203706682844628
-    second: Celestial Ranger-Sheet_17
-  - first:
-      213: -4260340889666148192
-    second: Celestial Ranger-Sheet_18
-  - first:
-      213: 1870436935107205186
-    second: Celestial Ranger-Sheet_19
-  - first:
-      213: -404110262056442290
-    second: Celestial Ranger-Sheet_20
-  - first:
-      213: 5160700519321938821
-    second: Celestial Ranger-Sheet_21
-  - first:
-      213: -2242322486958113184
+      213: 21300042
     second: Celestial Ranger-Sheet_22
   - first:
-      213: -6885156078331878651
+      213: 21300044
     second: Celestial Ranger-Sheet_23
   - first:
-      213: 2929939720852576013
+      213: 21300046
     second: Celestial Ranger-Sheet_24
   - first:
-      213: -3438348550251841153
+      213: 21300048
     second: Celestial Ranger-Sheet_25
   - first:
-      213: 8757364966894952564
+      213: 21300050
     second: Celestial Ranger-Sheet_26
   - first:
-      213: -5434352041582821708
+      213: 21300052
     second: Celestial Ranger-Sheet_27
   - first:
-      213: 7202839636954271255
+      213: 21300054
     second: Celestial Ranger-Sheet_28
   - first:
-      213: 8319906603348446985
+      213: 21300056
     second: Celestial Ranger-Sheet_29
   - first:
-      213: 1226241058593410906
+      213: 21300058
     second: Celestial Ranger-Sheet_30
   - first:
-      213: 818123006338320342
+      213: 21300060
     second: Celestial Ranger-Sheet_31
   - first:
-      213: 1986673500554243747
-    second: Celestial Ranger-Sheet_32
-  - first:
-      213: -6727161350814326354
+      213: 21300062
     second: Celestial Ranger-Sheet_21
-  - first:
-      213: -3166424428180596748
-    second: Celestial Ranger-Sheet_22
-  - first:
-      213: 8709424387728701023
-    second: Celestial Ranger-Sheet_23
-  - first:
-      213: -268195777894097902
-    second: Celestial Ranger-Sheet_24
-  - first:
-      213: 8665016948713142783
-    second: Celestial Ranger-Sheet_25
-  - first:
-      213: 7237640242948619410
-    second: Celestial Ranger-Sheet_26
-  - first:
-      213: -4046017394996775944
-    second: Celestial Ranger-Sheet_27
-  - first:
-      213: -4884559014459481533
-    second: Celestial Ranger-Sheet_28
-  - first:
-      213: -624608292465486971
-    second: Celestial Ranger-Sheet_29
-  - first:
-      213: -1835674183389844386
-    second: Celestial Ranger-Sheet_30
-  - first:
-      213: -197857978300162608
-    second: Celestial Ranger-Sheet_31
-  - first:
-      213: 5389606608624911560
-    second: Celestial Ranger-Sheet_32
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -267,7 +165,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 4096
@@ -279,7 +177,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 4096
@@ -291,7 +189,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -311,7 +209,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 09677b8f0f9ef8090800000000000000
-      internalID: -8029942389404109168
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -332,7 +230,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 99d220941e34ede20800000000000000
-      internalID: 3377211405446032793
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -353,7 +251,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8ce0801164b755bb0800000000000000
-      internalID: -4947913074732953912
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -374,7 +272,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5b5551c3dcd5e1900800000000000000
-      internalID: 657065731700381109
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -395,7 +293,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7f87a7fb19a72e3d0800000000000000
-      internalID: -3178843620568827657
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -416,7 +314,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 736a374c65e47d5d0800000000000000
-      internalID: -3037873289068042697
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -437,7 +335,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d00bc9b6d73700b70800000000000000
-      internalID: 8863211049178673165
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -458,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ef0920e71b88942c0800000000000000
-      internalID: -4446872861146967810
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -479,7 +377,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 29646bd2fededad90800000000000000
-      internalID: -7084745027264035182
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -500,7 +398,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d27b89a109f62fe50800000000000000
-      internalID: 6841653448641394477
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -521,7 +419,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 664d3301f0aae4610800000000000000
-      internalID: 1607409098690909286
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -542,7 +440,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: caddc1d1ae81e0880800000000000000
-      internalID: -8642943241087558228
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -563,7 +461,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9230844a3ae8c14b0800000000000000
-      internalID: -5468339014047628503
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -584,7 +482,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 56cc0016ce6f7fdc0800000000000000
-      internalID: -3605141481586635675
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -605,7 +503,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6305427feb1e14850800000000000000
-      internalID: 6359612359130239030
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -626,7 +524,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b89b1ee6bdb0e0b20800000000000000
-      internalID: 3102430230390880651
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -647,7 +545,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7c87a2dfb151ee580800000000000000
-      internalID: -8796069812252280633
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -668,7 +566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c2a55d580e95ae9c0800000000000000
-      internalID: -3897203706682844628
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -689,7 +587,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0a8a069788a30e4c0800000000000000
-      internalID: -4260340889666148192
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -710,7 +608,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 248d5d38b7025f910800000000000000
-      internalID: 1870436935107205186
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -731,7 +629,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e4629049bdf446af0800000000000000
-      internalID: -404110262056442290
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -752,7 +650,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4f71d2e42c99e04d0800000000000000
-      internalID: -3166424428180596748
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -773,7 +671,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f5671bc06571ed870800000000000000
-      internalID: 8709424387728701023
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -794,7 +692,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 21cdc586c5d274cf0800000000000000
-      internalID: -268195777894097902
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -815,7 +713,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ff939c07103504870800000000000000
-      internalID: 8665016948713142783
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -836,7 +734,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 29c360d4473417460800000000000000
-      internalID: 7237640242948619410
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -857,7 +755,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8f37a20bd98a9d7c0800000000000000
-      internalID: -4046017394996775944
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -878,7 +776,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 342e5b2b47f863cb0800000000000000
-      internalID: -4884559014459481533
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -899,7 +797,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 583d4db3112f457f0800000000000000
-      internalID: -624608292465486971
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -920,7 +818,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e5c61b75e006686e0800000000000000
-      internalID: -1835674183389844386
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -941,7 +839,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0dd117f8731114df0800000000000000
-      internalID: -197857978300162608
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -962,7 +860,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ea1a9f9b46254a2a0800000000000000
-      internalID: -6727161350814326354
+      internalID: 21300062
       vertices: []
       indices: 
       edges: []

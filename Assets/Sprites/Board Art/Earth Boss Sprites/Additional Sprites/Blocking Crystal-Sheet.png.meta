@@ -3,322 +3,67 @@ guid: 894a517a69b9d8e4987a739c72681c5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3438357857353562210
+      213: 21300000
     second: Blocking Crystal-Sheet_0
   - first:
-      213: -1237638242184747021
+      213: 21300002
     second: Blocking Crystal-Sheet_1
   - first:
-      213: 2719585230723963780
+      213: 21300004
     second: Blocking Crystal-Sheet_2
   - first:
-      213: 4352502934171490879
+      213: 21300006
     second: Blocking Crystal-Sheet_3
   - first:
-      213: -5391378013963112808
+      213: 21300008
     second: Blocking Crystal-Sheet_4
   - first:
-      213: 8170774501812624467
+      213: 21300010
     second: Blocking Crystal-Sheet_5
   - first:
-      213: -840667941579703242
+      213: 21300012
     second: Blocking Crystal-Sheet_6
   - first:
-      213: 8405723663398214581
+      213: 21300014
     second: Blocking Crystal-Sheet_7
   - first:
-      213: -4622013235140731064
+      213: 21300016
     second: Blocking Crystal-Sheet_8
   - first:
-      213: -9083496686866375863
+      213: 21300018
     second: Blocking Crystal-Sheet_9
   - first:
-      213: -1084128958594909961
+      213: 21300020
     second: Blocking Crystal-Sheet_10
   - first:
-      213: -7001512559637539138
+      213: 21300022
     second: Blocking Crystal-Sheet_11
   - first:
-      213: 5289943727203637929
+      213: 21300024
     second: Blocking Crystal-Sheet_12
   - first:
-      213: -2041630415641678196
+      213: 21300026
     second: Blocking Crystal-Sheet_13
   - first:
-      213: -1965562227147304281
+      213: 21300028
     second: Blocking Crystal-Sheet_14
   - first:
-      213: -1801113494663196151
+      213: 21300030
     second: Blocking Crystal-Sheet_15
   - first:
-      213: 3336059749217900689
+      213: 21300032
     second: Blocking Crystal-Sheet_16
   - first:
-      213: -2805356345599989549
+      213: 21300034
     second: Blocking Crystal-Sheet_17
   - first:
-      213: -3167192852186485261
+      213: 21300036
     second: Blocking Crystal-Sheet_18
   - first:
-      213: 1559835129142126294
+      213: 21300038
     second: Blocking Crystal-Sheet_19
   - first:
-      213: -3503662561582192190
-    second: Blocking Crystal-Sheet_20
-  - first:
-      213: 8240263095750681816
-    second: Blocking Crystal-Sheet_21
-  - first:
-      213: 6429031662457607149
-    second: Blocking Crystal-Sheet_22
-  - first:
-      213: -8999375851945550474
-    second: Blocking Crystal-Sheet_23
-  - first:
-      213: 3026883188999606502
-    second: Blocking Crystal-Sheet_24
-  - first:
-      213: 118574061620277294
-    second: Blocking Crystal-Sheet_25
-  - first:
-      213: -4985869207458178137
-    second: Blocking Crystal-Sheet_26
-  - first:
-      213: 3153574262085708835
-    second: Blocking Crystal-Sheet_27
-  - first:
-      213: -6010088939692238484
-    second: Blocking Crystal-Sheet_28
-  - first:
-      213: 7079788269305820204
-    second: Blocking Crystal-Sheet_29
-  - first:
-      213: -8082724562770962100
-    second: Blocking Crystal-Sheet_30
-  - first:
-      213: -7679096491141087705
-    second: Blocking Crystal-Sheet_31
-  - first:
-      213: -2994873109661856718
-    second: Blocking Crystal-Sheet_32
-  - first:
-      213: -5263720757900268622
-    second: Blocking Crystal-Sheet_33
-  - first:
-      213: 3112740387016336846
-    second: Blocking Crystal-Sheet_34
-  - first:
-      213: -3234816850043176167
-    second: Blocking Crystal-Sheet_35
-  - first:
-      213: 1734425528776329921
-    second: Blocking Crystal-Sheet_36
-  - first:
-      213: -2661684328862039323
-    second: Blocking Crystal-Sheet_37
-  - first:
-      213: -8830476090623076607
-    second: Blocking Crystal-Sheet_38
-  - first:
-      213: -5725026430064907399
-    second: Blocking Crystal-Sheet_39
-  - first:
-      213: -4392710166264675248
-    second: Blocking Crystal-Sheet_40
-  - first:
-      213: -8797124886557553599
-    second: Blocking Crystal-Sheet_41
-  - first:
-      213: -9129641080333707395
-    second: Blocking Crystal-Sheet_42
-  - first:
-      213: -8220887631133862115
-    second: Blocking Crystal-Sheet_43
-  - first:
-      213: 6837132713823979355
-    second: Blocking Crystal-Sheet_44
-  - first:
-      213: 4997514443905846240
-    second: Blocking Crystal-Sheet_45
-  - first:
-      213: -5828748842822722009
-    second: Blocking Crystal-Sheet_46
-  - first:
-      213: 2091001823449519099
-    second: Blocking Crystal-Sheet_47
-  - first:
-      213: 8459776614549836710
-    second: Blocking Crystal-Sheet_48
-  - first:
-      213: 7336139449016863013
-    second: Blocking Crystal-Sheet_49
-  - first:
-      213: 983678217203724083
-    second: Blocking Crystal-Sheet_50
-  - first:
-      213: 9150995757571303982
-    second: Blocking Crystal-Sheet_51
-  - first:
-      213: -8165407440666522153
-    second: Blocking Crystal-Sheet_52
-  - first:
-      213: 5136203765283098166
-    second: Blocking Crystal-Sheet_53
-  - first:
-      213: 6903490342400655901
-    second: Blocking Crystal-Sheet_54
-  - first:
-      213: -7780785680678479873
-    second: Blocking Crystal-Sheet_55
-  - first:
-      213: 8235858054674003228
-    second: Blocking Crystal-Sheet_56
-  - first:
-      213: -1004105346428503903
-    second: Blocking Crystal-Sheet_57
-  - first:
-      213: -1407589976606761044
-    second: Blocking Crystal-Sheet_58
-  - first:
-      213: -1939808594729523606
-    second: Blocking Crystal-Sheet_59
-  - first:
-      213: 4214487047204312166
-    second: Blocking Crystal-Sheet_60
-  - first:
-      213: 8270546367103563937
-    second: Blocking Crystal-Sheet_61
-  - first:
-      213: 7675388084972379493
-    second: Blocking Crystal-Sheet_62
-  - first:
-      213: 8870376387589792300
-    second: Blocking Crystal-Sheet_63
-  - first:
-      213: 3093177641449406246
-    second: Blocking Crystal-Sheet_64
-  - first:
-      213: 7615462906340637579
-    second: Blocking Crystal-Sheet_65
-  - first:
-      213: 6679674510889621004
-    second: Blocking Crystal-Sheet_66
-  - first:
-      213: -2384631491514281751
-    second: Blocking Crystal-Sheet_67
-  - first:
-      213: 2094432431264434504
-    second: Blocking Crystal-Sheet_68
-  - first:
-      213: -3518347246861222960
-    second: Blocking Crystal-Sheet_69
-  - first:
-      213: -6632764981902073188
-    second: Blocking Crystal-Sheet_70
-  - first:
-      213: 4339936129637491543
-    second: Blocking Crystal-Sheet_71
-  - first:
-      213: -3711739844104184465
-    second: Blocking Crystal-Sheet_72
-  - first:
-      213: -2297090534801204688
-    second: Blocking Crystal-Sheet_73
-  - first:
-      213: -8900615457655905652
-    second: Blocking Crystal-Sheet_74
-  - first:
-      213: -5972132155924165261
-    second: Blocking Crystal-Sheet_75
-  - first:
-      213: 5788020310633733550
-    second: Blocking Crystal-Sheet_76
-  - first:
-      213: -5566807027787183543
-    second: Blocking Crystal-Sheet_77
-  - first:
-      213: -3793149510225296955
-    second: Blocking Crystal-Sheet_78
-  - first:
-      213: -7696928963994809015
-    second: Blocking Crystal-Sheet_79
-  - first:
-      213: 2813052315618982518
-    second: Blocking Crystal-Sheet_80
-  - first:
-      213: -8681151995357199084
-    second: Blocking Crystal-Sheet_81
-  - first:
-      213: -2686288884230499789
-    second: Blocking Crystal-Sheet_82
-  - first:
-      213: -7115715000768562756
-    second: Blocking Crystal-Sheet_83
-  - first:
-      213: -5050806593330670776
-    second: Blocking Crystal-Sheet_84
-  - first:
-      213: -6419776997356750319
-    second: Blocking Crystal-Sheet_0
-  - first:
-      213: 5528452504586221805
-    second: Blocking Crystal-Sheet_1
-  - first:
-      213: -8621773161779073757
-    second: Blocking Crystal-Sheet_2
-  - first:
-      213: 5573936188545517936
-    second: Blocking Crystal-Sheet_3
-  - first:
-      213: 2564542408489260764
-    second: Blocking Crystal-Sheet_4
-  - first:
-      213: -8660236217481636272
-    second: Blocking Crystal-Sheet_5
-  - first:
-      213: 2782359082967585973
-    second: Blocking Crystal-Sheet_6
-  - first:
-      213: 826861174411787182
-    second: Blocking Crystal-Sheet_7
-  - first:
-      213: -2339703443100812056
-    second: Blocking Crystal-Sheet_8
-  - first:
-      213: -8001885683202672547
-    second: Blocking Crystal-Sheet_9
-  - first:
-      213: 7258024101794666167
-    second: Blocking Crystal-Sheet_10
-  - first:
-      213: 4700384340221937375
-    second: Blocking Crystal-Sheet_11
-  - first:
-      213: 3029995727738420041
-    second: Blocking Crystal-Sheet_12
-  - first:
-      213: 3390411770960267124
-    second: Blocking Crystal-Sheet_13
-  - first:
-      213: -7053279693006382091
-    second: Blocking Crystal-Sheet_14
-  - first:
-      213: -8420841195419914211
-    second: Blocking Crystal-Sheet_15
-  - first:
-      213: 5300781897730843657
-    second: Blocking Crystal-Sheet_16
-  - first:
-      213: -109439582100361879
-    second: Blocking Crystal-Sheet_17
-  - first:
-      213: -3892325684296275778
-    second: Blocking Crystal-Sheet_18
-  - first:
-      213: -6401081196074894139
-    second: Blocking Crystal-Sheet_19
-  - first:
-      213: 3443359857456941974
+      213: 21300040
     second: Blocking Crystal-Sheet_20
   externalObjects: {}
   serializedVersion: 10
@@ -387,7 +132,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -399,7 +144,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -411,7 +156,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -431,7 +176,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 11ab35795de58e6a0800000000000000
-      internalID: -6419776997356750319
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -452,7 +197,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de8fa7d034209bc40800000000000000
-      internalID: 5528452504586221805
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -473,7 +218,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 32d692e4dfe495880800000000000000
-      internalID: -8621773161779073757
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -494,7 +239,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 07943f67e699a5d40800000000000000
-      internalID: 5573936188545517936
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -515,7 +260,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cd65d65abb5179320800000000000000
-      internalID: 2564542408489260764
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -536,7 +281,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 056d80a4b09a0d780800000000000000
-      internalID: -8660236217481636272
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -557,7 +302,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5b45dd928dcec9620800000000000000
-      internalID: 2782359082967585973
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -578,7 +323,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eab70637bd9997b00800000000000000
-      internalID: 826861174411787182
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -599,7 +344,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8ecb7326d14b78fd0800000000000000
-      internalID: -2339703443100812056
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -620,7 +365,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d58bb6fed5793f090800000000000000
-      internalID: -8001885683202672547
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -641,7 +386,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7b6d1b6477ea9b460800000000000000
-      internalID: 7258024101794666167
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -662,7 +407,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fd6ccba57ae1b3140800000000000000
-      internalID: 4700384340221937375
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -683,7 +428,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 94bbcce8f05bc0a20800000000000000
-      internalID: 3029995727738420041
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -704,7 +449,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 477c362ea892d0f20800000000000000
-      internalID: 3390411770960267124
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -725,7 +470,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5fbd0e43d77bd1e90800000000000000
-      internalID: -7053279693006382091
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -746,7 +491,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d10350d5c89232b80800000000000000
-      internalID: -8420841195419914211
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -767,7 +512,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 904611e1d09209940800000000000000
-      internalID: 5300781897730843657
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -788,7 +533,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 96d6a88a7413b7ef0800000000000000
-      internalID: -109439582100361879
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -809,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eb8246d996eabf9c0800000000000000
-      internalID: -3892325684296275778
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -830,7 +575,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5ccf589019aca27a0800000000000000
-      internalID: -6401081196074894139
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -851,7 +596,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 69b8f81fb8549cf20800000000000000
-      internalID: 3443359857456941974
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []

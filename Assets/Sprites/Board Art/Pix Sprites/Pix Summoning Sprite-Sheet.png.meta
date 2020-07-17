@@ -3,92 +3,29 @@ guid: 22590036b9f2d6941b1f903b32507aba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1726072533183625762
+      213: 21300000
     second: Pix Summoning Sprite-Sheet_0
   - first:
-      213: 2495862882005215515
+      213: 21300002
     second: Pix Summoning Sprite-Sheet_1
   - first:
-      213: -1156482931930826133
+      213: 21300004
     second: Pix Summoning Sprite-Sheet_2
   - first:
-      213: 365473773005725121
+      213: 21300006
     second: Pix Summoning Sprite-Sheet_3
   - first:
-      213: 5529856026971530484
+      213: 21300008
     second: Pix Summoning Sprite-Sheet_4
   - first:
-      213: 3924649457627067226
+      213: 21300010
     second: Pix Summoning Sprite-Sheet_5
   - first:
-      213: 4482208876489112015
+      213: 21300012
     second: Pix Summoning Sprite-Sheet_6
   - first:
-      213: -4889455512120395118
+      213: 21300014
     second: Pix Summoning Sprite-Sheet_7
-  - first:
-      213: 5522968524390905183
-    second: Pix Summoning Sprite-Sheet_0
-  - first:
-      213: -8222654377767527548
-    second: Pix Summoning Sprite-Sheet_1
-  - first:
-      213: 8326872991249345865
-    second: Pix Summoning Sprite-Sheet_2
-  - first:
-      213: 2831209335458638387
-    second: Pix Summoning Sprite-Sheet_3
-  - first:
-      213: 1945135276082326748
-    second: Pix Summoning Sprite-Sheet_4
-  - first:
-      213: -7845443848498080786
-    second: Pix Summoning Sprite-Sheet_5
-  - first:
-      213: -1027993307936254542
-    second: Pix Summoning Sprite-Sheet_6
-  - first:
-      213: -4461508154641162891
-    second: Pix Summoning Sprite-Sheet_7
-  - first:
-      213: 1639787007064737063
-    second: Pix Summoning Sprite-Sheet_8
-  - first:
-      213: 5846401239683106597
-    second: Pix Summoning Sprite-Sheet_9
-  - first:
-      213: -1063321656192433681
-    second: Pix Summoning Sprite-Sheet_10
-  - first:
-      213: -7784674771736003745
-    second: Pix Summoning Sprite-Sheet_11
-  - first:
-      213: 151783269032724234
-    second: Pix Summoning Sprite-Sheet_12
-  - first:
-      213: 4930895640600473150
-    second: Pix Summoning Sprite-Sheet_13
-  - first:
-      213: 7286795973335785695
-    second: Pix Summoning Sprite-Sheet_14
-  - first:
-      213: 3671763843733007302
-    second: Pix Summoning Sprite-Sheet_15
-  - first:
-      213: -4940297716272870955
-    second: Pix Summoning Sprite-Sheet_16
-  - first:
-      213: -571298485695422708
-    second: Pix Summoning Sprite-Sheet_17
-  - first:
-      213: -2599334489258757447
-    second: Pix Summoning Sprite-Sheet_18
-  - first:
-      213: 3736250467292901190
-    second: Pix Summoning Sprite-Sheet_19
-  - first:
-      213: 2472458868222346291
-    second: Pix Summoning Sprite-Sheet_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -156,7 +93,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -168,7 +105,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -180,7 +117,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -200,7 +137,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f55bbf96c9685ac40800000000000000
-      internalID: 5522968524390905183
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -221,7 +158,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 48b1b5ea86343ed80800000000000000
-      internalID: -8222654377767527548
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -242,7 +179,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 94d263d2edefe8370800000000000000
-      internalID: 8326872991249345865
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -263,7 +200,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 33a28c4e3e97a4720800000000000000
-      internalID: 2831209335458638387
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -284,7 +221,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cdce7f25a328efa10800000000000000
-      internalID: 1945135276082326748
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -305,7 +242,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee39ff003626f1390800000000000000
-      internalID: -7845443848498080786
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -326,7 +263,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2b51bf07885dbb1f0800000000000000
-      internalID: -1027993307936254542
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -347,7 +284,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 57dda10b8f98512c0800000000000000
-      internalID: -4461508154641162891
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
