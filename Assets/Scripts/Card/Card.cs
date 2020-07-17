@@ -18,6 +18,7 @@ public class Card : MonoBehaviour {
     TextMeshProUGUI descriptionDisplay;
     Vector3 startingScale;
     CardEffect effect;
+    int manaCost;
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
@@ -34,6 +35,7 @@ public class Card : MonoBehaviour {
         imageDisplay.sprite = entity.artwork;
         nameDisplay.text = entity.name;
         manaDisplay.text = entity.manaCost.ToString();
+        manaCost = entity.manaCost;
         attackDisplay.text = entity.attack.ToString();
         descriptionDisplay.text = entity.description;
         if (entity.cardBase == CardBase.Basic) {
@@ -66,6 +68,11 @@ public class Card : MonoBehaviour {
     }
 
     public int GetManaCost() {
-        return entity.manaCost;
+        return manaCost;
+    }
+
+    public void SetManaCost(int value) {
+        manaCost = value;
+        manaDisplay.text = value.ToString();
     }
 }
