@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3616929994010726127
+--- !u!1001 &6548373438760768390
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,7 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: dce88b03056493d4192589a171d99b9e, type: 2}
+      objectReference: {fileID: 9100000, guid: 29e7cfea8352c2a45844e5eedf573107, type: 2}
     - target: {fileID: 2715232851750620381, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,23 +70,23 @@ PrefabInstance:
     - target: {fileID: 3402892627411027399, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_Name
-      value: Paradox
+      value: Stasis
       objectReference: {fileID: 0}
     - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -817405780812726949, guid: 41e4957d273f94847b9134e04613ceb0,
+      objectReference: {fileID: -2558706740161537182, guid: ec780df4499427b44ab42e29a7b4fd0d,
         type: 3}
     - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.36
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.28
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
