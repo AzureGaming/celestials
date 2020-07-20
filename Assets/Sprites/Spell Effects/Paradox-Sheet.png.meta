@@ -74,6 +74,30 @@ TextureImporter:
   - first:
       213: 6835306519898078952
     second: Paradox-Sheet_7
+  - first:
+      213: -6954890933778440025
+    second: Paradox-Sheet_8
+  - first:
+      213: -1960515127452156852
+    second: Paradox-Sheet_9
+  - first:
+      213: 8344190900785413767
+    second: Paradox-Sheet_10
+  - first:
+      213: 7007267450801140840
+    second: Paradox-Sheet_11
+  - first:
+      213: 2118619949480174469
+    second: Paradox-Sheet_12
+  - first:
+      213: 4626922062144419910
+    second: Paradox-Sheet_13
+  - first:
+      213: -392831984951047127
+    second: Paradox-Sheet_14
+  - first:
+      213: 2945405710113134042
+    second: Paradox-Sheet_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -162,9 +186,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 128
-        height: 128
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5d7e4de5cdf7a4f0800000000000000
-      internalID: -817405780812726949
+      spriteID: 4103213895bf4ffe0800000000000000
+      internalID: -1156022842457706476
       vertices: []
       indices: 
       edges: []
@@ -182,10 +206,10 @@ TextureImporter:
       name: Paradox-Sheet_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 139
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05352b9618cc7bc50800000000000000
-      internalID: 6681033428423562064
+      spriteID: bd589a66c09b61980800000000000000
+      internalID: -8568457778112657957
       vertices: []
       indices: 
       edges: []
@@ -203,10 +227,10 @@ TextureImporter:
       name: Paradox-Sheet_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 278
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,8 +238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80d5ff485085c0600800000000000000
-      internalID: 435820044677504264
+      spriteID: 1e0cdfec174b9fc40800000000000000
+      internalID: 5546662816980517089
       vertices: []
       indices: 
       edges: []
@@ -224,10 +248,10 @@ TextureImporter:
       name: Paradox-Sheet_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
+        x: 417
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37bd450daeb2f4790800000000000000
-      internalID: -7543762563304727693
+      spriteID: 2a2b9e4508a241f50800000000000000
+      internalID: 6851147663806149282
       vertices: []
       indices: 
       edges: []
@@ -245,10 +269,10 @@ TextureImporter:
       name: Paradox-Sheet_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
+        x: 556
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,8 +280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 093d05db6d12fc000800000000000000
-      internalID: 58302526362014608
+      spriteID: c40460ef3ff3989e0800000000000000
+      internalID: -1618692273891557300
       vertices: []
       indices: 
       edges: []
@@ -266,10 +290,10 @@ TextureImporter:
       name: Paradox-Sheet_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
+        x: 695
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 549a14ccd9cdd3fb0800000000000000
-      internalID: -4666331068591134395
+      spriteID: 8195489df9504f6f0800000000000000
+      internalID: -651889861954610920
       vertices: []
       indices: 
       edges: []
@@ -287,10 +311,10 @@ TextureImporter:
       name: Paradox-Sheet_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
+        x: 834
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,8 +322,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0138eb28c242d3bd0800000000000000
-      internalID: -2648921232233299184
+      spriteID: 94b684387dbd3f970800000000000000
+      internalID: 8787609016596982601
       vertices: []
       indices: 
       edges: []
@@ -308,10 +332,10 @@ TextureImporter:
       name: Paradox-Sheet_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
+        x: 973
+        y: 130
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,8 +343,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c9b9bba060a22520800000000000000
-      internalID: 2675877465669876168
+      spriteID: 8eebf699013ebde50800000000000000
+      internalID: 6835306519898078952
       vertices: []
       indices: 
       edges: []
@@ -329,10 +353,10 @@ TextureImporter:
       name: Paradox-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,8 +364,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef3cdbbb7a4395da0800000000000000
-      internalID: -5955671137206811650
+      spriteID: 7a02d885b834b7f90800000000000000
+      internalID: -6954890933778440025
       vertices: []
       indices: 
       edges: []
@@ -350,10 +374,10 @@ TextureImporter:
       name: Paradox-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 139
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,8 +385,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: effdd69b9003f5ab0800000000000000
-      internalID: -5017238641543618562
+      spriteID: c4c3f6bf0e9dac4e0800000000000000
+      internalID: -1960515127452156852
       vertices: []
       indices: 
       edges: []
@@ -371,10 +395,10 @@ TextureImporter:
       name: Paradox-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 278
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,8 +406,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dffe71f3c4fe2ded0800000000000000
-      internalID: -2390585341425225731
+      spriteID: 78e7c533a658cc370800000000000000
+      internalID: 8344190900785413767
       vertices: []
       indices: 
       edges: []
@@ -392,10 +416,10 @@ TextureImporter:
       name: Paradox-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1408
+        x: 417
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,8 +427,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3420c6aa538d18340800000000000000
-      internalID: 4864406797540917827
+      spriteID: 864b823de90de3160800000000000000
+      internalID: 7007267450801140840
       vertices: []
       indices: 
       edges: []
@@ -413,10 +437,10 @@ TextureImporter:
       name: Paradox-Sheet_12
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 556
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,8 +448,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70cfc633b6510c730800000000000000
-      internalID: 4017234417782946823
+      spriteID: 58362de7e99d66d10800000000000000
+      internalID: 2118619949480174469
       vertices: []
       indices: 
       edges: []
@@ -434,10 +458,10 @@ TextureImporter:
       name: Paradox-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1664
+        x: 695
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,8 +469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b4676e5a655b0e0800000000000000
-      internalID: -2254800767892960497
+      spriteID: 648398dd911263040800000000000000
+      internalID: 4626922062144419910
       vertices: []
       indices: 
       edges: []
@@ -455,10 +479,10 @@ TextureImporter:
       name: Paradox-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1792
+        x: 834
         y: 0
-        width: 128
-        height: 128
+        width: 139.5
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,8 +490,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d809a81a4da2d8bb0800000000000000
-      internalID: -4932238924169178995
+      spriteID: 92cc49814616c8af0800000000000000
+      internalID: -392831984951047127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paradox-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 139.5
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad553be43ee20e820800000000000000
+      internalID: 2945405710113134042
       vertices: []
       indices: 
       edges: []

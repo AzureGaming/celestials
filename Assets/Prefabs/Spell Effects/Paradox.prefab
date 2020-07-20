@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 20753401040911407, guid: 6b2b990d18ee4344ab119ac6f039fe65,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dce88b03056493d4192589a171d99b9e, type: 2}
     - target: {fileID: 2715232851750620381, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65,7 +70,28 @@ PrefabInstance:
     - target: {fileID: 3402892627411027399, guid: 6b2b990d18ee4344ab119ac6f039fe65,
         type: 3}
       propertyPath: m_Name
-      value: Spell Effect
+      value: Paradox
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -817405780812726949, guid: 41e4957d273f94847b9134e04613ceb0,
+        type: 3}
+    - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.395
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b2b990d18ee4344ab119ac6f039fe65, type: 3}
