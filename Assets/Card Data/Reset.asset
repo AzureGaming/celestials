@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df63777e85c1195479ccc978781e90f3, type: 3}
-  m_Name: Time Golem
+  m_Name: Reset
   m_EditorClassIdentifier: 
-  name: Time Golem
-  description: descripiton
-  artwork: {fileID: 21300000, guid: 33fc60fbfec598a4788423e9bdd2817f, type: 3}
+  name: Reset
+  description: reset_description
+  artwork: {fileID: 21300000, guid: 7d7780ff7d328f94a9ba80c19886af9f, type: 3}
   manaCost: 1
   attack: 1
-  summonPrefab: {fileID: 8338209750071241178, guid: c7f189c9181dfb54ca7b35321a9cec86,
-    type: 3}
+  summonPrefab: {fileID: 0}
   range: 1
-  type: 0
+  type: 1
   movementSpeed: 1
   cardBase: 0

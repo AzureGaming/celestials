@@ -18,6 +18,10 @@ public class Summon : MonoBehaviour {
         controller.Walk();
     }
 
+    public virtual void Walk(Tile tile) {
+        controller.Walk(tile);
+    }
+
     public virtual void ExecuteAction() {
         controller.ExecuteAction();
     }
@@ -60,5 +64,9 @@ public class Summon : MonoBehaviour {
 
     public int GetOrder() {
         return controller.GetOrder();
+    }
+
+    public void ActivateReset() {
+        controller.ActivateReset();
     }
 }

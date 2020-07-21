@@ -2,26 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class March : CardEffect {
+public class Reset : CardEffect
+{
     BoardManager boardManager;
-    Card card;
+    // move a celestial back to beginning of lane
 
     private void Awake() {
-        card = GetComponent<Card>();
         boardManager = FindObjectOfType<BoardManager>();
     }
 
-    override public IEnumerator Apply() {
-        yield return StartCoroutine(MarchRoutine());
+    public override IEnumerator Apply() {
+        yield return StartCoroutine(ResetRoutine());
     }
 
-    IEnumerator MarchRoutine() {
-        boardManager.DetectMoveableSummons();
+    IEnumerator ResetRoutine() {
+        boardManager.DetectSummons();
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         Summon summon = boardManager.GetQueue()[0].GetSummon();
         boardManager.SetNeutral();
-        yield return StartCoroutine(summon.ActivateMarch());
-        boardManager.ClearQueue();
-        yield break;
+        summon.ActivateReset();
     }
 }

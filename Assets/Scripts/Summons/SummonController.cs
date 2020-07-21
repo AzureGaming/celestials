@@ -6,6 +6,7 @@ using UnityEngine;
 public class SummonController : MonoBehaviour {
     public GameObject barrierPrefab;
     public GameObject marchPrefab;
+    public GameObject resetPrefab;
     public Entity entity;
     protected bool attackRoutineRunning = false;
     protected bool movementRoutineRunning = false;
@@ -37,6 +38,10 @@ public class SummonController : MonoBehaviour {
 
     public void Walk() {
         StartCoroutine(WalkRoutine(entity.movementSpeed, GetId()));
+    }
+
+    public void Walk(Tile tile) {
+        StartCoroutine(WalkRoutine(tile, GetId()));
     }
 
     public void Attack() {
@@ -91,6 +96,14 @@ public class SummonController : MonoBehaviour {
         }
     }
 
+    public virtual IEnumerator WalkRoutine(Tile tile, int id) {
+        if (tile?.type == TileType.Boss) {
+            yield return StartCoroutine(DieRoutine(false));
+        } else {
+            yield return StartCoroutine(UpdatePositionRoutine(transform.position, tile));
+        }
+    }
+
     public IEnumerator TakeDamage() {
         if (hasBarrier) {
             GetComponentInChildren<BarrierEffect>().Deactivate();
@@ -110,6 +123,11 @@ public class SummonController : MonoBehaviour {
     public IEnumerator ActivateMarch() {
         marchPrefab.SetActive(true);
         yield return StartCoroutine(marchPrefab.GetComponent<MarchEffect>().Activate());
+    }
+
+    public IEnumerator ActivateReset() {
+        resetPrefab.SetActive(true);
+        yield return StartCoroutine(resetPrefab.GetComponent<ResetEffect>().Activate());
     }
 
     protected void SetParent(Tile parent) {
