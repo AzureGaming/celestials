@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum GameState {
     START, PLAYERTURN, ENEMYTURN, WIN, LOSE
 }
 
 public class TurnManager : MonoBehaviour {
+    public event EventHandler OnPlayerTurnStart;
+    public event EventHandler OnPlayerTurnEnd;
     public GameState state;
     public AttackQueueManager queueManager;
     Player player;
@@ -68,6 +71,7 @@ public class TurnManager : MonoBehaviour {
 
     IEnumerator StartPlayerTurn() {
         state = GameState.PLAYERTURN;
+        OnPlayerTurnStart?.Invoke(this, EventArgs.Empty);
         while (cardManager.GetCardsInHand().Length < 5) {
             yield return StartCoroutine(cardManager.DrawToHand());
         }
@@ -76,6 +80,7 @@ public class TurnManager : MonoBehaviour {
 
         SetWaitForPlayer(true);
         yield return new WaitUntil(() => !waitForPlayer);
+        OnPlayerTurnEnd?.Invoke(this, EventArgs.Empty);
         yield return StartCoroutine(StartEnemyTurn());
     }
 
