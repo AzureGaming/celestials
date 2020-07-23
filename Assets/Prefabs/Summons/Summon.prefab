@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrierPrefab: {fileID: 9086294496397449281}
   marchPrefab: {fileID: 1110650094083230273}
+  resetPrefab: {fileID: 5323481505687164083}
   entity: {fileID: 0}
 --- !u!114 &4379188117566988816
 MonoBehaviour:
@@ -144,6 +145,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2914019695513255076}
     m_Modifications:
+    - target: {fileID: 1755259366256223656, guid: 62044dd749e51a840aba76294aa599ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832791046031457114, guid: 62044dd749e51a840aba76294aa599ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8313910631401720543, guid: 62044dd749e51a840aba76294aa599ba,
         type: 3}
       propertyPath: m_Name
@@ -218,6 +229,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5889337365293003035}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5323481505687164083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1755259366256223656, guid: 62044dd749e51a840aba76294aa599ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 5889337365293003035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8821262208372570442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -225,6 +242,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2914019695513255076}
     m_Modifications:
+    - target: {fileID: 320436763254628619, guid: e5955fe04a8547d4a95e7079c5513a8b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3674678921658088811, guid: e5955fe04a8547d4a95e7079c5513a8b,
         type: 3}
       propertyPath: m_LocalPosition.x

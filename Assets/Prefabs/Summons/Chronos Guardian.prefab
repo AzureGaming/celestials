@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrierPrefab: {fileID: 63434233506440853}
   marchPrefab: {fileID: 8183480109262353557}
+  resetPrefab: {fileID: 0}
   entity: {fileID: 11400000, guid: b108be5ce623578468f768af3b7677e0, type: 2}
 --- !u!1001 &9149165642436017876
 PrefabInstance:
