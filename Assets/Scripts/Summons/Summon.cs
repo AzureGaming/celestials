@@ -18,6 +18,10 @@ public class Summon : MonoBehaviour {
         controller.Walk();
     }
 
+    public virtual void Walk(Tile tile) {
+        controller.Walk(tile);
+    }
+
     public virtual void ExecuteAction() {
         controller.ExecuteAction();
     }
@@ -52,6 +56,10 @@ public class Summon : MonoBehaviour {
 
     public IEnumerator ActivateMarch() {
         yield return StartCoroutine(controller.ActivateMarch());
+    }
+
+    public void ActivateReset() {
+        StartCoroutine(controller.ActivateReset());
     }
 
     public int GetId() {

@@ -16,6 +16,7 @@ MonoBehaviour:
     type: 3}
   marchPrefab: {fileID: 2228589767349008820, guid: e4c539590ef4b88459333ca5860dfbd3,
     type: 3}
+  resetPrefab: {fileID: 0}
   entity: {fileID: 11400000, guid: 30d3578d9ba6c6b43920012a2ec75984, type: 2}
   arrowPrefab: {fileID: 8952812741212013840, guid: 9a910eb8ad99cde4ca6116378c775f7e,
     type: 3}

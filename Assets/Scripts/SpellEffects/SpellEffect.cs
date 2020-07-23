@@ -10,7 +10,7 @@ public abstract class SpellEffect : MonoBehaviour {
     }
 
     public virtual IEnumerator Activate() {
-        animator.SetTrigger("Active");
+        GetComponent<Animator>().SetTrigger("Active");
         yield break;
     }
 
