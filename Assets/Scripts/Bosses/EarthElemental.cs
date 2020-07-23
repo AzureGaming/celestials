@@ -41,16 +41,6 @@ public class EarthElemental : Boss {
         base.Start();
     }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.T)) {
-            StartCoroutine(Attack());
-        }
-
-        if (Input.GetKeyDown(KeyCode.Y)) {
-            QueueAttack();
-        }
-    }
-
     public override IEnumerator RunTurnRoutine() {
         if (GetIsProtected()) {
             SetIsProtected(false);
@@ -63,6 +53,7 @@ public class EarthElemental : Boss {
         }
         yield return StartCoroutine(Attack());
         yield return new WaitUntil(() => DoneActions());
+        QueueAttack();
     }
 
     public override IEnumerator TakeDamage(int damage) {
