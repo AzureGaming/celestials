@@ -21,6 +21,8 @@ public class EarthElemental : Boss {
     public ThrowBoulderSkill rockThrow;
     public PebbleStormSkill pebbleStorm;
     public BoulderDropSkill boulderDrop;
+    public CrystalizeSkill crystalize;
+
     Summoner summoner;
     GameManager gameManager;
     BoardManager boardManager;
@@ -45,7 +47,7 @@ public class EarthElemental : Boss {
 
     public override IEnumerator RunTurnRoutine() {
         if (GetIsProtected()) {
-            SetIsProtected(false);
+            animator.SetBool("IsProtected", false);
         }
 
         if (spawnedBlockingCrystal) {
@@ -84,7 +86,7 @@ public class EarthElemental : Boss {
     }
 
     void QueueAttack() {
-        Moves randomAttack = Moves.BOULDERDROP;
+        Moves randomAttack = Moves.CRYSTALIZE;
 
         if (randomAttack == Moves.PEBBLESTORM) {
             pebbleStorm.QueueSkill();
@@ -94,6 +96,7 @@ public class EarthElemental : Boss {
             rockThrow.QueueSkill();
         } else if (randomAttack == Moves.CRYSTALBLOCK) {
         } else if (randomAttack == Moves.CRYSTALIZE) {
+            crystalize.QueueSkill();
         }
     }
 
@@ -113,12 +116,6 @@ public class EarthElemental : Boss {
         yield return new WaitUntil(() => !blockingCrystal.GetIsSpawning());
     }
 
-    IEnumerator Crystalize() {
-        animator.SetTrigger("Attack3");
-        yield return new WaitUntil(() => DoneActions());
-        SetIsProtected(true);
-    }
-
     bool DoneActions() {
         return attackRoutineRunning ? false : true;
     }
@@ -129,9 +126,5 @@ public class EarthElemental : Boss {
 
     bool GetIsProtected() {
         return animator.GetBool("IsProtected");
-    }
-
-    void SetIsProtected(bool value) {
-        animator.SetBool("IsProtected", value);
     }
 }

@@ -21,6 +21,7 @@ public class AttackQueueManager : MonoBehaviour {
     public ThrowBoulderSkill rockThrow;
     public PebbleStormSkill pebbleStorm;
     public BoulderDropSkill boulderDrop;
+    public CrystalizeSkill crystalize;
 
     public void Queue(AttackCommand command) {
         if (attackCommands.Count >= 2) {
@@ -53,6 +54,7 @@ public class AttackQueueManager : MonoBehaviour {
             yield return StartCoroutine(rockThrow.CastSkill(command));
         } else if (command.moveName == EarthElemental.Moves.CRYSTALBLOCK) {
         } else if (command.moveName == EarthElemental.Moves.CRYSTALIZE) {
+            yield return StartCoroutine(crystalize.CastSkill());
         } else {
             Debug.LogWarning("Unknown Attack processed");
         }
