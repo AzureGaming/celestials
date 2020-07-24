@@ -19,6 +19,7 @@ public class EarthElemental : Boss {
     public GameObject blockingCrystalPrefab;
     public AttackQueueManager attackQueueManager;
     public ThrowBoulderSkill rockThrow;
+    public PebbleStormSkill pebbleStorm;
     Summoner summoner;
     GameManager gameManager;
     BoardManager boardManager;
@@ -82,8 +83,10 @@ public class EarthElemental : Boss {
     }
 
     void QueueAttack() {
-        Moves randomAttack = Moves.ROCKTHROW;
+        Moves randomAttack = Moves.PEBBLESTORM;
+
         if (randomAttack == Moves.PEBBLESTORM) {
+            pebbleStorm.QueueSkill();
         } else if (randomAttack == Moves.BOULDERDROP) {
         } else if (randomAttack == Moves.ROCKTHROW) {
             rockThrow.QueueSkill();
@@ -95,15 +98,6 @@ public class EarthElemental : Boss {
     IEnumerator ExecuteNextCommand() {
         yield return StartCoroutine(attackQueueManager.ProcessNextAttack());
     }
-
-    IEnumerator PebbleStorm() {
-        animator.SetTrigger("Attack1");
-        cardManager.AddToDeck(Instantiate(pebbleStormCardPrefab).GetComponent<Card>());
-        cardManager.AddToDeck(Instantiate(pebbleStormCardPrefab).GetComponent<Card>());
-        yield return new WaitUntil(() => DoneActions());
-        yield return StartCoroutine(cardManager.DrawToHand());
-    }
-
 
     IEnumerator BoulderDrop() {
         animator.SetTrigger("Attack1");
