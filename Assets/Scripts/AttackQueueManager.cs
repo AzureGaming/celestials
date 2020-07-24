@@ -12,10 +12,14 @@ public class AttackQueueManager : MonoBehaviour {
             moveName = _moveName;
             coords = _coords;
         }
+        public AttackCommand(EarthElemental.Moves _moveName) {
+            moveName = _moveName;
+        }
     }
     public List<AttackCommand> attackCommands = new List<AttackCommand>();
     public BoardManager boardManager;
     public ThrowBoulderSkill rockThrow;
+    public PebbleStormSkill pebbleStorm;
 
     public void Queue(AttackCommand command) {
         if (attackCommands.Count >= 2) {
@@ -24,8 +28,10 @@ public class AttackQueueManager : MonoBehaviour {
         }
         if (attackCommands.Count == 0) {
             boardManager.ResetAllIndicators();
-            foreach (int[] coord in command.coords) {
-                boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+            if (command.coords != null) {
+                foreach (int[] coord in command.coords) {
+                    boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+                }
             }
         }
 
@@ -39,6 +45,7 @@ public class AttackQueueManager : MonoBehaviour {
             yield break;
         }
         if (command.moveName == EarthElemental.Moves.PEBBLESTORM) {
+            yield return StartCoroutine(pebbleStorm.CastSkill());
         } else if (command.moveName == EarthElemental.Moves.BOULDERDROP) {
         } else if (command.moveName == EarthElemental.Moves.ROCKTHROW) {
             yield return StartCoroutine(rockThrow.CastSkill(command));
@@ -90,8 +97,10 @@ public class AttackQueueManager : MonoBehaviour {
             Debug.LogWarning("Unknown Attack processed");
         }
 
-        foreach (int[] coord in command.coords) {
-            boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+        if (command.coords != null) {
+            foreach (int[] coord in command.coords) {
+                boardManager.GetTile(coord[0], coord[1]).SetAttackIndicator(true);
+            }
         }
     }
 }

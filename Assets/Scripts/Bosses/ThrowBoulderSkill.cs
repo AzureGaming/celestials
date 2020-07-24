@@ -31,7 +31,6 @@ public class ThrowBoulderSkill : MonoBehaviour {
         LoadTargets(command.coords);
         yield return StartCoroutine(ThrowBoulders());
         skillIndicators.ClearIndicator();
-        Debug.Log("Done");
     }
 
     public void QueueSkill() {
@@ -79,7 +78,6 @@ public class ThrowBoulderSkill : MonoBehaviour {
     }
 
     IEnumerator ThrowBoulders() {
-        Debug.Log("Throw boulders" + pendingAttacks.Count);
         foreach (Tile tile in pendingAttacks) {
             GameObject rock = Instantiate(rockPrefab, rockSpawner.transform);
             Summon summon = tile.GetSummon();
