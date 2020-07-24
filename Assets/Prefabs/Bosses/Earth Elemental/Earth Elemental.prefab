@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cc40ecca4075f4eae97f4c194431b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillIndicators: {fileID: 0}
+  skillIndicators: {fileID: -3958895877849751442}
   queueManager: {fileID: 0}
   animator: {fileID: 871585752063383360}
   pebbleCard: {fileID: 3338291003009719233, guid: 0b77d8aaeee329648b61f671e9c47c55,

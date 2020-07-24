@@ -784,6 +784,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591744059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 943954622501967811, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1933306719}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cc40ecca4075f4eae97f4c194431b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &608668191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,30 +1426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c00007189bf298428a254ff5b4d45da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1209732485 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -3958895877849751442, guid: 38d5f46779f5f9644aa6d561313c2d8c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1933306719}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c41793da6b228745a9699d439020692, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1209732488 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 943954622501967811, guid: 38d5f46779f5f9644aa6d561313c2d8c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1933306719}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54cc40ecca4075f4eae97f4c194431b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1245374936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardManager: {fileID: 468281726}
   rockThrow: {fileID: 2102707360}
-  pebbleStorm: {fileID: 1209732488}
+  pebbleStorm: {fileID: 591744059}
 --- !u!4 &1507855072
 Transform:
   m_ObjectHideFlags: 0
@@ -2017,11 +2005,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 943954622501967811, guid: 38d5f46779f5f9644aa6d561313c2d8c,
-        type: 3}
-      propertyPath: skillIndicators
-      value: 
-      objectReference: {fileID: 1209732485}
     - target: {fileID: 943954622501967811, guid: 38d5f46779f5f9644aa6d561313c2d8c,
         type: 3}
       propertyPath: queueManager
