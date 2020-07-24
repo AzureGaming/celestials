@@ -63,6 +63,7 @@ MonoBehaviour:
   attackQueueManager: {fileID: 0}
   rockThrow: {fileID: 1331957666442940799}
   pebbleStorm: {fileID: 943954622501967811}
+  boulderDrop: {fileID: 4654029292457520307}
 --- !u!114 &1331957666442940799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +84,23 @@ MonoBehaviour:
     type: 3}
   rockSpawner: {fileID: 3404168844083640509}
   isCasting: 0
+--- !u!114 &4654029292457520307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871585752063383361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be30bd7e17a2e8489db3e4662b86fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillIndicators: {fileID: -3958895877849751442}
+  queueManager: {fileID: 0}
+  animator: {fileID: 871585752063383360}
+  boulder: {fileID: 6899321150750685673, guid: 0f401d0dcf2b15a44a8644758eb2d2dd, type: 3}
+  boulderSpawner: {fileID: 4525091036098862344}
 --- !u!212 &5180265105706314667
 SpriteRenderer:
   m_ObjectHideFlags: 0

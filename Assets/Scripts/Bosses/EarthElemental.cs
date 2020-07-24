@@ -20,6 +20,7 @@ public class EarthElemental : Boss {
     public AttackQueueManager attackQueueManager;
     public ThrowBoulderSkill rockThrow;
     public PebbleStormSkill pebbleStorm;
+    public BoulderDropSkill boulderDrop;
     Summoner summoner;
     GameManager gameManager;
     BoardManager boardManager;
@@ -83,11 +84,12 @@ public class EarthElemental : Boss {
     }
 
     void QueueAttack() {
-        Moves randomAttack = Moves.PEBBLESTORM;
+        Moves randomAttack = Moves.BOULDERDROP;
 
         if (randomAttack == Moves.PEBBLESTORM) {
             pebbleStorm.QueueSkill();
         } else if (randomAttack == Moves.BOULDERDROP) {
+            boulderDrop.QueueSkill();
         } else if (randomAttack == Moves.ROCKTHROW) {
             rockThrow.QueueSkill();
         } else if (randomAttack == Moves.CRYSTALBLOCK) {
@@ -97,16 +99,6 @@ public class EarthElemental : Boss {
 
     IEnumerator ExecuteNextCommand() {
         yield return StartCoroutine(attackQueueManager.ProcessNextAttack());
-    }
-
-    IEnumerator BoulderDrop() {
-        animator.SetTrigger("Attack1");
-        gameManager.SetWaitForCompletion(true);
-        Instantiate(boulderDropPrefab, boulderSpawner.transform);
-        yield return new WaitUntil(() => DoneBoulderDrop());
-        yield return new WaitUntil(() => DoneActions());
-        summoner.TakeDamage(3);
-        yield break;
     }
 
     IEnumerator CrystalBlock() {
@@ -129,10 +121,6 @@ public class EarthElemental : Boss {
 
     bool DoneActions() {
         return attackRoutineRunning ? false : true;
-    }
-
-    bool DoneBoulderDrop() {
-        return !gameManager.GetWaitForCompletion();
     }
 
     bool DoneSpawningBlockingCrystal() {
