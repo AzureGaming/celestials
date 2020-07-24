@@ -22,6 +22,7 @@ public class AttackQueueManager : MonoBehaviour {
     public PebbleStormSkill pebbleStorm;
     public BoulderDropSkill boulderDrop;
     public CrystalizeSkill crystalize;
+    public CrystalBlockSkill crystalBlock;
 
     public void Queue(AttackCommand command) {
         if (attackCommands.Count >= 2) {
@@ -53,6 +54,7 @@ public class AttackQueueManager : MonoBehaviour {
         } else if (command.moveName == EarthElemental.Moves.ROCKTHROW) {
             yield return StartCoroutine(rockThrow.CastSkill(command));
         } else if (command.moveName == EarthElemental.Moves.CRYSTALBLOCK) {
+            yield return StartCoroutine(crystalBlock.CastSkill());
         } else if (command.moveName == EarthElemental.Moves.CRYSTALIZE) {
             yield return StartCoroutine(crystalize.CastSkill());
         } else {

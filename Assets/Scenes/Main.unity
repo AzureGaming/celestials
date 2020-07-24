@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1709,6 +1709,7 @@ MonoBehaviour:
   pebbleStorm: {fileID: 591744059}
   boulderDrop: {fileID: 1933306724}
   crystalize: {fileID: 1933306729}
+  crystalBlock: {fileID: 1933306721}
 --- !u!4 &1507855072
 Transform:
   m_ObjectHideFlags: 0
@@ -2017,6 +2018,11 @@ PrefabInstance:
       propertyPath: attackQueueManager
       value: 
       objectReference: {fileID: 1507855071}
+    - target: {fileID: 1129860820523223033, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+        type: 3}
+      propertyPath: crystalBlock
+      value: 
+      objectReference: {fileID: 1933306721}
     - target: {fileID: 1246897347163992479, guid: 38d5f46779f5f9644aa6d561313c2d8c,
         type: 3}
       propertyPath: m_SortingLayer
@@ -2028,6 +2034,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 468281726}
     - target: {fileID: 1331957666442940799, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+        type: 3}
+      propertyPath: queueManager
+      value: 
+      objectReference: {fileID: 1507855071}
+    - target: {fileID: 1518311477021838721, guid: 38d5f46779f5f9644aa6d561313c2d8c,
         type: 3}
       propertyPath: queueManager
       value: 
@@ -2049,6 +2060,18 @@ PrefabInstance:
       objectReference: {fileID: 1933306723}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5f46779f5f9644aa6d561313c2d8c, type: 3}
+--- !u!114 &1933306721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1518311477021838721, guid: 38d5f46779f5f9644aa6d561313c2d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1933306719}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d015da4b416ac4681346ac44cf9776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1933306723 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 871585752063383360, guid: 38d5f46779f5f9644aa6d561313c2d8c,
