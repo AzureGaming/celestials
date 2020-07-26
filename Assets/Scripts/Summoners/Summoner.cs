@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Summoner : MonoBehaviour {
+    Healthbar healthbar;
     SummonerController controller;
     SpriteRenderer spriteRenderer;
     Animator animator;
@@ -13,6 +14,7 @@ public class Summoner : MonoBehaviour {
         controller = GetComponent<SummonerController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        healthbar = GetComponentInChildren<Healthbar>();
     }
 
     public virtual void Start() {
@@ -43,6 +45,7 @@ public class Summoner : MonoBehaviour {
     public virtual IEnumerator TakeDamage(int damage) {
         animator.SetTrigger("isHurt");
         health -= damage;
+        healthbar.SetHealth(health);
         yield return StartCoroutine(FlashRed());
         if (health < 0) {
             yield return StartCoroutine(Die());

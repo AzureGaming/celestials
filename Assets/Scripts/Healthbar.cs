@@ -38,10 +38,10 @@ public class Healthbar : MonoBehaviour {
         healthValue.SetValue(health);
     }
 
-    public void TakeDamage(int value) {
-        health -= value;
-        UpdateSprites();
+    public void SetHealth(int value) {
+        health = value;
         healthValue.SetValue(health);
+        UpdateSprites();
     }
 
     void UpdateSprites() {

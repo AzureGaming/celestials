@@ -49,7 +49,6 @@ public class TurnManager : MonoBehaviour {
     }
 
     IEnumerator ResolveSummonTurn() {
-        Debug.Log("Summon turn");
         //Summon[] summonsOnBoard = board.GetSummons();
         //Summon[] summons = new Summon[summonsOnBoard.Length];
         //System.Array.Copy(summonsOnBoard, summons, summons.Length);
@@ -84,7 +83,6 @@ public class TurnManager : MonoBehaviour {
     }
 
     IEnumerator StartEnemyTurn() {
-        Debug.Log("Start enemy turn");
         state = GameState.ENEMYTURN;
         yield return StartCoroutine(boss.RunTurnRoutine());
         if (player.GetHealth() < 1) {
