@@ -75,7 +75,6 @@ public class TurnManager : MonoBehaviour {
         while (cardManager.GetCardsInHand().Length < 5) {
             yield return StartCoroutine(cardManager.DrawToHand());
         }
-        yield return StartCoroutine(player.GainMaxMana(1));
         yield return StartCoroutine(player.RefreshMana());
 
         SetWaitForPlayer(true);
