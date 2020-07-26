@@ -155,6 +155,10 @@ public class SummonController : MonoBehaviour {
         yield break;
     }
 
+    protected virtual IEnumerator Howl() {
+        yield break;
+    }
+
     protected virtual IEnumerator UpdatePositionRoutine(Vector3 currentPos, Tile tileToMoveTo) {
         movementRoutineRunning = true;
         animator.SetBool("isWalking", true);
