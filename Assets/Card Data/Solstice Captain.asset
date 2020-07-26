@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df63777e85c1195479ccc978781e90f3, type: 3}
+  m_Name: Solstice Captain
+  m_EditorClassIdentifier: 
+  name: Solstice Captain
+  description: description...
+  artwork: {fileID: 21300000, guid: d56e07234a8100d429b28e475e41f765, type: 3}
+  manaCost: 2
+  attack: 3
+  summonPrefab: {fileID: 7506908670924861769, guid: 72bdba06b1eba4248bf1e89c2d4d6b74,
+    type: 3}
+  range: 1
+  type: 0
+  movementSpeed: 1
+  cardBase: 0
