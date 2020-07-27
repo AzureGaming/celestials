@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5592324523187177930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7506908670924861769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e665a77e0ec26cb46817b4734cb0f0d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrierPrefab: {fileID: 9143551417334667608}
+  marchPrefab: {fileID: 1122725915375045464}
+  resetPrefab: {fileID: 5268548681778566570}
+  entity: {fileID: 11400000, guid: 32a0c986274f5ac418111b7b3131113f, type: 2}
 --- !u!1001 &71330979013968153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,5 +165,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Solstice Captain
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8789592534453370440, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 455001eb4ef0f6149a7118ff9bdae356, type: 3}
+--- !u!1 &7506908670924861769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 71330979013968153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9143551417334667608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9086294496397449281, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 71330979013968153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1122725915375045464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1110650094083230273, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 71330979013968153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5268548681778566570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5323481505687164083, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 71330979013968153}
+  m_PrefabAsset: {fileID: 0}

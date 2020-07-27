@@ -46,6 +46,10 @@ public class Summon : MonoBehaviour {
         return controller.DoneAttacking();
     }
 
+    public bool DoneAction() {
+        return controller.DoneAction();
+    }
+
     public int GetRange() {
         return controller.GetRange();
     }
@@ -68,5 +72,9 @@ public class Summon : MonoBehaviour {
 
     public int GetOrder() {
         return controller.GetOrder();
+    }
+
+    public void SetAttack(int value) {
+        controller.attack = value;
     }
 }

@@ -7,11 +7,17 @@ public class SolsticeCaptainController : SummonController {
     Hand hand;
     int HOWL_DAMAGE = 2;
 
-    private void Awake() {
+    protected override void Awake() {
+        base.Awake();
         hand = FindObjectOfType<Hand>();
     }
 
-    protected override IEnumerator Howl() {
+    public override void ExecuteAction() {
+        base.ExecuteAction();
+        StartCoroutine(Howl());
+    }
+
+    IEnumerator Howl() {
         // give random celestial in hand +2 damage
         Card[] cards = hand.GetCards();
         bool isValid = cards.Any(card => card.GetType() == CardType.Summon);
@@ -27,5 +33,6 @@ public class SolsticeCaptainController : SummonController {
             }
         }
         randomCard.AddAttack(HOWL_DAMAGE);
+        actionRoutineRunning = false;
     }
 }

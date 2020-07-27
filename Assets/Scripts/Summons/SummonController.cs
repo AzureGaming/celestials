@@ -10,6 +10,7 @@ public class SummonController : MonoBehaviour {
     public Entity entity;
     protected bool attackRoutineRunning = false;
     protected bool movementRoutineRunning = false;
+    protected bool actionRoutineRunning = false;
     protected bool hasBarrier = false;
     protected Animator animator;
     protected BoardManager boardManager;
@@ -21,8 +22,9 @@ public class SummonController : MonoBehaviour {
     protected Nullable<int> id;
     protected int order;
     protected Boss boss;
+    public int attack;
 
-    private void Awake() {
+    protected virtual void Awake() {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         summon = GetComponent<Summon>();
@@ -61,7 +63,7 @@ public class SummonController : MonoBehaviour {
     }
 
     public virtual void ExecuteAction() {
-
+        actionRoutineRunning = true;
     }
 
     void SetOrder(int value) {
@@ -93,6 +95,10 @@ public class SummonController : MonoBehaviour {
 
     public bool DoneAttacking() {
         return !attackRoutineRunning ? true : false;
+    }
+
+    public bool DoneAction() {
+        return !actionRoutineRunning ? true : false;
     }
 
     public virtual IEnumerator WalkRoutine(int tiles, int id) {
@@ -155,10 +161,6 @@ public class SummonController : MonoBehaviour {
         yield break;
     }
 
-    protected virtual IEnumerator Howl() {
-        yield break;
-    }
-
     protected virtual IEnumerator UpdatePositionRoutine(Vector3 currentPos, Tile tileToMoveTo) {
         movementRoutineRunning = true;
         animator.SetBool("isWalking", true);
@@ -185,7 +187,7 @@ public class SummonController : MonoBehaviour {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
             yield return new WaitUntil(() => !attackRoutineRunning);
-            yield return StartCoroutine(boss.TakeDamage(entity.attack));
+            yield return StartCoroutine(boss.TakeDamage(attack));
         }
     }
 

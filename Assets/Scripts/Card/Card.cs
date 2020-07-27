@@ -58,7 +58,9 @@ public class Card : MonoBehaviour {
         if (tile.GetComponentInChildren<Summon>()) {
             Debug.LogWarning("Overwriting summon at column, row: " + tile.column + " " + tile.row);
         }
-        Instantiate(entity.summonPrefab, tile.transform);
+        Summon summon = Instantiate(entity.summonPrefab, tile.transform).GetComponent<Summon>();
+        summon.SetAttack(attack);
+        summon.ExecuteAction();
     }
 
     public new CardType GetType() {
@@ -80,5 +82,6 @@ public class Card : MonoBehaviour {
 
     public void AddAttack(int value) {
         attack += value;
+        attackDisplay.text = attack.ToString();
     }
 }
