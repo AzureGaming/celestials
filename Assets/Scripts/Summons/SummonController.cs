@@ -105,6 +105,8 @@ public class SummonController : MonoBehaviour {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
         if (tileToMoveTo?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine(false));
+        } else if (tileToMoveTo.GetComponentInChildren<BlockingCrystal>()) {
+            yield break;
         } else {
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
         }
