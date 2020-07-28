@@ -41,8 +41,8 @@ public class Player : MonoBehaviour {
         for (int i = numberOfCardsHeld; i < handLimit; i++) {
             yield return StartCoroutine(cardManager.DrawToHand());
         }
-        yield return StartCoroutine(GainMaxMana(1));
-        yield return StartCoroutine(GainMana(1));
+        yield return StartCoroutine(GainMaxMana(3));
+        yield return StartCoroutine(GainMana(3));
         yield break;
     }
 

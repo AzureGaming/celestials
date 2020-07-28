@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &236345514262739451
+--- !u!1001 &1737476628331270995
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,7 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: entity
       value: 
-      objectReference: {fileID: 11400000, guid: 30d3578d9ba6c6b43920012a2ec75984,
+      objectReference: {fileID: 11400000, guid: 32a0c986274f5ac418111b7b3131113f,
         type: 2}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
@@ -71,22 +71,22 @@ PrefabInstance:
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -286.35
+      value: 190.4
       objectReference: {fileID: 0}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000012398
+      value: -30.1
       objectReference: {fileID: 0}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 431.3
+      value: 380.8
       objectReference: {fileID: 0}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 565
+      value: 489.7
       objectReference: {fileID: 0}
     - target: {fileID: 1672890979875637132, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
@@ -121,57 +121,7 @@ PrefabInstance:
     - target: {fileID: 1672890979875637135, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
         type: 3}
       propertyPath: m_Name
-      value: Celestial Ranger Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 1672890981284780585, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1672890981284780585, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4033390533801175160, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4033390533801175160, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5568228834756998318, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5568228834756998318, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5803844128550374305, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5803844128550374305, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734755106560257764, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734755106560257764, guid: 97662ae0c35ee9040ae654d5fd0a2aa4,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
+      value: Solstice Captain Card
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97662ae0c35ee9040ae654d5fd0a2aa4, type: 3}

@@ -287,7 +287,7 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator StageRoutine(int stageIndex) {
-        yield return StartCoroutine(ResolveAbilitiesForStage(stageIndex));
+        //yield return StartCoroutine(ResolveAbilitiesForStage(stageIndex));
         yield return StartCoroutine(ResolveAttacksForStage(stageIndex));
         yield return StartCoroutine(ResolveMovementForStage(stageIndex));
     }
@@ -327,6 +327,23 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveAbilitiesForStage(int stageIndex) {
-        yield break;
+        Tile[] tilesInStage = new Tile[stageLimit];
+        Array.Copy(grid[stageIndex], tilesInStage, stageLimit);
+        System.Array.Sort(tilesInStage, (tileX, tileY) => {
+            Summon summonX = tileX.GetComponentInChildren<Summon>();
+            Summon summonY = tileY.GetComponentInChildren<Summon>();
+            int x, y;
+            x = summonX ? summonX.GetOrder() : -1;
+            y = summonY ? summonY.GetOrder() : -1;
+            return x - y;
+        });
+
+        foreach (Tile tile in tilesInStage) {
+            Summon summon = tile.GetComponentInChildren<Summon>();
+            if (summon != null) {
+                summon.ExecuteAction();
+                yield return new WaitUntil(() => summon.DoneAction());
+            }
+        }
     }
 }

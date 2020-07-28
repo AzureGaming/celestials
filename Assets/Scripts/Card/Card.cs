@@ -19,6 +19,7 @@ public class Card : MonoBehaviour {
     Vector3 startingScale;
     CardEffect effect;
     int manaCost;
+    int attack;
 
     private void Awake() {
         imageDisplay = transform.Find("Artwork").GetComponent<Image>();
@@ -37,6 +38,7 @@ public class Card : MonoBehaviour {
         manaDisplay.text = entity.manaCost.ToString();
         manaCost = entity.manaCost;
         attackDisplay.text = entity.attack.ToString();
+        attack = entity.attack;
         descriptionDisplay.text = entity.description;
         if (entity.cardBase == CardBase.Basic) {
             cardFrame.sprite = basicFrame;
@@ -56,7 +58,9 @@ public class Card : MonoBehaviour {
         if (tile.GetComponentInChildren<Summon>()) {
             Debug.LogWarning("Overwriting summon at column, row: " + tile.column + " " + tile.row);
         }
-        Instantiate(entity.summonPrefab, tile.transform);
+        Summon summon = Instantiate(entity.summonPrefab, tile.transform).GetComponent<Summon>();
+        summon.SetAttack(attack);
+        summon.ExecuteAction();
     }
 
     public new CardType GetType() {
@@ -74,5 +78,10 @@ public class Card : MonoBehaviour {
     public void SetManaCost(int value) {
         manaCost = value;
         manaDisplay.text = value.ToString();
+    }
+
+    public void AddAttack(int value) {
+        attack += value;
+        attackDisplay.text = attack.ToString();
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour {
     public GameObject projectileCollision;
+    public Healthbar healthBar;
 
     protected int health;
     protected SpriteRenderer spriteRenderer;
@@ -41,6 +42,7 @@ public class Boss : MonoBehaviour {
 
     public virtual IEnumerator TakeDamage(int damage) {
         health -= damage;
+        healthBar.SetHealth(health);
         yield return StartCoroutine(FlashRed());
         if (health < 0) {
             Debug.Log("Implement win scneario");
