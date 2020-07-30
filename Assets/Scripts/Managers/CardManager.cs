@@ -21,8 +21,9 @@ public class CardManager : MonoBehaviour {
     }
 
     public IEnumerator DrawToHand() {
-        Card card = DrawCard();
-        GameObject instance = Instantiate(card.gameObject);
+        //Card card = DrawCard();
+        //GameObject instance = Instantiate(card.gameObject);
+        GameObject instance = DrawCard();
         instance.SetActive(true);
         instance.transform.SetParent(hand.transform);
         instance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
@@ -45,12 +46,12 @@ public class CardManager : MonoBehaviour {
         Destroy(card.gameObject);
     }
 
-    public Card DrawCard() {
+    public GameObject DrawCard() {
         if (cardQueue.GetComponentsInChildren<Transform>().Length > 1) {
             Card card = cardQueue.transform.GetChild(0).GetComponent<Card>();
-            Card newCard = Instantiate(card.gameObject).GetComponent<Card>();
-            Destroy(card.gameObject);
-            return newCard;
+            //Card newCard = Instantiate(card.gameObject).GetComponent<Card>();
+            //Destroy(card.gameObject);
+            return cardQueue.transform.GetChild(0).gameObject;
         }
         return deck.RemoveCard();
     }
@@ -66,20 +67,5 @@ public class CardManager : MonoBehaviour {
     public void QueueFutureSightCard(Card card) {
         GameObject cardObj = Instantiate(card.gameObject);
         cardObj.transform.SetParent(cardQueue.transform);
-    }
-
-    GameObject CompileCard(Entity data) {
-        return cardPrefab;
-    }
-
-    GameObject GetCardPrefab() {
-        // Will break if no valid cards
-        int randomIndex = Random.Range(0, cards.Length);
-        return cards[randomIndex].gameObject;
-        //if (!hand.handCardIds.Contains(cards[randomIndex].id)) {
-        //    return cards[randomIndex];
-        //}
-        //return GetValidCardData();
-        //return cards[1];
     }
 }

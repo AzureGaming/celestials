@@ -49,8 +49,9 @@ public class FutureSight : CardEffect {
         hand.enabled = false;
         // view the top 3 cards on the deck
         for (int i = 0; i < numberOfCards; i++) {
-            Card card = cardManager.DrawCard();
-            GameObject instance = Instantiate(card.gameObject);
+            //Card card = cardManager.DrawCard();
+            //GameObject instance = Instantiate(card.gameObject);
+            GameObject instance = cardManager.DrawCard();
             instance.transform.SetParent(displayArea.transform.GetChild(0).transform);
             instance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         }
