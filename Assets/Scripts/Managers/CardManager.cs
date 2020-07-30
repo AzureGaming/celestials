@@ -9,6 +9,7 @@ public class CardManager : MonoBehaviour {
     Hand hand;
     List<Card> discardPile = new List<Card>();
     Mulligan mulligan;
+    GameObject cardQueue;
 
     private void Awake() {
         hand = FindObjectOfType<Hand>();
@@ -16,16 +17,13 @@ public class CardManager : MonoBehaviour {
         Debug.Log("Loaded cards" + cards.Length);
         deck = FindObjectOfType<Deck>();
         mulligan = FindObjectOfType<Mulligan>();
-    }
-
-    public GameObject CreateCard() {
-        GameObject cardPrefab = Instantiate(GetCardPrefab(), transform);
-        return cardPrefab;
+        cardQueue = FindObjectOfType<UIManager>().futureSightQueue;
     }
 
     public IEnumerator DrawToHand() {
         Card card = DrawCard();
         GameObject instance = Instantiate(card.gameObject);
+        instance.SetActive(true);
         instance.transform.SetParent(hand.transform);
         instance.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
         yield break;
@@ -48,6 +46,12 @@ public class CardManager : MonoBehaviour {
     }
 
     public Card DrawCard() {
+        if (cardQueue.GetComponentsInChildren<Transform>().Length > 1) {
+            Card card = cardQueue.transform.GetChild(0).GetComponent<Card>();
+            Card newCard = Instantiate(card.gameObject).GetComponent<Card>();
+            Destroy(card.gameObject);
+            return newCard;
+        }
         return deck.RemoveCard();
     }
 
@@ -57,6 +61,11 @@ public class CardManager : MonoBehaviour {
 
     public void ClearDiscardPile() {
         discardPile.Clear();
+    }
+
+    public void QueueFutureSightCard(Card card) {
+        GameObject cardObj = Instantiate(card.gameObject);
+        cardObj.transform.SetParent(cardQueue.transform);
     }
 
     GameObject CompileCard(Entity data) {
