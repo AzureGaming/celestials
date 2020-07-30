@@ -35,7 +35,6 @@ public class Deck : MonoBehaviour {
         for (int i = 0; i < 30; i++) {
         int randomIndex = Random.Range(0, loadedCards.Length);
         Card randomCard = loadedCards[randomIndex];
-            //AddCard(Instantiate(randomCard));
             AddCard(randomCard);
         }
         display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);

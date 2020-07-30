@@ -11,6 +11,7 @@ TagManager:
   - '[Tile] Summon'
   - '[Tile] Boss'
   - Barrier
+  - FutureSightDisplay
   layers:
   - Default
   - TransparentFX
