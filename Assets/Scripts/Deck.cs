@@ -20,14 +20,14 @@ public class Deck : MonoBehaviour {
         display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);
     }
 
-    public Card RemoveCard() {
+    public GameObject RemoveCard() {
         if (cards.Count < 0) {
             Reload();
         }
         Card cardToRemove = cards.SkipWhile(card => !card).Skip(1).DefaultIfEmpty(cards[0]).FirstOrDefault();
         cards.Remove(cardToRemove);
         display.GetComponent<CardsInDeck>().UpdateText(cards.Count, deckLimit);
-        return cardToRemove;
+        return Instantiate(cardToRemove.gameObject);
     }
 
     void FillDeck() {
