@@ -10,7 +10,8 @@ public class SummonController : MonoBehaviour {
     public Entity entity;
     protected bool attackRoutineRunning = false;
     protected bool movementRoutineRunning = false;
-    protected bool actionRoutineRunning = false;
+    protected bool howlRoutineRunning = false;
+    protected bool powerRoutineRunning = false;
     protected bool hasBarrier = false;
     protected Animator animator;
     protected BoardManager boardManager;
@@ -62,8 +63,12 @@ public class SummonController : MonoBehaviour {
         yield return StartCoroutine(DieRoutine(dyingWish));
     }
 
-    public virtual void ExecuteAction() {
-        actionRoutineRunning = true;
+    public virtual void UseHowl() {
+        howlRoutineRunning = true;
+    }
+
+    public virtual void UsePower() {
+        powerRoutineRunning = true;
     }
 
     void SetOrder(int value) {
@@ -97,8 +102,12 @@ public class SummonController : MonoBehaviour {
         return !attackRoutineRunning ? true : false;
     }
 
-    public bool DoneAction() {
-        return !actionRoutineRunning ? true : false;
+    public bool DoneHowl() {
+        return !howlRoutineRunning ? true : false;
+    }
+
+    public bool DonePower() {
+        return !powerRoutineRunning ? true : false;
     }
 
     public virtual IEnumerator WalkRoutine(int tiles, int id) {

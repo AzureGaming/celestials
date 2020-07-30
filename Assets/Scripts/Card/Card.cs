@@ -60,7 +60,7 @@ public class Card : MonoBehaviour {
         }
         Summon summon = Instantiate(entity.summonPrefab, tile.transform).GetComponent<Summon>();
         summon.SetAttack(attack);
-        summon.ExecuteAction();
+        summon.UseHowl();
     }
 
     public new CardType GetType() {

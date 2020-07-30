@@ -22,8 +22,12 @@ public class Summon : MonoBehaviour {
         controller.Walk(tile);
     }
 
-    public virtual void ExecuteAction() {
-        controller.ExecuteAction();
+    public virtual void UseHowl() {
+        controller.UseHowl();
+    }
+
+    public virtual void UsePower() {
+        controller.UsePower();
     }
 
     public virtual void Attack() {
@@ -46,8 +50,12 @@ public class Summon : MonoBehaviour {
         return controller.DoneAttacking();
     }
 
-    public bool DoneAction() {
-        return controller.DoneAction();
+    public bool DoneHowl() {
+        return controller.DoneHowl();
+    }
+
+    public bool DonePower() {
+        return controller.DonePower();
     }
 
     public int GetRange() {

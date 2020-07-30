@@ -12,8 +12,8 @@ public class SolsticeCaptainController : SummonController {
         hand = FindObjectOfType<Hand>();
     }
 
-    public override void ExecuteAction() {
-        base.ExecuteAction();
+    public override void UseHowl() {
+        base.UseHowl();
         StartCoroutine(Howl());
     }
 
@@ -33,6 +33,6 @@ public class SolsticeCaptainController : SummonController {
             }
         }
         randomCard.AddAttack(HOWL_DAMAGE);
-        actionRoutineRunning = false;
+        howlRoutineRunning = false;
     }
 }
