@@ -11,6 +11,7 @@ public class OracleController : SummonController {
     }
 
     public override void UsePower() {
+        powerRoutineRunning = true;
         StartCoroutine(PowerRoutine());
     }
 

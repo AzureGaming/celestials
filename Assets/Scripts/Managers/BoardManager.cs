@@ -237,6 +237,7 @@ public class BoardManager : MonoBehaviour {
 
     public IEnumerator ResolveStagesRoutine() {
         for (int i = stageLimit - 1; i >= 0; i--) {
+            Debug.Log("resolve stage" + i);
             yield return StartCoroutine(StageRoutine(i));
         }
     }
@@ -293,6 +294,7 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveMovementForStage(int stageIndex) {
+        Debug.Log("Resolve movement");
         for (int rowIndex = 0; rowIndex < rowLimit; rowIndex++) {
             Tile tile = grid[stageIndex][rowIndex];
             Summon summon = tile.GetComponentInChildren<Summon>();
@@ -320,6 +322,7 @@ public class BoardManager : MonoBehaviour {
         foreach (Tile tile in tilesInStage) {
             Summon summon = tile.GetComponentInChildren<Summon>();
             if (summon != null) {
+                Debug.Log("ATTACK");
                 summon.Attack();
                 yield return new WaitUntil(() => summon.DoneAttacking());
             }

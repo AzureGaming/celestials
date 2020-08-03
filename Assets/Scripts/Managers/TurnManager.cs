@@ -62,8 +62,9 @@ public class TurnManager : MonoBehaviour {
         //        yield break; 
         //    }
         //}
-
+        Debug.Log("Resolve");
         yield return StartCoroutine(boardManager.ResolveStagesRoutine());
+        Debug.Log("done Resolve");
         queueManager.RefreshIndicators(true);
         yield return StartCoroutine(StartPlayerTurn());
     }

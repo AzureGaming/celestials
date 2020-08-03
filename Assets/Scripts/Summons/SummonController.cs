@@ -68,7 +68,7 @@ public class SummonController : MonoBehaviour {
     }
 
     public virtual void UsePower() {
-        powerRoutineRunning = true;
+        //powerRoutineRunning = true;
     }
 
     void SetOrder(int value) {
