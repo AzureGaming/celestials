@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class SummonerController : MonoBehaviour {
     public GameObject flyingCard;
+    public StasisEffect stasis;
     Animator animator;
     bool routineRunning = false;
     bool doneAnimation;
@@ -23,6 +24,11 @@ public class SummonerController : MonoBehaviour {
     public void CastSpell() {
         animator.SetTrigger("isCasting");
         doneAnimation = false;
+    }
+
+    public IEnumerator CastStasis() {
+        yield return StartCoroutine(stasis.Activate());
+        yield return new WaitUntil(() => stasis.IsDone());
     }
 
     public void SetRoutineRunning(bool value) {

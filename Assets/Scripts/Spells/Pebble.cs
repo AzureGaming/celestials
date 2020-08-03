@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PebbleEffect : CardEffect {
+public class Pebble : CardEffect {
     CardManager cardManager;
 
     private void Awake() {

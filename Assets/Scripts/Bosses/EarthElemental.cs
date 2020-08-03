@@ -46,6 +46,11 @@ public class EarthElemental : Boss {
     }
 
     public override IEnumerator RunTurnRoutine() {
+        if (skipTurn) {
+            skipTurn = false;
+            yield break;
+        }
+
         if (GetIsProtected()) {
             animator.SetBool("IsProtected", false);
         }

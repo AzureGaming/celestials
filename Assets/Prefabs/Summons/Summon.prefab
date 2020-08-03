@@ -126,6 +126,7 @@ MonoBehaviour:
   marchPrefab: {fileID: 1110650094083230273}
   resetPrefab: {fileID: 5323481505687164083}
   entity: {fileID: 0}
+  attack: 0
 --- !u!114 &4379188117566988816
 MonoBehaviour:
   m_ObjectHideFlags: 0

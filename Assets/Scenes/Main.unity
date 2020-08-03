@@ -2305,12 +2305,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4257279918883667840, guid: 8a97e7669fa04c541931ed14398e3a12,
-        type: 3}
-      propertyPath: flyingCard
-      value: 
-      objectReference: {fileID: 2391905179685243025, guid: e3b81e5384660174daf9231012fef544,
-        type: 3}
     - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
       propertyPath: sprites.Array.size

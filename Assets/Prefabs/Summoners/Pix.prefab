@@ -86,6 +86,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pix
       objectReference: {fileID: 0}
+    - target: {fileID: 3628966735373811835, guid: cc1b3876b20026e4e808a2d130315c14,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714186695815101859, guid: cc1b3876b20026e4e808a2d130315c14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7356319196301297594, guid: cc1b3876b20026e4e808a2d130315c14,
         type: 3}
       propertyPath: m_Sprite

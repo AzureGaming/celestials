@@ -10,6 +10,7 @@ public class Boss : MonoBehaviour {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
     protected Color color;
+    protected bool skipTurn = false;
 
     public virtual void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -38,6 +39,11 @@ public class Boss : MonoBehaviour {
     }
 
     public virtual void Initialize() {
+    }
+
+    public void SkipTurn() {
+        skipTurn = true;
+        Debug.Log("Skip turn");
     }
 
     public virtual IEnumerator TakeDamage(int damage) {

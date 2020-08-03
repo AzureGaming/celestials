@@ -29,6 +29,10 @@ public class Summoner : MonoBehaviour {
         controller.CastSpell();
     }
 
+    public IEnumerator CastStasis() {
+        yield return StartCoroutine(controller.CastStasis());
+    }
+
     public bool GetAnimationDone() {
         return controller.GetDoneAnimation();
     }
