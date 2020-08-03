@@ -15,7 +15,6 @@ public class Summon : MonoBehaviour {
     }
 
     public virtual void Walk() {
-        Debug.Log("Hello");
         controller.Walk();
     }
 

@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Accelerate : CardEffect {
     BoardManager boardManager;
-    Summoner summoner;
 
     private void Awake() {
         boardManager = FindObjectOfType<BoardManager>();
-        summoner = FindObjectOfType<Summoner>();
     }
 
     public override IEnumerator Apply() {
