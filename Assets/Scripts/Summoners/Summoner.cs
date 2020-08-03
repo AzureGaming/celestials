@@ -33,6 +33,10 @@ public class Summoner : MonoBehaviour {
         yield return StartCoroutine(controller.CastStasis());
     }
 
+    public IEnumerator CastStockPile() {
+        yield return StartCoroutine(controller.CastStockPile());
+    }
+
     public bool GetAnimationDone() {
         return controller.GetDoneAnimation();
     }

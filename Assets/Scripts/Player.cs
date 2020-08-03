@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
     int mana;
     int maxMana;
     int numberOfCardsHeld;
+    int manaReserve = 0;
 
     private void Awake() {
         deck = GetComponentInChildren<Deck>();
@@ -82,7 +83,13 @@ public class Player : MonoBehaviour {
 
     public IEnumerator RefreshMana() {
         mana = maxMana;
+        mana += manaReserve;
+        SetReserveMana(0);
         uiManager.SetMana(mana, maxMana);
         yield break;
+    }
+
+    public void SetReserveMana(int value) {
+        manaReserve = value;
     }
 }

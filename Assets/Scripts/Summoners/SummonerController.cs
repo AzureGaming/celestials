@@ -6,6 +6,7 @@ using UnityEngine;
 public class SummonerController : MonoBehaviour {
     public GameObject flyingCard;
     public StasisEffect stasis;
+    public StockPileEffect stockpile;
     Animator animator;
     bool routineRunning = false;
     bool doneAnimation;
@@ -29,6 +30,11 @@ public class SummonerController : MonoBehaviour {
     public IEnumerator CastStasis() {
         yield return StartCoroutine(stasis.Activate());
         yield return new WaitUntil(() => stasis.IsDone());
+    }
+
+    public IEnumerator CastStockPile() {
+        yield return StartCoroutine(stockpile.Activate());
+        yield return new WaitUntil(() => stockpile.IsDone());
     }
 
     public void SetRoutineRunning(bool value) {
