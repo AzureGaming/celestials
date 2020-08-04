@@ -23,6 +23,7 @@ public class SummonController : MonoBehaviour {
     protected Nullable<int> id;
     protected int order;
     protected Boss boss;
+    protected bool doneCasting;
     public int attack;
 
     protected virtual void Awake() {
@@ -92,6 +93,10 @@ public class SummonController : MonoBehaviour {
 
     public virtual void OnAttackAnimationEnd() {
         attackRoutineRunning = false;
+    }
+
+    public void OnCastAnimationEnd() {
+        doneCasting = true;
     }
 
     public bool DoneMoving() {

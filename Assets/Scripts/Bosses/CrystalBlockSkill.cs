@@ -43,7 +43,6 @@ public class CrystalBlockSkill : MonoBehaviour {
         List<Tile> validTiles = boardManager.GetSummonableTiles();
         int randomIndex = Random.Range(0, validTiles.Count);
         Tile tileToBlock = validTiles[randomIndex];
-        Debug.Log(tileToBlock);
         instance = Instantiate(crystal, tileToBlock.transform);
         BlockingCrystal blockingCrystal = instance.GetComponent<BlockingCrystal>();
         yield return new WaitUntil(() => !blockingCrystal.GetIsSpawning());

@@ -258,7 +258,6 @@ public class BoardManager : MonoBehaviour {
         if (!summon) {
             yield break;
         }
-        Debug.Log("Run routines" + summon);
         yield return StartCoroutine(ResolveAbilityForSummon(summon));
         yield return StartCoroutine(ResolveAttackForSummon(summon));
         yield return StartCoroutine(ResolveMovementForSummon(summon));
@@ -309,11 +308,11 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
-    IEnumerator StageRoutine(int stageIndex) {
-        yield return StartCoroutine(ResolveAbilitiesForStage(stageIndex));
-        yield return StartCoroutine(ResolveAttacksForStage(stageIndex));
-        yield return StartCoroutine(ResolveMovementForStage(stageIndex));
-    }
+    //IEnumerator StageRoutine(int stageIndex) {
+    //    yield return StartCoroutine(ResolveAbilitiesForStage(stageIndex));
+    //    yield return StartCoroutine(ResolveAttacksForStage(stageIndex));
+    //    yield return StartCoroutine(ResolveMovementForStage(stageIndex));
+    //}
 
     IEnumerator ResolveMovementForSummon(Summon summon) {
         summon.Walk();
@@ -365,6 +364,7 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveAbilitiesForStage(int stageIndex) {
+        Debug.Log("Resolve abilities for stage" + stageIndex);
         Tile[] tilesInStage = new Tile[stageLimit];
         Array.Copy(grid[stageIndex], tilesInStage, stageLimit);
         System.Array.Sort(tilesInStage, (tileX, tileY) => {
