@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Accelerate
   m_EditorClassIdentifier: 
   name: Accelerate
-  description: asdf
+  description: fdas
   artwork: {fileID: 21300000, guid: 128b19a40a235354c87c2796087fe87e, type: 3}
-  manaCost: 2
+  manaCost: 22
   attack: 0
   summonPrefab: {fileID: 0}
   range: 0
