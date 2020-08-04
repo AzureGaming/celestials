@@ -178,6 +178,9 @@ public class BoardManager : MonoBehaviour {
                 summons.Add(tile.GetSummon());
             }
         }
+        if (summons.Count < 1) {
+            return null;
+        }
         return summons[UnityEngine.Random.Range(0, summons.Count)];
     }
 
