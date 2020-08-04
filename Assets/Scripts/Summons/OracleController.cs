@@ -17,6 +17,9 @@ public class OracleController : SummonController {
 
     IEnumerator PowerRoutine() {
         // draw card
+        animator.SetTrigger("isCasting");
+        doneCasting = false;
+        yield return new WaitUntil(() => doneCasting);
         yield return StartCoroutine(cardManager.DrawToHand());
         powerRoutineRunning = false;
     }
