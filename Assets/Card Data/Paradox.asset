@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Paradox
   m_EditorClassIdentifier: 
   name: Paradox
-  description: description
+  description: Decrease cost of Celestials in your hand by 1 mana
   artwork: {fileID: 21300000, guid: 9e1caa252d3125c4abd09b7e2b88ae1c, type: 3}
   manaCost: 2
   attack: 1

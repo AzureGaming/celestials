@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enforcer
   m_EditorClassIdentifier: 
   name: Enforcer
-  description: 
+  description: '<b> Howl: </b> Move a Celestial forward one stage '
   artwork: {fileID: 21300000, guid: 79df4028c1d7ba74ea3ffa1f8fb92d51, type: 3}
   manaCost: 2
   attack: 2

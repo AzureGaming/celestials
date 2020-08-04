@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Clock Master
   m_EditorClassIdentifier: 
   name: Clock Master
-  description: asdf
+  description: '<b> Power: </b> Adjacent Celestials in the same stage move forward
+    one '
   artwork: {fileID: 21300000, guid: d434eb047923d8f468f8a88fc7174a19, type: 3}
   manaCost: 1
   attack: 1
@@ -22,3 +23,4 @@ MonoBehaviour:
   range: 1
   type: 0
   movementSpeed: 1
+  cardBase: 0

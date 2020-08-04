@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stasis
   m_EditorClassIdentifier: 
   name: Stasis
-  description: description..
+  description: Enemy misses his next turn
   artwork: {fileID: 21300000, guid: 6e11e2418bfaddb48b7e65c0279c2a21, type: 3}
   manaCost: 1
   attack: 0
