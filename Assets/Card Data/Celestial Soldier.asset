@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Celestial Soldier
   m_EditorClassIdentifier: 
   name: Celestial Soldier
-  description: A pawn in a greater game.
+  description: 
   artwork: {fileID: 21300000, guid: 5532e650f92a2a6478892998e45c9002, type: 3}
   manaCost: 1
   attack: 1

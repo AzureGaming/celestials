@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Reset
   m_EditorClassIdentifier: 
   name: Reset
-  description: reset description
+  description: Move a Celestial back to the beginning of their lane
   artwork: {fileID: 21300000, guid: 7d7780ff7d328f94a9ba80c19886af9f, type: 3}
   manaCost: 1
   attack: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Seer
   m_EditorClassIdentifier: 
   name: Seer
-  description: 
+  description: '<b> Howl: </b> Draw 1 card'
   artwork: {fileID: 21300000, guid: a312e1d75ea89354aa943f0e81f2e81c, type: 3}
   manaCost: 2
   attack: 2

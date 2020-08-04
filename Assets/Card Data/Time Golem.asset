@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df63777e85c1195479ccc978781e90f3, type: 3}
   m_Name: Time Golem
   m_EditorClassIdentifier: 
-  name: Time GOlem
-  description: descripiton
+  name: Time Golem
+  description: After his first attack Time Golem resets to the start of his lane
   artwork: {fileID: 21300000, guid: 33fc60fbfec598a4788423e9bdd2817f, type: 3}
   manaCost: 1
   attack: 1

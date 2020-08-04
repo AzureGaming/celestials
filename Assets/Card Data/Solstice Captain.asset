@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Solstice Captain
   m_EditorClassIdentifier: 
   name: Solstice Captain
-  description: description...
+  description: '<b> Howl: </b> Give a random Celestial in your hand +2 dmg'
   artwork: {fileID: 21300000, guid: d56e07234a8100d429b28e475e41f765, type: 3}
   manaCost: 2
   attack: 3

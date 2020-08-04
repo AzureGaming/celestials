@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StockPile
   m_EditorClassIdentifier: 
   name: StockPile
-  description: sdescipriton..
+  description: Save current unspent mana to spend on next turn
   artwork: {fileID: 21300000, guid: cda94e3df0bf8a249808a512cfd63d02, type: 3}
   manaCost: 0
   attack: 0
