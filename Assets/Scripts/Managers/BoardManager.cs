@@ -96,7 +96,12 @@ public class BoardManager : MonoBehaviour {
     }
 
     public Tile GetTile(int column, int row) {
-        return grid[column][row];
+        if (grid.ElementAtOrDefault(column) != null) {
+            if (grid[column].ElementAtOrDefault(row) != null) {
+                return grid[column][row];
+            }
+        }
+        return null;
     }
 
     public List<Tile[]> GetRandomRows(int maxNum) {
@@ -237,8 +242,23 @@ public class BoardManager : MonoBehaviour {
 
     public IEnumerator ResolveStagesRoutine() {
         for (int i = stageLimit - 1; i >= 0; i--) {
-            yield return StartCoroutine(StageRoutine(i));
+            yield return StartCoroutine(ResolveAbilitiesForStage(i));
         }
+
+        for (int i = stageLimit - 1; i >= 0; i--) {
+            yield return StartCoroutine(ResolveAttacksForStage(i));
+            yield return StartCoroutine(ResolveMovementForStage(i));
+        }
+    }
+
+    public IEnumerator ResolveTurnForSummon(Summon summon) {
+        if (!summon) {
+            yield break;
+        }
+        Debug.Log("Run routines" + summon);
+        yield return StartCoroutine(ResolveAbilityForSummon(summon));
+        yield return StartCoroutine(ResolveAttackForSummon(summon));
+        yield return StartCoroutine(ResolveMovementForSummon(summon));
     }
 
     bool GetTileIsOccupied(Tile tile) {
@@ -290,6 +310,21 @@ public class BoardManager : MonoBehaviour {
         yield return StartCoroutine(ResolveAbilitiesForStage(stageIndex));
         yield return StartCoroutine(ResolveAttacksForStage(stageIndex));
         yield return StartCoroutine(ResolveMovementForStage(stageIndex));
+    }
+
+    IEnumerator ResolveMovementForSummon(Summon summon) {
+        summon.Walk();
+        yield return new WaitWhile(() => summon.DoneMoving());
+    }
+
+    IEnumerator ResolveAttackForSummon(Summon summon) {
+        summon.Attack();
+        yield return new WaitUntil(() => summon.DoneAttacking());
+    }
+
+    IEnumerator ResolveAbilityForSummon(Summon summon) {
+        summon.UsePower();
+        yield return new WaitUntil(() => summon.DonePower());
     }
 
     IEnumerator ResolveMovementForStage(int stageIndex) {
