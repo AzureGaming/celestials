@@ -10,25 +10,25 @@ public class Card : MonoBehaviour {
     public Sprite basicFrame;
     public Sprite pixFrame;
     public Sprite bossFrame;
-    Image imageDisplay;
-    Image cardFrame;
-    TextMeshProUGUI nameDisplay;
-    TextMeshProUGUI manaDisplay;
-    TextMeshProUGUI attackDisplay;
-    TextMeshProUGUI descriptionDisplay;
+    public Image imageDisplay;
+    public Image cardFrame;
+    public TextMeshProUGUI nameDisplay;
+    public TextMeshProUGUI manaDisplay;
+    public TextMeshProUGUI attackDisplay;
+    public TextMeshProUGUI descriptionDisplay;
     Vector3 startingScale;
     CardEffect effect;
     int manaCost;
     int attack;
 
     private void Awake() {
-        imageDisplay = transform.Find("Artwork").GetComponent<Image>();
-        nameDisplay = transform.Find("Card Frame").Find("Name").GetComponent<TextMeshProUGUI>();
-        manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
-        attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
-        descriptionDisplay = transform.Find("Card Frame").Find("Description").GetComponent<TextMeshProUGUI>();
+        //imageDisplay = transform.Find("Artwork").GetComponent<Image>();
+        //nameDisplay = transform.Find("Card Frame").Find("Name").GetComponent<TextMeshProUGUI>();
+        //manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
+        //attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
+        //descriptionDisplay = transform.Find("Card Frame").Find("Description").GetComponent<TextMeshProUGUI>();
         effect = GetComponent<CardEffect>();
-        cardFrame = transform.Find("Card Frame").GetComponent<Image>();
+        //cardFrame = transform.Find("Card Frame").GetComponent<Image>();
     }
 
     private void Start() {

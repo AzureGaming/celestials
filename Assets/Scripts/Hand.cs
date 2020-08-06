@@ -25,7 +25,11 @@ public class Hand : MonoBehaviour, IDropHandler {
     }
 
     public void OnDrop(PointerEventData eventData) {
-        eventData.pointerDrag.transform.SetParent(transform);
+        foreach (Card card in GetCards()) {
+            card.GetComponent<UIHoverSize>().enabled = true;
+        }
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
         eventData.pointerDrag.gameObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        eventData.pointerDrag.transform.SetParent(transform);
     }
 }

@@ -76,7 +76,14 @@ public class TurnManager : MonoBehaviour {
         yield return StartCoroutine(player.RefreshMana());
 
         SetWaitForPlayer(true);
+        Card[] cards = hand.GetCards();
+        foreach (Card card in cards) {
+            card.GetComponentInChildren<UIHoverSize>().enabled = true;
+        }
         yield return new WaitUntil(() => !waitForPlayer);
+        foreach (Card card in hand.GetCards()) {
+            card.GetComponent<UIHoverSize>().enabled = false;
+        }
         OnPlayerTurnEnd?.Invoke(this, EventArgs.Empty);
         yield return StartCoroutine(StartEnemyTurn());
     }

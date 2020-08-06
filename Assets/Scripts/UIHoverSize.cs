@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class UIHoverSize : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
-    public GameState hoverTrigger;
-    TurnManager turnManager;
+    public Transform transformToModify;
+    Vector3 startingPos;
     Vector3 startingScale;
+    Hand hand;
 
     private void Awake() {
-        turnManager = FindObjectOfType<TurnManager>();
+        hand = FindObjectOfType<Hand>();
     }
 
     private void Start() {
-        startingScale = transform.localScale;
+        startingPos = transformToModify.position;
+        startingScale = transformToModify.localScale;
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
-        if (turnManager.state == hoverTrigger) {
-            transform.localScale = startingScale * 1.5f;
-        }
+        Debug.Log("Enter");
+        transformToModify.Translate(new Vector3(0, 60, transform.position.z));
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-        transform.localScale = startingScale;
+        Debug.Log("Exit");
+        transformToModify.position = startingPos;
     }
 }
