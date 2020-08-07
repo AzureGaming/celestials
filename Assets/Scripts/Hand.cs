@@ -25,11 +25,19 @@ public class Hand : MonoBehaviour, IDropHandler {
     }
 
     public void OnDrop(PointerEventData eventData) {
+        eventData.pointerDrag.transform.SetParent(transform);
+        foreach (Card card in GetCards()) {
+            Transform cardElementContainer = card.transform.Find("Card Element Container");
+            RectTransform rt = cardElementContainer.GetComponent<RectTransform>();
+            rt.offsetMax = new Vector2(0, 0); // top
+            rt.offsetMin = new Vector2(0, 0); //bot
+            //rt.offsetMin = new Vector2(0, rt.offsetMin.y); //left
+            //rt.offsetMin = new Vector2(0, rt.offsetMax.y); //right
+        }
+        Debug.Log("Done recalculation");
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
         foreach (Card card in GetCards()) {
             card.GetComponent<UIHoverSize>().enabled = true;
         }
-        //LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
-        eventData.pointerDrag.gameObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
-        eventData.pointerDrag.transform.SetParent(transform);
     }
 }

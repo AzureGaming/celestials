@@ -22,13 +22,7 @@ public class Card : MonoBehaviour {
     int attack;
 
     private void Awake() {
-        //imageDisplay = transform.Find("Artwork").GetComponent<Image>();
-        //nameDisplay = transform.Find("Card Frame").Find("Name").GetComponent<TextMeshProUGUI>();
-        //manaDisplay = transform.Find("Mana").GetComponentInChildren<TextMeshProUGUI>();
-        //attackDisplay = transform.Find("Attack").GetComponentInChildren<TextMeshProUGUI>();
-        //descriptionDisplay = transform.Find("Card Frame").Find("Description").GetComponent<TextMeshProUGUI>();
         effect = GetComponent<CardEffect>();
-        //cardFrame = transform.Find("Card Frame").GetComponent<Image>();
     }
 
     private void Start() {

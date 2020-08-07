@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -6,8 +7,8 @@ using UnityEngine.UI;
 
 public class UIHoverSize : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public Transform transformToModify;
-    Vector3 startingPos;
-    Vector3 startingScale;
+    Vector3 lastPos;
+    Vector3 startPos;
     Hand hand;
 
     private void Awake() {
@@ -15,17 +16,22 @@ public class UIHoverSize : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
 
     private void Start() {
-        startingPos = transformToModify.position;
-        startingScale = transformToModify.localScale;
+        startPos = transformToModify.position;
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
-        Debug.Log("Enter");
-        transformToModify.Translate(new Vector3(0, 60, transform.position.z));
+        Vector3 newPos = transformToModify.position;
+        newPos.y += 60;
+        transformToModify.position = newPos;
+        lastPos = transformToModify.position;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-        Debug.Log("Exit");
-        transformToModify.position = startingPos;
+        if (lastPos != null) {
+            Vector3 newPos = transformToModify.position;
+            newPos.y = startPos.y;
+            transformToModify.position = newPos;
+        }
+        lastPos = default;
     }
 }
