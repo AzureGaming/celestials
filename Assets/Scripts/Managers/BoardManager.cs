@@ -364,7 +364,6 @@ public class BoardManager : MonoBehaviour {
     }
 
     IEnumerator ResolveAbilitiesForStage(int stageIndex) {
-        Debug.Log("Resolve abilities for stage" + stageIndex);
         Tile[] tilesInStage = new Tile[stageLimit];
         Array.Copy(grid[stageIndex], tilesInStage, stageLimit);
         System.Array.Sort(tilesInStage, (tileX, tileY) => {

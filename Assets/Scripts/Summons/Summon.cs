@@ -15,7 +15,7 @@ public class Summon : MonoBehaviour {
     }
 
     public virtual void Walk() {
-        controller.Walk();
+        StartCoroutine(controller.Walk());
     }
 
     public virtual void Walk(Tile tile) {

@@ -8,6 +8,11 @@ public class SummonController : MonoBehaviour {
     public GameObject marchPrefab;
     public GameObject resetPrefab;
     public Entity entity;
+    public AudioSource walkAudio;
+    public AudioSource deathAudio;
+    public AudioSource attackAudio;
+    public AudioSource powerAudio;
+    public AudioSource spawnAudio;
     protected bool attackRoutineRunning = false;
     protected bool movementRoutineRunning = false;
     protected bool howlRoutineRunning = false;
@@ -46,10 +51,12 @@ public class SummonController : MonoBehaviour {
         marchPrefab.SetActive(false);
 
         SetOrder(gameManager.GetNextCardOrder());
+
+        spawnAudio.Play();
     }
 
-    public void Walk() {
-        StartCoroutine(WalkRoutine(entity.movementSpeed, GetId()));
+    public IEnumerator Walk() {
+        yield return StartCoroutine(WalkRoutine(entity.movementSpeed, GetId()));
     }
 
     public void Walk(Tile tile) {
@@ -122,7 +129,10 @@ public class SummonController : MonoBehaviour {
         } else if (tileToMoveTo.GetComponentInChildren<BlockingCrystal>()) {
             yield break;
         } else {
+            walkAudio.loop = true;
+            walkAudio.Play();
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
+            walkAudio.Stop();
         }
     }
 
@@ -130,7 +140,10 @@ public class SummonController : MonoBehaviour {
         if (tile?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine(false));
         } else {
+            walkAudio.loop = true;
+            walkAudio.Play();
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tile));
+            walkAudio.Stop();
         }
     }
 
@@ -165,6 +178,7 @@ public class SummonController : MonoBehaviour {
     }
 
     protected IEnumerator DieRoutine(bool dyingWish) {
+        deathAudio.Play();
         yield return StartCoroutine(FlashRed());
         yield return StartCoroutine(FadeOut());
         if (dyingWish) {
@@ -202,6 +216,7 @@ public class SummonController : MonoBehaviour {
         if (CheckWithinRange(range, id)) {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
+            attackAudio.Play();
             yield return new WaitUntil(() => !attackRoutineRunning);
             yield return StartCoroutine(boss.TakeDamage(attack));
         }
