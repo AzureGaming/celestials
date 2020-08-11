@@ -12,6 +12,7 @@ public class OracleController : SummonController {
 
     public override void UsePower() {
         powerRoutineRunning = true;
+        powerAudio.Play();
         StartCoroutine(PowerRoutine());
     }
 

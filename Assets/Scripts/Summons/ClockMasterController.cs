@@ -5,6 +5,7 @@ using UnityEngine;
 public class ClockMasterController : SummonController {
     public override void UsePower() {
         powerRoutineRunning = true;
+        powerAudio.Play();
         StartCoroutine(PowerRoutine());
     }
 
