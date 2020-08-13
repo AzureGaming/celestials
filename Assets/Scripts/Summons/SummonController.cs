@@ -11,7 +11,7 @@ public class SummonController : MonoBehaviour {
     public AudioSource walkAudio;
     public AudioSource deathAudio;
     public float deathAudioStart = 0;
-    public float deathAudioEnd = 0;
+    public float deathAudioEnd = -1;
     public AudioSource attackAudio;
     public AudioSource powerAudio;
     public AudioSource spawnAudio;
@@ -46,6 +46,10 @@ public class SummonController : MonoBehaviour {
     }
 
     private void Start() {
+        if (deathAudioEnd == -1) {
+            deathAudioEnd = deathAudio.clip.length;
+        }
+
         color = spriteRenderer.color;
 
         resetPrefab.SetActive(false);
@@ -185,7 +189,9 @@ public class SummonController : MonoBehaviour {
         deathAudio.SetScheduledEndTime(AudioSettings.dspTime + (deathAudioEnd - deathAudioStart));
         yield return StartCoroutine(FlashRed());
         yield return StartCoroutine(FadeOut());
+        Debug.Log("Die");
         if (dyingWish) {
+            Debug.Log("Dying wish");
             yield return StartCoroutine(DyingWish());
         }
         Destroy(transform.gameObject);

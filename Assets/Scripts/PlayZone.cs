@@ -21,7 +21,6 @@ public class PlayZone : MonoBehaviour, IDropHandler {
     }
 
     public void OnDrop(PointerEventData eventData) {
-        Debug.Log("Dropped in play zone");
         Draggable droppedObject = eventData.pointerDrag.GetComponent<Draggable>();
         Card card = droppedObject.GetComponent<Card>();
         if (droppedObject != null) {
