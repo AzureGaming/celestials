@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss : MonoBehaviour {
+    public AudioSource hurtAudio;
     public GameObject projectileCollision;
     public Healthbar healthBar;
 
@@ -47,6 +48,7 @@ public class Boss : MonoBehaviour {
     }
 
     public virtual IEnumerator TakeDamage(int damage) {
+        hurtAudio.Play();
         health -= damage;
         healthBar.SetHealth(health);
         yield return StartCoroutine(FlashRed());

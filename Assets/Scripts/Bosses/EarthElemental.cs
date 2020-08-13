@@ -18,7 +18,6 @@ public class EarthElemental : Boss {
     public GameObject pebbleStormCardPrefab;
     public GameObject blockingCrystalPrefab;
     public AttackQueueManager attackQueueManager;
-
     public ThrowBoulderSkill rockThrow;
     public PebbleStormSkill pebbleStorm;
     public BoulderDropSkill boulderDrop;

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BlockingCrystal : MonoBehaviour {
+    public AudioSource entryAudio;
+    public AudioSource exitAudio;
     Animator animator;
     bool isBreaking = false;
     bool isSpawning = true;
@@ -11,9 +13,14 @@ public class BlockingCrystal : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
+    private void Start() {
+        entryAudio.Play();
+    }
+
     public IEnumerator Break() {
         animator.SetTrigger("IsBroken");
         isBreaking = true;
+        exitAudio.Play();
         yield return new WaitUntil(() => !isBreaking);
         Destroy(gameObject);
     }

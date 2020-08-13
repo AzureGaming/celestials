@@ -7,7 +7,7 @@ public class Summoner : MonoBehaviour {
     SummonerController controller;
     SpriteRenderer spriteRenderer;
     Animator animator;
-    protected int health = 0;
+    protected int health = 30;
     protected Color color;
 
     public virtual void Awake() {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CrystalizeSkill : MonoBehaviour {
+    public AudioSource attackAudio;
     public EarthElementalSkillIndicators skillIndicators;
     public AttackQueueManager queueManager;
     public Animator animator;
@@ -28,6 +29,7 @@ public class CrystalizeSkill : MonoBehaviour {
     public IEnumerator CastSkill() {
         isCasting = true;
         animator.SetTrigger("Attack3");
+        attackAudio.Play();
         yield return new WaitUntil(() => !isCasting);
         Crystalize();
         skillIndicators.ClearIndicator();

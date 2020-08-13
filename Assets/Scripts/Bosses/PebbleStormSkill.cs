@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PebbleStormSkill : MonoBehaviour {
+    public AudioSource attackAudio;
     public EarthElementalSkillIndicators skillIndicators;
     public AttackQueueManager queueManager;
     public Animator animator;
@@ -28,6 +29,7 @@ public class PebbleStormSkill : MonoBehaviour {
         isCasting = true;
         animator.SetTrigger("Attack1");
         yield return new WaitUntil(() => !isCasting);
+        attackAudio.Play();
         PebbleStorm();
         skillIndicators.ClearIndicator();
     }

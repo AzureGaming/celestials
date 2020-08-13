@@ -6,6 +6,7 @@ public class BoulderDropSkill : MonoBehaviour {
     public EarthElementalSkillIndicators skillIndicators;
     public AttackQueueManager queueManager;
     public Animator animator;
+    public AudioSource attackAudio;
     CardManager cardManager;
     GameManager gameManager;
     public GameObject boulder;
@@ -32,6 +33,7 @@ public class BoulderDropSkill : MonoBehaviour {
     public IEnumerator CastSkill() {
         isCasting = true;
         animator.SetTrigger("Attack1");
+        attackAudio.Play();
         yield return new WaitUntil(() => !isCasting);
         yield return StartCoroutine(BoulderDrop());
         skillIndicators.ClearIndicator();
