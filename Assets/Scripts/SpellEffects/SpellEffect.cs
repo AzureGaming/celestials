@@ -13,12 +13,17 @@ public abstract class SpellEffect : MonoBehaviour {
 
     public virtual IEnumerator Activate() {
         GetComponent<Animator>().SetTrigger("Active");
-        entryAudio?.Play();
+        if (entryAudio != null) {
+            entryAudio.Play();
+        }
+        //entryAudio?.Play();
         yield break;
     }
 
     public virtual void Deactivate() {
-        exitAudio?.Play();
+        if (exitAudio != null) {
+            exitAudio.Play();
+        }
         GetComponent<Animator>().SetTrigger("Inactive");
     }
 

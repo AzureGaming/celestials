@@ -7,6 +7,7 @@ public class SummonerController : MonoBehaviour {
     public GameObject flyingCard;
     public StasisEffect stasis;
     public StockPileEffect stockpile;
+    public AccelerateEffect accelerate;
     Animator animator;
     bool routineRunning = false;
     bool doneAnimation;
@@ -35,6 +36,11 @@ public class SummonerController : MonoBehaviour {
     public IEnumerator CastStockPile() {
         yield return StartCoroutine(stockpile.Activate());
         yield return new WaitUntil(() => stockpile.IsDone());
+    }
+
+    public IEnumerator CastAccelerate() {
+        yield return StartCoroutine(accelerate.Activate());
+        yield return new WaitUntil(() => accelerate.IsDone());
     }
 
     public void SetRoutineRunning(bool value) {
