@@ -10,6 +10,8 @@ public class SummonController : MonoBehaviour {
     public Entity entity;
     public AudioSource walkAudio;
     public AudioSource deathAudio;
+    public float deathAudioStart = 0;
+    public float deathAudioEnd = 0;
     public AudioSource attackAudio;
     public AudioSource powerAudio;
     public AudioSource spawnAudio;
@@ -178,7 +180,9 @@ public class SummonController : MonoBehaviour {
     }
 
     protected IEnumerator DieRoutine(bool dyingWish) {
+        deathAudio.time = deathAudioStart;
         deathAudio.Play();
+        deathAudio.SetScheduledEndTime(AudioSettings.dspTime + (deathAudioEnd - deathAudioStart));
         yield return StartCoroutine(FlashRed());
         yield return StartCoroutine(FadeOut());
         if (dyingWish) {
