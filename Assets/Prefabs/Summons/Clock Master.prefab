@@ -12,7 +12,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 61efc66e6bbe4724c9f976fdb2e8a099, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -108,7 +108,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7782d37864b07e245bd11b737e15a89a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -498,6 +498,8 @@ MonoBehaviour:
   entity: {fileID: 11400000, guid: ee2a78b5aee21474ba359ce8e3176b83, type: 2}
   walkAudio: {fileID: -3205940229883622769}
   deathAudio: {fileID: 7012017623641598233}
+  deathAudioStart: 0
+  deathAudioEnd: 0
   attackAudio: {fileID: 3759996604363485430}
   powerAudio: {fileID: 925343488132731800}
   spawnAudio: {fileID: -6719780310356914609}
