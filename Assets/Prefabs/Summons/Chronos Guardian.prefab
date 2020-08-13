@@ -400,6 +400,11 @@ MonoBehaviour:
   marchPrefab: {fileID: 8183480109262353557}
   resetPrefab: {fileID: 0}
   entity: {fileID: 11400000, guid: b108be5ce623578468f768af3b7677e0, type: 2}
+  walkAudio: {fileID: -5964654583364572363}
+  deathAudio: {fileID: -3062548760395506860}
+  attackAudio: {fileID: -4801378104304704368}
+  powerAudio: {fileID: 0}
+  spawnAudio: {fileID: -1093629833652593432}
   attack: 0
 --- !u!1001 &9149165642436017876
 PrefabInstance:
