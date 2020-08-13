@@ -1,8 +1,8 @@
 ﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public enum GameState {
     START, PLAYERTURN, ENEMYTURN, WIN, LOSE
@@ -21,6 +21,8 @@ public class TurnManager : MonoBehaviour {
     GameManager gameManager;
     BoardManager boardManager;
     CardManager cardManager;
+    UIManager uiManager;
+    Summoner summoner;
     bool waitForPlayer = false;
 
     private void Awake() {
@@ -32,6 +34,8 @@ public class TurnManager : MonoBehaviour {
         gameManager = FindObjectOfType<GameManager>();
         boardManager = FindObjectOfType<BoardManager>();
         cardManager = FindObjectOfType<CardManager>();
+        uiManager = FindObjectOfType<UIManager>();
+        summoner = FindObjectOfType<Summoner>();
     }
 
     private void Start() {
@@ -49,21 +53,15 @@ public class TurnManager : MonoBehaviour {
     }
 
     IEnumerator ResolveSummonTurn() {
-        //Summon[] summonsOnBoard = board.GetSummons();
-        //Summon[] summons = new Summon[summonsOnBoard.Length];
-        //System.Array.Copy(summonsOnBoard, summons, summons.Length);
-
-        //System.Array.Sort(summons, (x, y) => x.GetOrder() - y.GetOrder());
-        //foreach (Summon summon in summons) {
-        //    yield return StartCoroutine(summon.ExecuteAction());
-        //    if (boss.getHealth() < 1) {
-        //        state = GameState.WIN;
-        //        Debug.Log("Implement win scenario");
-        //        yield break; 
-        //    }
-        //}
         yield return StartCoroutine(boardManager.ResolveStagesRoutine());
         queueManager.RefreshIndicators(true);
+
+        if (boss.getHealth() < 1) {
+            state = GameState.WIN;
+            uiManager.SetWinScreen(true);
+            yield break;
+        }
+
         yield return StartCoroutine(StartPlayerTurn());
     }
 
@@ -91,9 +89,10 @@ public class TurnManager : MonoBehaviour {
     IEnumerator StartEnemyTurn() {
         state = GameState.ENEMYTURN;
         yield return StartCoroutine(boss.RunTurnRoutine());
-        if (player.GetHealth() < 1) {
+        Debug.Log("Hello" + summoner.GetHealth());
+        if (summoner.GetHealth() < 1) {
             state = GameState.LOSE;
-            Debug.Log("Implement Lose scenario");
+            uiManager.SetLoseScreen(true);
             yield break;
         }
         yield return StartCoroutine(ResolveSummonTurn());
