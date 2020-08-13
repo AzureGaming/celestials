@@ -8,6 +8,7 @@ public class CelestialRangerController : SummonController {
         if (CheckWithinRange(range, id)) {
             attackRoutineRunning = true;
             animator.SetTrigger("isAttacking");
+            attackAudio.Play();
             yield return new WaitUntil(() => !attackRoutineRunning);
             yield return StartCoroutine(boss.TakeDamage(entity.attack));
         }
