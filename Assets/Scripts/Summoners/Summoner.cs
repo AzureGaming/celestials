@@ -7,7 +7,7 @@ public class Summoner : MonoBehaviour {
     SummonerController controller;
     SpriteRenderer spriteRenderer;
     Animator animator;
-    protected int health = 30;
+    protected int health = 0;
     protected Color color;
 
     public virtual void Awake() {
@@ -63,6 +63,10 @@ public class Summoner : MonoBehaviour {
     public virtual IEnumerator Die() {
         Debug.Log("Implement summoner death");
         yield break;
+    }
+
+    public int GetHealth() {
+        return health;
     }
 
     IEnumerator FlashRed() {

@@ -11,7 +11,6 @@ public class Player : MonoBehaviour {
     Deck deck;
     Hand hand;
     int handLimit;
-    int health;
     int mana;
     int maxMana;
     int numberOfCardsHeld;
@@ -28,14 +27,9 @@ public class Player : MonoBehaviour {
 
     private void Start() {
         handLimit = 5;
-        health = 30;
         mana = 0;
         maxMana = 0;
         numberOfCardsHeld = hand.transform.childCount;
-    }
-
-    public int GetHealth() {
-        return health;
     }
 
     public IEnumerator SetupPlayer() {

@@ -57,7 +57,6 @@ public class ThrowBoulderSkill : MonoBehaviour {
                 }
             } else {
                 // Default
-                Debug.Log("Set indicator summoner");
                 coords[i] = new int[] { row[0].column, row[0].row };
             }
             i++;

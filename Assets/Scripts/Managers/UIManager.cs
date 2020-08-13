@@ -5,6 +5,8 @@ using UnityEngine;
 public class UIManager : MonoBehaviour {
     public GameObject futureSightDisplay;
     public GameObject futureSightQueue;
+    public GameObject loseScreen;
+    public GameObject winScreen;
     GameObject locationSelection;
     ManaDisplay manaDisplay;
 
@@ -23,5 +25,13 @@ public class UIManager : MonoBehaviour {
 
     public void SetMana(int current, int max) {
         manaDisplay.UpdateText(current, max);
+    }
+
+    public void SetLoseScreen(bool value) {
+        loseScreen.SetActive(value);
+    }
+
+    public void SetWinScreen(bool value) {
+        winScreen.SetActive(value);
     }
 }
