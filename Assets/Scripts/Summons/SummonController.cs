@@ -11,7 +11,7 @@ public class SummonController : MonoBehaviour {
     public AudioSource walkAudio;
     public AudioSource deathAudio;
     public float deathAudioStart = 0;
-    public float deathAudioEnd = 0;
+    public float deathAudioEnd = -1;
     public AudioSource attackAudio;
     public AudioSource powerAudio;
     public AudioSource spawnAudio;
@@ -46,6 +46,10 @@ public class SummonController : MonoBehaviour {
     }
 
     private void Start() {
+        if (deathAudioEnd == -1) {
+            deathAudioEnd = deathAudio.clip.length;
+        }
+
         color = spriteRenderer.color;
 
         resetPrefab.SetActive(false);
@@ -69,8 +73,8 @@ public class SummonController : MonoBehaviour {
         StartCoroutine(AttackRoutine(entity.range, GetId()));
     }
 
-    public IEnumerator Die(bool dyingWish) {
-        yield return StartCoroutine(DieRoutine(dyingWish));
+    public IEnumerator Die(bool dyingWish, bool playAudio) {
+        yield return StartCoroutine(DieRoutine(dyingWish, playAudio));
     }
 
     public virtual void UseHowl() {
@@ -127,7 +131,7 @@ public class SummonController : MonoBehaviour {
     public virtual IEnumerator WalkRoutine(int tiles, int id) {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
         if (tileToMoveTo?.type == TileType.Boss) {
-            yield return StartCoroutine(DieRoutine(false));
+            yield return StartCoroutine(DieRoutine(false, false));
         } else if (tileToMoveTo.GetComponentInChildren<BlockingCrystal>()) {
             yield break;
         } else {
@@ -140,7 +144,7 @@ public class SummonController : MonoBehaviour {
 
     public virtual IEnumerator WalkRoutine(Tile tile, int id) {
         if (tile?.type == TileType.Boss) {
-            yield return StartCoroutine(DieRoutine(false));
+            yield return StartCoroutine(DieRoutine(false, false));
         } else {
             walkAudio.loop = true;
             walkAudio.Play();
@@ -155,7 +159,7 @@ public class SummonController : MonoBehaviour {
             hasBarrier = false;
             // timing?
         } else {
-            yield return StartCoroutine(Die(true));
+            yield return StartCoroutine(Die(true, true));
         }
     }
 
@@ -179,13 +183,15 @@ public class SummonController : MonoBehaviour {
         transform.SetParent(parent.transform);
     }
 
-    protected IEnumerator DieRoutine(bool dyingWish) {
+    protected IEnumerator DieRoutine(bool dyingWish, bool playAudio) {
         deathAudio.time = deathAudioStart;
         deathAudio.Play();
         deathAudio.SetScheduledEndTime(AudioSettings.dspTime + (deathAudioEnd - deathAudioStart));
         yield return StartCoroutine(FlashRed());
         yield return StartCoroutine(FadeOut());
+        Debug.Log("Die");
         if (dyingWish) {
+            Debug.Log("Dying wish");
             yield return StartCoroutine(DyingWish());
         }
         Destroy(transform.gameObject);

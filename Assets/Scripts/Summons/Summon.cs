@@ -38,8 +38,8 @@ public class Summon : MonoBehaviour {
         yield return StartCoroutine(controller.TakeDamage());
     }
 
-    public virtual IEnumerator Die(bool dyingWish) {
-        yield return StartCoroutine(controller.Die(dyingWish));
+    public virtual IEnumerator Die(bool dyingWish, bool playAudio) {
+        yield return StartCoroutine(controller.Die(dyingWish, playAudio));
     }
 
     public virtual bool DoneMoving() {
