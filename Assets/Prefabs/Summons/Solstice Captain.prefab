@@ -299,7 +299,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4145f407786911a49902e9bc1ac7fffa, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   walkAudio: {fileID: 2961270407777490327}
   deathAudio: {fileID: 5976020010361311253}
   deathAudioStart: 0
-  deathAudioEnd: 0
+  deathAudioEnd: 1
   attackAudio: {fileID: -1096444206647787448}
   powerAudio: {fileID: 0}
   spawnAudio: {fileID: -2510289604574083734}

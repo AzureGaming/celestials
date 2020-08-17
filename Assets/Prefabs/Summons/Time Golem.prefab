@@ -499,7 +499,7 @@ MonoBehaviour:
   walkAudio: {fileID: 0}
   deathAudio: {fileID: 7684703071307862140}
   deathAudioStart: 0
-  deathAudioEnd: 0
+  deathAudioEnd: 3
   attackAudio: {fileID: -1201681961601562428}
   powerAudio: {fileID: 0}
   spawnAudio: {fileID: -5131407502418132212}
