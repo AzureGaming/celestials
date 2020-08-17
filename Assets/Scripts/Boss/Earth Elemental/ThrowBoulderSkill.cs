@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine;
 
 public class ThrowBoulderSkill : MonoBehaviour {
-    public AudioSource attackAudio;
     public Animator animator;
     public EarthElementalSkillIndicators skillIndicators;
     public AttackQueueManager queueManager;
@@ -81,7 +80,6 @@ public class ThrowBoulderSkill : MonoBehaviour {
         foreach (Tile tile in pendingAttacks) {
             GameObject rock = Instantiate(rockPrefab, rockSpawner.transform);
             Summon summon = tile.GetSummon();
-            attackAudio.Play();
             if (summon) {
                 yield return StartCoroutine(rock.GetComponent<ThrowBoulder>().Attack(summon.transform.position, summon));
             } else {

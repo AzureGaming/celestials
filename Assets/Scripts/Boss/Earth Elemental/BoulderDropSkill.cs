@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoulderDropSkill : MonoBehaviour {
+    public AudioSource impactAudio;
     public EarthElementalSkillIndicators skillIndicators;
     public AttackQueueManager queueManager;
     public Animator animator;
-    public AudioSource attackAudio;
     CardManager cardManager;
     GameManager gameManager;
     public GameObject boulder;
@@ -33,7 +33,6 @@ public class BoulderDropSkill : MonoBehaviour {
     public IEnumerator CastSkill() {
         isCasting = true;
         animator.SetTrigger("Attack1");
-        attackAudio.Play();
         yield return new WaitUntil(() => !isCasting);
         yield return StartCoroutine(BoulderDrop());
         skillIndicators.ClearIndicator();
@@ -43,6 +42,7 @@ public class BoulderDropSkill : MonoBehaviour {
         gameManager.SetWaitForCompletion(true);
         Instantiate(boulder, boulderSpawner.transform);
         yield return new WaitUntil(() => DoneBoulderDrop());
+        impactAudio.Play();
         yield return StartCoroutine(summoner.TakeDamage(3));
     }
 
