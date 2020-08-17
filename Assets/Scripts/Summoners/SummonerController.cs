@@ -6,7 +6,7 @@ using UnityEngine;
 public class SummonerController : MonoBehaviour {
     public GameObject flyingCard;
     public SpellEffect stasis;
-    public StockPileEffect stockpile;
+    public SpellEffect stockpile;
     public AccelerateEffect accelerate;
     public FutureSightEffect futureSight;
     public SpellEffect paradox;
