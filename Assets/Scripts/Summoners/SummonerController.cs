@@ -10,6 +10,7 @@ public class SummonerController : MonoBehaviour {
     public AccelerateEffect accelerate;
     public FutureSightEffect futureSight;
     public SpellEffect paradox;
+    public AudioSource stasisEntryAudio;
     Animator animator;
     bool routineRunning = false;
     bool doneAnimation;
@@ -31,8 +32,8 @@ public class SummonerController : MonoBehaviour {
     }
 
     public IEnumerator CastStasis() {
-        yield return StartCoroutine(stasis.Activate());
-        yield return new WaitUntil(() => stasis.IsDone());
+        stasisEntryAudio.Play();
+        yield break;
     }
 
     public IEnumerator CastStockPile() {

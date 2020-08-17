@@ -6,6 +6,7 @@ public class Boss : MonoBehaviour {
     public AudioSource hurtAudio;
     public GameObject projectileCollision;
     public Healthbar healthBar;
+    public BossStatusEffectManager statusEffects;
 
     protected int health;
     protected SpriteRenderer spriteRenderer;
@@ -42,9 +43,9 @@ public class Boss : MonoBehaviour {
     public virtual void Initialize() {
     }
 
-    public void SkipTurn() {
+    public void Stasis() {
         skipTurn = true;
-        Debug.Log("Skip turn");
+        statusEffects.EnableStasis();
     }
 
     public virtual IEnumerator TakeDamage(int damage) {
@@ -55,6 +56,14 @@ public class Boss : MonoBehaviour {
         if (health < 0) {
             Debug.Log("Implement win scneario");
         }
+    }
+
+    public void EnableStasis() {
+        statusEffects.EnableStasis();
+    }
+
+    public void DisableStasis() {
+        statusEffects.DisableStasis();
     }
 
     protected virtual IEnumerator Attack() {

@@ -46,6 +46,7 @@ public class EarthElemental : Boss {
 
     public override IEnumerator RunTurnRoutine() {
         if (skipTurn) {
+            statusEffects.DisableStasis();
             skipTurn = false;
             yield break;
         }

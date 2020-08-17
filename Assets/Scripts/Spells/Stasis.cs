@@ -18,6 +18,6 @@ public class Stasis : CardEffect {
 
     IEnumerator StasisRoutine() {
         yield return StartCoroutine(summoner.CastStasis());
-        boss.SkipTurn();
+        boss.Stasis();
     }
 }
