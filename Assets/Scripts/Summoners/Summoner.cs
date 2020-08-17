@@ -41,6 +41,14 @@ public class Summoner : MonoBehaviour {
         yield return StartCoroutine(controller.CastAccelerate());
     }
 
+    public IEnumerator CastFutureSight() {
+        yield return StartCoroutine(controller.CastFutureSight());
+    }
+
+    public IEnumerator CastParadox() {
+        yield return StartCoroutine(controller.CastParadox());
+    }
+
     public bool GetAnimationDone() {
         return controller.GetDoneAnimation();
     }

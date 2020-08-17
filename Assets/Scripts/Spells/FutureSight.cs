@@ -9,12 +9,14 @@ public class FutureSight : CardEffect {
     CardManager cardManager;
     CardSnapToFutureSightDisplay cardSnap;
     Hand hand;
+    Summoner summoner;
 
     private void Awake() {
         cardManager = FindObjectOfType<CardManager>();
         displayArea = FindObjectOfType<UIManager>().futureSightDisplay;
         playZone = FindObjectOfType<PlayZone>();
         hand = FindObjectOfType<Hand>();
+        summoner = FindObjectOfType<Summoner>();
     }
 
     private void Start() {
@@ -43,6 +45,7 @@ public class FutureSight : CardEffect {
     }
 
     IEnumerator FutureSightRoutine() {
+        yield return StartCoroutine(summoner.CastFutureSight());
         displayArea.SetActive(true);
         playZone.enabled = false;
         cardSnap.enabled = true;

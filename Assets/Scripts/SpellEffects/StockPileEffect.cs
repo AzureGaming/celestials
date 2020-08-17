@@ -11,8 +11,4 @@ public class StockPileEffect : SpellEffect {
     public override void Deactivate() {
         gameObject.SetActive(false);
     }
-
-    public bool IsDone() {
-        return gameObject.activeSelf ? false : true;
-    }
 }

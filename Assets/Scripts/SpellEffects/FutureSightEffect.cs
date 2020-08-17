@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FutureSightEffect : SpellEffect
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class FutureSightEffect : SpellEffect {
+    public override IEnumerator Activate() {
+        gameObject.SetActive(true);
+        StartCoroutine(base.Activate());
+        yield break;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public override void Deactivate() {
+        gameObject.SetActive(false);
     }
 }

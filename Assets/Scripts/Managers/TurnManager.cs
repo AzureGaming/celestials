@@ -89,7 +89,6 @@ public class TurnManager : MonoBehaviour {
     IEnumerator StartEnemyTurn() {
         state = GameState.ENEMYTURN;
         yield return StartCoroutine(boss.RunTurnRoutine());
-        Debug.Log("Hello" + summoner.GetHealth());
         if (summoner.GetHealth() < 1) {
             state = GameState.LOSE;
             uiManager.SetLoseScreen(true);

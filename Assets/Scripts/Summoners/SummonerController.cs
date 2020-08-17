@@ -5,9 +5,11 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class SummonerController : MonoBehaviour {
     public GameObject flyingCard;
-    public StasisEffect stasis;
+    public SpellEffect stasis;
     public StockPileEffect stockpile;
     public AccelerateEffect accelerate;
+    public FutureSightEffect futureSight;
+    public SpellEffect paradox;
     Animator animator;
     bool routineRunning = false;
     bool doneAnimation;
@@ -41,6 +43,16 @@ public class SummonerController : MonoBehaviour {
     public IEnumerator CastAccelerate() {
         yield return StartCoroutine(accelerate.Activate());
         yield return new WaitUntil(() => accelerate.IsDone());
+    }
+
+    public IEnumerator CastFutureSight() {
+        yield return StartCoroutine(futureSight.Activate());
+        yield return new WaitUntil(() => futureSight.IsDone());
+    }
+
+    public IEnumerator CastParadox() {
+        yield return StartCoroutine(paradox.Activate());
+        yield return new WaitUntil(() => paradox.IsDone());
     }
 
     public void SetRoutineRunning(bool value) {
