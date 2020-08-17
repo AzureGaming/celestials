@@ -494,14 +494,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrierPrefab: {fileID: 7313506799317402059}
   marchPrefab: {fileID: 1445120547350991819}
-  resetPrefab: {fileID: 0}
+  resetPrefab: {fileID: 5946727476673957177}
   entity: {fileID: 11400000, guid: 01de6530042e3b044ab06617ccba5ccb, type: 2}
-  walkAudio: {fileID: 0}
+  walkAudio: {fileID: 3310396949422678141}
   deathAudio: {fileID: 7684703071307862140}
   deathAudioStart: 0
   deathAudioEnd: 3
   attackAudio: {fileID: -1201681961601562428}
-  powerAudio: {fileID: 0}
+  powerAudio: {fileID: 3391431011053951751}
   spawnAudio: {fileID: -5131407502418132212}
   attack: 0
 --- !u!1001 &1974770280428247434
@@ -567,6 +567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323481505687164083, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6818164089875801406, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
@@ -651,6 +656,12 @@ GameObject:
 --- !u!1 &1445120547350991819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1110650094083230273, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 1974770280428247434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5946727476673957177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5323481505687164083, guid: 455001eb4ef0f6149a7118ff9bdae356,
     type: 3}
   m_PrefabInstance: {fileID: 1974770280428247434}
   m_PrefabAsset: {fileID: 0}

@@ -40,9 +40,6 @@ public class SummonController : MonoBehaviour {
         boardManager = FindObjectOfType<BoardManager>();
         gameManager = FindObjectOfType<GameManager>();
         boss = FindObjectOfType<Boss>();
-        resetPrefab = GetComponentInChildren<ResetEffect>().gameObject;
-        barrierPrefab = GetComponentInChildren<BarrierEffect>().gameObject;
-        marchPrefab = GetComponentInChildren<MarchEffect>().gameObject;
     }
 
     private void Start() {

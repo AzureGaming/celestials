@@ -20,7 +20,10 @@ public class TimeGolemController : SummonController {
             skipMove = true;
            yield return StartCoroutine(Rewind());
         } else {
+            walkAudio.loop = true;
+            walkAudio.Play();
             yield return StartCoroutine(UpdatePositionRoutine(transform.position, tileToMoveTo));
+            walkAudio.Stop();
         }
     }
 
@@ -33,6 +36,7 @@ public class TimeGolemController : SummonController {
         if (rewindDestination == null) {
             yield return StartCoroutine(Die(false, false));
         } else {
+            powerAudio.Play();
             isRewind = true;
             animator.SetBool("isRewind", true);
             movementRoutineRunning = true; // board manager will proceed too early otherwise
