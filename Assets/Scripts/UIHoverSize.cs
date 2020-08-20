@@ -21,7 +21,7 @@ public class UIHoverSize : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData) {
         Vector3 newPos = transformToModify.position;
-        newPos.y += 60;
+        newPos.y += 70;
         transformToModify.position = newPos;
         lastPos = transformToModify.position;
     }
