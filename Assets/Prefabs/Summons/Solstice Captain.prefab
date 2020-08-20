@@ -531,6 +531,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3132395710482516451, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.78
+      objectReference: {fileID: 0}
     - target: {fileID: 3838097514557706253, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_Sprite
@@ -551,6 +556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229943877902025761, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
