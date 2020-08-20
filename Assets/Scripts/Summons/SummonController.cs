@@ -129,7 +129,9 @@ public class SummonController : MonoBehaviour {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
         if (tileToMoveTo?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine(false, false));
-        } else if (tileToMoveTo.GetComponentInChildren<BlockingCrystal>()) {
+        } else if (tileToMoveTo?.GetSummon() != null) {
+            yield break;
+        } else if (tileToMoveTo?.GetComponentInChildren<BlockingCrystal>()) {
             yield break;
         } else {
             walkAudio.loop = true;
@@ -142,6 +144,10 @@ public class SummonController : MonoBehaviour {
     public virtual IEnumerator WalkRoutine(Tile tile, int id) {
         if (tile?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine(false, false));
+        } else if (tile?.GetSummon() != null) {
+            yield break;
+        } else if (tile?.GetComponentInChildren<BlockingCrystal>()) {
+            yield break;
         } else {
             walkAudio.loop = true;
             walkAudio.Play();
