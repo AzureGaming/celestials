@@ -19,6 +19,10 @@ public class TimeGolemController : SummonController {
         } else if (tileToMoveTo?.type == TileType.Boss) {
             skipMove = true;
            yield return StartCoroutine(Rewind());
+        } else if (tileToMoveTo?.GetSummon() != null) {
+            yield break;
+        } else if (tileToMoveTo?.GetComponentInChildren<BlockingCrystal>()) {
+            yield break;
         } else {
             walkAudio.loop = true;
             walkAudio.Play();
