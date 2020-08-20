@@ -28,8 +28,9 @@ public class EffectIndicator : MonoBehaviour {
         Summon summon = transform.parent.GetComponentInChildren<Summon>();
         if (summon) {
             SpriteRenderer summonSpriteR = summon.GetComponent<SpriteRenderer>();
-            float summonHeight = summonSpriteR.bounds.max.y - summonSpriteR.bounds.min.y;
-            return new Vector3(origPos.x, origPos.y + summonHeight);
+            //float summonHeight = summonSpriteR.bounds.max.y - summonSpriteR.bounds.min.y;
+            Vector3 indicatorPosition = summon.transform.Find("Head Effect").transform.position;
+            return new Vector3(origPos.x, indicatorPosition.y + 0.2f);
         }
         return origPos;
     }
