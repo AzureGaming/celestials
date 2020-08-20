@@ -398,7 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrierPrefab: {fileID: 63434233506440853}
   marchPrefab: {fileID: 8183480109262353557}
-  resetPrefab: {fileID: 0}
+  resetPrefab: {fileID: 3970085335899253351}
   entity: {fileID: 11400000, guid: b108be5ce623578468f768af3b7677e0, type: 2}
   walkAudio: {fileID: -5964654583364572363}
   deathAudio: {fileID: -3062548760395506860}
@@ -531,6 +531,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3132395710482516451, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.671
+      objectReference: {fileID: 0}
     - target: {fileID: 3838097514557706253, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
       propertyPath: m_Sprite
@@ -551,6 +556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229943877902025761, guid: 455001eb4ef0f6149a7118ff9bdae356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.002
       objectReference: {fileID: 0}
     - target: {fileID: 7552693308965613648, guid: 455001eb4ef0f6149a7118ff9bdae356,
         type: 3}
@@ -575,6 +585,12 @@ GameObject:
 --- !u!1 &8183480109262353557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1110650094083230273, guid: 455001eb4ef0f6149a7118ff9bdae356,
+    type: 3}
+  m_PrefabInstance: {fileID: 9149165642436017876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3970085335899253351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5323481505687164083, guid: 455001eb4ef0f6149a7118ff9bdae356,
     type: 3}
   m_PrefabInstance: {fileID: 9149165642436017876}
   m_PrefabAsset: {fileID: 0}
