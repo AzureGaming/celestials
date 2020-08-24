@@ -33,5 +33,8 @@ public class PlayZone : MonoBehaviour, IDropHandler {
             }
         }
         eventData.pointerDrag.gameObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        foreach (Card handCard in hand.GetCards()) {
+            handCard.GetComponent<UIHoverSize>().enabled = true;
+        }
     }
 }

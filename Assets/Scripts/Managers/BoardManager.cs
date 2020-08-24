@@ -163,7 +163,17 @@ public class BoardManager : MonoBehaviour {
 
     public void DetectSummons() {
         foreach (Tile tile in tiles) {
-            if (tile.IsOccupied()) {
+            if (tile.GetSummon()) {
+                tile.SetValidState();
+            } else {
+                tile.SetInvalidState();
+            }
+        }
+    }
+
+    public void DetectSummonsExcluding(int id) {
+        foreach (Tile tile in tiles) {
+            if (tile.GetSummon() && tile.GetSummon().GetId() != id) {
                 tile.SetValidState();
             } else {
                 tile.SetInvalidState();
