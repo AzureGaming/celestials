@@ -127,6 +127,9 @@ public class SummonController : MonoBehaviour {
 
     public virtual IEnumerator WalkRoutine(int tiles, int id) {
         Tile tileToMoveTo = boardManager.GetDestination(id, tiles);
+        if (tileToMoveTo == null) {
+            yield break;
+        }
         if (tileToMoveTo?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine(false, false));
         } else if (tileToMoveTo?.GetSummon() != null) {
@@ -142,6 +145,9 @@ public class SummonController : MonoBehaviour {
     }
 
     public virtual IEnumerator WalkRoutine(Tile tile, int id) {
+        if (tile == null) {
+            yield break;
+        }
         if (tile?.type == TileType.Boss) {
             yield return StartCoroutine(DieRoutine(false, false));
         } else if (tile?.GetSummon() != null) {

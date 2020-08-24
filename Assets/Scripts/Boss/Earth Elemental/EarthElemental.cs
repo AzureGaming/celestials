@@ -86,7 +86,8 @@ public class EarthElemental : Boss {
     }
 
     void QueueAttack() {
-        Moves randomAttack = (Moves)Random.Range(0, 5);
+        //Moves randomAttack = (Moves)Random.Range(0, 5);
+        Moves randomAttack = (Moves)3;
 
         if (randomAttack == Moves.PEBBLESTORM) {
             pebbleStorm.QueueSkill();
