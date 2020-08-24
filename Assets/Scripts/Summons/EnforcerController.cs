@@ -19,6 +19,7 @@ public class EnforcerController : SummonController {
         Summon summon = boardManager.GetQueue()[0].GetSummon();
         boardManager.SetNeutral();
         FindObjectOfType<Hand>().SetCardsInteractivity(true);
+        FindObjectOfType<AttackQueueManager>().RefreshIndicators(true);
         yield return StartCoroutine(boardManager.ResolveTurnForSummon(summon));
         boardManager.ClearQueue();
         howlRoutineRunning = false;
