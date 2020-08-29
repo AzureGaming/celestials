@@ -15,7 +15,6 @@ public class SpellEffect : MonoBehaviour {
         gameObject.SetActive(true);
         GetComponent<Animator>().SetTrigger("Active");
         if (entryAudio != null) {
-            Debug.Log("Play audio");
             entryAudio.Play();
         }
         //entryAudio?.Play();

@@ -69,20 +69,21 @@ public class Tile : MonoBehaviour {
         attackIndicator.RefreshPosition();
     }
 
-    public bool CheckOccupied() {
-        if (GetComponentInChildren<Summon>()) {
-            return true;
+    public bool IsOccupied() {
+        if (GetSummon() == null && GetBlockingCrystal() == null) {
+            return false;
         }
 
-        return false;
+        return true;
     }
+
 
     public Summon GetSummon() {
         return GetComponentInChildren<Summon>();
     }
 
-    public bool GetIsTargeted() {
-        return attackIndicator.GetIsTargeted();
+    public BlockingCrystal GetBlockingCrystal() {
+        return GetComponentInChildren<BlockingCrystal>();
     }
 
     void UpdateState(State state) {

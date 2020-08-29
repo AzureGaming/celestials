@@ -24,6 +24,7 @@ public class March : CardEffect {
         Summon summon = boardManager.GetQueue()[0].GetSummon();
         boardManager.SetNeutral();
         yield return StartCoroutine(summon.ActivateMarch());
+        FindObjectOfType<AttackQueueManager>().RefreshIndicators(true);
         boardManager.ClearQueue();
         yield break;
     }

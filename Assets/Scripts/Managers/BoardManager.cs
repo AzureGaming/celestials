@@ -73,7 +73,7 @@ public class BoardManager : MonoBehaviour {
         int stage = 0;
         for (int row = 0; row < rowLimit; row++) {
             Tile tile = grid[stage][row];
-            if (tile.CheckOccupied()) {
+            if (tile.IsOccupied()) {
                 tile.SetInvalidState();
             } else {
                 tile.SetValidState();
@@ -86,7 +86,7 @@ public class BoardManager : MonoBehaviour {
         for (int stage = 0; stage < stageLimit; stage++) {
             for (int row = 0; row < rowLimit; row++) {
                 Tile tile = grid[stage][row];
-                if (!tile.CheckOccupied()) {
+                if (!tile.IsOccupied()) {
                     tiles.Add(tile);
                 }
             }
@@ -136,7 +136,7 @@ public class BoardManager : MonoBehaviour {
         for (int stage = 0; stage < stageLimit; stage++) {
             for (int row = 0; row < rowLimit; row++) {
                 Tile tile = grid[stage][row];
-                if (tile && tile.CheckOccupied()) {
+                if (tile && tile.IsOccupied()) {
                     tiles[row] = tile;
                 }
             }
@@ -163,7 +163,17 @@ public class BoardManager : MonoBehaviour {
 
     public void DetectSummons() {
         foreach (Tile tile in tiles) {
-            if (tile.CheckOccupied()) {
+            if (tile.GetSummon()) {
+                tile.SetValidState();
+            } else {
+                tile.SetInvalidState();
+            }
+        }
+    }
+
+    public void DetectSummonsExcluding(int id) {
+        foreach (Tile tile in tiles) {
+            if (tile.GetSummon() && tile.GetSummon().GetId() != id) {
                 tile.SetValidState();
             } else {
                 tile.SetInvalidState();
@@ -174,7 +184,7 @@ public class BoardManager : MonoBehaviour {
     public Summon GetRandomSummonInStage(int stage) {
         List<Summon> summons = new List<Summon>();
         foreach (Tile tile in grid[stage]) {
-            if (tile.CheckOccupied()) {
+            if (tile.IsOccupied()) {
                 summons.Add(tile.GetSummon());
             }
         }
@@ -227,20 +237,20 @@ public class BoardManager : MonoBehaviour {
         Tile currentTile = GetCurrentTile(summonId);
         return Array.Find(tiles, (Tile tile) => {
             if (currentTile && tile.row == currentTile.row && tile.column == currentTile.column + offset) {
-                return true;
+                if (!tile.IsOccupied()) {
+                    return true;
+                }
             }
             return false;
         });
     }
 
-    public Tile GetFirstTileInRowIfValid(int summonId) {
+    public Tile GetFirstTileInRow(int summonId) {
         Tile currentTile = GetCurrentTile(summonId);
-        return Array.Find(tiles, (Tile tile) => {
-            if (currentTile && tile.row == currentTile.row && tile.column == 0 && !GetTileIsOccupied(tile)) {
-                return true;
-            }
-            return false;
-        });
+        if (currentTile == null) {
+            return null;
+        }
+        return grid[0][currentTile.row];
     }
 
     public IEnumerator ResolveStagesRoutine() {
@@ -262,14 +272,7 @@ public class BoardManager : MonoBehaviour {
         yield return StartCoroutine(ResolveAttackForSummon(summon));
         yield return StartCoroutine(ResolveMovementForSummon(summon));
     }
-
-    bool GetTileIsOccupied(Tile tile) {
-        if (tile.GetSummon() == null) {
-            return false;
-        }
-        return true;
-    }
-
+    
     Tile GetCurrentTile(int id) {
         return Array.Find(tiles, (Tile tile) => {
             Summon summon = tile.GetComponentInChildren<Summon>();
@@ -286,6 +289,7 @@ public class BoardManager : MonoBehaviour {
         uiManager.SetLocationSelectionPrompt(true);
         DetectSummonableSpace();
         yield return new WaitUntil(() => GetQueue().Count == 1);
+        uiManager.SetLocationSelectionPrompt(false);
         Tile tile = GetQueue()[0];
         SetNeutral();
         summoner.Summon(tile);

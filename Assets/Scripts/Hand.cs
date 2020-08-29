@@ -16,6 +16,12 @@ public class Hand : MonoBehaviour, IDropHandler {
         return GetComponentsInChildren<Card>();
     }
 
+    public void SetCardsInteractivity(bool value) {
+        foreach (Card card in GetCards()) {
+            card.SetInteractable(value);
+        }
+    }
+
     public void RemoveCard(Entity entity) {
         foreach (Card card in GetComponentsInChildren<Card>()) {
             if (card.GetEntity() == entity) {
@@ -34,8 +40,6 @@ public class Hand : MonoBehaviour, IDropHandler {
             //rt.offsetMin = new Vector2(0, rt.offsetMin.y); //left
             //rt.offsetMin = new Vector2(0, rt.offsetMax.y); //right
         }
-        Debug.Log("Done recalculation");
-        //LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
         foreach (Card card in GetCards()) {
             card.GetComponent<UIHoverSize>().enabled = true;
         }

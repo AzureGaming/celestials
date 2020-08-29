@@ -292,18 +292,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &228288096 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3417218682281404499, guid: 8a97e7669fa04c541931ed14398e3a12,
-    type: 3}
-  m_PrefabInstance: {fileID: 1703007919}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44bff78761702949a4649f7f2a0fa61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &300649817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,18 +2620,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1522109550 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3254784299820794686, guid: 8a97e7669fa04c541931ed14398e3a12,
-    type: 3}
-  m_PrefabInstance: {fileID: 1703007919}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44bff78761702949a4649f7f2a0fa61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1547859709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,26 +3173,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4257279918883667840, guid: 8a97e7669fa04c541931ed14398e3a12,
-        type: 3}
-      propertyPath: futureSight
-      value: 
-      objectReference: {fileID: 709463845}
-    - target: {fileID: 4257279918883667840, guid: 8a97e7669fa04c541931ed14398e3a12,
-        type: 3}
-      propertyPath: paradox
-      value: 
-      objectReference: {fileID: 228288096}
-    - target: {fileID: 4257279918883667840, guid: 8a97e7669fa04c541931ed14398e3a12,
-        type: 3}
-      propertyPath: stasis
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4257279918883667840, guid: 8a97e7669fa04c541931ed14398e3a12,
-        type: 3}
-      propertyPath: stockpile
-      value: 
-      objectReference: {fileID: 1522109550}
     - target: {fileID: 5732401609263687696, guid: 8a97e7669fa04c541931ed14398e3a12,
         type: 3}
       propertyPath: sprites.Array.size

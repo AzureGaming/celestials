@@ -12,12 +12,14 @@ public class EnforcerController : SummonController {
         if (!CheckValidHowl()) {
             yield break;
         }
-
-        boardManager.DetectSummons();
+        boardManager.DetectSummonsExcluding(GetId());
+        FindObjectOfType<Hand>().SetCardsInteractivity(false);
         boardManager.ClearQueue();
         yield return new WaitUntil(() => boardManager.GetQueue().Count == 1);
         Summon summon = boardManager.GetQueue()[0].GetSummon();
         boardManager.SetNeutral();
+        FindObjectOfType<Hand>().SetCardsInteractivity(true);
+        FindObjectOfType<AttackQueueManager>().RefreshIndicators(true);
         yield return StartCoroutine(boardManager.ResolveTurnForSummon(summon));
         boardManager.ClearQueue();
         howlRoutineRunning = false;

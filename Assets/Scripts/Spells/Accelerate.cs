@@ -19,5 +19,6 @@ public class Accelerate : CardEffect {
         // mve all units up 1 stage
         StartCoroutine(summoner.CastAccelerate());
         yield return StartCoroutine(boardManager.ResolveStagesRoutine());
+        FindObjectOfType<AttackQueueManager>().RefreshIndicators(true);
     }
 }

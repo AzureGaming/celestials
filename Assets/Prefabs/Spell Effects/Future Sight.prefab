@@ -15,7 +15,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entryAudio: {fileID: 7487352679375938841}
   exitAudio: {fileID: 0}
+  spriteRenderer: {fileID: 5534751410990727533}
 --- !u!1001 &3134867216485184612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208,6 +209,12 @@ PrefabInstance:
 --- !u!1 &340243664661688739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3402892627411027399, guid: 6b2b990d18ee4344ab119ac6f039fe65,
+    type: 3}
+  m_PrefabInstance: {fileID: 3134867216485184612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5534751410990727533 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7443933459559232777, guid: 6b2b990d18ee4344ab119ac6f039fe65,
     type: 3}
   m_PrefabInstance: {fileID: 3134867216485184612}
   m_PrefabAsset: {fileID: 0}

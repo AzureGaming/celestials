@@ -78,4 +78,9 @@ public class Card : MonoBehaviour {
         attack += value;
         attackDisplay.text = attack.ToString();
     }
+
+    public void SetInteractable(bool value) {
+        GetComponent<CanvasGroup>().blocksRaycasts = value;
+    }
+
 }
