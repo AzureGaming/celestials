@@ -41,11 +41,8 @@ public class TimeGolemController : SummonController {
 
     IEnumerator Rewind() {
         rewindDestination = boardManager.GetFirstTileInRow(GetId());
-        Debug.Log("Hello" + rewindDestination.IsOccupied() + rewindDestination.name);
-        if (rewindDestination == null) {
+        if (rewindDestination == null || rewindDestination.IsOccupied()) {
             yield return StartCoroutine(Die(false, false));
-        } else if (rewindDestination.IsOccupied()) {
-            yield break;
         }
 
         powerAudio.Play();
